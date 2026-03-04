@@ -80,7 +80,7 @@
       ]
     },
     {
-      "id": "céma",
+      "id": "céma-",
       "lemma": "céma-",
       "script": "",
       "pos": "verb",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "id": "áta",
+      "id": "áta-",
       "lemma": "áta-",
       "script": "",
       "pos": "verb",
@@ -155,8 +155,8 @@
       ]
     },
     {
-      "id": "ocá",
-      "lemma": "ocá",
+      "id": "oca",
+      "lemma": "oca",
       "script": "",
       "pos": "particle",
       "definitions": [

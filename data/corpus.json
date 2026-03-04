@@ -8,7 +8,7 @@
         { "form": "ja",        "script": "", "entry_id": "ja",   "gloss": "NOM"           },
         { "form": "tákan=cen", "script": "", "entry_id": "cen",  "gloss": "Takan-language"},
         { "form": "ki",        "script": "", "entry_id": "ki",   "gloss": "ACC"           },
-        { "form": "cémala-ta",   "script": "", "entry_id": "céma", "gloss": "speak-PST"     }
+        { "form": "cémala-ta",   "script": "", "entry_id": "céma-", "gloss": "speak-PST"     }
       ],
       "translation": "The daytime spoke the Takan language."
     },
@@ -20,7 +20,7 @@
         { "form": "ja",      "script": "", "entry_id": "ja",   "gloss": "NOM"   },
         { "form": "ácijo",    "script": "", "entry_id": "ácijo", "gloss": "stone" },
         { "form": "ki",      "script": "", "entry_id": "ki",   "gloss": "ACC"   },
-        { "form": "átala-ta", "script": "", "entry_id": "áta", "gloss": "see-PST" }
+        { "form": "átala-ta", "script": "", "entry_id": "áta-", "gloss": "see-PST" }
       ],
       "translation": "The water looked upon the stone."
     },
@@ -32,7 +32,7 @@
         { "form": "ja",     "script": "", "entry_id": "ja",   "gloss": "NOM"     },
         { "form": "ná",   "script": "", "entry_id": "ná", "gloss": "water"   },
         { "form": "ki",     "script": "", "entry_id": "ki",   "gloss": "ACC"     },
-        { "form": "átalu", "script": "", "entry_id": "áta", "gloss": "see-NPST"}
+        { "form": "átalu", "script": "", "entry_id": "áta-", "gloss": "see-NPST"}
       ],
       "translation": "The daytime gazes upon the water."
     },
@@ -43,11 +43,21 @@
         { "form": "má",     "script": "", "entry_id": "má",   "gloss": "you"     },
         { "form": "ja",     "script": "", "entry_id": "ja",   "gloss": "NOM"     },
         { "form": "nán",     "script": "", "entry_id": "nán",   "gloss": "what?"     },
-        { "form": "ocá",     "script": "", "entry_id": "ocá",   "gloss": "ABL"     },
+        { "form": "oca",     "script": "", "entry_id": "oca",   "gloss": "ABL"     },
         { "form": "cák-u",     "script": "", "entry_id": "cák-",   "gloss": "come"     },
         { "form": "mu",     "script": "", "entry_id": "mu",   "gloss": "Q"     }
       ],
       "translation": "Where are you from?"
+    },
+    {
+      "id": "s005",
+      "source": "Imperfect pangram",
+      "tokens": [
+        { "form": "obénuci",     "script": "", "entry_id": "obénuci",   "gloss": "ocean"     },
+        { "form": "kan",     "script": "", "entry_id": "kan",   "gloss": "LOC"     },
+        { "form": "moúla-ta",     "script": "", "entry_id": "moú-",   "gloss": "go-PST"     }
+      ],
+      "translation": "[implicit subject] went to the ocean."
     }
   ]
 }
