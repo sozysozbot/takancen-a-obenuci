@@ -32,7 +32,7 @@
         { "form": "ja",     "script": "", "entry_id": "ja",   "gloss": "NOM"     },
         { "form": "ná",   "script": "", "entry_id": "ná", "gloss": "water"   },
         { "form": "ki",     "script": "", "entry_id": "ki",   "gloss": "ACC"     },
-        { "form": "átala-ta", "script": "", "entry_id": "áta", "gloss": "see-NPST"}
+        { "form": "átalu", "script": "", "entry_id": "áta", "gloss": "see-NPST"}
       ],
       "translation": "The daytime gazes upon the water."
     },
@@ -44,7 +44,7 @@
         { "form": "ja",     "script": "", "entry_id": "ja",   "gloss": "NOM"     },
         { "form": "nán",     "script": "", "entry_id": "nán",   "gloss": "what?"     },
         { "form": "ocá",     "script": "", "entry_id": "ocá",   "gloss": "ABL"     },
-        { "form": "cak-ú",     "script": "", "entry_id": "cak-",   "gloss": "come"     },
+        { "form": "cák-u",     "script": "", "entry_id": "cák-",   "gloss": "come"     },
         { "form": "mu",     "script": "", "entry_id": "mu",   "gloss": "Q"     }
       ],
       "translation": "Where are you from?"
