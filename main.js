@@ -226,26 +226,15 @@ function buildTokenEl(token) {
   const syllText  = romanToHiragana(token.form);
   const coincide  = !mixedText || mixedText === syllText;
 
-  const scripts = document.createElement('div');
-  scripts.className = coincide ? 'token-scripts single' : 'token-scripts';
+  const scriptEl = document.createElement('ruby');
+  scriptEl.className = 'token-script';
+  scriptEl.appendChild(document.createTextNode(mixedText || syllText));
 
-  if (coincide) {
-    const s = document.createElement('div');
-    s.className = 'token-script';
-    s.textContent = mixedText || syllText;
-    scripts.appendChild(s);
-  } else {
-    const mixed = document.createElement('div');
-    mixed.className = 'token-script';
-    mixed.textContent = mixedText;
-    scripts.appendChild(mixed);
-
-    const syll = document.createElement('div');
-    syll.className = 'token-script';
-    syll.textContent = syllText;
-    scripts.appendChild(syll);
-  }
-  div.appendChild(scripts);
+  const rt = document.createElement('rt');
+  rt.textContent = coincide ? "\u3000" : syllText;
+  scriptEl.appendChild(rt);
+  
+  div.appendChild(scriptEl);
 
   const form = document.createElement('div');
   form.className = 'token-form';

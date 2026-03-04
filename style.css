@@ -173,16 +173,11 @@ main {
 .entry-link.found:hover { background: #aed6f1; }
 .entry-link.missing { background: #fadbd8; color: #c0392b; font-weight: bold; }
 
-.token-scripts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 3rem;
-}
-.token-scripts.single { justify-content: center; }
 .token-script { font-size: 1.2rem; font-family: 'LinzklarRounded', serif; }
 .token-form   { font-size: 1rem; font-family: monospace; }
 .token-gloss  { font-size: 0.8rem; color: #888; }
+
+ruby rt { font-size: 70%;}
 
 .translation {
   font-style: italic;
