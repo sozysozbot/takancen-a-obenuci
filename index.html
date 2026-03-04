@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takan-cen Corpus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Takan-cen</h1>
+    <nav class="tabs">
+      <button id="tab-dictionary" class="tab active">Dictionary</button>
+      <button id="tab-corpus" class="tab">Corpus</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="panel-dictionary">
+      <div class="search-controls">
+        <input type="search" id="search-input" placeholder="Search lemma or definition…" autocomplete="off">
+        <select id="pos-filter">
+          <option value="">All parts of speech</option>
+        </select>
+      </div>
+      <div id="entry-list"></div>
+    </section>
+
+    <section id="panel-corpus" hidden>
+      <div id="corpus-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

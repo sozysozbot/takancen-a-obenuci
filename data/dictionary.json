@@ -1,0 +1,107 @@
+{
+  "entries": [
+    {
+      "id": "cen",
+      "lemma": "cen",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "class-A",
+      "definitions": [
+        {
+          "gloss": "language",
+          "definition": "Language, tongue; a system of communication specific to a people or region."
+        }
+      ],
+      "notes": "Commonly used in compounds, as in 'Takan-cen' (the Takan language)."
+    },
+    {
+      "id": "asa",
+      "lemma": "asa",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "class-A",
+      "definitions": [
+        {
+          "gloss": "sun",
+          "definition": "The sun; by extension, daylight or a radiant day."
+        }
+      ]
+    },
+    {
+      "id": "koru",
+      "lemma": "koru",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "class-B",
+      "definitions": [
+        {
+          "gloss": "stone",
+          "definition": "A stone or rock; by extension, anything solid and immovable."
+        }
+      ]
+    },
+    {
+      "id": "veli",
+      "lemma": "veli",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "class-A",
+      "definitions": [
+        {
+          "gloss": "water",
+          "definition": "Water; a body of water such as a river or lake."
+        }
+      ]
+    },
+    {
+      "id": "noba",
+      "lemma": "noba-",
+      "script": "",
+      "pos": "verb",
+      "inflection_class": "class-1",
+      "definitions": [
+        {
+          "gloss": "speak",
+          "definition": "To speak, to say, to utter words."
+        }
+      ]
+    },
+    {
+      "id": "imel",
+      "lemma": "imel-",
+      "script": "",
+      "pos": "verb",
+      "inflection_class": "class-2",
+      "definitions": [
+        {
+          "gloss": "see",
+          "definition": "To see, to perceive visually; also to understand or comprehend."
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "lemma": "ra",
+      "script": "",
+      "pos": "particle",
+      "definitions": [
+        {
+          "gloss": "NOM",
+          "definition": "Nominative case marker; indicates the subject of the sentence."
+        }
+      ]
+    },
+    {
+      "id": "na",
+      "lemma": "na",
+      "script": "",
+      "pos": "particle",
+      "definitions": [
+        {
+          "gloss": "ACC",
+          "definition": "Accusative case marker; indicates the direct object of the sentence."
+        }
+      ]
+    }
+  ]
+}

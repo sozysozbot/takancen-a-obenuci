@@ -1,0 +1,40 @@
+{
+  "sentences": [
+    {
+      "id": "s001",
+      "source": "Takan-cen Creation Myth, §1",
+      "tokens": [
+        { "form": "asa",       "script": "", "entry_id": "asa",  "gloss": "sun"           },
+        { "form": "ra",        "script": "", "entry_id": "ra",   "gloss": "NOM"           },
+        { "form": "Takan-cen", "script": "", "entry_id": "cen",  "gloss": "Takan-language"},
+        { "form": "na",        "script": "", "entry_id": "na",   "gloss": "ACC"           },
+        { "form": "noba-ta",   "script": "", "entry_id": "noba", "gloss": "speak-PST"     }
+      ],
+      "translation": "The sun spoke the Takan language."
+    },
+    {
+      "id": "s002",
+      "source": "Takan-cen Creation Myth, §2",
+      "tokens": [
+        { "form": "veli",    "script": "", "entry_id": "veli", "gloss": "water" },
+        { "form": "ra",      "script": "", "entry_id": "ra",   "gloss": "NOM"   },
+        { "form": "koru",    "script": "", "entry_id": "koru", "gloss": "stone" },
+        { "form": "na",      "script": "", "entry_id": "na",   "gloss": "ACC"   },
+        { "form": "imel-ta", "script": "", "entry_id": "imel", "gloss": "see-PST" }
+      ],
+      "translation": "The water looked upon the stone."
+    },
+    {
+      "id": "s003",
+      "source": "Folk song, verse 1",
+      "tokens": [
+        { "form": "asa",    "script": "", "entry_id": "asa",  "gloss": "sun"     },
+        { "form": "ra",     "script": "", "entry_id": "ra",   "gloss": "NOM"     },
+        { "form": "veli",   "script": "", "entry_id": "veli", "gloss": "water"   },
+        { "form": "na",     "script": "", "entry_id": "na",   "gloss": "ACC"     },
+        { "form": "imel-a", "script": "", "entry_id": "imel", "gloss": "see-NPST"}
+      ],
+      "translation": "The sun gazes upon the water."
+    }
+  ]
+}
