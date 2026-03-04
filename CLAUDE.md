@@ -6,10 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 
 A static web frontend for a searchable corpus of a fictitious language named **Takan-cen**, hosted on GitHub Pages. The language has Japanese-like grammar (simple noun declensions, complex verb conjugations) and a mixed writing system with logograms and syllabaries.
 
+The dictionary and the corpus will be given in two separate JSON files. The frontend should display the sentences in the corpus based on the content of the dictionary.
+
 ## Architecture
 
 - **Target**: GitHub Pages (static hosting — no server-side code)
-- **Approach**: Pure frontend (HTML/CSS/JS or a static site generator that compiles to static files)
+- **Approach**: Pure frontend (HTML/CSS/JS)
 - No backend; any search/filtering logic runs entirely in the browser
 
 ## About the User
