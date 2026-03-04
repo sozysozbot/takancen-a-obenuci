@@ -122,7 +122,7 @@
       "id": "ja",
       "lemma": "ja",
       "script": "",
-      "pos": "particle",
+      "pos": "noun particle",
       "definitions": [
         {
           "gloss": "NOM",
@@ -134,7 +134,7 @@
       "id": "ki",
       "lemma": "ki",
       "script": "",
-      "pos": "particle",
+      "pos": "noun particle",
       "definitions": [
         {
           "gloss": "ACC",
@@ -146,7 +146,7 @@
       "id": "mu",
       "lemma": "mu",
       "script": "",
-      "pos": "particle",
+      "pos": "sentence particle",
       "definitions": [
         {
           "gloss": "Q",
@@ -158,11 +158,75 @@
       "id": "oca",
       "lemma": "oca",
       "script": "",
-      "pos": "particle",
+      "pos": "noun particle",
       "definitions": [
         {
           "gloss": "ABL",
           "definition": "Ablative case marker; indicates a movement away from it."
+        }
+      ]
+    },
+    {
+      "id": "kan",
+      "lemma": "kan",
+      "script": "",
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "LOC",
+          "definition": "Locative case marker; indicates a place where an action takes place."
+        }
+      ]
+    },
+    {
+      "id": "tákan",
+      "lemma": "tákan",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "Takan",
+          "definition": "Takan; name of an ethnicity or a language"
+        }
+      ]
+    },
+    {
+      "id": "obénuci",
+      "lemma": "obénuci",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "ocean",
+          "definition": "Ocean; a big patch of saltwater"
+        }
+      ]
+    },
+    {
+      "id": "(a)ta",
+      "lemma": "(a)ta",
+      "script": "",
+      "pos": "verb particle",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "PST",
+          "definition": "A marker that marks that the action is already completed."
+        }
+      ]
+    },
+    {
+      "id": "(u)",
+      "lemma": "(u)",
+      "script": "",
+      "pos": "verb particle",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "PST",
+          "definition": "A marker that marks that the action is already completed."
         }
       ]
     }
