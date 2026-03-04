@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'LinzklarRounded';
-  src: url('https://yasusho.github.io/linmarn_font_project/fonts/rounded/Linzklar_rounded.woff') format('woff');
+  src: url('https://yasusho.github.io/linmarn_font_project/fonts/rounded/linzklar_rounded.woff') format('woff');
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
