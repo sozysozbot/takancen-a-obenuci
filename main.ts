@@ -68,7 +68,8 @@ function t(section: 'pos' | 'conj' | 'ui', key: string): string {
 }
 
 function localize(s: LocalizedString): string {
-  return (lang === 'ja' ? s.ja : undefined) ?? s.en;
+  if (lang === 'ja') return s.ja;
+  return s.en ?? s.ja;
 }
 
 function tCount(count: number): string {
@@ -536,11 +537,11 @@ function buildEntryObject() {
   for (const row of defList.querySelectorAll<HTMLDivElement>('.def-row')) {
     const g = (row.querySelector('.def-gloss') as HTMLInputElement).value.trim();
     const d = (row.querySelector('.def-definition') as HTMLInputElement).value.trim();
-    if (g || d) defs.push({ gloss: { en: g }, ...(d ? { definition: { en: d } } : {}) });
+    if (g || d) defs.push({ gloss: { ja: g }, ...(d ? { definition: { ja: d } } : {}) });
   }
   entry['definitions'] = defs;
   const notes = fieldNotes.value.trim();
-  if (notes) entry['notes'] = { en: notes };
+  if (notes) entry['notes'] = { ja: notes };
   return entry;
 }
 

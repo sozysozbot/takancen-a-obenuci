@@ -7,8 +7,8 @@ type IndeclinablePos = 'noun' | 'noun suffix'  | 'noun particle'
 export type ConjugationClass = 'vowel-stem' | 'consonant-stem' | 'c-irregular';
 
 export interface LocalizedString {
-  en: string;
-  ja?: string;
+  en?: string;
+  ja: string;
 }
 
 export interface Definition {

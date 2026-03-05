@@ -233,7 +233,8 @@
       "definitions": [
         {
           "gloss": {
-            "en": "Q"
+            "en": "Q",
+            "ja": "Q"
           },
           "definition": {
             "en": "Question marker; placed at the end of a questioning sentence.",
@@ -396,7 +397,8 @@
       "definitions": [
         {
           "gloss": {
-            "en": "GEN"
+            "en": "GEN",
+            "ja": "GEN"
           },
           "definition": {
             "en": "The genitive marker",

@@ -2,8 +2,8 @@ import { z } from 'zod';
 import { readFileSync } from 'fs';
 // ── Schemas ────────────────────────────────────────────────────────────────
 const localizedStringSchema = z.object({
-    en: z.string(),
-    ja: z.string().optional(),
+    en: z.string().optional(),
+    ja: z.string(),
 });
 const definitionSchema = z.object({
     gloss: localizedStringSchema,

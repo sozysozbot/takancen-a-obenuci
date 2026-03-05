@@ -70,7 +70,9 @@ function t(section, key) {
     return i18n[section]?.[key] ?? key;
 }
 function localize(s) {
-    return (lang === 'ja' ? s.ja : undefined) ?? s.en;
+    if (lang === 'ja')
+        return s.ja;
+    return s.en ?? s.ja;
 }
 function tCount(count) {
     const tmpl = count === 1 && i18n['count-in-corpus']?.one
@@ -475,12 +477,12 @@ function buildEntryObject() {
         const g = row.querySelector('.def-gloss').value.trim();
         const d = row.querySelector('.def-definition').value.trim();
         if (g || d)
-            defs.push({ gloss: { en: g }, ...(d ? { definition: { en: d } } : {}) });
+            defs.push({ gloss: { ja: g }, ...(d ? { definition: { ja: d } } : {}) });
     }
     entry['definitions'] = defs;
     const notes = fieldNotes.value.trim();
     if (notes)
-        entry['notes'] = { en: notes };
+        entry['notes'] = { ja: notes };
     return entry;
 }
 function updateJsonOutput() {
