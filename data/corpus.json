@@ -55,7 +55,8 @@
         }
       ],
       "translation": {
-        "en": "Where are you from?"
+        "en": "Where are you from?",
+        "ja": "君はどこから来たの？"
       }
     },
     {
@@ -89,7 +90,8 @@
         }
       ],
       "translation": {
-        "en": "[implicit subject] went to the ocean."
+        "en": "[implicit subject] went to the ocean.",
+        "ja": "海に行った。"
       }
     },
     {
@@ -133,7 +135,8 @@
         }
       ],
       "translation": {
-        "en": "a book to learn the Takan language from"
+        "en": "a book to learn the Takan language from",
+        "ja": "タカン語を学ぶ本"
       }
     },
     {
@@ -193,7 +196,8 @@
         }
       ],
       "translation": {
-        "en": "Would light have come through, if it were daytime?"
+        "en": "Would light have come through, if it were daytime?",
+        "ja": "昼間であれば、光は入ってきたのか。"
       }
     },
     {
@@ -245,7 +249,8 @@
         }
       ],
       "translation": {
-        "en": "I can speak Linepāine."
+        "en": "I can speak Linepāine.",
+        "ja": "私はリパライン語が話せる。"
       }
     },
     {
@@ -305,7 +310,8 @@
         }
       ],
       "translation": {
-        "en": "Do you want water?"
+        "en": "Do you want water?",
+        "ja": "君は水が欲しい？"
       }
     },
     {
@@ -339,7 +345,8 @@
         }
       ],
       "translation": {
-        "en": "Watch this."
+        "en": "Watch this.",
+        "ja": "これを見よ。"
       }
     },
     {
@@ -401,7 +408,7 @@
           "entry_ids": [
             "wa"
           ],
-          "gloss": "and.then"
+          "gloss": "and.also"
         },
         {
           "form": "amamátono",
@@ -443,7 +450,7 @@
           "entry_ids": [
             "wa"
           ],
-          "gloss": "and.then"
+          "gloss": "and.also"
         },
         {
           "form": "ininátono",
@@ -512,7 +519,8 @@
         }
       ],
       "translation": {
-        "en": "The Ai’ren Republic is a country belonging to the Republic Union of the Eastern Islands; there is Manmana Island, which is a big island, and there are Atalam Island, Ekadon Island and 闇島, which are small islands."
+        "en": "The Ai’ren Republic is a country belonging to the Republic Union of the Eastern Islands; there is Manmana Island, which is a big island, and there are Atalam Island, Ekadon Island and 闇島, which are small islands.",
+        "ja": "アイル共和国は東諸島共和国連合の国であり、大きな島であるマナナ島と、小さな島であるアタラム島・光島・闇島がある。"
       }
     },
     {
@@ -555,7 +563,8 @@
         }
       ],
       "translation": {
-        "en": "Are you a Takan?"
+        "en": "He must be a Takan.",
+        "ja": "彼はタカン人だろう。"
       }
     },
     {
@@ -582,7 +591,8 @@
         }
       ],
       "translation": {
-        "en": "a place where it is possible to sit"
+        "en": "a place where it is possible to sit",
+        "ja": "座ることができる土地"
       }
     },
     {
@@ -609,7 +619,8 @@
         }
       ],
       "translation": {
-        "en": "a place where I had the honor to sit"
+        "en": "a place where I had the honor to sit",
+        "ja": "座らせていただいた土地"
       }
     },
     {
@@ -621,7 +632,8 @@
           "mixed_script": "別而",
           "entry_ids": [
             "mórwa"
-          ]
+          ],
+          "gloss": "but"
         },
         {
           "form": "janeníte",
@@ -630,7 +642,8 @@
             "ján-",
             "(e)nít-",
             "(e)"
-          ]
+          ],
+          "gloss": "eat.up-ADV"
         },
         {
           "form": "wáce",
@@ -638,21 +651,24 @@
           "entry_ids": [
             "wác-",
             "(e)"
-          ]
+          ],
+          "gloss": "not.exist-ADV"
         },
         {
           "form": "ken",
           "mixed_script": "即",
           "entry_ids": [
             "ken"
-          ]
+          ],
+          "gloss": "then"
         },
         {
           "form": "méko",
           "mixed_script": "道",
           "entry_ids": [
             "méko"
-          ]
+          ],
+          "gloss": "way"
         },
         {
           "form": "wáci",
@@ -660,11 +676,13 @@
           "entry_ids": [
             "wác-",
             "(i)"
-          ]
+          ],
+          "gloss": "not.exist-IMP"
         }
       ],
       "translation": {
-        "en": "But if you leave any food behind, you'll be sorry."
+        "en": "But if you leave any food behind, you'll be sorry.",
+        "ja": "でも食べ残したら承知しないからな。"
       }
     }
   ]
