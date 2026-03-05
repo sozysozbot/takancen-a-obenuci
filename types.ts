@@ -1,6 +1,6 @@
 export type Pos = DeclinablePos | IndeclinablePos;
 type DeclinablePos = 'verb' | 'auxiliary verb';
-type IndeclinablePos = 'noun'  | 'noun particle'
+type IndeclinablePos = 'noun' | 'noun suffix'  | 'noun particle'
   | 'verb particle'
   | 'sentence particle';
 
