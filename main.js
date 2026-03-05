@@ -263,8 +263,6 @@ function buildEntryEl(entry) {
             const badge = document.createElement('span');
             if (entryMap.has(id)) {
                 badge.className = 'entry-link found';
-                const linked = entryMap.get(id);
-                const gloss = linked.definitions[0]?.gloss;
                 badge.textContent = id;
                 badge.addEventListener('click', () => navigateToEntry(id));
             }

@@ -4,12 +4,55 @@
       "id": "s004",
       "source": "Spoonfed Takancen, sample #10",
       "tokens": [
-        { "form": "má",    "mixed_script": "汝", "entry_ids": ["má"],   "gloss": "you"  },
-        { "form": "ja",    "mixed_script": "や", "entry_ids": ["ja"],   "gloss": "NOM"  },
-        { "form": "nán",   "mixed_script": "何", "entry_ids": ["nán"],  "gloss": "what?"},
-        { "form": "oca",   "mixed_script": "耒", "entry_ids": ["oca"],  "gloss": "ABL"  },
-        { "form": "cáku", "mixed_script": "来く", "entry_ids": ["cák-","(u)"], "gloss": "come" },
-        { "form": "mu",    "mixed_script": "む", "entry_ids": ["mu"],   "gloss": "Q"    }
+        {
+          "form": "má",
+          "mixed_script": "汝",
+          "entry_ids": [
+            "má"
+          ],
+          "gloss": "you"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nán",
+          "mixed_script": "何",
+          "entry_ids": [
+            "nán"
+          ],
+          "gloss": "what?"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "cáku",
+          "mixed_script": "来く",
+          "entry_ids": [
+            "cák-",
+            "(u)"
+          ],
+          "gloss": "come"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        }
       ],
       "translation": "Where are you from?"
     },
@@ -17,9 +60,31 @@
       "id": "s005",
       "source": "Imperfect pangram",
       "tokens": [
-        { "form": "obénuci",  "mixed_script": "海", "entry_ids": ["obénuci"], "gloss": "ocean"  },
-        { "form": "kan",      "mixed_script": "処", "entry_ids": ["kan"],     "gloss": "LOC"    },
-        { "form": "moŕlata", "mixed_script": "行ら終", "entry_ids": ["moŕ-", "(a)ta"],    "gloss": "go-PST" }
+        {
+          "form": "obénuci",
+          "mixed_script": "海",
+          "entry_ids": [
+            "obénuci"
+          ],
+          "gloss": "ocean"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "moŕlata",
+          "mixed_script": "行ら終",
+          "entry_ids": [
+            "moŕ-",
+            "(a)ta"
+          ],
+          "gloss": "go-PST"
+        }
       ],
       "translation": "[implicit subject] went to the ocean."
     },
@@ -27,10 +92,41 @@
       "id": "s006",
       "source": "タカン語概論",
       "tokens": [
-        { "form": "tákan=cen", "mixed_script": "皇言", "entry_ids": ["tákan", "cen"],  "gloss": "Takan-language" },
-        { "form": "ki",       "mixed_script": "き", "entry_ids": ["ki"],       "gloss": "ACC"      },
-        { "form": "caneníta",  "mixed_script": "識ね入た", "entry_ids": ["cán-", "(e)nít-", "(a)"], "gloss": "learn-PTCP"  },
-        { "form": "áku",      "mixed_script": "書", "entry_ids": ["áku"],     "gloss": "book"    }
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "caneníta",
+          "mixed_script": "識ね入た",
+          "entry_ids": [
+            "cán-",
+            "(e)nít-",
+            "(a)"
+          ],
+          "gloss": "learn-PTCP"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        }
       ],
       "translation": "a book to learn the Takan language from"
     },
@@ -38,12 +134,57 @@
       "id": "s007",
       "source": "タカン語概論",
       "tokens": [
-        { "form": "kijákaga",  "mixed_script": "日時", "entry_ids": ["kijákaga"],      "gloss": "daytime"        },
-        { "form": "únune",  "mixed_script": "うぬね", "entry_ids": ["únun-", "(e)"],      "gloss": "be-ADV"        },
-        { "form": "áika",  "mixed_script": "光", "entry_ids": ["áika"],      "gloss": "light"        },
-        { "form": "ja",        "mixed_script": "や", "entry_ids": ["ja"],             "gloss": "NOM"            },
-        { "form": "cakenítu",  "mixed_script": "来け入つ", "entry_ids": ["cák-", "(e)nít-", "(u)"], "gloss": "come.in-NPST"  },
-        { "form": "mu",    "mixed_script": "む", "entry_ids": ["mu"],   "gloss": "Q"    }
+        {
+          "form": "kijákaga",
+          "mixed_script": "日時",
+          "entry_ids": [
+            "kijákaga"
+          ],
+          "gloss": "daytime"
+        },
+        {
+          "form": "únune",
+          "mixed_script": "うぬね",
+          "entry_ids": [
+            "únun-",
+            "(e)"
+          ],
+          "gloss": "be-ADV"
+        },
+        {
+          "form": "áika",
+          "mixed_script": "光",
+          "entry_ids": [
+            "áika"
+          ],
+          "gloss": "light"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "cakenítu",
+          "mixed_script": "来け入つ",
+          "entry_ids": [
+            "cák-",
+            "(e)nít-",
+            "(u)"
+          ],
+          "gloss": "come.in-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        }
       ],
       "translation": "Would light have come through, if it were daytime?"
     },
@@ -51,88 +192,415 @@
       "id": "s007",
       "source": "タカン語概論",
       "tokens": [
-        { "form": "nó",  "mixed_script": "我", "entry_ids": ["nó"],      "gloss": "I"        },
-        { "form": "ja",        "mixed_script": "や", "entry_ids": ["ja"],             "gloss": "NOM"            },
-        { "form": "nimálane=cen", "mixed_script": "哩言", "entry_ids": ["nimálane", "cen"],  "gloss": "Linepāine.language" },
-        { "form": "ki",        "mixed_script": "き", "entry_ids": ["ki"],             "gloss": "ACC"            },
-        { "form": "cemalácu", "mixed_script": "言能す", "entry_ids": ["céma-", "(á)c-", "(u)"],         "gloss": "speak-can-NPST"      }
-     ],
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nimálane=cen",
+          "mixed_script": "哩言",
+          "entry_ids": [
+            "nimálane",
+            "cen"
+          ],
+          "gloss": "Linepāine.language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cemalácu",
+          "mixed_script": "言能す",
+          "entry_ids": [
+            "céma-",
+            "(á)c-",
+            "(u)"
+          ],
+          "gloss": "speak-can-NPST"
+        }
+      ],
       "translation": "I can speak Linepāine."
     },
     {
       "id": "s008",
       "source": "タカン語概論",
       "tokens": [
-            { "form": "má",    "mixed_script": "汝", "entry_ids": ["má"],   "gloss": "you"  },
-            { "form": "ja",    "mixed_script": "や", "entry_ids": ["ja"],   "gloss": "NOM"  },
-            { "form": "ná",       "mixed_script": "水", "entry_ids": ["ná"],    "gloss": "water"  },
-            { "form": "ki",        "mixed_script": "き", "entry_ids": ["ki"],             "gloss": "ACC"            },
-            { "form": "momecakíjalu",    "mixed_script": "手来心る", "entry_ids": ["móm-", "(e)cák-", "(í)ja-", "(u)"],   "gloss": "obtain-want-NPST"    },
-            { "form": "mu",    "mixed_script": "む", "entry_ids": ["mu"],   "gloss": "Q"    }
+        {
+          "form": "má",
+          "mixed_script": "汝",
+          "entry_ids": [
+            "má"
+          ],
+          "gloss": "you"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "ná",
+          "mixed_script": "水",
+          "entry_ids": [
+            "ná"
+          ],
+          "gloss": "water"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "momecakíjalu",
+          "mixed_script": "手来心る",
+          "entry_ids": [
+            "móm-",
+            "(e)cák-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "obtain-want-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        }
       ],
       "translation": "Do you want water?"
-    }, {
+    },
+    {
       "id": "s009",
       "source": "タカン語概論",
       "tokens": [
-            { "form": "mé",    "mixed_script": "茲", "entry_ids": ["mé"],   "gloss": "this"  },
-            { "form": "ki",        "mixed_script": "き", "entry_ids": ["ki"],             "gloss": "ACC"            },
-            { "form": "átaci",    "mixed_script": "目し", "entry_ids": ["áta-","(i)"],     "gloss": "see-IMP" }
+        {
+          "form": "mé",
+          "mixed_script": "茲",
+          "entry_ids": [
+            "mé"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "átaci",
+          "mixed_script": "目し",
+          "entry_ids": [
+            "áta-",
+            "(i)"
+          ],
+          "gloss": "see-IMP"
+        }
       ],
       "translation": "Watch this."
-    }, {
+    },
+    {
       "id": "s010",
       "source": "タカン語概論",
       "tokens": [
-            { "form": "ailúcima",    "mixed_script": "冠国", "entry_ids": ["ailúcima"],   "gloss": "Ai’ren.Republic"  },
-            { "form": "ja",    "mixed_script": "や", "entry_ids": ["ja"],   "gloss": "NOM"  },
-            { "form": "dońdatu",    "mixed_script": "島集", "entry_ids": ["dońdatu"],   "gloss": "Republic.Union.of.the.Eastern.Islands"  },
-            { "form": "a",    "mixed_script": "あ", "entry_ids": ["a"],   "gloss": "GEN"  },
-            { "form": "címa",    "mixed_script": "国", "entry_ids": ["címa"],   "gloss": "country"  },
-            { "form": "únune",  "mixed_script": "うぬね", "entry_ids": ["únun-", "(e)"],      "gloss": "be-ADV"        },
-            { "form": "wa",  "mixed_script": "わ", "entry_ids": ["wa"],      "gloss": "and.then"        },
-
-            { "form": "amamátono",    "mixed_script": "大島", "entry_ids": ["amamátono"],   "gloss": "big.island"  },
-            { "form": "únuna",  "mixed_script": "うぬな", "entry_ids": ["únun-", "(a)"],      "gloss": "be-PTCP"        },
-            { "form": "mananádon",    "mixed_script": "母島", "entry_ids": ["mananádon"],   "gloss": "Manmana.Island"  },
-            { "form": "éma",    "mixed_script": "在", "entry_ids": ["éma-", "(e)"],   "gloss": "exist-ADV"  },
-            { "form": "wa",  "mixed_script": "わ", "entry_ids": ["wa"],      "gloss": "and.then"        },
-            { "form": "ininátono",    "mixed_script": "小島", "entry_ids": ["ininátono"],   "gloss": "small.island"  },
-            { "form": "a",    "mixed_script": "あ", "entry_ids": ["a"],   "gloss": "GEN"  },
-            { "form": "takańdon",    "mixed_script": "皇島", "entry_ids": ["takańdon"],   "gloss": "Atalam.Island"  },
-            { "form": "ata",    "mixed_script": "あた", "entry_ids": ["ata"],   "gloss": "and"  },
-            { "form": "ekádon",    "mixed_script": "光島", "entry_ids": ["ekádon"],   "gloss": "Ekadon.Island"  },
-            { "form": "ata",    "mixed_script": "あた", "entry_ids": ["ata"],   "gloss": "and"  },
-            { "form": "bartádon",    "mixed_script": "闇島", "entry_ids": ["bartádon"],   "gloss": "闇島"  },
-            { "form": "émalu",    "mixed_script": "在る", "entry_ids": ["éma-", "(u)"],   "gloss": "exist-NPST"  }
+        {
+          "form": "ailúcima",
+          "mixed_script": "冠国",
+          "entry_ids": [
+            "ailúcima"
+          ],
+          "gloss": "Ai’ren.Republic"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "dońdatu",
+          "mixed_script": "島集",
+          "entry_ids": [
+            "dońdatu"
+          ],
+          "gloss": "Republic.Union.of.the.Eastern.Islands"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "címa",
+          "mixed_script": "国",
+          "entry_ids": [
+            "címa"
+          ],
+          "gloss": "country"
+        },
+        {
+          "form": "únune",
+          "mixed_script": "うぬね",
+          "entry_ids": [
+            "únun-",
+            "(e)"
+          ],
+          "gloss": "be-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.then"
+        },
+        {
+          "form": "amamátono",
+          "mixed_script": "大島",
+          "entry_ids": [
+            "amamátono"
+          ],
+          "gloss": "big.island"
+        },
+        {
+          "form": "únuna",
+          "mixed_script": "うぬな",
+          "entry_ids": [
+            "únun-",
+            "(a)"
+          ],
+          "gloss": "be-PTCP"
+        },
+        {
+          "form": "mananádon",
+          "mixed_script": "母島",
+          "entry_ids": [
+            "mananádon"
+          ],
+          "gloss": "Manmana.Island"
+        },
+        {
+          "form": "éma",
+          "mixed_script": "在",
+          "entry_ids": [
+            "éma-",
+            "(e)"
+          ],
+          "gloss": "exist-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.then"
+        },
+        {
+          "form": "ininátono",
+          "mixed_script": "小島",
+          "entry_ids": [
+            "ininátono"
+          ],
+          "gloss": "small.island"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "takańdon",
+          "mixed_script": "皇島",
+          "entry_ids": [
+            "takańdon"
+          ],
+          "gloss": "Atalam.Island"
+        },
+        {
+          "form": "ata",
+          "mixed_script": "あた",
+          "entry_ids": [
+            "ata"
+          ],
+          "gloss": "and"
+        },
+        {
+          "form": "ekádon",
+          "mixed_script": "光島",
+          "entry_ids": [
+            "ekádon"
+          ],
+          "gloss": "Ekadon.Island"
+        },
+        {
+          "form": "ata",
+          "mixed_script": "あた",
+          "entry_ids": [
+            "ata"
+          ],
+          "gloss": "and"
+        },
+        {
+          "form": "bartádon",
+          "mixed_script": "闇島",
+          "entry_ids": [
+            "bartádon"
+          ],
+          "gloss": "闇島"
+        },
+        {
+          "form": "émalu",
+          "mixed_script": "在る",
+          "entry_ids": [
+            "éma-",
+            "(u)"
+          ],
+          "gloss": "exist-NPST"
+        }
       ],
       "translation": "The Ai’ren Republic is a country belonging to the Republic Union of the Eastern Islands; there is Manmana Island, which is a big island, and there are Atalam Island, Ekadon Island and 闇島, which are small islands."
-    }, {
+    },
+    {
       "id": "s011",
-         "source": "タカン語概論",
+      "source": "タカン語概論",
       "tokens": [
-            { "form": "ki",    "mixed_script": "那", "entry_ids": ["ki#2"],   "gloss": "he"  },
-            { "form": "ja",    "mixed_script": "や", "entry_ids": ["ja"],   "gloss": "NOM"  },
-            { "form": "takamácuka",    "mixed_script": "皇人", "entry_ids": ["takamácuka"],   "gloss": "person.of.Takan.ethnicity"  },
-            { "form": "ununílu",  "mixed_script": "うぬにる", "entry_ids": ["únun-", "(í)-", "(u)"],      "gloss": "be-PTCP-NPST"        }
+        {
+          "form": "ki",
+          "mixed_script": "那",
+          "entry_ids": [
+            "ki#2"
           ],
-          "translation": "Are you a Takan?"
-    }, {
+          "gloss": "he"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "takamácuka",
+          "mixed_script": "皇人",
+          "entry_ids": [
+            "takamácuka"
+          ],
+          "gloss": "person.of.Takan.ethnicity"
+        },
+        {
+          "form": "ununílu",
+          "mixed_script": "うぬにる",
+          "entry_ids": [
+            "únun-",
+            "(í)-",
+            "(u)"
+          ],
+          "gloss": "be-PTCP-NPST"
+        }
+      ],
+      "translation": "Are you a Takan?"
+    },
+    {
       "id": "s011",
-         "source": "タカン語概論",
+      "source": "タカン語概論",
       "tokens": [
-            { "form": "cikácola",    "mixed_script": "席能そら", "entry_ids": ["cík-", "(á)c-", "(a)"],   "gloss": "sit-can-PTCP"  },
-            { "form": "méma",    "mixed_script": "地", "entry_ids": ["méma"],   "gloss": "land"  }
+        {
+          "form": "cikácola",
+          "mixed_script": "席能そら",
+          "entry_ids": [
+            "cík-",
+            "(á)c-",
+            "(a)"
           ],
-          "translation": "a place where it is possible to sit"
-    }, {
+          "gloss": "sit-can-PTCP"
+        },
+        {
+          "form": "méma",
+          "mixed_script": "地",
+          "entry_ids": [
+            "méma"
+          ],
+          "gloss": "land"
+        }
+      ],
+      "translation": "a place where it is possible to sit"
+    },
+    {
       "id": "s012",
-         "source": "タカン語概論",
+      "source": "タカン語概論",
       "tokens": [
-            { "form": "cikecóla",    "mixed_script": "席上ら", "entry_ids": ["cík-", "(e)có-", "(a)"],   "gloss": "sit-humbly-PTCP"  },
-            { "form": "méma",    "mixed_script": "地", "entry_ids": ["méma"],   "gloss": "land"  }
+        {
+          "form": "cikecóla",
+          "mixed_script": "席上ら",
+          "entry_ids": [
+            "cík-",
+            "(e)có-",
+            "(a)"
           ],
-          "translation": "a place where I had the honor to sit"
+          "gloss": "sit-humbly-PTCP"
+        },
+        {
+          "form": "méma",
+          "mixed_script": "地",
+          "entry_ids": [
+            "méma"
+          ],
+          "gloss": "land"
+        }
+      ],
+      "translation": "a place where I had the honor to sit"
+    }, {
+      "id": "s013",
+      "source": "ヤマタ！",
+      "tokens": [
+        {"form": "mórwa", "mixed_script": "別而", "entry_ids": ["mórwa"]},
+        {"form": "janeníte", "mixed_script": "口入て", "entry_ids": ["ján-", "(e)nít-", "(e)"]},
+        {"form": "wáce", "mixed_script": "無せ", "entry_ids": ["wác-", "(e)"]},
+        {"form": "ken", "mixed_script": "即", "entry_ids": ["ken"]},
+        {"form": "méko", "mixed_script": "道", "entry_ids": ["méko"]},
+        {"form": "wáci", "mixed_script": "無し", "entry_ids": ["wác-", "(i)"]}
+      ],
+      "translation": "But if you leave any food behind, you'll be sorry."
     }
   ]
 }
