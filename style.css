@@ -92,6 +92,7 @@ main {
 }
 .script {
   font-size: 1.4rem;
+  font-family: 'LinzklarRounded', serif !important;
 }
 .pos {
   font-size: 0.8rem;
