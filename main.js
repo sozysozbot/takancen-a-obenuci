@@ -65,6 +65,9 @@ async function init() {
   setupModal();
   renderDictionary(dictionary);
   renderCorpus(corpus);
+
+  const initialTab = new URLSearchParams(location.search).get('tab');
+  if (initialTab === 'dictionary' || initialTab === 'corpus') switchTab(initialTab);
 }
 
 // ── Tab switching ──────────────────────────────────────────────────────────
@@ -74,6 +77,7 @@ function switchTab(name) {
   document.getElementById('panel-corpus').hidden    = name !== 'corpus';
   document.getElementById('tab-dictionary').classList.toggle('active', name === 'dictionary');
   document.getElementById('tab-corpus').classList.toggle('active',     name === 'corpus');
+  history.replaceState(null, '', '?tab=' + name);
 }
 
 // ── Controls setup ─────────────────────────────────────────────────────────
