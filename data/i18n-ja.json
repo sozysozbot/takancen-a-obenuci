@@ -1,0 +1,18 @@
+{
+    "pos": {
+        "noun": "名詞",
+        "verb": "動詞",
+        "noun particle": "名詞につく助詞",
+        "auxiliary verb": "助動詞",
+        "verb particle": "接続助詞",
+        "sentence particle": "終助詞"
+    },
+    "conj": {
+        "vowel-stem": "母音幹",
+        "consonant-stem": "子音幹",
+        "c-irregular": "特殊幹"
+    },
+    "count-in-corpus": {
+        "other": "コーパス内に ${COUNT} 文あります"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "pos": {
+        "noun": "noun",
+        "verb": "verb",
+        "noun particle": "noun particle",
+        "auxiliary verb": "auxiliary verb",
+        "verb particle": "verb particle",
+        "sentence particle": "sentence particle"
+    },
+    "conj": {
+        "vowel-stem": "vowel-stem",
+        "consonant-stem": "consonant-stem",
+        "c-irregular": "c-irregular"
+    },
+    "count-in-corpus": {
+        "other": "${COUNT} sentences in corpus",
+        "one": "1 sentence in corpus"
+    }
+}

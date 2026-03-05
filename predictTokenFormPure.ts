@@ -3,7 +3,7 @@
 function stripHomophoneDisambiguator(id: string) { return id.replace(/#\d+$/, ''); }
 
 // Suffix vowel realisation per stem class.
-// Keys are inflection_class values; values map the parenthesised vowel to its realisation.
+// Keys are conjugation_class values; values map the parenthesised vowel to its realisation.
 const SUFFIX_VOWEL = {
   'vowel-stem': { a: 'la', e: '', i: 'ci', u: 'lu', á: 'lá', é: '', í: 'cí', ú: 'lú' },
   'consonant-stem': { a: 'a', e: 'e', i: 'i', u: 'u', á: 'á', é: 'é', í: 'í', ú: 'ú' },

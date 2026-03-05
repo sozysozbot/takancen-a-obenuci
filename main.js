@@ -135,12 +135,12 @@ function getLemma(entry) {
   const base = baseId(entry.id);
   if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
     if (base.slice(-1) === "-") {
-      if (entry.inflection_class === "consonant-stem" || entry.inflection_class === "c-irregular") {
+      if (entry.conjugation_class === "consonant-stem" || entry.conjugation_class === "c-irregular") {
         return base.slice(0, -1) + "u";
-      } else if (entry.inflection_class === "vowel-stem") {
+      } else if (entry.conjugation_class === "vowel-stem") {
         return base.slice(0, -1) + "lu";
       } else {
-        console.warn(`warning: entry ${entry.id} ends in a hyphen but its inflection class is ${entry.inflection_class}`);
+        console.warn(`warning: entry ${entry.id} ends in a hyphen but its conjugation class is ${entry.conjugation_class}`);
       }
     } else {
       console.warn(`warning: entry ${entry.id} is a verb/aux but does not end in a hyphen`);
@@ -183,10 +183,10 @@ function buildEntryEl(entry) {
 
   div.appendChild(header);
 
-  if (entry.inflection_class) {
+  if (entry.conjugation_class) {
     const ic = document.createElement('div');
-    ic.className = 'inflection-class';
-    ic.textContent = entry.inflection_class;
+    ic.className = 'conjugation-class';
+    ic.textContent = entry.conjugation_class;
     div.appendChild(ic);
   }
 
@@ -354,8 +354,8 @@ function highlightEntry(id) {
 const modal          = document.getElementById('entry-modal');
 const fieldLemma     = document.getElementById('field-lemma');
 const fieldPos       = document.getElementById('field-pos');
-const fieldInflect   = document.getElementById('field-inflection');
-const inflectLabel   = document.getElementById('inflection-label');
+const fieldInflect   = document.getElementById('field-conjugation');
+const inflectLabel   = document.getElementById('conjugation-label');
 const fieldNotes     = document.getElementById('field-notes');
 const defList        = document.getElementById('def-list');
 const jsonOutput     = document.getElementById('json-output');
@@ -428,7 +428,7 @@ function buildEntryObject() {
     pos:   fieldPos.value,
   };
   if (canInflect()) {
-    entry.inflection_class = fieldInflect.value;
+    entry.conjugation_class = fieldInflect.value;
   }
   const defs = [];
   for (const row of defList.querySelectorAll('.def-row')) {

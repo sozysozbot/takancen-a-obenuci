@@ -4,7 +4,7 @@
       "id": "cen",
       "script": "言",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "language"
@@ -16,7 +16,7 @@
       "id": "kijákaga",
       "script": "日時",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "daytime",
@@ -28,7 +28,7 @@
       "id": "ácijo",
       "script": "石",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "stone"
@@ -39,7 +39,7 @@
       "id": "ná",
       "script": "水",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "water"
@@ -50,7 +50,7 @@
       "id": "má",
       "script": "汝",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "you",
@@ -62,7 +62,7 @@
       "id": "nó",
       "script": "我",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "I",
@@ -74,7 +74,7 @@
       "id": "áku",
       "script": "書",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "book"
@@ -85,7 +85,7 @@
       "id": "nán",
       "script": "何",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "what?"
@@ -96,7 +96,7 @@
       "id": "céma-",
       "script": "言る",
       "pos": "verb",
-      "inflection_class": "vowel-stem",
+      "conjugation_class": "vowel-stem",
       "definitions": [
         {
           "gloss": "speak"
@@ -107,7 +107,7 @@
       "id": "cák-",
       "script": "来く",
       "pos": "verb",
-      "inflection_class": "consonant-stem",
+      "conjugation_class": "consonant-stem",
       "definitions": [
         {
           "gloss": "come"
@@ -118,7 +118,7 @@
       "id": "áta-",
       "script": "目る",
       "pos": "verb",
-      "inflection_class": "vowel-stem",
+      "conjugation_class": "vowel-stem",
       "definitions": [
         {
           "gloss": "see"
@@ -195,7 +195,7 @@
       "id": "tákan",
       "script": "皇",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "Takan",
@@ -207,7 +207,7 @@
       "id": "obénuci",
       "script": "海",
       "pos": "noun",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "ocean"
@@ -218,7 +218,7 @@
       "id": "(a)ta",
       "script": "終",
       "pos": "verb particle",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "PST",
@@ -230,7 +230,7 @@
       "id": "(e)nít-",
       "script": "入つ",
       "pos": "auxiliary verb",
-      "inflection_class": "consonant-stem",
+      "conjugation_class": "consonant-stem",
       "definitions": [
         {
           "gloss": "CMPL",
@@ -242,7 +242,7 @@
       "id": "(u)",
       "script": "",
       "pos": "verb particle",
-      "inflection_class": "",
+      "conjugation_class": "",
       "definitions": [
         {
           "gloss": "NPST",
@@ -255,7 +255,7 @@
       "lemma": "(á)c-",
       "script": "",
       "pos": "auxiliary verb",
-      "inflection_class": "c-irregular",
+      "conjugation_class": "c-irregular",
       "definitions": [
         {
           "gloss": "can"
@@ -267,7 +267,7 @@
       "lemma": "cík-",
       "script": "席く",
       "pos": "verb",
-      "inflection_class": "consonant-stem",
+      "conjugation_class": "consonant-stem",
       "definitions": [
         {
           "gloss": "sit"

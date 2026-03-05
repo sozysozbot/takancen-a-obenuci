@@ -102,7 +102,7 @@ main {
   padding: 2px 7px;
   border-radius: 3px;
 }
-.inflection-class {
+.conjugation-class {
   font-size: 0.8rem;
   color: #aaa;
   margin-bottom: 6px;
@@ -266,7 +266,7 @@ dialog#entry-modal::backdrop { background: rgba(0,0,0,0.45); }
   flex-shrink: 0;
 }
 .def-row button:hover { color: #c0392b; border-color: #c0392b; }
-#field-inflection:disabled {
+#field-conjugation:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
