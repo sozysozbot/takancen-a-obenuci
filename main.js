@@ -1,4 +1,4 @@
-import { predictTokenFormPure } from "./predictTokenFormPure.js";
+import { predictTokenFormPure, getStemClassFromId } from "./predictTokenFormPure.js";
 
 // ── Romanization → hiragana ────────────────────────────────────────────────
 // Transcription conventions: c = サ行, s = ザ行, j = ヤ行, l = ラ行
@@ -114,9 +114,16 @@ function setupControls() {
   document.getElementById('search-input').addEventListener('input',   applyFilter);
   document.getElementById('pos-filter').addEventListener('change',    applyFilter);
 
+  // Create the "All parts of speech" option first
+  const sel = document.getElementById('pos-filter');
+  const opt = document.createElement('option');
+  opt.value = "";
+  opt.textContent = t('pos', "All parts of speech");
+  sel.appendChild(opt);
+
+
   // Populate POS filter from data
   const poses = [...new Set(dictionary.map(e => e.pos))].sort();
-  const sel = document.getElementById('pos-filter');
   for (const pos of poses) {
     const opt = document.createElement('option');
     opt.value = pos;
@@ -399,7 +406,7 @@ function openEntryModal(id) {
   const base = id.replace(/#\d+$/, '');
   if (base.endsWith('-')) {
     fieldPos.value = base.startsWith('(') ? 'auxiliary verb' : 'verb';
-    fieldInflect.value = guessStemClassFromId(id);
+    fieldInflect.value = getStemClassFromId(id);
   } else {
     fieldPos.value = 'noun';
   }

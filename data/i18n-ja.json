@@ -5,7 +5,8 @@
         "noun particle": "名詞につく助詞",
         "auxiliary verb": "助動詞",
         "verb particle": "接続助詞",
-        "sentence particle": "終助詞"
+        "sentence particle": "終助詞",
+        "All parts of speech": "全ての品詞から検索" 
     },
     "conj": {
         "vowel-stem": "母音幹",

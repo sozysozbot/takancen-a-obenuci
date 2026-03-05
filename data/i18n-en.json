@@ -5,7 +5,8 @@
         "noun particle": "noun particle",
         "auxiliary verb": "auxiliary verb",
         "verb particle": "verb particle",
-        "sentence particle": "sentence particle"
+        "sentence particle": "sentence particle",
+        "All parts of speech": "All parts of speech" 
     },
     "conj": {
         "vowel-stem": "vowel-stem",
