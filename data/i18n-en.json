@@ -16,5 +16,8 @@
     "count-in-corpus": {
         "other": "${COUNT} sentences in corpus",
         "one": "1 sentence in corpus"
+    },
+    "ui": {
+        "components": "components"
     }
 }

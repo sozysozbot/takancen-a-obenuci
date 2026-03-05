@@ -19,10 +19,10 @@
 
       "definitions": [
         {
-          "gloss": "daytime",
-          "definition": "A compound word, consisting of <i>kíja</i> (sun) and <i>kága</i> (time)."
+          "gloss": "daytime"
         }
-      ]
+      ],
+      "components": ["kíja", "kága"]
     },
     {
       "id": "ácijo",

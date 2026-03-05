@@ -10,6 +10,7 @@ const commonFields = {
     script: z.string().optional(),
     definitions: z.array(definitionSchema),
     notes: z.string().optional(),
+    components: z.array(z.string()).optional(),
 };
 const conjugationClassSchema = z.enum(['vowel-stem', 'consonant-stem', 'c-irregular']);
 // Declinable entries (verb / auxiliary verb) require conjugation_class.

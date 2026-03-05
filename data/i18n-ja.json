@@ -15,5 +15,8 @@
     },
     "count-in-corpus": {
         "other": "コーパス内に ${COUNT} 文あります"
+    },
+    "ui": {
+        "components": "構成要素"
     }
 }

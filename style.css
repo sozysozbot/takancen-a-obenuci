@@ -131,6 +131,18 @@ main {
   color: #666;
   font-style: italic;
 }
+.entry-components {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.components-label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
 .corpus-link {
   margin-top: 10px;
   font-size: 0.85rem;

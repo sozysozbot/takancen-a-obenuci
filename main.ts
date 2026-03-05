@@ -62,7 +62,7 @@ function detectLang(): string {
   return SUPPORTED_LANGS.includes(browserLang) ? browserLang : 'en';
 }
 
-function t(section: 'pos' | 'conj', key: string): string {
+function t(section: 'pos' | 'conj' | 'ui', key: string): string {
   return i18n[section]?.[key] ?? key;
 }
 
@@ -277,6 +277,31 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
     notes.className = 'notes';
     notes.textContent = entry.notes;
     div.appendChild(notes);
+  }
+
+  // Component words (cross-links within the dictionary)
+  if (entry.components?.length) {
+    const compRow = document.createElement('div');
+    compRow.className = 'entry-components';
+    const label = document.createElement('span');
+    label.className = 'components-label';
+    label.textContent = t('ui', 'components') + ':';
+    compRow.appendChild(label);
+    for (const id of entry.components) {
+      const badge = document.createElement('span');
+      if (entryMap.has(id)) {
+        badge.className = 'entry-link found';
+        const linked = entryMap.get(id)!;
+        const gloss = linked.definitions[0]?.gloss;
+        badge.textContent = gloss ? `${id} (${gloss})` : id;
+        badge.addEventListener('click', () => highlightEntry(id));
+      } else {
+        badge.className = 'entry-link missing';
+        badge.textContent = id;
+      }
+      compRow.appendChild(badge);
+    }
+    div.appendChild(compRow);
   }
 
   // Link to corpus sentences that use this entry
