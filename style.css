@@ -191,6 +191,7 @@ dialog#entry-modal {
   border-radius: 8px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.35);
   padding: 0;
+  margin: auto;
   max-width: 820px;
   width: 92vw;
 }
