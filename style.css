@@ -21,7 +21,20 @@ header {
   align-items: center;
   gap: 24px;
 }
-header h1 { font-size: 1.3rem; }
+header h1 { font-size: 1.3rem; flex: 1; }
+
+.header-settings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+.font-toggle-btn { font-family: 'LinzklarRounded', serif; font-size: 1rem; min-width: 2rem; }
+
+/* When script font is disabled, suppress LinzklarRounded everywhere */
+.no-script-font .script,
+.no-script-font .token-script,
+.no-script-font .font-toggle-btn { font-family: serif !important; }
 
 .tabs { display: flex; gap: 4px; }
 .tab {

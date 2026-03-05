@@ -87,12 +87,39 @@ async function init() {
     for (const entry of dictionary)
         entryMap.set(entry.id, entry);
     setupControls();
+    setupSettings();
     setupModal();
     renderDictionary(dictionary);
     renderCorpus(corpus);
     const initialTab = new URLSearchParams(location.search).get('tab');
     if (initialTab === 'dictionary' || initialTab === 'corpus')
         switchTab(initialTab);
+}
+// ── Settings (language + font toggle) ─────────────────────────────────────
+function setupSettings() {
+    const lang = detectLang();
+    // Highlight the active language button
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-ja').classList.toggle('active', lang === 'ja');
+    document.getElementById('lang-en').addEventListener('click', () => switchLang('en'));
+    document.getElementById('lang-ja').addEventListener('click', () => switchLang('ja'));
+    // Font toggle — persisted in localStorage
+    const fontEnabled = localStorage.getItem('scriptFont') !== 'off';
+    applyScriptFont(fontEnabled);
+    document.getElementById('font-toggle').addEventListener('click', () => {
+        const next = document.body.classList.contains('no-script-font');
+        applyScriptFont(next);
+        localStorage.setItem('scriptFont', next ? 'on' : 'off');
+    });
+}
+function switchLang(lang) {
+    const params = new URLSearchParams(location.search);
+    params.set('lang', lang);
+    location.search = params.toString(); // triggers reload
+}
+function applyScriptFont(enabled) {
+    document.body.classList.toggle('no-script-font', !enabled);
+    document.getElementById('font-toggle').classList.toggle('active', enabled);
 }
 // ── Tab switching ──────────────────────────────────────────────────────────
 function switchTab(name) {
