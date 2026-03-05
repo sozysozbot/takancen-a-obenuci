@@ -18,14 +18,14 @@ console.assert(predictTokenFormPure(["éma-", "(u)"]) === "émalu");
 console.assert(predictTokenFormPure(["moŕ-", "(a)ta"]) === "moŕlata");
 
 
-function getStemClassFromId(id: string): "vowel-stem" | "consonant-stem" | "c-irregular" {
+export function getStemClassFromId(id: string): "vowel-stem" | "consonant-stem" | "c-irregular" {
   if (["c-", "ác-", "(á)c-"].includes(id)) {
     return "c-irregular";
   }
 
   const base = id.replace(/#\d+$/, '');
   if (base.endsWith('-')) {
-    const stem = base.slice(0, -1);
+    const stem = base.replace(/[\(\)]/g, "").slice(0, -1);
     const lastChar = stem.normalize('NFD').replace(/[\u0300-\u036f]/g, '').slice(-1);
     return (new Set('aeiour')).has(lastChar) ? 'vowel-stem' : 'consonant-stem';
   } else {
@@ -33,7 +33,7 @@ function getStemClassFromId(id: string): "vowel-stem" | "consonant-stem" | "c-ir
   }
 }
 
-function predictTokenFormPure(entry_ids: string[]) {
+export function predictTokenFormPure(entry_ids: string[]) {
 
   const ids = entry_ids;
   if (ids[0].slice(0, 1) === "(") {

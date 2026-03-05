@@ -1,3 +1,5 @@
+import { predictTokenFormPure } from "./predictTokenFormPure.js";
+
 // ── Romanization → hiragana ────────────────────────────────────────────────
 // Transcription conventions: c = サ行, s = ザ行, j = ヤ行, l = ラ行
 
@@ -255,93 +257,12 @@ function buildSentenceEl(sentence) {
   return div;
 }
 
-// ── Morphophonological form prediction ────────────────────────────────────────
-// Validates that a token's form is consistent with its entry_ids.
-// Rules: vowel-stem: (a)→la, (e)→"", (i)→ci, (u)→lu
-//        consonant-stem: (V)→V  (use the vowel directly)
-//        accent: rightmost acute wins, all others deleted
-
-function applyAccentRule(text) {
-  const nfd = text.normalize('NFD');
-  const acute = '\u0301';
-  const lastIdx = nfd.lastIndexOf(acute);
-  if (lastIdx === -1) return text;
-  let result = '';
-  for (let i = 0; i < nfd.length; i++) {
-    if (nfd[i] === acute && i !== lastIdx) continue;
-    result += nfd[i];
-  }
-  return result.normalize('NFC');
-}
-
-// Suffix vowel realisation per stem class.
-// Keys are inflection_class values; values map the parenthesised vowel to its realisation.
-const SUFFIX_VOWEL = {
-  'vowel-stem':    { a: 'la',  e: '',    i: 'ci', u: 'lu'  },
-  'consonant-stem':{ a: 'a',   e: 'e',   i: 'i',  u: 'u'   },
-  'c-irregular':   { a: 'ola', e: 'o',   i: 'i',  u: 'u'   },
-};
-
-function predictTokenForm(token) {
-  const ids = token.entry_ids;
-  if (ids[0].slice(0,1) === "(") {
-    console.warn(`The chain starts with an auxiliary; are you sure? ${JSON.stringify(token)}`)
-  }
-  if (ids[0].slice(-1) === "-") {
-    return predictTokenFormVerb(token)
-  }
-
-  // otherwise it should be a noun; just combine all the components
-  // but don't forget to strip the homophone disambiguators
-  return ids.map(baseId).join("");
-}
-function predictTokenFormVerb(token) {
-  const ids = token.entry_ids;
-  if (!ids || ids.length < 2) return null;
-
-  const suffixIds = ids.slice(1);
-  if (!suffixIds.every(id => /^\([aeiuáéíú]\)/.test(id))) {
-    console.warn(`What should follow a verb is a chain of suffixes; the chain is interrupted in the token ${JSON.stringify(token)}`)
-    return null;
-  }
-
-  let stem = baseId(ids[0]).replace(/-$/, '');
-
-  for (let i = 1; i < ids.length; i++) {
-
-    const previousEntry = entryMap.get(ids[i - 1]);
-    if (!previousEntry || (previousEntry.pos !== 'verb' && previousEntry.pos !== 'auxiliary verb')) return null;
-    let stemClass = previousEntry.inflection_class ? previousEntry.inflection_class : guessStemClassFromId(ids[0]);
-    if (!(stemClass in SUFFIX_VOWEL)) return null;
-    
-
-    const suffixId = ids[i];
-    const hasDash = suffixId.endsWith('-');
-    const withoutDash = hasDash ? suffixId.slice(0, -1) : suffixId;
-    const m = withoutDash.match(/^\(([aeiou])\)(.*)$/);
-    if (!m) return null;
-    const [, vowel, fixed] = m;
-
-    const prefix = SUFFIX_VOWEL[stemClass][vowel];
-    const concrete = prefix + fixed;
-
-    stem = applyAccentRule(stem + concrete);
-
-    if (hasDash) {
-      const lastChar = concrete.slice(-1);
-      stemClass = VOWELS.has(lastChar) ? 'vowel-stem' : 'consonant-stem';
-    }
-  }
-
-  return stem;
-}
-
 function buildTokenEl(token) {
   const div = document.createElement('div');
 
-  const predicted = predictTokenForm(token);
+  const predicted = predictTokenFormPure(token.entry_ids);
   const actual    = token.form.replace(/[-=]/g, '').normalize('NFC');
-  const mismatch  = predicted !== null && predicted !== actual;
+  const mismatch  = predicted !== actual;
   if (mismatch) {
     div.className = 'token mismatch';
     console.warn(`expected "${predicted}" but was given ${actual}`)
@@ -435,16 +356,7 @@ const jsonOutput     = document.getElementById('json-output');
 
 let modalEntryId = '';
 
-function guessStemClassFromId(id) {
-  const base = id.replace(/#\d+$/, '');
-  if (base.endsWith('-')) {
-    const stem     = base.slice(0, -1);
-    const lastChar = stem.normalize('NFD').replace(/[\u0300-\u036f]/g, '').slice(-1);
-    return VOWELS.has(lastChar) ? 'vowel-stem' : 'consonant-stem';
-  } else {
-    return null;
-  }
-}
+
 
 function openEntryModal(id) {
   modalEntryId = id;

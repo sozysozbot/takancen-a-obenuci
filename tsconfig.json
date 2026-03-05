@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "ES2022",
+    "strict": true,
+    "noEmitOnError": true
+  },
+  "include": ["predictTokenFormPure.ts"]
+}
