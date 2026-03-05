@@ -99,7 +99,7 @@ function applyFilter() {
 
   const filtered = dictionary.filter(entry => {
     const matchQuery = !query
-      || entry.lemma.toLowerCase().includes(query)
+      || entry.id.toLowerCase().includes(query)
       || entry.definitions.some(d =>
            d.gloss.toLowerCase().includes(query) ||
            d.definition.toLowerCase().includes(query));
@@ -118,6 +118,23 @@ function renderDictionary(entries) {
   for (const entry of entries) list.appendChild(buildEntryEl(entry));
 }
 
+function getLemma(entry) {
+  if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
+    if (entry.id.slice(-1) === "-") {
+      if (entry.inflection_class === "consonant-stem") {
+        return entry.id.slice(0, -1) + "u";
+      } else if (entry.inflection_class === "vowel-stem") {
+        return entry.id.slice(0, -1) + "lu";
+      } else {
+        console.log(`warning: entry ${entry.id} ends in a hyphen but its inflection class is ${entry.inflection_class}`)
+      }
+    } else {
+      console.log(`warning: entry ${entry.id} ends in a hyphen but is neither a verb nor an auxiliary verb`)
+    }
+  }
+  return entry.id;
+}
+
 function buildEntryEl(entry) {
   const div = document.createElement('div');
   div.className = 'entry';
@@ -129,7 +146,7 @@ function buildEntryEl(entry) {
 
   const lemma = document.createElement('span');
   lemma.className = 'lemma';
-  lemma.textContent = entry.lemma;
+  lemma.textContent = entry.id === getLemma(entry) ? entry.id : `${getLemma(entry)} [${entry.id}]`;
   header.appendChild(lemma);
 
   if (entry.script) {
@@ -258,7 +275,7 @@ function predictTokenForm(token) {
   const suffixIds = ids.slice(1);
   if (!suffixIds.every(id => /^\([aeiou]\)/.test(id))) return null;
 
-  let stem = verbEntry.lemma.replace(/-$/, '');
+  let stem = verbEntry.id.replace(/-$/, '');
 
   for (const suffixId of suffixIds) {
     const hasDash = suffixId.endsWith('-');

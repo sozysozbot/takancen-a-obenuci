@@ -2,7 +2,6 @@
   "entries": [
     {
       "id": "cen",
-      "lemma": "cen",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -16,7 +15,6 @@
     },
     {
       "id": "kijákaga",
-      "lemma": "kijákaga",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -29,7 +27,6 @@
     },
     {
       "id": "ácijo",
-      "lemma": "ácijo",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -42,7 +39,6 @@
     },
     {
       "id": "ná",
-      "lemma": "ná",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -55,7 +51,6 @@
     },
     {
       "id": "má",
-      "lemma": "má",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -68,7 +63,6 @@
     },
     {
       "id": "nó",
-      "lemma": "nó",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -81,7 +75,6 @@
     },
     {
       "id": "áku",
-      "lemma": "áku",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -94,7 +87,6 @@
     },
     {
       "id": "nán",
-      "lemma": "nán",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -107,7 +99,6 @@
     },
     {
       "id": "céma-",
-      "lemma": "céma-",
       "script": "",
       "pos": "verb",
       "inflection_class": "vowel-stem",
@@ -120,7 +111,6 @@
     },
     {
       "id": "cák-",
-      "lemma": "cák-",
       "script": "",
       "pos": "verb",
       "inflection_class": "consonant-stem",
@@ -133,7 +123,6 @@
     },
     {
       "id": "áta-",
-      "lemma": "áta-",
       "script": "",
       "pos": "verb",
       "inflection_class": "vowel-stem",
@@ -146,7 +135,6 @@
     },
     {
       "id": "ja",
-      "lemma": "ja",
       "script": "",
       "pos": "noun particle",
       "definitions": [
@@ -158,7 +146,6 @@
     },
     {
       "id": "ki",
-      "lemma": "ki",
       "script": "",
       "pos": "noun particle",
       "definitions": [
@@ -170,7 +157,6 @@
     },
     {
       "id": "mu",
-      "lemma": "mu",
       "script": "",
       "pos": "sentence particle",
       "definitions": [
@@ -182,7 +168,6 @@
     },
     {
       "id": "oca",
-      "lemma": "oca",
       "script": "",
       "pos": "noun particle",
       "definitions": [
@@ -194,7 +179,6 @@
     },
     {
       "id": "kan",
-      "lemma": "kan",
       "script": "",
       "pos": "noun particle",
       "definitions": [
@@ -206,7 +190,6 @@
     },
     {
       "id": "tákan",
-      "lemma": "tákan",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -219,7 +202,6 @@
     },
     {
       "id": "obénuci",
-      "lemma": "obénuci",
       "script": "",
       "pos": "noun",
       "inflection_class": "",
@@ -232,7 +214,6 @@
     },
     {
       "id": "(a)ta",
-      "lemma": "(a)ta",
       "script": "",
       "pos": "verb particle",
       "inflection_class": "",
@@ -245,10 +226,9 @@
     },
     {
       "id": "(e)nít-",
-      "lemma": "(e)nít-",
       "script": "",
       "pos": "auxiliary verb",
-      "inflection_class": "",
+      "inflection_class": "consonant-stem",
       "definitions": [
         {
           "gloss": "CMPL",
@@ -258,7 +238,6 @@
     },
     {
       "id": "(u)",
-      "lemma": "(u)",
       "script": "",
       "pos": "verb particle",
       "inflection_class": "",
