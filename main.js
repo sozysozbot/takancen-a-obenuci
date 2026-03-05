@@ -433,12 +433,12 @@ function openEntryModal(id) {
   modal.showModal();
 }
 
-function isVerbPos() {
+function canInflect() {
   return fieldPos.value === 'verb' || fieldPos.value === 'auxiliary verb';
 }
 
 function syncInflectVisibility() {
-  fieldInflect.disabled = !isVerbPos();
+  fieldInflect.disabled = !canInflect();
 }
 
 function addDefRow() {
@@ -474,7 +474,7 @@ function buildEntryObject() {
     script: '',
     pos:   fieldPos.value,
   };
-  if (isVerbPos()) {
+  if (canInflect()) {
     entry.inflection_class = fieldInflect.value;
   }
   const defs = [];
