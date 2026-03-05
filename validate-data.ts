@@ -3,16 +3,21 @@ import { readFileSync } from 'fs';
 
 // ── Schemas ────────────────────────────────────────────────────────────────
 
+const localizedStringSchema = z.object({
+  en: z.string(),
+  ja: z.string().optional(),
+});
+
 const definitionSchema = z.object({
-  gloss: z.string(),
-  definition: z.string().optional(),
+  gloss: localizedStringSchema,
+  definition: localizedStringSchema.optional(),
 });
 
 const commonFields = {
   id: z.string(),
   script: z.string().optional(),
   definitions: z.array(definitionSchema),
-  notes: z.string().optional(),
+  notes: localizedStringSchema.optional(),
   components: z.array(z.string()).optional(),
 };
 
@@ -50,7 +55,7 @@ const corpusDataSchema = z.object({
     id: z.string(),
     source: z.string().optional(),
     tokens: z.array(tokenSchema),
-    translation: z.string(),
+    translation: localizedStringSchema,
   })),
 });
 

@@ -6,9 +6,14 @@ type IndeclinablePos = 'noun' | 'noun suffix'  | 'noun particle'
 
 export type ConjugationClass = 'vowel-stem' | 'consonant-stem' | 'c-irregular';
 
+export interface LocalizedString {
+  en: string;
+  ja?: string;
+}
+
 export interface Definition {
-  gloss: string;
-  definition?: string;
+  gloss: LocalizedString;
+  definition?: LocalizedString;
 }
 
 export type DictionaryEntry = {
@@ -17,14 +22,14 @@ export type DictionaryEntry = {
   pos: DeclinablePos;
   conjugation_class: ConjugationClass;
   definitions: Definition[];
-  notes?: string;
+  notes?: LocalizedString;
   components?: string[];
 } | {
   id: string;
   script?: string;
   pos: IndeclinablePos;
   definitions: Definition[];
-  notes?: string;
+  notes?: LocalizedString;
   components?: string[];
 }
 
@@ -43,7 +48,7 @@ export interface CorpusSentence {
   id: string;
   source?: string;
   tokens: Token[];
-  translation: string;
+  translation: LocalizedString;
 }
 
 export interface CorpusData {

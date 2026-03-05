@@ -1,5 +1,5 @@
 import { predictTokenFormPure, getStemClassFromId, stripHomophoneDisambiguator } from "./predictTokenFormPure.js";
-import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nData } from './types.js';
+import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nData, LocalizedString } from './types.js';
 
 // ── Romanization → hiragana ────────────────────────────────────────────────
 // Transcription conventions: c = サ行, s = ザ行, j = ヤ行, l = ラ行
@@ -52,6 +52,7 @@ let dictionary: DictionaryEntry[] = [];
 let corpus: CorpusSentence[] = [];
 const entryMap = new Map<string, DictionaryEntry>();
 let i18n: I18nData = {};
+let lang = 'en';
 
 const SUPPORTED_LANGS = ['en', 'ja'];
 
@@ -66,6 +67,10 @@ function t(section: 'pos' | 'conj' | 'ui', key: string): string {
   return i18n[section]?.[key] ?? key;
 }
 
+function localize(s: LocalizedString): string {
+  return (lang === 'ja' ? s.ja : undefined) ?? s.en;
+}
+
 function tCount(count: number): string {
   const tmpl = count === 1 && i18n['count-in-corpus']?.one
     ? i18n['count-in-corpus'].one
@@ -74,7 +79,7 @@ function tCount(count: number): string {
 }
 
 async function init() {
-  const lang = detectLang();
+  lang = detectLang();
   const [dictData, corpusData, i18nData] = await Promise.all([
     fetch('data/dictionary.json',   { cache: 'no-store' }).then(r => r.json() as Promise<DictionaryData>),
     fetch('data/corpus.json',       { cache: 'no-store' }).then(r => r.json() as Promise<CorpusData>),
@@ -99,8 +104,6 @@ async function init() {
 // ── Settings (language + font toggle) ─────────────────────────────────────
 
 function setupSettings() {
-  const lang = detectLang();
-
   // Highlight the active language button
   document.getElementById('lang-en')!.classList.toggle('active', lang === 'en');
   document.getElementById('lang-ja')!.classList.toggle('active', lang === 'ja');
@@ -174,8 +177,8 @@ function applyFilter() {
     const matchQuery = !query
       || entry.id.toLowerCase().includes(query)
       || entry.definitions.some(d =>
-           (d.gloss ?? "").toLowerCase().includes(query) ||
-           (d.definition ?? "").toLowerCase().includes(query));
+           localize(d.gloss).toLowerCase().includes(query) ||
+           (d.definition ? localize(d.definition) : '').toLowerCase().includes(query));
     const matchPos = !pos || entry.pos === pos;
     return matchQuery && matchPos;
   });
@@ -263,10 +266,10 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
   for (const def of entry.definitions) {
     const li = document.createElement('li');
     const strong = document.createElement('strong');
-    strong.textContent = def.gloss;
+    strong.textContent = localize(def.gloss);
     li.appendChild(strong);
     if (def.definition) {
-      li.append(' — ' + def.definition);
+      li.append(' — ' + localize(def.definition));
     }
     defs.appendChild(li);
   }
@@ -275,7 +278,7 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
   if (entry.notes) {
     const notes = document.createElement('div');
     notes.className = 'notes';
-    notes.textContent = entry.notes;
+    notes.textContent = localize(entry.notes);
     div.appendChild(notes);
   }
 
@@ -347,7 +350,7 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
   // Free translation
   const translation = document.createElement('div');
   translation.className = 'translation';
-  translation.textContent = '\u201C' + sentence.translation + '\u201D';
+  translation.textContent = '\u201C' + localize(sentence.translation) + '\u201D';
   div.appendChild(translation);
 
   return div;
@@ -525,15 +528,15 @@ function buildEntryObject() {
   if (canInflect()) {
     entry['conjugation_class'] = fieldInflect.value;
   }
-  const defs: { gloss: string; definition: string }[] = [];
+  const defs: { gloss: LocalizedString; definition?: LocalizedString }[] = [];
   for (const row of defList.querySelectorAll<HTMLDivElement>('.def-row')) {
     const g = (row.querySelector('.def-gloss') as HTMLInputElement).value.trim();
     const d = (row.querySelector('.def-definition') as HTMLInputElement).value.trim();
-    if (g || d) defs.push({ gloss: g, definition: d });
+    if (g || d) defs.push({ gloss: { en: g }, ...(d ? { definition: { en: d } } : {}) });
   }
   entry['definitions'] = defs;
   const notes = fieldNotes.value.trim();
-  if (notes) entry['notes'] = notes;
+  if (notes) entry['notes'] = { en: notes };
   return entry;
 }
 

@@ -57,6 +57,7 @@ let dictionary = [];
 let corpus = [];
 const entryMap = new Map();
 let i18n = {};
+let lang = 'en';
 const SUPPORTED_LANGS = ['en', 'ja'];
 function detectLang() {
     const param = new URLSearchParams(location.search).get('lang');
@@ -68,6 +69,9 @@ function detectLang() {
 function t(section, key) {
     return i18n[section]?.[key] ?? key;
 }
+function localize(s) {
+    return (lang === 'ja' ? s.ja : undefined) ?? s.en;
+}
 function tCount(count) {
     const tmpl = count === 1 && i18n['count-in-corpus']?.one
         ? i18n['count-in-corpus'].one
@@ -75,7 +79,7 @@ function tCount(count) {
     return tmpl.replace('${COUNT}', String(count));
 }
 async function init() {
-    const lang = detectLang();
+    lang = detectLang();
     const [dictData, corpusData, i18nData] = await Promise.all([
         fetch('data/dictionary.json', { cache: 'no-store' }).then(r => r.json()),
         fetch('data/corpus.json', { cache: 'no-store' }).then(r => r.json()),
@@ -97,7 +101,6 @@ async function init() {
 }
 // ── Settings (language + font toggle) ─────────────────────────────────────
 function setupSettings() {
-    const lang = detectLang();
     // Highlight the active language button
     document.getElementById('lang-en').classList.toggle('active', lang === 'en');
     document.getElementById('lang-ja').classList.toggle('active', lang === 'ja');
@@ -158,8 +161,8 @@ function applyFilter() {
     const filtered = dictionary.filter(entry => {
         const matchQuery = !query
             || entry.id.toLowerCase().includes(query)
-            || entry.definitions.some(d => (d.gloss ?? "").toLowerCase().includes(query) ||
-                (d.definition ?? "").toLowerCase().includes(query));
+            || entry.definitions.some(d => localize(d.gloss).toLowerCase().includes(query) ||
+                (d.definition ? localize(d.definition) : '').toLowerCase().includes(query));
         const matchPos = !pos || entry.pos === pos;
         return matchQuery && matchPos;
     });
@@ -236,10 +239,10 @@ function buildEntryEl(entry) {
     for (const def of entry.definitions) {
         const li = document.createElement('li');
         const strong = document.createElement('strong');
-        strong.textContent = def.gloss;
+        strong.textContent = localize(def.gloss);
         li.appendChild(strong);
         if (def.definition) {
-            li.append(' — ' + def.definition);
+            li.append(' — ' + localize(def.definition));
         }
         defs.appendChild(li);
     }
@@ -247,7 +250,7 @@ function buildEntryEl(entry) {
     if (entry.notes) {
         const notes = document.createElement('div');
         notes.className = 'notes';
-        notes.textContent = entry.notes;
+        notes.textContent = localize(entry.notes);
         div.appendChild(notes);
     }
     // Component words (cross-links within the dictionary)
@@ -313,7 +316,7 @@ function buildSentenceEl(sentence) {
     // Free translation
     const translation = document.createElement('div');
     translation.className = 'translation';
-    translation.textContent = '\u201C' + sentence.translation + '\u201D';
+    translation.textContent = '\u201C' + localize(sentence.translation) + '\u201D';
     div.appendChild(translation);
     return div;
 }
@@ -470,12 +473,12 @@ function buildEntryObject() {
         const g = row.querySelector('.def-gloss').value.trim();
         const d = row.querySelector('.def-definition').value.trim();
         if (g || d)
-            defs.push({ gloss: g, definition: d });
+            defs.push({ gloss: { en: g }, ...(d ? { definition: { en: d } } : {}) });
     }
     entry['definitions'] = defs;
     const notes = fieldNotes.value.trim();
     if (notes)
-        entry['notes'] = notes;
+        entry['notes'] = { en: notes };
     return entry;
 }
 function updateJsonOutput() {
