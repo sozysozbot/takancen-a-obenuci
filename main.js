@@ -284,10 +284,23 @@ const SUFFIX_VOWEL = {
 
 function predictTokenForm(token) {
   const ids = token.entry_ids;
+  if (ids[0].slice(0,1) === "(") {
+    console.warn(`The chain starts with an auxiliary; are you sure? ${JSON.stringify(token)}`)
+  }
+  if (ids[0].slice(-1) === "-") {
+    return predictTokenFormVerb(token)
+  }
+
+  // otherwise it should be a noun; just combine all the components
+  // but don't forget to strip the homophone disambiguators
+  return ids.map(baseId).join("");
+}
+function predictTokenFormVerb(token) {
+  const ids = token.entry_ids;
   if (!ids || ids.length < 2) return null;
 
   const suffixIds = ids.slice(1);
-  if (!suffixIds.every(id => /^\([aeiou]\)/.test(id))) {
+  if (!suffixIds.every(id => /^\([aeiuáéíú]\)/.test(id))) {
     console.warn(`What should follow a verb is a chain of suffixes; the chain is interrupted in the token ${JSON.stringify(token)}`)
     return null;
   }
