@@ -134,10 +134,10 @@ function getLemma(entry) {
       } else if (entry.inflection_class === "vowel-stem") {
         return base.slice(0, -1) + "lu";
       } else {
-        console.log(`warning: entry ${entry.id} ends in a hyphen but its inflection class is ${entry.inflection_class}`);
+        console.warn(`warning: entry ${entry.id} ends in a hyphen but its inflection class is ${entry.inflection_class}`);
       }
     } else {
-      console.log(`warning: entry ${entry.id} is a verb/aux but does not end in a hyphen`);
+      console.warn(`warning: entry ${entry.id} is a verb/aux but does not end in a hyphen`);
     }
   }
   return base;
@@ -283,13 +283,12 @@ const SUFFIX_VOWEL = {
 };
 
 function predictTokenForm(token) {
-  console.log(token);
   const ids = token.entry_ids;
   if (!ids || ids.length < 2) return null;
 
   const suffixIds = ids.slice(1);
   if (!suffixIds.every(id => /^\([aeiou]\)/.test(id))) {
-    console.log(`What should follow a verb is a chain of suffixes; the chain is interrupted in the token ${JSON.stringify(token)}`)
+    console.warn(`What should follow a verb is a chain of suffixes; the chain is interrupted in the token ${JSON.stringify(token)}`)
     return null;
   }
 
@@ -311,7 +310,6 @@ function predictTokenForm(token) {
     const [, vowel, fixed] = m;
 
     const prefix = SUFFIX_VOWEL[stemClass][vowel];
-    console.log({stemClass, prefix, vowel})
     const concrete = prefix + fixed;
 
     stem = applyAccentRule(stem + concrete);
@@ -332,8 +330,8 @@ function buildTokenEl(token) {
   const actual    = token.form.replace(/[-=]/g, '').normalize('NFC');
   const mismatch  = predicted !== null && predicted !== actual;
   if (mismatch) {
-    div.className ='token mismatch';
-    console.log(`expected "${predicted}" but was given ${actual}`)
+    div.className = 'token mismatch';
+    console.warn(`expected "${predicted}" but was given ${actual}`)
   } else {
     div.className = 'token';
   }
@@ -429,9 +427,7 @@ function guessStemClassFromId(id) {
   if (base.endsWith('-')) {
     const stem     = base.slice(0, -1);
     const lastChar = stem.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const ans = VOWELS.has(lastChar) ? 'vowel-stem' : 'consonant-stem';
-    console.log({base, ans});
-    return ans;
+    return VOWELS.has(lastChar) ? 'vowel-stem' : 'consonant-stem';
   } else {
     return null;
   }
