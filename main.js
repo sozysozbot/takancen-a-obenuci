@@ -50,12 +50,36 @@ function latinToSyllabary(token) {
 let dictionary = [];
 let corpus = [];
 const entryMap = new Map(); // id -> entry
+let i18n = {};
+
+const SUPPORTED_LANGS = ['en', 'ja'];
+
+function detectLang() {
+  const param = new URLSearchParams(location.search).get('lang');
+  if (param && SUPPORTED_LANGS.includes(param)) return param;
+  const browserLang = (navigator.language || 'en').split('-')[0];
+  return SUPPORTED_LANGS.includes(browserLang) ? browserLang : 'en';
+}
+
+function t(section, key) {
+  return i18n[section]?.[key] ?? key;
+}
+
+function tCount(count) {
+  const tmpl = count === 1 && i18n['count-in-corpus']?.one
+    ? i18n['count-in-corpus'].one
+    : (i18n['count-in-corpus']?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
+  return tmpl.replace('${COUNT}', count);
+}
 
 async function init() {
-  const [dictData, corpusData] = await Promise.all([
-    fetch('data/dictionary.json', { cache: 'no-store' }).then(r => r.json()),
-    fetch('data/corpus.json',     { cache: 'no-store' }).then(r => r.json()),
+  const lang = detectLang();
+  const [dictData, corpusData, i18nData] = await Promise.all([
+    fetch('data/dictionary.json',     { cache: 'no-store' }).then(r => r.json()),
+    fetch('data/corpus.json',         { cache: 'no-store' }).then(r => r.json()),
+    fetch(`data/i18n-${lang}.json`,   { cache: 'no-store' }).then(r => r.json()),
   ]);
+  i18n = i18nData;
 
   dictionary = dictData.entries;
   corpus = corpusData.sentences;
@@ -77,7 +101,9 @@ function switchTab(name) {
   document.getElementById('panel-corpus').hidden    = name !== 'corpus';
   document.getElementById('tab-dictionary').classList.toggle('active', name === 'dictionary');
   document.getElementById('tab-corpus').classList.toggle('active',     name === 'corpus');
-  history.replaceState(null, '', '?tab=' + name);
+  const params = new URLSearchParams(location.search);
+  params.set('tab', name);
+  history.replaceState(null, '', '?' + params.toString());
 }
 
 // ── Controls setup ─────────────────────────────────────────────────────────
@@ -94,7 +120,7 @@ function setupControls() {
   for (const pos of poses) {
     const opt = document.createElement('option');
     opt.value = pos;
-    opt.textContent = pos;
+    opt.textContent = t('pos', pos);
     sel.appendChild(opt);
   }
 }
@@ -178,7 +204,7 @@ function buildEntryEl(entry) {
 
   const pos = document.createElement('span');
   pos.className = 'pos';
-  pos.textContent = entry.pos;
+  pos.textContent = t('pos', entry.pos);
   header.appendChild(pos);
 
   div.appendChild(header);
@@ -186,7 +212,7 @@ function buildEntryEl(entry) {
   if (entry.conjugation_class) {
     const ic = document.createElement('div');
     ic.className = 'conjugation-class';
-    ic.textContent = entry.conjugation_class;
+    ic.textContent = t('conj', entry.conjugation_class);
     div.appendChild(ic);
   }
 
@@ -217,7 +243,7 @@ function buildEntryEl(entry) {
   if (linked.length > 0) {
     const link = document.createElement('div');
     link.className = 'corpus-link';
-    link.textContent = `${linked.length} sentence${linked.length > 1 ? 's' : ''} in corpus`;
+    link.textContent = tCount(linked.length);
     link.addEventListener('click', () => {
       switchTab('corpus');
       highlightSentences(linked.map(s => s.id));
