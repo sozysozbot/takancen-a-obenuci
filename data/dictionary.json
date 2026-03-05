@@ -67,6 +67,32 @@
       ]
     },
     {
+      "id": "nó",
+      "lemma": "nó",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "I",
+          "definition": "first person singular pronoun"
+        }
+      ]
+    },
+    {
+      "id": "áku",
+      "lemma": "áku",
+      "script": "",
+      "pos": "noun",
+      "inflection_class": "",
+      "definitions": [
+        {
+          "gloss": "book",
+          "definition": "Book"
+        }
+      ]
+    },
+    {
       "id": "nán",
       "lemma": "nán",
       "script": "",
