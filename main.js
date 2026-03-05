@@ -198,7 +198,9 @@ function buildEntryEl(entry) {
     const strong = document.createElement('strong');
     strong.textContent = def.gloss;
     li.appendChild(strong);
-    li.append(' — ' + def.definition);
+    if (def.definition) {
+      li.append(' — ' + def.definition);
+    }
     defs.appendChild(li);
   }
   div.appendChild(defs);
