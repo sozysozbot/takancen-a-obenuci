@@ -60,6 +60,7 @@ async function init() {
   for (const entry of dictionary) entryMap.set(entry.id, entry);
 
   setupControls();
+  setupModal();
   renderDictionary(dictionary);
   renderCorpus(corpus);
 }
@@ -321,6 +322,7 @@ function buildTokenEl(token) {
         });
       } else {
         badge.className = 'entry-link missing';
+        badge.addEventListener('click', () => openEntryModal(id));
       }
       badge.textContent = id;
       links.appendChild(badge);
@@ -358,6 +360,105 @@ function highlightEntry(id) {
     el.classList.add('highlighted');
     el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
+}
+
+// ── Entry modal ────────────────────────────────────────────────────────────
+
+const modal          = document.getElementById('entry-modal');
+const fieldLemma     = document.getElementById('field-lemma');
+const fieldPos       = document.getElementById('field-pos');
+const fieldInflect   = document.getElementById('field-inflection');
+const inflectLabel   = document.getElementById('inflection-label');
+const fieldNotes     = document.getElementById('field-notes');
+const defList        = document.getElementById('def-list');
+const jsonOutput     = document.getElementById('json-output');
+
+let modalEntryId = '';
+
+function openEntryModal(id) {
+  modalEntryId = id;
+  document.getElementById('modal-title').textContent = 'New entry: ' + id;
+  fieldLemma.value = id;
+  fieldPos.value   = 'noun';
+  fieldNotes.value = '';
+  defList.innerHTML = '';
+  addDefRow();
+  syncInflectVisibility();
+  updateJsonOutput();
+  modal.showModal();
+}
+
+function syncInflectVisibility() {
+  inflectLabel.hidden = fieldPos.value !== 'verb';
+}
+
+function addDefRow() {
+  const row = document.createElement('div');
+  row.className = 'def-row';
+
+  const gloss = document.createElement('input');
+  gloss.type = 'text';
+  gloss.placeholder = 'gloss';
+  gloss.className = 'def-gloss';
+  gloss.addEventListener('input', updateJsonOutput);
+
+  const def = document.createElement('input');
+  def.type = 'text';
+  def.placeholder = 'definition';
+  def.className = 'def-definition';
+  def.addEventListener('input', updateJsonOutput);
+
+  const rm = document.createElement('button');
+  rm.type = 'button';
+  rm.textContent = '✕';
+  rm.addEventListener('click', () => { row.remove(); updateJsonOutput(); });
+
+  row.append(gloss, def, rm);
+  defList.appendChild(row);
+  gloss.focus();
+}
+
+function buildEntryObject() {
+  const entry = {
+    id:    modalEntryId,
+    lemma: fieldLemma.value.trim(),
+    script: '',
+    pos:   fieldPos.value,
+  };
+  if (fieldPos.value === 'verb') {
+    entry.inflection_class = fieldInflect.value;
+  }
+  const defs = [];
+  for (const row of defList.querySelectorAll('.def-row')) {
+    const g = row.querySelector('.def-gloss').value.trim();
+    const d = row.querySelector('.def-definition').value.trim();
+    if (g || d) defs.push({ gloss: g, definition: d });
+  }
+  entry.definitions = defs;
+  const notes = fieldNotes.value.trim();
+  if (notes) entry.notes = notes;
+  return entry;
+}
+
+function updateJsonOutput() {
+  jsonOutput.value = JSON.stringify(buildEntryObject(), null, 2);
+}
+
+// Setup modal event listeners (called once after DOM is ready)
+function setupModal() {
+  document.getElementById('modal-close').addEventListener('click', () => modal.close());
+  document.getElementById('add-def-btn').addEventListener('click', addDefRow);
+  document.getElementById('copy-json-btn').addEventListener('click', () => {
+    navigator.clipboard.writeText(jsonOutput.value);
+  });
+
+  fieldLemma.addEventListener('input', updateJsonOutput);
+  fieldNotes.addEventListener('input', updateJsonOutput);
+  fieldInflect.addEventListener('change', updateJsonOutput);
+  fieldPos.addEventListener('change', () => { syncInflectVisibility(); updateJsonOutput(); });
+
+  // Close on backdrop click
+  modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
 }
 
 init();

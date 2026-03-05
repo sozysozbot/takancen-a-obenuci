@@ -31,6 +31,52 @@
     </section>
   </main>
 
+  <dialog id="entry-modal">
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button id="modal-close" type="button">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-form">
+        <label>Lemma
+          <input id="field-lemma" type="text">
+        </label>
+        <label>POS
+          <select id="field-pos">
+            <option value="noun">noun</option>
+            <option value="verb">verb</option>
+            <option value="particle">particle</option>
+            <option value="adj">adj</option>
+            <option value="adv">adv</option>
+            <option value="conj">conj</option>
+            <option value="intj">intj</option>
+          </select>
+        </label>
+        <label id="inflection-label">Inflection class
+          <select id="field-inflection">
+            <option value="vowel-stem">vowel-stem</option>
+            <option value="consonant-stem">consonant-stem</option>
+          </select>
+        </label>
+        <div>
+          <div class="field-label">Definitions</div>
+          <div id="def-list"></div>
+          <button type="button" id="add-def-btn">+ Add definition</button>
+        </div>
+        <label>Notes <small>(optional)</small>
+          <input id="field-notes" type="text">
+        </label>
+      </div>
+      <div class="modal-output">
+        <div class="output-header">
+          <span class="field-label">JSON output</span>
+          <button type="button" id="copy-json-btn">Copy</button>
+        </div>
+        <textarea id="json-output" readonly></textarea>
+      </div>
+    </div>
+  </dialog>
+
   <script type="module" src="main.js"></script>
 </body>
 </html>
