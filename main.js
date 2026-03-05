@@ -439,7 +439,7 @@ function guessStemClassFromId(id) {
   const base = id.replace(/#\d+$/, '');
   if (base.endsWith('-')) {
     const stem     = base.slice(0, -1);
-    const lastChar = stem.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const lastChar = stem.normalize('NFD').replace(/[\u0300-\u036f]/g, '').slice(-1);
     return VOWELS.has(lastChar) ? 'vowel-stem' : 'consonant-stem';
   } else {
     return null;

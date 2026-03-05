@@ -284,6 +284,30 @@
           "definition": "To sit"
         }
       ]
+    },
+    {
+      "id": "a",
+      "lemma": "a",
+      "script": "",
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "GEN",
+          "definition": "The genitive marker"
+        }
+      ]
+    },
+    {
+      "id": "címa",
+      "lemma": "címa",
+      "script": "",
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "country",
+          "definition": "Country"
+        }
+      ]
     }
   ]
 }
