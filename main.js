@@ -217,10 +217,7 @@ function buildEntryEl(entry) {
     }
     header.appendChild(lemma);
     if (entry.script) {
-        const script = document.createElement('span');
-        script.className = 'script';
-        script.textContent = entry.script;
-        header.appendChild(script);
+        header.appendChild(buildScriptElWithRuby({ mixed_script: entry.script, latin_form: headword }));
     }
     const pos = document.createElement('span');
     pos.className = 'pos';
@@ -320,6 +317,18 @@ function buildSentenceEl(sentence) {
     div.appendChild(translation);
     return div;
 }
+function buildScriptElWithRuby(o) {
+    const mixedText = o.mixed_script || '';
+    const syllText = latinToSyllabary(o.latin_form);
+    const coincide = !mixedText || mixedText === syllText;
+    const scriptEl = document.createElement('ruby');
+    scriptEl.className = 'token-script';
+    scriptEl.appendChild(document.createTextNode(mixedText || syllText));
+    const rt = document.createElement('rt');
+    rt.textContent = coincide ? "\u3000" : syllText;
+    scriptEl.appendChild(rt);
+    return scriptEl;
+}
 function buildTokenEl(token) {
     const div = document.createElement('div');
     const predicted = token.entry_ids ? predictTokenFormPure(token.entry_ids) : null;
@@ -332,16 +341,7 @@ function buildTokenEl(token) {
     else {
         div.className = 'token';
     }
-    const mixedText = token.mixed_script || '';
-    const syllText = latinToSyllabary(token.form);
-    const coincide = !mixedText || mixedText === syllText;
-    const scriptEl = document.createElement('ruby');
-    scriptEl.className = 'token-script';
-    scriptEl.appendChild(document.createTextNode(mixedText || syllText));
-    const rt = document.createElement('rt');
-    rt.textContent = coincide ? "\u3000" : syllText;
-    scriptEl.appendChild(rt);
-    div.appendChild(scriptEl);
+    div.appendChild(buildScriptElWithRuby({ mixed_script: token.mixed_script || '', latin_form: token.form }));
     const form = document.createElement('div');
     form.className = 'token-form';
     form.textContent = token.form;
