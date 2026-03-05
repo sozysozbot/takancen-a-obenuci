@@ -1,4 +1,4 @@
-import { predictTokenFormPure, getStemClassFromId } from "./predictTokenFormPure.js";
+import { predictTokenFormPure, getStemClassFromId, stripHomophoneDisambiguator } from "./predictTokenFormPure.js";
 import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nData } from './types.js';
 
 // ── Romanization → hiragana ────────────────────────────────────────────────
@@ -191,15 +191,12 @@ function renderDictionary(entries: DictionaryEntry[]) {
   for (const entry of entries) list.appendChild(buildEntryEl(entry));
 }
 
-// Strip the homophone disambiguator (#2, #3, …) from an id.
-function baseId(id: string): string { return id.replace(/#\d+$/, ''); }
-
 // Unicode superscript digits for homophone numbering in headers.
 const SUPERS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
 function superscript(n: string): string { return n.split('').map(d => SUPERS[+d]).join(''); }
 
 function getLemma(entry: DictionaryEntry): string {
-  const base = baseId(entry.id);
+  const base = stripHomophoneDisambiguator(entry.id);
   if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
     if (base.slice(-1) === "-") {
       if (entry.conjugation_class === "consonant-stem" || entry.conjugation_class === "c-irregular") {
@@ -228,7 +225,7 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
   const lemma = document.createElement('span');
   lemma.className = 'lemma';
   const headword  = getLemma(entry);
-  const stemPart  = baseId(entry.id);
+  const stemPart  = stripHomophoneDisambiguator(entry.id);
   const homNum    = entry.id.match(/#(\d+)$/);
   const sup       = homNum ? superscript(homNum[1]!) : '';
   lemma.appendChild(document.createTextNode(`${headword}${sup}`));

@@ -1,6 +1,6 @@
 
 // Strip the homophone disambiguator (#2, #3, …) from an id.
-function stripHomophoneDisambiguator(id: string) { return id.replace(/#\d+$/, ''); }
+export function stripHomophoneDisambiguator(id: string) { return id.replace(/#\d+$/, ''); }
 
 // Suffix vowel realisation per stem class.
 // Keys are conjugation_class values; values map the parenthesised vowel to its realisation.
@@ -66,7 +66,7 @@ export function predictTokenFormPure(entry_ids: string[]) {
 
   // otherwise it should be a noun; just combine all the components
   // but don't forget to strip the homophone disambiguators
-  return ids.map(stripHomophoneDisambiguator).join("");
+  return ids.map(id => stripHomophoneDisambiguator(id).replace(/=/g, "")).join("");
 }
 function predictTokenFormVerb(ids: string[]) {
   if (!ids || ids.length < 2) {
