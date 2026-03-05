@@ -18,6 +18,8 @@
         "other": "コーパス内に ${COUNT} 文あります"
     },
     "ui": {
-        "components": "構成要素"
+        "components": "構成要素",
+        "Dictionary": "辞書",
+        "Corpus": "コーパス"
     }
 }

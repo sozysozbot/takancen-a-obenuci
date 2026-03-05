@@ -19,6 +19,8 @@
         "one": "1 sentence in corpus"
     },
     "ui": {
-        "components": "components"
+        "components": "components",
+        "Dictionary": "Dictionary",
+        "Corpus": "Corpus"
     }
 }

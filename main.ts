@@ -152,6 +152,10 @@ function setupControls() {
   document.getElementById('search-input')!.addEventListener('input',   applyFilter);
   document.getElementById('pos-filter')!.addEventListener('change',    applyFilter);
 
+  document.getElementById('tab-dictionary')!.textContent = t('ui', 'Dictionary');
+  document.getElementById('tab-corpus')!.textContent = t('ui', 'Corpus');
+
+
   // Create the "All parts of speech" option first
   const sel = document.getElementById('pos-filter') as HTMLSelectElement;
   const allOpt = document.createElement('option');
