@@ -224,8 +224,12 @@ function buildEntryEl(entry) {
         lemma.appendChild(stemLabel);
     }
     header.appendChild(lemma);
-    if (entry.script) {
-        header.appendChild(buildScriptElWithRuby({ mixed_script: entry.script, latin_form: headword }));
+    if (entry.script?.length) {
+        for (let i = 0; i < entry.script.length; i++) {
+            if (i > 0)
+                header.appendChild(document.createTextNode(' / '));
+            header.appendChild(buildScriptElWithRuby({ mixed_script: entry.script[i], latin_form: headword }));
+        }
     }
     const pos = document.createElement('span');
     pos.className = 'pos';
@@ -413,7 +417,7 @@ function highlightEntry(id) {
 // ── Entry modal ────────────────────────────────────────────────────────────
 const modal = document.getElementById('entry-modal');
 const fieldLemma = document.getElementById('field-lemma');
-const fieldScript = document.getElementById('field-script');
+const scriptList = document.getElementById('script-list');
 const fieldPos = document.getElementById('field-pos');
 const fieldInflect = document.getElementById('field-conjugation');
 const fieldNotes = document.getElementById('field-notes');
@@ -433,7 +437,8 @@ function openEntryModal(id) {
     else {
         fieldPos.value = 'noun';
     }
-    fieldScript.value = '';
+    scriptList.innerHTML = '';
+    addScriptRow();
     fieldNotes.value = '';
     defList.innerHTML = '';
     addDefRow();
@@ -446,6 +451,21 @@ function canInflect() {
 }
 function syncInflectVisibility() {
     fieldInflect.disabled = !canInflect();
+}
+function addScriptRow() {
+    const row = document.createElement('div');
+    row.className = 'script-row';
+    const inp = document.createElement('input');
+    inp.type = 'text';
+    inp.className = 'script-input';
+    inp.addEventListener('input', updateJsonOutput);
+    const rm = document.createElement('button');
+    rm.type = 'button';
+    rm.textContent = '✕';
+    rm.addEventListener('click', () => { row.remove(); updateJsonOutput(); });
+    row.append(inp, rm);
+    scriptList.appendChild(row);
+    inp.focus();
 }
 function addDefRow() {
     const row = document.createElement('div');
@@ -469,9 +489,11 @@ function addDefRow() {
     gloss.focus();
 }
 function buildEntryObject() {
+    const scripts = [...scriptList.querySelectorAll('.script-input')]
+        .map(el => el.value.trim()).filter(s => s.length > 0);
     const entry = {
         id: modalEntryId,
-        script: fieldScript.value.trim(),
+        script: scripts,
         pos: fieldPos.value,
     };
     if (canInflect()) {
@@ -496,12 +518,12 @@ function updateJsonOutput() {
 // Setup modal event listeners (called once after DOM is ready)
 function setupModal() {
     document.getElementById('modal-close').addEventListener('click', () => modal.close());
+    document.getElementById('add-script-btn').addEventListener('click', addScriptRow);
     document.getElementById('add-def-btn').addEventListener('click', addDefRow);
     document.getElementById('copy-json-btn').addEventListener('click', () => {
         navigator.clipboard.writeText(jsonOutput.value);
     });
     fieldLemma.addEventListener('input', updateJsonOutput);
-    fieldScript.addEventListener('input', updateJsonOutput);
     fieldNotes.addEventListener('input', updateJsonOutput);
     fieldInflect.addEventListener('change', updateJsonOutput);
     fieldPos.addEventListener('change', () => { syncInflectVisibility(); updateJsonOutput(); });
@@ -511,6 +533,7 @@ function setupModal() {
     // Set localized label text
     document.getElementById('modal-label-lemma').textContent = t('ui', 'Lemma');
     document.getElementById('modal-label-script').textContent = t('ui', 'Script');
+    document.getElementById('add-script-btn').textContent = t('ui', '+ Add script');
     document.getElementById('modal-label-pos').textContent = t('ui', 'POS');
     document.getElementById('modal-label-conj').textContent = t('ui', 'conjugation class');
     document.getElementById('modal-label-definitions').textContent = t('ui', 'Definitions');

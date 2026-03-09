@@ -2,7 +2,7 @@
   "entries": [
     {
       "id": "=cen",
-      "script": "言",
+      "script": ["言"],
       "pos": "noun suffix",
       "definitions": [
         {
@@ -17,7 +17,7 @@
     },
     {
       "id": "kága",
-      "script": "時",
+      "script": ["時"],
       "pos": "noun",
       "definitions": [
         {
@@ -28,7 +28,7 @@
     },
     {
       "id": "kijákaga",
-      "script": "日時",
+      "script": ["日時"],
       "pos": "noun",
       "definitions": [
         {
@@ -43,7 +43,7 @@
     },
     {
       "id": "ácijo",
-      "script": "石",
+      "script": ["石"],
       "pos": "noun",
       "definitions": [
         {
@@ -54,7 +54,7 @@
     },
     {
       "id": "ná",
-      "script": "水",
+      "script": ["水"],
       "pos": "noun",
       "definitions": [
         {
@@ -65,7 +65,7 @@
     },
     {
       "id": "má",
-      "script": "汝",
+      "script": ["汝"],
       "pos": "noun",
       "definitions": [
         {
@@ -79,7 +79,7 @@
     },
     {
       "id": "nó",
-      "script": "我",
+      "script": ["我"],
       "pos": "noun",
       "definitions": [
         {
@@ -93,7 +93,7 @@
     },
     {
       "id": "áku",
-      "script": "書",
+      "script": ["書"],
       "pos": "noun",
       "definitions": [
         {
@@ -104,7 +104,7 @@
     },
     {
       "id": "nán",
-      "script": "何",
+      "script": ["何"],
       "pos": "noun",
       "definitions": [
         {
@@ -115,7 +115,7 @@
     },
     {
       "id": "céma-",
-      "script": "言る",
+      "script": ["言る"],
       "pos": "verb",
       "conjugation_class": "vowel-stem",
       "definitions": [
@@ -127,7 +127,7 @@
     },
     {
       "id": "cák-",
-      "script": "来く",
+      "script": ["来く"],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
       "definitions": [
@@ -139,7 +139,7 @@
     },
     {
       "id": "áta-",
-      "script": "目る",
+      "script": ["目る"],
       "pos": "verb",
       "conjugation_class": "vowel-stem",
       "definitions": [
@@ -151,7 +151,7 @@
     },
     {
       "id": "ja",
-      "script": "や",
+      "script": ["や"],
       "pos": "noun particle",
       "definitions": [
         {
@@ -165,7 +165,7 @@
     },
     {
       "id": "ki",
-      "script": "き",
+      "script": ["き"],
       "pos": "noun particle",
       "definitions": [
         {
@@ -179,7 +179,7 @@
     },
     {
       "id": "ki#2",
-      "script": "那",
+      "script": ["那"],
       "pos": "noun",
       "definitions": [
         {
@@ -193,7 +193,7 @@
     },
     {
       "id": "mu",
-      "script": "む",
+      "script": ["む"],
       "pos": "sentence particle",
       "definitions": [
         {
@@ -207,7 +207,7 @@
     },
     {
       "id": "oca",
-      "script": "耒",
+      "script": ["耒"],
       "pos": "noun particle",
       "definitions": [
         {
@@ -221,7 +221,7 @@
     },
     {
       "id": "kan",
-      "script": "処",
+      "script": ["処"],
       "pos": "noun particle",
       "definitions": [
         {
@@ -235,7 +235,7 @@
     },
     {
       "id": "tákan",
-      "script": "皇",
+      "script": ["皇"],
       "pos": "noun",
       "definitions": [
         {
@@ -249,7 +249,7 @@
     },
     {
       "id": "obénuci",
-      "script": "海",
+      "script": ["海"],
       "pos": "noun",
       "definitions": [
         {
@@ -260,7 +260,7 @@
     },
     {
       "id": "(a)ta",
-      "script": "終",
+      "script": ["終"],
       "pos": "verb particle",
       "definitions": [
         {
@@ -274,7 +274,7 @@
     },
     {
       "id": "(e)nít-",
-      "script": "入つ",
+      "script": ["入つ"],
       "pos": "auxiliary verb",
       "conjugation_class": "consonant-stem",
       "definitions": [
@@ -289,7 +289,6 @@
     },
     {
       "id": "(u)",
-      "script": "",
       "pos": "verb particle",
       "definitions": [
         {
@@ -304,7 +303,6 @@
     {
       "id": "(á)c-",
       "lemma": "(á)c-",
-      "script": "",
       "pos": "auxiliary verb",
       "conjugation_class": "c-irregular",
       "definitions": [
@@ -317,7 +315,7 @@
     {
       "id": "cík-",
       "lemma": "cík-",
-      "script": "席く",
+      "script": ["席く"],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
       "definitions": [
@@ -330,7 +328,7 @@
     {
       "id": "a",
       "lemma": "a",
-      "script": "之",
+      "script": ["之"],
       "pos": "noun particle",
       "definitions": [
         {
@@ -345,7 +343,7 @@
     {
       "id": "címa",
       "lemma": "címa",
-      "script": "国",
+      "script": ["国"],
       "pos": "noun",
       "definitions": [
         {
@@ -356,7 +354,7 @@
     },
     {
       "id": "áika",
-      "script": "光",
+      "script": ["光"],
       "pos": "noun",
       "definitions": [
         {
@@ -367,7 +365,7 @@
     },
     {
       "id": "écilo",
-      "script": "えしろ",
+      "script": ["えしろ"],
       "pos": "noun",
       "definitions": [
         {
@@ -378,7 +376,7 @@
     },
     {
       "id": "moŕ-",
-      "script": "行る",
+      "script": ["行る"],
       "pos": "verb",
       "conjugation_class": "vowel-stem",
       "definitions": [
@@ -390,7 +388,6 @@
     },
     {
       "id": "(i)",
-      "script": "",
       "pos": "verb particle",
       "definitions": [
         {
@@ -404,7 +401,7 @@
     },
     {
       "id": "jám-",
-      "script": "口む",
+      "script": ["口む"],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
       "definitions": [
@@ -416,7 +413,7 @@
     },
     {
       "id": "éma-",
-      "script": "在る",
+      "script": ["在る"],
       "pos": "verb",
       "conjugation_class": "vowel-stem",
       "definitions": [
@@ -427,9 +424,10 @@
           }
         }
       ]
-    }, {
+    },
+    {
       "id": "wác-",
-      "script": "無す",
+      "script": ["無す"],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
       "definitions": [
@@ -443,7 +441,7 @@
     },
     {
       "id": "méma",
-      "script": "地",
+      "script": ["地"],
       "pos": "noun",
       "definitions": [
         {
@@ -453,15 +451,29 @@
           }
         }
       ]
-    }, {
+    },
+    {
       "id": "takamácuka",
-      "script": "皇人",
+      "script": ["皇人"],
       "pos": "noun",
       "definitions": [
         {
           "gloss": "person of Takan ethnicity",
           "translations": {
             "ja": "タカン人"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mé",
+      "script": ["此", "茲"],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "this",
+          "translations": {
+            "ja": "これ"
           }
         }
       ]

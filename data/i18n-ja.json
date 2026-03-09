@@ -23,6 +23,7 @@
         "Corpus": "コーパス",
         "Lemma": "見出し語",
         "Script": "交ぜ書き表記（動詞の場合は終止形で書く）",
+        "+ Add script": "+ 交ぜ書きを追加",
         "POS": "品詞",
         "conjugation class": "活用の型",
         "Definitions": "定義",

@@ -18,7 +18,7 @@ export interface Definition {
 
 export type DictionaryEntry = {
   id: string;
-  script?: string;
+  script?: string[];
   pos: DeclinablePos;
   conjugation_class: ConjugationClass;
   definitions: Definition[];
@@ -26,7 +26,7 @@ export type DictionaryEntry = {
   components?: string[];
 } | {
   id: string;
-  script?: string;
+  script?: string[];
   pos: IndeclinablePos;
   definitions: Definition[];
   notes?: LocalizedString;

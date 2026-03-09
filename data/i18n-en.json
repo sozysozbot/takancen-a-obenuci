@@ -24,6 +24,7 @@
         "Corpus": "Corpus",
         "Lemma": "Lemma",
         "Script": "Script [write the (u) form when it is a verb]",
+        "+ Add script": "+ Add script",
         "POS": "POS",
         "conjugation class": "conjugation class",
         "Definitions": "Definitions",

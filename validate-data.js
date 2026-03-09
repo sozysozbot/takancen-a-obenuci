@@ -11,7 +11,7 @@ const definitionSchema = z.object({
 });
 const commonFields = {
     id: z.string(),
-    script: z.string().optional(),
+    script: z.array(z.string()).optional(),
     definitions: z.array(definitionSchema),
     notes: localizedStringSchema.optional(),
     components: z.array(z.string()).optional(),
