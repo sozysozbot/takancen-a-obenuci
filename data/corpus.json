@@ -722,6 +722,155 @@
         "en": "But if you leave any food behind, you'll be sorry.",
         "ja": "でも食べ残したら承知しないからな。"
       }
+    },
+    {
+      "id": "s013.4",
+      "source": "ヤマタ！",
+      "tokens": [
+        {"form": "kákan", "mixed_script": "此処", "entry_ids": ["kákan"], "gloss": "here"},
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "céjo", "mixed_script": "或", "entry_ids": ["céjo"], "gloss": "a.certain"
+        },
+        {
+          "form": "jamámuta", "mixed_script": "口家", "entry_ids": ["jamámuta"], "gloss": "cheap.restaurant"
+        }
+      ],
+      "translation": {
+        "ja": "ここはとある大衆食堂。"
+      }
+    },
+    {
+      "id": "s013.5",
+      "source": "ヤマタ！",
+      "tokens": [
+        {"form": "cína", "mixed_script": "名", "entry_ids": ["cína"], "gloss": "name"},
+        {"form": "ékala", "mixed_script": "光ら", "entry_ids": ["éka-", "(a)"], "gloss": "shine-PTCP"},
+        {"form": "sukelácuka", "mixed_script": "店軸人", "entry_ids": ["sukelácuka"], "gloss": "shopkeeper"},
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {"form": "kinínsu", "mixed_script": "銭", "entry_ids": ["kinínsu"], "gloss": "money"},
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {"form": "códo", "mixed_script": "錘", "entry_ids": ["códo-", "(e)"], "gloss": "consider.important-ADV"},
+        {
+          "form": "wáce",
+          "mixed_script": "無せ",
+          "entry_ids": [
+            "wác-",
+            "(e)"
+          ],
+          "gloss": "not.exist-ADV"
+        },{
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "kaácuka",
+          "mixed_script": "此人",
+          "entry_ids": ["kaácuka"],
+          "gloss": "this.person"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "munbóato",
+          "mixed_script": "無満之樽",
+          "entry_ids": ["munbóato"],
+          "gloss": "insatiable"
+        },
+        {"form": "a", "mixed_script": "之", "entry_ids": ["a"], "gloss": "GEN"},
+        {"form": "ácuka", "mixed_script": "人", "entry_ids": ["ácuka"], "gloss": "person"},
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+         {
+          "form": "áta",
+          "mixed_script": "目",
+          "entry_ids": [
+            "áta-",
+            "(e)"
+          ],
+          "gloss": "see-ADV"
+        },
+        {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {"form": "muńcan", "mixed_script": "無識", "entry_ids": ["muńcan"], "gloss": "subconsciousness"},
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {"form": "munsú", "mixed_script": "無銭", "entry_ids": ["munsú"], "gloss": "free.of.charge"},
+        {"form": "a", "mixed_script": "之", "entry_ids": ["a"], "gloss": "GEN"},
+        {"form": "átawi", "mixed_script": "加皿", "entry_ids": ["átawi"], "gloss": "another.helping"},
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "momemokecáki",
+          "mixed_script": "与来き",
+          "entry_ids": [
+
+            "móm-",
+            "(e)mók-",
+            "(e)cák-",
+            "(i)"
+          ],
+          "gloss": "give-toward.us-IMP"
+        }
+      ],
+      "translation": {
+        "ja": "気前のいい名物店主は食欲旺盛なお客さんを見るとついうっかり「おかわり」をサービスしてしまいます。"
+      }
     }
   ]
 }
