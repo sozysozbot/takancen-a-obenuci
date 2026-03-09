@@ -209,7 +209,7 @@ main {
 }
 .entry-link.found { background: #d6eaf8; color: #2471a3; cursor: pointer; }
 .entry-link.found:hover { background: #aed6f1; }
-.entry-link.missing { background: #fadbd8; color: #c0392b; font-weight: bold; }
+.entry-link.missing { background: #fadbd8; color: #c0392b; font-weight: bold; cursor: pointer; }
 
 .token-script { font-size: 1.2rem; font-family: 'LinzklarRounded', serif; }
 .token-form   { font-size: 1rem; font-family: 'Menlo', 'Arial', monospace; }
