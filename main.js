@@ -166,8 +166,8 @@ function applyFilter() {
     const filtered = dictionary.filter(entry => {
         const matchQuery = !query
             || entry.id.toLowerCase().includes(query)
-            || entry.definitions.some(d => localize(d.gloss).toLowerCase().includes(query) ||
-                (d.definition ? localize(d.definition) : '').toLowerCase().includes(query));
+            || entry.definitions.some(d => d.gloss.toLowerCase().includes(query) ||
+                (d.translations ? localize(d.translations) : '').toLowerCase().includes(query));
         const matchPos = !pos || entry.pos === pos;
         return matchQuery && matchPos;
     });
@@ -244,10 +244,12 @@ function buildEntryEl(entry) {
     for (const def of entry.definitions) {
         const li = document.createElement('li');
         const strong = document.createElement('strong');
-        strong.textContent = localize(def.gloss);
+        strong.textContent = def.gloss;
         li.appendChild(strong);
-        if (def.definition) {
-            li.append(' — ' + localize(def.definition));
+        if (def.translations) {
+            const text = lang === 'ja' ? def.translations.ja : def.translations.en;
+            if (text)
+                li.append(' — ' + text);
         }
         defs.appendChild(li);
     }
@@ -411,6 +413,7 @@ function highlightEntry(id) {
 // ── Entry modal ────────────────────────────────────────────────────────────
 const modal = document.getElementById('entry-modal');
 const fieldLemma = document.getElementById('field-lemma');
+const fieldScript = document.getElementById('field-script');
 const fieldPos = document.getElementById('field-pos');
 const fieldInflect = document.getElementById('field-conjugation');
 const fieldNotes = document.getElementById('field-notes');
@@ -430,6 +433,7 @@ function openEntryModal(id) {
     else {
         fieldPos.value = 'noun';
     }
+    fieldScript.value = '';
     fieldNotes.value = '';
     defList.innerHTML = '';
     addDefRow();
@@ -467,7 +471,7 @@ function addDefRow() {
 function buildEntryObject() {
     const entry = {
         id: modalEntryId,
-        script: '',
+        script: fieldScript.value.trim(),
         pos: fieldPos.value,
     };
     if (canInflect()) {
@@ -478,7 +482,7 @@ function buildEntryObject() {
         const g = row.querySelector('.def-gloss').value.trim();
         const d = row.querySelector('.def-definition').value.trim();
         if (g || d)
-            defs.push({ gloss: { ja: g }, ...(d ? { definition: { ja: d } } : {}) });
+            defs.push({ gloss: g, ...(d ? { translations: { ja: d } } : {}) });
     }
     entry['definitions'] = defs;
     const notes = fieldNotes.value.trim();
@@ -497,6 +501,7 @@ function setupModal() {
         navigator.clipboard.writeText(jsonOutput.value);
     });
     fieldLemma.addEventListener('input', updateJsonOutput);
+    fieldScript.addEventListener('input', updateJsonOutput);
     fieldNotes.addEventListener('input', updateJsonOutput);
     fieldInflect.addEventListener('change', updateJsonOutput);
     fieldPos.addEventListener('change', () => { syncInflectVisibility(); updateJsonOutput(); });
@@ -505,6 +510,7 @@ function setupModal() {
         modal.close(); });
     // Set localized label text
     document.getElementById('modal-label-lemma').textContent = t('ui', 'Lemma');
+    document.getElementById('modal-label-script').textContent = t('ui', 'Script');
     document.getElementById('modal-label-pos').textContent = t('ui', 'POS');
     document.getElementById('modal-label-conj').textContent = t('ui', 'conjugation class');
     document.getElementById('modal-label-definitions').textContent = t('ui', 'Definitions');

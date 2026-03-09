@@ -6,10 +6,8 @@
       "pos": "noun suffix",
       "definitions": [
         {
-          "gloss": {
-            "en": "language",
-            "ja": "言語、〜語"
-          }
+          "gloss": "language",
+          "translations": { "ja": "言語、〜語" }
         }
       ],
       "notes": {
@@ -23,10 +21,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "time",
-            "ja": "時"
-          }
+          "gloss": "time",
+          "translations": { "ja": "時" }
         }
       ]
     },
@@ -36,10 +32,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "daytime",
-            "ja": "昼間"
-          }
+          "gloss": "daytime",
+          "translations": { "ja": "昼間" }
         }
       ],
       "components": [
@@ -53,10 +47,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "stone",
-            "ja": "石"
-          }
+          "gloss": "stone",
+          "translations": { "ja": "石" }
         }
       ]
     },
@@ -66,10 +58,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "water",
-            "ja": "水"
-          }
+          "gloss": "water",
+          "translations": { "ja": "水" }
         }
       ]
     },
@@ -79,11 +69,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "you",
-            "ja": "you"
-          },
-          "definition": {
+          "gloss": "you",
+          "translations": {
             "en": "second person singular pronoun",
             "ja": "あなた、君（二人称単数代名詞）"
           }
@@ -96,11 +83,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "I",
-            "ja": "I"
-          },
-          "definition": {
+          "gloss": "I",
+          "translations": {
             "en": "first person singular pronoun",
             "ja": "わたし（一人称単数代名詞）"
           }
@@ -113,10 +97,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "book",
-            "ja": "本、書籍"
-          }
+          "gloss": "book",
+          "translations": { "ja": "本、書籍" }
         }
       ]
     },
@@ -126,10 +108,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "what?",
-            "ja": "何"
-          }
+          "gloss": "what?",
+          "translations": { "ja": "何" }
         }
       ]
     },
@@ -140,10 +120,8 @@
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "speak",
-            "ja": "話す"
-          }
+          "gloss": "speak",
+          "translations": { "ja": "話す" }
         }
       ]
     },
@@ -154,10 +132,8 @@
       "conjugation_class": "consonant-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "come",
-            "ja": "来る"
-          }
+          "gloss": "come",
+          "translations": { "ja": "来る" }
         }
       ]
     },
@@ -168,10 +144,8 @@
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "see",
-            "ja": "見る"
-          }
+          "gloss": "see",
+          "translations": { "ja": "見る" }
         }
       ]
     },
@@ -181,11 +155,8 @@
       "pos": "noun particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "NOM",
-            "ja": "NOM"
-          },
-          "definition": {
+          "gloss": "NOM",
+          "translations": {
             "en": "Nominative case / topic marker; indicates either the subject or the topic of the sentence.",
             "ja": "主格マーカー、主題マーカー。文の主語や主題を表す。"
           }
@@ -198,11 +169,8 @@
       "pos": "noun particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "ACC",
-            "ja": "ACC"
-          },
-          "definition": {
+          "gloss": "ACC",
+          "translations": {
             "en": "Accusative case marker; indicates the direct object of the sentence.",
             "ja": "対格マーカー。文の目的語を表す。"
           }
@@ -215,11 +183,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "3sg",
-            "ja": "3sg"
-          },
-          "definition": {
+          "gloss": "3sg",
+          "translations": {
             "en": "third person singular pronoun",
             "ja": "三人称単数代名詞"
           }
@@ -232,11 +197,8 @@
       "pos": "sentence particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "Q",
-            "ja": "Q"
-          },
-          "definition": {
+          "gloss": "Q",
+          "translations": {
             "en": "Question marker; placed at the end of a questioning sentence.",
             "ja": "文末に置く疑問文マーカー"
           }
@@ -249,11 +211,8 @@
       "pos": "noun particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "ABL",
-            "ja": "ABL"
-          },
-          "definition": {
+          "gloss": "ABL",
+          "translations": {
             "en": "Ablative case marker; indicates a movement away from it.",
             "ja": "奪格マーカー"
           }
@@ -266,11 +225,8 @@
       "pos": "noun particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "LOC",
-            "ja": "LOC"
-          },
-          "definition": {
+          "gloss": "LOC",
+          "translations": {
             "en": "Locative case marker; indicates a place where an action takes place.",
             "ja": "処格マーカー"
           }
@@ -283,11 +239,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "Takan",
-            "ja": "Takan"
-          },
-          "definition": {
+          "gloss": "Takan",
+          "translations": {
             "en": "name of an ethnicity or a language",
             "ja": "タカン（民族名 / 言語名）"
           }
@@ -300,10 +253,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "ocean",
-            "ja": "海"
-          }
+          "gloss": "ocean",
+          "translations": { "ja": "海" }
         }
       ]
     },
@@ -313,11 +264,8 @@
       "pos": "verb particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "PST",
-            "ja": "PST"
-          },
-          "definition": {
+          "gloss": "PST",
+          "translations": {
             "en": "Past marker; A marker that marks that the action is already completed.",
             "ja": "〜した；完了マーカー"
           }
@@ -331,11 +279,8 @@
       "conjugation_class": "consonant-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "CMPL",
-            "ja": "CMPL"
-          },
-          "definition": {
+          "gloss": "CMPL",
+          "translations": {
             "en": "The instant-of-completion marker",
             "ja": "終了した瞬間に着目する瞬間動詞を作る"
           }
@@ -348,11 +293,8 @@
       "pos": "verb particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "NPST",
-            "ja": "NPST"
-          },
-          "definition": {
+          "gloss": "NPST",
+          "translations": {
             "en": "Non-past marker",
             "ja": "非過去形"
           }
@@ -367,10 +309,8 @@
       "conjugation_class": "c-irregular",
       "definitions": [
         {
-          "gloss": {
-            "en": "can",
-            "ja": "〜できる、〜しうる"
-          }
+          "gloss": "can",
+          "translations": { "ja": "〜できる、〜しうる" }
         }
       ]
     },
@@ -382,10 +322,8 @@
       "conjugation_class": "consonant-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "sit",
-            "ja": "座る"
-          }
+          "gloss": "sit",
+          "translations": { "ja": "座る" }
         }
       ]
     },
@@ -396,11 +334,8 @@
       "pos": "noun particle",
       "definitions": [
         {
-          "gloss": {
-            "en": "GEN",
-            "ja": "GEN"
-          },
-          "definition": {
+          "gloss": "GEN",
+          "translations": {
             "en": "The genitive marker",
             "ja": "〜の；属格マーカー"
           }
@@ -414,10 +349,8 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "country",
-            "ja": "国"
-          }
+          "gloss": "country",
+          "translations": { "ja": "国" }
         }
       ]
     },
@@ -427,35 +360,31 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "light",
-            "ja": "光"
-          }
+          "gloss": "light",
+          "translations": { "ja": "光" }
         }
       ]
-    }, {
+    },
+    {
       "id": "écilo",
       "script": "えしろ",
       "pos": "noun",
       "definitions": [
         {
-          "gloss": {
-            "en": "appetite",
-            "ja": "食欲"
-          }
+          "gloss": "appetite",
+          "translations": { "ja": "食欲" }
         }
       ]
-    }, {
+    },
+    {
       "id": "moŕ-",
       "script": "行る",
       "pos": "verb",
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": {
-            "en": "go",
-            "ja": "行く"
-          }
+          "gloss": "go",
+          "translations": { "ja": "行く" }
         }
       ]
     }

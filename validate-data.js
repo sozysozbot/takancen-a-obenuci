@@ -6,8 +6,8 @@ const localizedStringSchema = z.object({
     ja: z.string(),
 });
 const definitionSchema = z.object({
-    gloss: localizedStringSchema,
-    definition: localizedStringSchema.optional(),
+    gloss: z.string(),
+    translations: localizedStringSchema.optional(),
 });
 const commonFields = {
     id: z.string(),

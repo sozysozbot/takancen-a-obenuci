@@ -12,8 +12,8 @@ export interface LocalizedString {
 }
 
 export interface Definition {
-  gloss: LocalizedString;
-  definition?: LocalizedString;
+  gloss: string;
+  translations?: LocalizedString;
 }
 
 export type DictionaryEntry = {

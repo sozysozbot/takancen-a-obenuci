@@ -9,8 +9,8 @@ const localizedStringSchema = z.object({
 });
 
 const definitionSchema = z.object({
-  gloss: localizedStringSchema,
-  definition: localizedStringSchema.optional(),
+  gloss: z.string(),
+  translations: localizedStringSchema.optional(),
 });
 
 const commonFields = {
