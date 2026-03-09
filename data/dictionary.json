@@ -433,6 +433,18 @@
           }
         }
       ]
+    }, {
+      "id": "écilo",
+      "script": "",
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": {
+            "en": "appetite",
+            "ja": "食欲"
+          }
+        }
+      ]
     }
   ]
 }
