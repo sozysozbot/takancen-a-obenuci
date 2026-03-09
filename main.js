@@ -350,6 +350,7 @@ function buildTokenEl(token) {
     const mismatch = predicted !== null && predicted !== actual;
     if (mismatch) {
         div.className = 'token mismatch';
+        div.title = `expected "${predicted}" but was given "${actual}"`;
         console.warn(`expected "${predicted}" but was given ${actual}`);
     }
     else {

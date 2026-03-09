@@ -390,6 +390,7 @@ function buildTokenEl(token: import('./types.js').Token): HTMLDivElement {
   const mismatch  = predicted !== null && predicted !== actual;
   if (mismatch) {
     div.className = 'token mismatch';
+    div.title = `expected "${predicted}" but was given "${actual}"`;
     console.warn(`expected "${predicted}" but was given ${actual}`);
   } else {
     div.className = 'token';
