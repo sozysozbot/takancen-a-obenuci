@@ -83,6 +83,7 @@ gloss        string    interlinear gloss label, e.g. "sun", "NOM", "speak-PST"
 - Acute accent (á, é, í, ó, ú) marks word stress; unaccented words are phonologically bound to the preceding stressed word (no space in hiragana output)
 - `or` → `ou` (long o), `r` alone → `ー`
 - 拗音: `CjV` (e.g. `kja`) → Ci-kana + small vowel kana (e.g. `きぁ`), distinct from Japanese `kya` = `きゃ`
+- `x` → `っ` (geminate consonant marker, e.g. `káxcen` → `かっせん`)
 
 ## About the User
 

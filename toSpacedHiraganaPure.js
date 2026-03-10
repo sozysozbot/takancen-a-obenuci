@@ -60,6 +60,12 @@ export function latinToSyllabary(token) {
             i++;
             continue;
         }
+        // Geminate consonant: 'x' → っ
+        if (text[i] === 'x') {
+            result += 'っ';
+            i++;
+            continue;
+        }
         // Unknown — pass through so nothing silently disappears
         result += text[i];
         i++;
@@ -97,3 +103,4 @@ console.assert(toSpacedHiraganaPure("kákan ja céjo jamámuta".split(" ")) === 
 console.assert(toSpacedHiraganaPure("mórwa jameníte wáca ja nóni".split(" ")) === "もうわ やめにて わさや のに");
 console.assert(toSpacedHiraganaPure("nó ja nimálane=cen ki cemalácu".split(" ")) === "のや にまらねせんき せまらす");
 console.assert(toSpacedHiraganaPure("láneme ja kjábetu wáci".split(" ")) === "らねめや きぁべつ わし");
+console.assert(toSpacedHiraganaPure("kéca ju káxcen wácata a".split(" ")) === "けさゆ かっせん わさたあ");
