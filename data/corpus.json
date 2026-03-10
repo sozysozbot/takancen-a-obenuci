@@ -93,6 +93,48 @@
       }
     },
     {
+      "source": "Imperfect pangram",
+      "tokens": [
+        {
+          "mixed_script": "羅",
+          "form": "láneme",
+          "entry_ids": [
+            "láneme"
+          ],
+          "gloss": "Lanerme"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kjábetu",
+          "mixed_script": "心圧",
+          "entry_ids": [
+            "kjábetu"
+          ],
+          "gloss": "oppression"
+        },
+        {
+          "form": "wáci",
+          "mixed_script": "無し",
+          "entry_ids": [
+            "wác-",
+            "(i)"
+          ],
+          "gloss": "not.exist-IMP"
+        }
+      ],
+      "translation": {
+        "en": "There shall be no oppression in Lanerme",
+        "ja": "ラネーメは心圧あるべからず"
+      }
+    },
+    {
       "source": "タカン語概論",
       "tokens": [
         {
