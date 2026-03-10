@@ -42,7 +42,7 @@
             "cák-",
             "(u)"
           ],
-          "gloss": "come"
+          "gloss": "come-NPST"
         },
         {
           "form": "mu",
@@ -939,10 +939,10 @@
           "gloss": "and.also"
         },
         {
-          "form": "kaácuka",
+          "form": "kácuka",
           "mixed_script": "此人",
           "entry_ids": [
-            "kaácuka"
+            "kácuka"
           ],
           "gloss": "this.person"
         },
@@ -955,10 +955,10 @@
           "gloss": "NOM"
         },
         {
-          "form": "munbóato",
+          "form": "múnbo a tó",
           "mixed_script": "無満之樽",
           "entry_ids": [
-            "munbóato"
+            "múnbo a tó"
           ],
           "gloss": "insatiable"
         },
@@ -1215,6 +1215,120 @@
     
       "translation": {
         "ja": "食べ残すと店主はカンカンに怒ってしまいます！"
+      }
+    }, {
+      "source":"ヤマタ！",
+      "tokens":[
+        {
+          "form": "jamemóke",
+          "mixed_script": "口行",
+          "entry_ids": [
+            "jám-",
+            "(e)mók-",
+            "(e)"
+          ],
+          "gloss": "eat-away-ADV"
+        },{
+          "form": "jamemóke",
+          "mixed_script": "口行",
+          "entry_ids": [
+            "jám-",
+            "(e)mók-",
+            "(e)"
+          ],
+          "gloss": "eat-away-ADV"
+        },{
+          "form": "kańken",
+          "mixed_script": "火処",
+          "entry_ids": ["kańken"],
+          "gloss": "kitchen"
+        },{
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },{
+          "form": "jánku",
+          "mixed_script": "口物",
+          "entry_ids": ["jánku"],
+          "gloss": "kitchen"
+        },{
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },{
+          "form": "áno",
+          "mixed_script": "全",
+          "entry_ids": [
+            "áno"
+          ],
+          "gloss": "entirety"
+        },{
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        }, {
+          "form": "níte",
+          "mixed_script": "入て",
+          "entry_ids": [
+            "nít-",
+            "(e)"
+          ],
+          "gloss": "disappear-ADV"
+        },
+        {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {
+          "form": "bécuku",
+          "mixed_script": "全人",
+          "entry_ids": ["bécuku"],
+          "gloss": "everyone"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "cumácuka",
+          "mixed_script": "豊人",
+          "entry_ids": ["cumácuka"],
+          "gloss": "rich.person"
+        },{
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },{
+          "form": "comóki",
+          "mixed_script": "上行",
+          "entry_ids": [
+            "comók-", "(i)"
+          ],
+          "gloss": "be.victorious-IMP"
+        }
+      ],
+      "translation": {
+        "ja": "厨房の食材が尽きるまで食べ続け、最も得点を稼いだ人が勝者です。"
       }
     }
   ]
