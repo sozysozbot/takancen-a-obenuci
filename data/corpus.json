@@ -1355,10 +1355,10 @@
       "source": "ヤマタ！",
       "tokens": [
         {
-          "form": "soŕciju",
+          "form": "soŕcju",
           "mixed_script": "上裁",
           "entry_ids": [
-            "soŕciju"
+            "soŕcju"
           ],
           "gloss": "setup"
         }
@@ -1388,7 +1388,7 @@
         },
         {
           "form": "makamómi",
-          "mixed_script": "値手",
+          "mixed_script": "値手み",
           "entry_ids": [
             "makamóm-",
             "(i)"
@@ -1703,10 +1703,10 @@
           "gloss": "GEN"
         },
         {
-          "form": "cajúmoka",
+          "form": "ceímoku",
           "mixed_script": "周行",
           "entry_ids": [
-            "cajúmoka"
+            "ceímoku"
           ],
           "gloss": "rotational.direction"
         },
@@ -1752,10 +1752,10 @@
           "gloss": "GEN"
         },
         {
-          "form": "moŕmeko",
+          "form": "mokámeko",
           "mixed_script": "行道",
           "entry_ids": [
-            "moŕmeko"
+            "mokámeko"
           ]
         }
       ]
@@ -1814,6 +1814,136 @@
             "(u)"
           ],
           "gloss": "go-NPST"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "自分の手番では、以下の【A】か【B】どちらかを選んで行います。"
+      },
+      "tokens": [
+        {
+          "form": "tína",
+          "mixed_script": "己",
+          "entry_ids": [
+            "tína"
+          ],
+          "gloss": "oneself"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "kíja",
+          "mixed_script": "日",
+          "entry_ids": [
+            "kíja"
+          ],
+          "gloss": "day"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "mixed_script": "下",
+          "form": "útagi",
+          "entry_ids": [
+            "útagi"
+          ],
+          "gloss": "below"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "á",
+          "mixed_script": "「あ」",
+          "entry_ids": [
+            "á"
+          ],
+          "gloss": "the.first.alphabet"
+        },
+        {
+          "form": "ju",
+          "mixed_script": "亦",
+          "entry_ids": [
+            "ju"
+          ],
+          "gloss": "or"
+        },
+        {
+          "form": "é",
+          "mixed_script": "「え」",
+          "entry_ids": [
+            "é"
+          ],
+          "gloss": "the.second.alphabet"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "máme",
+          "mixed_script": "定",
+          "entry_ids": [
+            "mám-",
+            "(e)"
+          ],
+          "gloss": "determine-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "cú",
+          "mixed_script": "為",
+          "entry_ids": [
+            "c-",
+            "(ú)"
+          ],
+          "gloss": "do-NPST"
         }
       ]
     }
