@@ -9,5 +9,5 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["predictTokenFormPure.ts", "types.ts", "main.ts", "validate-data.ts"]
+  "include": ["predictTokenFormPure.ts", "toSpacedHiraganaPure.ts", "types.ts", "main.ts", "validate-data.ts"]
 }

@@ -1,52 +1,6 @@
 import { predictTokenFormPure, getStemClassFromId, stripHomophoneDisambiguator } from "./predictTokenFormPure.js";
+import { toSpacedHiraganaPure, latinToSyllabary } from "./toSpacedHiraganaPure.js";
 import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nData, LocalizedString, Pos, ConjugationClass } from './types.js';
-
-// ── Romanization → hiragana ────────────────────────────────────────────────
-// Transcription conventions: c = サ行, s = ザ行, j = ヤ行, l = ラ行
-
-const CV_TABLE: Record<string, string> = {
-  'a':'あ','i':'い','u':'う','e':'え','o':'お',
-  'ka':'か','ki':'き','ku':'く','ke':'け','ko':'こ',
-  'ga':'が','gi':'ぎ','gu':'ぐ','ge':'げ','go':'ご',
-  'ca':'さ','ci':'し','cu':'す','ce':'せ','co':'そ',  // c = サ行
-  'sa':'ざ','si':'じ','su':'ず','se':'ぜ','so':'ぞ',  // s = ザ行
-  'ta':'た','ti':'ち','tu':'つ','te':'て','to':'と',
-  'da':'だ','di':'ぢ','du':'づ','de':'で','do':'ど',
-  'na':'な','ni':'に','nu':'ぬ','ne':'ね','no':'の',
-  'ba':'ば','bi':'び','bu':'ぶ','be':'べ','bo':'ぼ',
-  'pa':'ぱ','pi':'ぴ','pu':'ぷ','pe':'ぺ','po':'ぽ',
-  'ma':'ま','mi':'み','mu':'む','me':'め','mo':'も',
-  'ja':'や','ju':'ゆ', 'jo':'よ',  // j = ヤ行
-  'la':'ら','li':'り','lu':'る','le':'れ','lo':'ろ',  // l = ラ行
-  'wa':'わ','wi':'ゐ','we':'ゑ','wo':'を',
-};
-const VOWELS = new Set('aeiou');
-
-function latinToSyllabary(token: string): string {
-  // Strip accent marks (acute etc.) then morpheme-boundary markers
-  let text = token.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  text = text.replace(/[-=]/g, '').toLowerCase();
-
-  // or → ou
-  text = text.replace(/or/g, "ou");
-
-  text = text.replace(/r/g, "ー");
-
-  let result = '';
-  let i = 0;
-  while (i < text.length) {
-    // Try CV pair first
-    const cv2 = text[i] + (text[i + 1] ?? '');
-    if (CV_TABLE[cv2]) { result += CV_TABLE[cv2]; i += 2; continue; }
-    // Syllabic n: 'n' not followed by a vowel
-    if (text[i] === 'n' && !VOWELS.has(text[i + 1]!)) { result += 'ん'; i++; continue; }
-    // Bare vowel
-    if (VOWELS.has(text[i]!) && CV_TABLE[text[i]!]) { result += CV_TABLE[text[i]!]; i++; continue; }
-    // Unknown — pass through so nothing silently disappears
-    result += text[i]; i++;
-  }
-  return result;
-}
 
 let dictionary: DictionaryEntry[] = [];
 let corpus: CorpusSentence[] = [];
@@ -375,6 +329,15 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
       setTimeout(() => { copyScript.textContent = t('ui', 'Copy script'); }, 1500);
     });
   });
+  const copyHiragana = document.createElement('button');
+  copyHiragana.type = 'button';
+  copyHiragana.textContent = t('ui', 'Copy Hiragana');
+  copyHiragana.addEventListener('click', () => {
+    navigator.clipboard.writeText(toSpacedHiraganaPure(sentence.tokens.map(tok => tok.form))).then(() => {
+      copyHiragana.textContent = t('ui', 'Copied!');
+      setTimeout(() => { copyHiragana.textContent = t('ui', 'Copy Hiragana'); }, 1500);
+    });
+  });
   const copyLatin = document.createElement('button');
   copyLatin.type = 'button';
   copyLatin.textContent = t('ui', 'Copy latin');
@@ -384,7 +347,7 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
       setTimeout(() => { copyLatin.textContent = t('ui', 'Copy latin'); }, 1500);
     });
   });
-  copyRow.append(copyScript, copyLatin);
+  copyRow.append(copyScript, copyHiragana, copyLatin);
   div.appendChild(copyRow);
 
   return div;
