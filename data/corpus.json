@@ -1728,6 +1728,94 @@
           "gloss": "determine-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "ゲームの流れ"
+      },
+      "tokens": [
+        {
+          "form": "bélepici",
+          "mixed_script": "遊術",
+          "entry_ids": [
+            "bélepici"
+          ],
+          "gloss": "game"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "moŕmeko",
+          "mixed_script": "行道",
+          "entry_ids": [
+            "moŕmeko"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "スタートプレイヤーから順に手番を行います"
+      },
+      "tokens": [
+        {
+          "form": "lácuka",
+          "mixed_script": "軸人",
+          "entry_ids": [
+            "lácuka"
+          ],
+          "gloss": "starting.player"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "tútu",
+          "mixed_script": "再々",
+          "entry_ids": [
+            "tútu"
+          ],
+          "gloss": "repeatedly"
+        },
+        {
+          "form": "kíja",
+          "mixed_script": "日",
+          "entry_ids": [
+            "kíja"
+          ],
+          "gloss": "day"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "moŕlu",
+          "mixed_script": "行る",
+          "entry_ids": [
+            "moŕ-",
+            "(u)"
+          ],
+          "gloss": "go-NPST"
+        }
+      ]
     }
   ]
 }
