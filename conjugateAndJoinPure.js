@@ -7,30 +7,30 @@ const SUFFIX_VOWEL = {
     'consonant-stem': { a: 'a', e: 'e', i: 'i', u: 'u', á: 'á', é: 'é', í: 'í', ú: 'ú' },
     'c-irregular': { a: 'ola', e: 'o', i: 'i', u: 'u', á: 'olá', é: 'ó', í: 'í', ú: 'ú' },
 };
-console.assert(predictTokenFormPure(["cán-", "(e)nít-", "(a)"]) === "caneníta");
-console.assert(predictTokenFormPure(["móm-", "(e)cák-", "(í)ja-", "(u)"]) === "momecakíjalu");
-console.assert(predictTokenFormPure(["éma-", "(e)"]) === "éma");
-console.assert(predictTokenFormPure(["éma-", "(u)"]) === "émalu");
+console.assert(conjugateAndJoinPure(["cán-", "(e)nít-", "(a)"]) === "caneníta");
+console.assert(conjugateAndJoinPure(["móm-", "(e)cák-", "(í)ja-", "(u)"]) === "momecakíjalu");
+console.assert(conjugateAndJoinPure(["éma-", "(e)"]) === "éma");
+console.assert(conjugateAndJoinPure(["éma-", "(u)"]) === "émalu");
 // únunu
-/* 普 */ console.assert(predictTokenFormPure(["únun-", "(e)"]) === "únune");
-/* 普 */ console.assert(predictTokenFormPure(["únun-", "(a)ta"]) === "únunata");
-/* 妙 */ console.assert(predictTokenFormPure(["únun-", "(é)m-", "(u)"]) === "unúnemu");
-/* 妙 */ console.assert(predictTokenFormPure(["únun-", "(á)c-", "(u)"]) === "unúnacu");
-/* 普 */ console.assert(predictTokenFormPure(["únun-", "(í)-", "(u)"]) === "ununílu");
-/* 妙 */ console.assert(predictTokenFormPure(["únun-", "(í)ja-", "(u)"]) === "unúnijalu");
-/* 妙 */ console.assert(predictTokenFormPure(["únun-", "(é)t-", "(u)"]) === "unúnetu");
-/* 普 */ console.assert(predictTokenFormPure(["únun-", "(e)có-", "(u)"]) === "ununecólu");
-/* 妙 */ console.assert(predictTokenFormPure(["únun-", "(é)mu-", "(u)"]) === "unúnemulu");
+/* 普 */ console.assert(conjugateAndJoinPure(["únun-", "(e)"]) === "únune");
+/* 普 */ console.assert(conjugateAndJoinPure(["únun-", "(a)ta"]) === "únunata");
+/* 妙 */ console.assert(conjugateAndJoinPure(["únun-", "(é)m-", "(u)"]) === "unúnemu");
+/* 妙 */ console.assert(conjugateAndJoinPure(["únun-", "(á)c-", "(u)"]) === "unúnacu");
+/* 普 */ console.assert(conjugateAndJoinPure(["únun-", "(í)-", "(u)"]) === "ununílu");
+/* 妙 */ console.assert(conjugateAndJoinPure(["únun-", "(í)ja-", "(u)"]) === "unúnijalu");
+/* 妙 */ console.assert(conjugateAndJoinPure(["únun-", "(é)t-", "(u)"]) === "unúnetu");
+/* 普 */ console.assert(conjugateAndJoinPure(["únun-", "(e)có-", "(u)"]) === "ununecólu");
+/* 妙 */ console.assert(conjugateAndJoinPure(["únun-", "(é)mu-", "(u)"]) === "unúnemulu");
 // moŕlu
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(e)"]) === "moŕ");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(a)ta"]) === "moŕlata");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(é)m-", "(u)"]) === "moŕmu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(á)c-", "(u)"]) === "morlácu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(í)-", "(u)"]) === "morcílu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(í)ja-", "(u)"]) === "morcíjalu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(é)t-", "(u)"]) === "moŕtu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(e)có-", "(u)"]) === "morcólu");
-/* 普 */ console.assert(predictTokenFormPure(["moŕ-", "(é)mu-", "(u)"]) === "moŕmulu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(e)"]) === "moŕ");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(a)ta"]) === "moŕlata");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(é)m-", "(u)"]) === "moŕmu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(á)c-", "(u)"]) === "morlácu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(í)-", "(u)"]) === "morcílu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(í)ja-", "(u)"]) === "morcíjalu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(é)t-", "(u)"]) === "moŕtu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(e)có-", "(u)"]) === "morcólu");
+/* 普 */ console.assert(conjugateAndJoinPure(["moŕ-", "(é)mu-", "(u)"]) === "moŕmulu");
 export function getStemClassFromId(id) {
     if (["c-", "ác-", "(á)c-"].includes(id)) {
         return "c-irregular";
@@ -45,19 +45,19 @@ export function getStemClassFromId(id) {
         throw new Error(`Invalid input ${id} passed to `);
     }
 }
-export function predictTokenFormPure(entry_ids) {
+export function conjugateAndJoinPure(entry_ids) {
     const ids = entry_ids;
     if (ids[0].slice(0, 1) === "(") {
         console.warn(`The chain starts with an auxiliary; are you sure? ${JSON.stringify(entry_ids)}`);
     }
     if (ids[0].slice(-1) === "-") {
-        return predictTokenFormVerb(entry_ids);
+        return conjugateAndJoinVerb(entry_ids);
     }
     // otherwise it should be a noun; just combine all the components
     // but don't forget to strip the homophone disambiguators
     return ids.map(id => stripHomophoneDisambiguator(id).replace(/=/g, "")).join("");
 }
-function predictTokenFormVerb(ids) {
+function conjugateAndJoinVerb(ids) {
     if (!ids || ids.length < 2) {
         console.log({ ids });
         return null;

@@ -1,4 +1,4 @@
-import { predictTokenFormPure, getStemClassFromId, stripHomophoneDisambiguator } from "./predictTokenFormPure.js";
+import { conjugateAndJoinPure, getStemClassFromId, stripHomophoneDisambiguator } from "./conjugateAndJoinPure.js";
 import { toSpacedHiraganaPure, latinToSyllabary } from "./toSpacedHiraganaPure.js";
 let dictionary = [];
 let corpus = [];
@@ -324,7 +324,7 @@ function buildScriptElWithRuby(o) {
 }
 function buildTokenEl(token) {
     const div = document.createElement('div');
-    const predicted = token.entry_ids ? predictTokenFormPure(token.entry_ids) : null;
+    const predicted = token.entry_ids ? conjugateAndJoinPure(token.entry_ids) : null;
     const actual = token.form.replace(/[-=]/g, '').normalize('NFC');
     const mismatch = predicted !== null && predicted !== actual;
     if (mismatch) {

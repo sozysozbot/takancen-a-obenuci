@@ -1,4 +1,4 @@
-import { predictTokenFormPure, getStemClassFromId, stripHomophoneDisambiguator } from "./predictTokenFormPure.js";
+import { conjugateAndJoinPure, getStemClassFromId, stripHomophoneDisambiguator } from "./conjugateAndJoinPure.js";
 import { toSpacedHiraganaPure, latinToSyllabary } from "./toSpacedHiraganaPure.js";
 import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nData, LocalizedString, Pos, ConjugationClass } from './types.js';
 
@@ -372,7 +372,7 @@ function buildScriptElWithRuby(o: {mixed_script: string, latin_form: string}): H
 function buildTokenEl(token: import('./types.js').Token): HTMLDivElement {
   const div = document.createElement('div');
 
-  const predicted = token.entry_ids ? predictTokenFormPure(token.entry_ids) : null;
+  const predicted = token.entry_ids ? conjugateAndJoinPure(token.entry_ids) : null;
   const actual    = token.form.replace(/[-=]/g, '').normalize('NFC');
   const mismatch  = predicted !== null && predicted !== actual;
   if (mismatch) {
