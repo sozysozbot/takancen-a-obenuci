@@ -218,7 +218,24 @@ main {
 .token-form   { font-size: 1rem; font-family: 'Menlo', 'Arial', monospace; }
 .token-gloss  { font-size: 0.8rem; color: #888; }
 
-.sentence-copy-row button { margin: 0 3px; padding: 1px; font-size: 70%;}
+.sentence-copy-row {
+  margin-top: 8px;
+}
+.sentence-copy-row button {
+  margin: 0 3px 0 0;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  background: #f0f0f0;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sentence-copy-row button:hover {
+  background: #e4e4e4;
+  border-color: #bbb;
+  color: #444;
+}
 
 ruby rt { font-size: 70%;}
 
