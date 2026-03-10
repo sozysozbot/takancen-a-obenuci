@@ -1330,6 +1330,70 @@
       "translation": {
         "ja": "厨房の食材が尽きるまで食べ続け、最も得点を稼いだ人が勝者です。"
       }
-    }
-  ]
+    },
+    {
+      "source":"ヤマタ！",
+      "tokens": [
+        { "form": "soŕciju", "mixed_script": "上裁", "entry_ids": ["soŕciju"], "gloss": "setup"}
+      ], "translation": {"ja": "準備"}
+    },
+    {
+      "source": "ヤマタ！",
+      "tokens": [
+        {"form": "nińtuo", "mixed_script": "紙片", "entry_ids": ["nińtuo"], "gloss": "card"},
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {"form": "makamómi", "mixed_script":"値手","entry_ids": ["makamóm-", "(i)"], "gloss": "count-IMP"}
+      ], "translation": {"ja": "カードの確認"}
+    },
+    {
+      "source": "ヤマタ！",
+      "tokens": [
+        {"form": "máka", "mixed_script": "値", "gloss": "number", "entry_ids":["máka"]},
+    
+     {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {"form": "nińtuo", "mixed_script": "紙片", "entry_ids": ["nińtuo"], "gloss": "card"},
+        {"form": "mún oca nór", "mixed_script": "（無耒九）", "entry_ids": ["mún oca nór"], "gloss": "0.to.9"},
+        {"form": "túce", "mixed_script": "毎", "entry_ids": ["túce"], "gloss": "each"},
+        {"form": "ún=tuo", "mixed_script": "五片", "entry_ids": ["ún", "=tuo"], "gloss": "five-pieces"}
+  ], "translation": {"ja":"数字札（0〜9）各5枚"}
+      },{"source":"ヤマタ！", "translation":{"ja":"調味料（ワイルド）15枚"},
+      "tokens":[
+         {"mixed_script": "味油", "form": "tikéoli", "entry_ids": ["tikéoli"], "gloss": "condiment"},
+         {"mixed_script": "（歪片）", "form": "buńtuo", "entry_ids": ["buńtuo"], "gloss": "wildcard"},
+         {"mixed_script": "十五片", "form": "mitácuna=tuo", "entry_ids": ["mitácuna", "=tuo"], "gloss":"fifteen-pieces"}
+       ]
+    },{"source":"ヤマタ！","translation":{"ja":"計65枚"},"tokens":[
+      {
+          "form": "áno",
+          "mixed_script": "全",
+          "entry_ids": [
+            "áno"
+          ],
+          "gloss": "entirety"
+        },{
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+         {"mixed_script": "六十五片", "form": "cunasimitácuna=tuo", "entry_ids": ["cunasimitácuna", "=tuo"], "gloss":"65-pieces"}
+     ]}
+    ]
 }
+
