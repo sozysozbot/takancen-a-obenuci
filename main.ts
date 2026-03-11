@@ -163,7 +163,11 @@ function getLemma(entry: DictionaryEntry): string {
   if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
     if (base.slice(-1) === "-") {
       if (entry.conjugation_class === "consonant-stem" || entry.conjugation_class === "c-irregular") {
-        return base.slice(0, -1) + "u";
+        if (base.endsWith("ć-")) {
+          return base.slice(0, -2) + "cú";
+        } else {
+          return base.slice(0, -1) + "u";
+        }
       } else if (entry.conjugation_class === "vowel-stem") {
         return base.slice(0, -1) + "lu";
       } else {

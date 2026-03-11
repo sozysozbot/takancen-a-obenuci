@@ -594,6 +594,22 @@
           "gloss": "DECL"
         }
       ]
+    },
+    {
+      "id": "ć-",
+      "script": [
+        "為"
+      ],
+      "pos": "verb",
+      "conjugation_class": "c-irregular",
+      "definitions": [
+        {
+          "gloss": "do",
+          "translations": {
+            "ja": "する"
+          }
+        }
+      ]
     }
   ]
 }
