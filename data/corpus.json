@@ -3941,6 +3941,46 @@
           "mixed_script": "九"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "組み合わせの種類"
+      },
+      "tokens": [
+        {
+          "form": "dátu",
+          "mixed_script": "集",
+          "entry_ids": [
+            "dátu"
+          ],
+          "gloss": "combination"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "túce",
+          "mixed_script": "毎",
+          "entry_ids": [
+            "túce"
+          ],
+          "gloss": "each"
+        },
+        {
+          "form": "míso",
+          "mixed_script": "類",
+          "gloss": "kind",
+          "entry_ids": [
+            "míso"
+          ]
+        }
+      ]
     }
   ]
 }
