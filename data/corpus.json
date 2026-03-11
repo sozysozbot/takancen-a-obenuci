@@ -4014,6 +4014,48 @@
           "gloss": "be.similar-ADV"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "1枚出し　カード1枚　5"
+      },
+      "tokens": [
+        {
+          "form": "éx=co",
+          "mixed_script": "一片",
+          "entry_ids": [
+            "éx",
+            "=co"
+          ],
+          "gloss": "one-piece"
+        },
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "éx=co",
+          "mixed_script": "一片",
+          "entry_ids": [
+            "éx",
+            "=co"
+          ],
+          "gloss": "one-piece"
+        },
+        {
+          "form": "cúna",
+          "entry_ids": [
+            "cúna"
+          ],
+          "gloss": "five",
+          "mixed_script": "五"
+        }
+      ]
     }
   ]
 }
