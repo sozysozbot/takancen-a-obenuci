@@ -1370,7 +1370,7 @@
           "entry_ids": [
             "áno"
           ],
-          "gloss": "entirety"
+          "gloss": "all"
         },
         {
           "form": "ja",
@@ -1594,7 +1594,7 @@
           "entry_ids": [
             "áno"
           ],
-          "gloss": "entirety"
+          "gloss": "all"
         },
         {
           "form": "ja",
@@ -2666,6 +2666,226 @@
           "entry_ids": [
             "lúcju"
           ]
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "自分以外の全員がパスをしたら、場のカードをすべて捨て札にします。"
+      },
+      "tokens": [
+        {
+          "form": "asiácuka",
+          "mixed_script": "一人",
+          "entry_ids": [
+            "asiácuka"
+          ],
+          "gloss": "one.person"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "émo",
+          "mixed_script": "別",
+          "entry_ids": [
+            "émo"
+          ],
+          "gloss": "other"
+        },
+        {
+          "form": "bécuku",
+          "mixed_script": "全人",
+          "entry_ids": [
+            "bécuku"
+          ],
+          "gloss": "everyone"
+        },
+        {
+          "form": "nímor",
+          "mixed_script": "小止",
+          "entry_ids": [
+            "nímor"
+          ],
+          "gloss": "short.break"
+        },
+        {
+          "form": "có",
+          "mixed_script": "そ",
+          "entry_ids": [
+            "ć-",
+            "(e)"
+          ],
+          "gloss": "do-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "áno",
+          "mixed_script": "全",
+          "entry_ids": [
+            "áno"
+          ],
+          "gloss": "all"
+        },
+        {
+          "form": "kéxke",
+          "mixed_script": "戦処",
+          "entry_ids": [
+            "kéxke"
+          ],
+          "gloss": "fighting.place"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "wáci",
+          "mixed_script": "無し",
+          "entry_ids": [
+            "wác-",
+            "(i)"
+          ],
+          "gloss": "not.exist-IMP"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "その後、最後にカードを出したプレイヤーがカードを出し、ゲームを再開します。"
+      },
+      "tokens": [
+        {
+          "form": "aaaaa",
+          "mixed_script": "其下全新処",
+          "entry_ids": [
+            "iiiii"
+          ]
+        },
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "jána",
+          "mixed_script": "生な",
+          "entry_ids": [
+            "ján-",
+            "(a)"
+          ],
+          "gloss": "submit-PTCP"
+        },
+        {
+          "form": "ácuka",
+          "mixed_script": "人",
+          "entry_ids": [
+            "ácuka"
+          ],
+          "gloss": "person"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "jáne",
+          "mixed_script": "生ね",
+          "entry_ids": [
+            "ján-",
+            "(e)"
+          ],
+          "gloss": "submit-ADV"
+        },
+        {
+          "form": "bélepici",
+          "mixed_script": "遊術",
+          "entry_ids": [
+            "bélepici"
+          ],
+          "gloss": "game"
+        },
+        {
+          "form": "tútu",
+          "mixed_script": "再",
+          "entry_ids": [
+            "tútu"
+          ],
+          "gloss": "again"
+        },
+        {
+          "form": "utejáni",
+          "mixed_script": "始",
+          "entry_ids": [
+            "uteján-",
+            "(i)"
+          ],
+          "gloss": "begin-IMP"
         }
       ]
     }
