@@ -3642,6 +3642,79 @@
           "gloss": "go-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "継続:"
+      },
+      "tokens": [
+        {
+          "form": "túmoku",
+          "mixed_script": "再行",
+          "entry_ids": [
+            "túmoku"
+          ],
+          "gloss": "go.again"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "手番を次の人に移し、ゲームを続けます。"
+      },
+      "tokens": [
+        {
+          "form": "kíja",
+          "mixed_script": "日",
+          "entry_ids": [
+            "kíja"
+          ],
+          "gloss": "day"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "úte",
+          "mixed_script": "下て",
+          "entry_ids": [
+            "út-",
+            "(e)"
+          ]
+        },
+        {
+          "form": "bélepici",
+          "mixed_script": "遊術",
+          "entry_ids": [
+            "bélepici"
+          ],
+          "gloss": "game"
+        },
+        {
+          "form": "tútu",
+          "mixed_script": "再",
+          "entry_ids": [
+            "tútu"
+          ],
+          "gloss": "again"
+        },
+        {
+          "form": "moŕci",
+          "mixed_script": "行し",
+          "entry_ids": [
+            "moŕ-",
+            "(i)"
+          ],
+          "gloss": "go-IMP"
+        }
+      ]
     }
   ]
 }
