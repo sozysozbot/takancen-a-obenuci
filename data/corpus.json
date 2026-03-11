@@ -3731,10 +3731,19 @@
           "gloss": "card"
         },
         {
-          "form": "méxko",
+          "multiple-standard-pronunciation": true,
+          "forms": [
+            "méxko",
+            "méxkor"
+          ],
           "mixed_script": "硬軟",
-          "entry_ids": [
-            "méxko"
+          "entry_ids_of_each_form": [
+            [
+              "méxko"
+            ],
+            [
+              "méxkor"
+            ]
           ],
           "gloss": "strength"
         },

@@ -37,12 +37,22 @@ export interface DictionaryData {
   entries: DictionaryEntry[];
 }
 
-export interface Token {
+export interface SingleFormToken {
   form: string;
   mixed_script?: string;
   entry_ids?: string[];
   gloss?: string;
 }
+
+export interface MultiPronunciationToken {
+  'multiple-standard-pronunciation': true;
+  forms: string[];
+  mixed_script?: string;
+  gloss: string;
+  entry_ids_of_each_form: string[][];
+}
+
+export type Token = SingleFormToken | MultiPronunciationToken;
 
 export interface CorpusSentenceData {
   source?: string;

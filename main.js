@@ -131,7 +131,10 @@ function computeHighFreqMissing() {
     for (const sentence of corpus) {
         const seenInSentence = new Set();
         for (const token of sentence.tokens) {
-            for (const id of (token.entry_ids ?? [])) {
+            const ids = 'multiple-standard-pronunciation' in token
+                ? token.entry_ids_of_each_form.flat()
+                : (token.entry_ids ?? []);
+            for (const id of ids) {
                 if (!entryMap.has(id) && !seenInSentence.has(id)) {
                     seenInSentence.add(id);
                     counts.set(id, (counts.get(id) ?? 0) + 1);
@@ -293,7 +296,9 @@ function buildEntryEl(entry) {
         div.appendChild(compRow);
     }
     // Link to corpus sentences that use this entry
-    const linked = corpus.filter(s => s.tokens.some(t => t.entry_ids?.includes(entry.id)));
+    const linked = corpus.filter(s => s.tokens.some(t => 'multiple-standard-pronunciation' in t
+        ? t.entry_ids_of_each_form.some(ids => ids.includes(entry.id))
+        : t.entry_ids?.includes(entry.id)));
     if (linked.length > 0) {
         const link = document.createElement('div');
         link.className = 'corpus-link';
@@ -350,7 +355,7 @@ function buildSentenceEl(sentence) {
     copyHiragana.type = 'button';
     copyHiragana.textContent = t('ui', 'Copy Hiragana');
     copyHiragana.addEventListener('click', () => {
-        navigator.clipboard.writeText(toSpacedHiraganaPure(sentence.tokens.map(tok => tok.form))).then(() => {
+        navigator.clipboard.writeText(toSpacedHiraganaPure(sentence.tokens.map(tok => 'multiple-standard-pronunciation' in tok ? '{' + tok.forms.join('/') + '}' : tok.form))).then(() => {
             copyHiragana.textContent = t('ui', 'Copied!');
             setTimeout(() => { copyHiragana.textContent = t('ui', 'Copy Hiragana'); }, 1500);
         });
@@ -359,7 +364,7 @@ function buildSentenceEl(sentence) {
     copyLatin.type = 'button';
     copyLatin.textContent = t('ui', 'Copy latin');
     copyLatin.addEventListener('click', () => {
-        navigator.clipboard.writeText(sentence.tokens.map(tok => tok.form).join(' ')).then(() => {
+        navigator.clipboard.writeText(sentence.tokens.map(tok => 'multiple-standard-pronunciation' in tok ? tok.forms.join('/') : tok.form).join(' ')).then(() => {
             copyLatin.textContent = t('ui', 'Copied!');
             setTimeout(() => { copyLatin.textContent = t('ui', 'Copy latin'); }, 1500);
         });
@@ -380,8 +385,42 @@ function buildScriptElWithRuby(o) {
     scriptEl.appendChild(rt);
     return scriptEl;
 }
+function buildEntryLinks(ids) {
+    const links = document.createElement('div');
+    links.className = 'entry-links';
+    for (const id of ids) {
+        const badge = document.createElement('span');
+        if (entryMap.has(id)) {
+            badge.className = 'entry-link found';
+            badge.addEventListener('click', () => navigateToEntry(id));
+        }
+        else {
+            badge.className = 'entry-link missing';
+            badge.addEventListener('click', () => openEntryModal(id));
+        }
+        badge.textContent = id;
+        links.appendChild(badge);
+    }
+    return links;
+}
 function buildTokenEl(token) {
     const div = document.createElement('div');
+    if ('multiple-standard-pronunciation' in token) {
+        div.className = 'token';
+        div.appendChild(buildScriptElWithRuby({ mixed_script: token.mixed_script || '', latin_form: token.forms.join(' / ') }));
+        const form = document.createElement('div');
+        form.className = 'token-form';
+        form.textContent = token.forms.join(' / ');
+        div.appendChild(form);
+        const allIds = [...new Set(token.entry_ids_of_each_form.flat())];
+        if (allIds.length)
+            div.appendChild(buildEntryLinks(allIds));
+        const gloss = document.createElement('div');
+        gloss.className = 'token-gloss';
+        gloss.textContent = token.gloss;
+        div.appendChild(gloss);
+        return div;
+    }
     const predicted = token.entry_ids ? conjugateAndJoinPure(token.entry_ids) : null;
     const actual = token.form.replace(/[-=]/g, '').normalize('NFC');
     const mismatch = predicted !== null && predicted !== actual;
@@ -398,25 +437,8 @@ function buildTokenEl(token) {
     form.className = 'token-form';
     form.textContent = token.form;
     div.appendChild(form);
-    // One clickable badge per entry_id; red if missing from dictionary
-    if (token.entry_ids?.length) {
-        const links = document.createElement('div');
-        links.className = 'entry-links';
-        for (const id of token.entry_ids) {
-            const badge = document.createElement('span');
-            if (entryMap.has(id)) {
-                badge.className = 'entry-link found';
-                badge.addEventListener('click', () => navigateToEntry(id));
-            }
-            else {
-                badge.className = 'entry-link missing';
-                badge.addEventListener('click', () => openEntryModal(id));
-            }
-            badge.textContent = id;
-            links.appendChild(badge);
-        }
-        div.appendChild(links);
-    }
+    if (token.entry_ids?.length)
+        div.appendChild(buildEntryLinks(token.entry_ids));
     const gloss = document.createElement('div');
     gloss.className = 'token-gloss';
     gloss.textContent = token.gloss ?? '';

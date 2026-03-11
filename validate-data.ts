@@ -43,12 +43,22 @@ const dictionaryDataSchema = z.object({
   entries: z.array(entrySchema),
 });
 
-const tokenSchema = z.object({
+const singleFormTokenSchema = z.object({
   form: z.string(),
   mixed_script: z.string().optional(),
   entry_ids: z.array(z.string()).optional(),
   gloss: z.string().optional(),
 });
+
+const multiPronunciationTokenSchema = z.object({
+  'multiple-standard-pronunciation': z.literal(true),
+  forms: z.array(z.string()),
+  mixed_script: z.string().optional(),
+  gloss: z.string(),
+  entry_ids_of_each_form: z.array(z.array(z.string())),
+});
+
+const tokenSchema = z.union([singleFormTokenSchema, multiPronunciationTokenSchema]);
 
 const corpusDataSchema = z.object({
   sentences: z.array(z.object({

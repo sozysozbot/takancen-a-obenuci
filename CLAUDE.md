@@ -67,7 +67,9 @@ tokens      [ Token ]
 translation { en?: string, ja: string }   free translation
 ```
 
-Each `Token`:
+Each `Token` is one of two shapes:
+
+**Single-form token** (the common case):
 ```
 form         string    surface form in romanization
 mixed_script string    mixed logogram+syllabary representation (displayed with LinzklarRounded font);
@@ -76,6 +78,16 @@ entry_ids    string[]  dictionary entry ids this token links to (one per morphem
                        red badge if id is missing from dictionary, blue+clickable if found
 gloss        string    interlinear gloss label, e.g. "sun", "NOM", "speak-PST"
 ```
+
+**Multi-pronunciation token** (for logograms with multiple equally-valid readings, e.g. "四"):
+```
+multiple-standard-pronunciation  true      discriminant field
+forms                            string[]  all equally-valid romanized readings
+mixed_script                     string    logogram (optional, displayed with LinzklarRounded font)
+gloss                            string    interlinear gloss label
+entry_ids_of_each_form           string[][]  entry ids per form (parallel array with `forms`)
+```
+Example: `{"multiple-standard-pronunciation": true, "forms": ["méxko", "méxkor"], "gloss": "strength", "entry_ids_of_each_form": [["méxko"], ["méxkor"]]}`
 
 ## Romanization conventions
 
