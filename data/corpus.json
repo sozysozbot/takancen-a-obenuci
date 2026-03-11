@@ -3358,6 +3358,89 @@
           "gloss": "go-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "カードが減っても場の要求条件は変わりません"
+      },
+      "tokens": [
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "eeemóke",
+          "mixed_script": "少行",
+          "entry_ids": [
+            "iií-",
+            "(e)mók-",
+            "(e)"
+          ]
+        },
+        {
+          "form": "kéxke",
+          "mixed_script": "戦処",
+          "entry_ids": [
+            "kéxke"
+          ],
+          "gloss": "fighting.place"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "jáku",
+          "mixed_script": "律",
+          "entry_ids": [
+            "jáku"
+          ],
+          "gloss": "rule"
+        },
+        {
+          "form": "émo",
+          "mixed_script": "別",
+          "entry_ids": [
+            "émo"
+          ],
+          "gloss": "other"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "moŕ",
+          "mixed_script": "行",
+          "entry_ids": [
+            "moŕ-",
+            "(e)"
+          ],
+          "gloss": "go-ADV"
+        },
+        {
+          "form": "wáci",
+          "mixed_script": "無し",
+          "entry_ids": [
+            "wác-",
+            "(i)"
+          ],
+          "gloss": "not.exist-IMP"
+        }
+      ]
     }
   ]
 }
