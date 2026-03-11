@@ -2445,6 +2445,136 @@
           ]
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "山札からカードを1枚引き、手番を終えます。"
+      },
+      "tokens": [
+        {
+          "form": "cómaco",
+          "mixed_script": "積片",
+          "entry_ids": [
+            "cómaco"
+          ],
+          "gloss": "pile.of.cards"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "móme",
+          "mixed_script": "手",
+          "entry_ids": [
+            "móm-",
+            "(e)"
+          ],
+          "gloss": "take-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "kíja",
+          "mixed_script": "日",
+          "entry_ids": [
+            "kíja"
+          ],
+          "gloss": "day"
+        },
+        {
+          "form": "táci",
+          "mixed_script": "終し",
+          "entry_ids": [
+            "tá-",
+            "(i)"
+          ],
+          "gloss": "end-IMP"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "※戦略的なパスも可能です。"
+      },
+      "tokens": [
+        {
+          "mixed_script": "術上",
+          "form": "six́sor",
+          "entry_ids": [
+            "six́sor"
+          ]
+        },
+        {
+          "form": "muńmoku",
+          "mixed_script": "無行",
+          "entry_ids": [
+            "muńmoku"
+          ]
+        },
+        {
+          "form": "cóla",
+          "mixed_script": "為ら",
+          "entry_ids": [
+            "c-",
+            "(á)"
+          ]
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kéta",
+          "mixed_script": "善",
+          "entry_ids": [
+            "két-",
+            "(a)"
+          ],
+          "gloss": "good-PTCP"
+        },
+        {
+          "form": "émalu",
+          "mixed_script": "在る",
+          "entry_ids": [
+            "éma-",
+            "(u)"
+          ],
+          "gloss": "exist-NPST"
+        }
+      ]
     }
   ]
 }
