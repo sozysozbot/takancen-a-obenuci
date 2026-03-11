@@ -470,8 +470,24 @@ function buildTokenEl(token: import('./types.js').Token): HTMLDivElement {
     form.textContent = token.forms.join(' / ');
     div.appendChild(form);
 
-    const allIds = [...new Set(token.entry_ids_of_each_form.flat())];
-    if (allIds.length) div.appendChild(buildEntryLinks(allIds));
+    const links = document.createElement('div');
+    links.className = 'entry-links';
+    for (let i = 0; i < token.entry_ids_of_each_form.length; i++) {
+      if (i > 0) links.appendChild(document.createTextNode(' / '));
+      for (const id of token.entry_ids_of_each_form[i]!) {
+        const badge = document.createElement('span');
+        if (entryMap.has(id)) {
+          badge.className = 'entry-link found';
+          badge.addEventListener('click', () => navigateToEntry(id));
+        } else {
+          badge.className = 'entry-link missing';
+          badge.addEventListener('click', () => openEntryModal(id));
+        }
+        badge.textContent = id;
+        links.appendChild(badge);
+      }
+    }
+    if (links.childNodes.length) div.appendChild(links);
 
     const gloss = document.createElement('div');
     gloss.className = 'token-gloss';
