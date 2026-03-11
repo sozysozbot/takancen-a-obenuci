@@ -2637,6 +2637,37 @@
           "gloss": "not.exist-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "場のリセット"
+      },
+      "tokens": [
+        {
+          "form": "kéxke",
+          "mixed_script": "戦処",
+          "entry_ids": [
+            "kéxke"
+          ],
+          "gloss": "fighting.place"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "lúcju",
+          "mixed_script": "新裁",
+          "entry_ids": [
+            "lúcju"
+          ]
+        }
+      ]
     }
   ]
 }
