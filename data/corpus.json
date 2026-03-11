@@ -1520,10 +1520,10 @@
           "gloss": "card"
         },
         {
-          "form": "mún oca nór",
+          "form": "mún oca nóu",
           "mixed_script": "(無耒九)",
           "entry_ids": [
-            "mún oca nór"
+            "mún oca nóu"
           ],
           "gloss": "0.to.9"
         },
@@ -3792,6 +3792,118 @@
           "entry_ids": [
             "méki"
           ]
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "ワイルドのみ"
+      },
+      "tokens": [
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "tetu",
+          "mixed_script": "唯",
+          "entry_ids": [
+            "tetu"
+          ],
+          "gloss": "only"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "0　1　2　3　4　5　6　7　8　9"
+      },
+      "tokens": [
+        {
+          "form": "mún",
+          "entry_ids": [
+            "mún"
+          ],
+          "gloss": "zero",
+          "mixed_script": "無"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "íku",
+          "mixed_script": "二",
+          "entry_ids": [
+            "íku"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "úmu",
+          "mixed_script": "三",
+          "entry_ids": [
+            "úmu"
+          ],
+          "gloss": "three"
+        },
+        {
+          "form": "aaa",
+          "entry_ids": [
+            "iii"
+          ],
+          "gloss": "four",
+          "mixed_script": "四"
+        },
+        {
+          "form": "cúna",
+          "entry_ids": [
+            "cúna"
+          ],
+          "gloss": "five",
+          "mixed_script": "五"
+        },
+        {
+          "form": "cúnasi",
+          "entry_ids": [
+            "cúnasi"
+          ],
+          "gloss": "six",
+          "mixed_script": "六"
+        },
+        {
+          "form": "cúneku",
+          "entry_ids": [
+            "cúneku"
+          ],
+          "gloss": "seven",
+          "mixed_script": "七"
+        },
+        {
+          "form": "nómu",
+          "entry_ids": [
+            "nómu"
+          ],
+          "gloss": "eight",
+          "mixed_script": "八"
+        },
+        {
+          "form": "nóu",
+          "entry_ids": [
+            "nóu"
+          ],
+          "gloss": "nine",
+          "mixed_script": "九"
         }
       ]
     }
