@@ -38,9 +38,14 @@ console.assert(conjugateAndJoinPure(["éma-", "(u)"]) === "émalu");
 /* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(e)có-", "(u)"]) === "morcólu"); 
 /* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(é)mu-", "(u)"]) === "moŕmulu"); 
 
+// cú
+console.assert(conjugateAndJoinPure(["ć-", "(e)"]) === "có"); 
+console.assert(conjugateAndJoinPure(["ć-", "(a)"]) === "cóla"); 
+console.assert(conjugateAndJoinPure(["ć-", "(u)"]) === "cú"); 
+console.assert(conjugateAndJoinPure(["ć-", "(i)"]) === "cí"); 
 
 export function getStemClassFromId(id: string): "vowel-stem" | "consonant-stem" | "c-irregular" {
-  if (["c-", "ác-", "(á)c-"].includes(id)) {
+  if (["ć-", "ác-", "(á)c-"].includes(id)) {
     return "c-irregular";
   }
 
@@ -122,6 +127,10 @@ function applyAccentRule(text: string): string {
   if (text === "únunému") { return "unúnemu"; }
   if (text === "únunét") { return "unúnet"; }
   if (text === "únuníja") { return "unúnija"; }
+
+  if (text.startsWith("ćo")) { return "có" + text.slice(2); }
+  if (text.startsWith("ću")) { return "cú" + text.slice(2); }
+  if (text.startsWith("ći")) { return "cí" + text.slice(2); }
 
   const nfd = text.normalize('NFD');
   const acute = '\u0301';
