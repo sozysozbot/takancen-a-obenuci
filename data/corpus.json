@@ -2888,6 +2888,146 @@
           "gloss": "begin-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "ヤマタ！（ごっつぉさん！）"
+      },
+      "tokens": [
+        {
+          "form": "jámata",
+          "mixed_script": "口終",
+          "entry_ids": [
+            "jám-",
+            "(a)ta"
+          ],
+          "gloss": "eat-PST"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "手札が0枚になった瞬間に「ヤマタ！」と宣言し、以下の3つを順に行います。"
+      },
+      "tokens": [
+        {
+          "form": "kóxco",
+          "mixed_script": "手片",
+          "entry_ids": [
+            "kóxco"
+          ]
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "wáca",
+          "mixed_script": "無",
+          "entry_ids": [
+            "wác-",
+            "(a)"
+          ],
+          "gloss": "not.exist-PTCP"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "tíkaga",
+          "mixed_script": "其時",
+          "entry_ids": [
+            "tíkaga"
+          ],
+          "gloss": "that.time"
+        },
+        {
+          "form": "jámata",
+          "mixed_script": "「口終！」",
+          "entry_ids": [
+            "jám-",
+            "(a)ta"
+          ],
+          "gloss": "eat-PST"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "céma",
+          "mixed_script": "言",
+          "entry_ids": [
+            "céma-",
+            "(e)"
+          ],
+          "gloss": "speak-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "mixed_script": "下",
+          "form": "útagi",
+          "entry_ids": [
+            "útagi"
+          ],
+          "gloss": "below"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "méko",
+          "mixed_script": "道",
+          "entry_ids": [
+            "méko"
+          ],
+          "gloss": "way"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "moŕci",
+          "mixed_script": "行し",
+          "entry_ids": [
+            "moŕ-",
+            "(i)"
+          ],
+          "gloss": "go-IMP"
+        }
+      ]
     }
   ]
 }
