@@ -610,6 +610,22 @@
           }
         }
       ]
+    },
+    {
+      "id": "únun-",
+      "script": [
+        "うぬゝ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "be",
+          "translations": {
+            "ja": "〜である"
+          }
+        }
+      ]
     }
   ]
 }
