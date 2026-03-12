@@ -4808,6 +4808,162 @@
           "gloss": "be.similar-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "ワイルド単体:"
+      },
+      "tokens": [
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "tetu",
+          "mixed_script": "唯",
+          "entry_ids": [
+            "tetu"
+          ],
+          "gloss": "only"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "W-Wのように、Wのみで出すともっとも弱い組合せになります。"
+      },
+      "tokens": [
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "ému",
+          "mixed_script": "如",
+          "entry_ids": [
+            "ému-",
+            "(e)"
+          ],
+          "gloss": "be.similar-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "而",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "tetu",
+          "mixed_script": "唯",
+          "entry_ids": [
+            "tetu"
+          ],
+          "gloss": "only"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "jáne",
+          "mixed_script": "生",
+          "entry_ids": [
+            "ján-",
+            "(e)"
+          ],
+          "gloss": "submit-ADV"
+        },
+        {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {
+          "form": "áno",
+          "mixed_script": "全",
+          "entry_ids": [
+            "áno"
+          ],
+          "gloss": "all"
+        },
+        {
+          "form": "dátu",
+          "mixed_script": "集",
+          "entry_ids": [
+            "dátu"
+          ],
+          "gloss": "combination"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "mixed_script": "軟",
+          "form": "kéma",
+          "entry_ids": [
+            "kém-",
+            "(a)"
+          ],
+          "gloss": "be.weak-PTCP"
+        },
+        {
+          "form": "dátu",
+          "mixed_script": "集",
+          "entry_ids": [
+            "dátu"
+          ],
+          "gloss": "combination"
+        },
+        {
+          "form": "únuni",
+          "mixed_script": "うぬに",
+          "entry_ids": [
+            "únun-",
+            "(i)"
+          ],
+          "gloss": "exist-IMP"
+        }
+      ]
     }
   ]
 }
