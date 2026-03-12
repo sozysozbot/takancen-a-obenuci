@@ -3374,10 +3374,10 @@
           "gloss": "card"
         },
         {
-          "form": "eeemóke",
+          "form": "ukemóke",
           "mixed_script": "少行",
           "entry_ids": [
-            "iií-",
+            "úk-",
             "(e)mók-",
             "(e)"
           ]
@@ -3567,7 +3567,7 @@
           "entry_ids": [
             "téko"
           ],
-          "gloss": "leftover"
+          "gloss": "remaining"
         },
         {
           "form": "ja",
@@ -3578,12 +3578,13 @@
           "gloss": "NOM"
         },
         {
-          "form": "eee",
+          "form": "úka",
           "mixed_script": "少",
           "entry_ids": [
-            "iií-",
-            "(e)"
-          ]
+            "úk-",
+            "(a)"
+          ],
+          "gloss": "be.few-PTCP"
         },
         {
           "form": "kága",
@@ -3602,27 +3603,21 @@
           "gloss": "NOM"
         },
         {
-          "form": "momátomo",
-          "mixed_script": "手端",
+          "form": "móma",
+          "mixed_script": "手ま",
           "entry_ids": [
-            "momátomo"
-          ]
+            "móm-",
+            "(a)"
+          ],
+          "gloss": "take-PTCP"
         },
         {
-          "form": "a",
-          "mixed_script": "之",
+          "form": "tomábeko",
+          "mixed_script": "端之道",
           "entry_ids": [
-            "a"
+            "tomábeko"
           ],
-          "gloss": "GEN"
-        },
-        {
-          "form": "méko",
-          "mixed_script": "道",
-          "entry_ids": [
-            "méko"
-          ],
-          "gloss": "way"
+          "gloss": "as.much.as.possible"
         },
         {
           "form": "kan",
