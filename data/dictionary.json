@@ -626,6 +626,106 @@
           }
         }
       ]
+    },
+    {
+      "id": "canenít-",
+      "script": [
+        "識ね入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "learn",
+          "translations": {
+            "ja": "学ぶ"
+          }
+        }
+      ],
+      "components": [
+        "cán-",
+        "(e)nít-"
+      ]
+    },
+    {
+      "id": "cakenít-",
+      "script": [
+        "来け入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "come in",
+          "translations": {
+            "ja": "中に入る、入ってくる"
+          }
+        }
+      ],
+      "components": [
+        "cák-",
+        "(e)nít-"
+      ]
+    },
+    {
+      "id": "momecák-",
+      "script": [
+        "手来く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "obtain",
+          "translations": {
+            "ja": "手に入れる"
+          }
+        }
+      ],
+      "components": [
+        "móm-",
+        "(e)cák-"
+      ]
+    },
+    {
+      "id": "momemók-",
+      "script": [
+        "与く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "give",
+          "translations": {
+            "ja": "与える"
+          }
+        }
+      ],
+      "components": [
+        "móm-",
+        "(e)mók-"
+      ]
+    },
+    {
+      "id": "jamenít-",
+      "script": [
+        "口入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "eat up",
+          "translations": {
+            "ja": "食べ尽くす"
+          }
+        }
+      ],
+      "components": [
+        "jám-",
+        "(e)nít-"
+      ]
     }
   ]
 }

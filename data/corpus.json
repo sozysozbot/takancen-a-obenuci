@@ -208,8 +208,7 @@
           "form": "caneníta",
           "mixed_script": "識ね入た",
           "entry_ids": [
-            "cán-",
-            "(e)nít-",
+            "canenít-",
             "(a)"
           ],
           "gloss": "learn-PTCP"
@@ -268,8 +267,7 @@
           "form": "cakenítu",
           "mixed_script": "来け入つ",
           "entry_ids": [
-            "cák-",
-            "(e)nít-",
+            "cakenít-",
             "(u)"
           ],
           "gloss": "come.in-NPST"
@@ -379,8 +377,7 @@
           "form": "momecakíjalu",
           "mixed_script": "手来心る",
           "entry_ids": [
-            "móm-",
-            "(e)cák-",
+            "momecák-",
             "(í)ja-",
             "(u)"
           ],
@@ -866,8 +863,7 @@
           "form": "jameníte",
           "mixed_script": "口入て",
           "entry_ids": [
-            "jám-",
-            "(e)nít-",
+            "jamenít-",
             "(e)"
           ],
           "gloss": "eat.up-ADV"
@@ -1147,8 +1143,7 @@
           "form": "momemokecáki",
           "mixed_script": "与来き",
           "entry_ids": [
-            "móm-",
-            "(e)mók-",
+            "momemók-",
             "(e)cák-",
             "(i)"
           ],
@@ -1174,8 +1169,7 @@
           "form": "jameníte",
           "mixed_script": "口入て",
           "entry_ids": [
-            "jám-",
-            "(e)nít-",
+            "jamenít-",
             "(e)"
           ],
           "gloss": "eat.up-ADV"
@@ -1658,8 +1652,7 @@
           "form": "momemóki",
           "mixed_script": "与き",
           "entry_ids": [
-            "móm-",
-            "(e)mók-",
+            "momemók-",
             "(i)"
           ],
           "gloss": "give-IMP"
