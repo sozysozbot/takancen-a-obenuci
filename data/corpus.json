@@ -5552,6 +5552,63 @@
           "gloss": "submit-can-NPST"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "ゲームの終了と計算"
+      },
+      "tokens": [
+        {
+          "form": "bélepici",
+          "mixed_script": "遊術",
+          "entry_ids": [
+            "bélepici"
+          ],
+          "gloss": "game"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "tála",
+          "entry_ids": [
+            "tá-",
+            "(a)"
+          ],
+          "mixed_script": "終",
+          "gloss": "end-PTCP"
+        },
+        {
+          "form": "kága",
+          "mixed_script": "時",
+          "entry_ids": [
+            "kága"
+          ],
+          "gloss": "time"
+        },
+        {
+          "form": "ata",
+          "mixed_script": "加",
+          "entry_ids": [
+            "ata"
+          ],
+          "gloss": "and"
+        },
+        {
+          "form": "cjúsu",
+          "mixed_script": "裁銭",
+          "entry_ids": [
+            "cjúsu"
+          ],
+          "gloss": "calculate.money"
+        }
+      ]
     }
   ]
 }
