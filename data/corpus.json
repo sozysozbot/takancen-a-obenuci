@@ -4618,6 +4618,23 @@
           "gloss": "usage"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "混ぜる:"
+      },
+      "tokens": [
+        {
+          "form": "téni",
+          "entry_ids": [
+            "tén-",
+            "(i)"
+          ],
+          "gloss": "mix-IMP",
+          "mixed_script": "混に"
+        }
+      ]
     }
   ]
 }
