@@ -5905,6 +5905,53 @@
           "gloss": "be.victorious-NPST"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "（手元の得点札の枚数 × 5点） − （残った手札の枚数 × 1点）"
+      },
+      "tokens": [
+        {
+          "form": "mjamja",
+          "mixed_script": "付紙片之多少層",
+          "entry_ids": [
+            "bjabja"
+          ]
+        },
+        {
+          "form": "ún=su",
+          "mixed_script": "五銭",
+          "entry_ids": [
+            "ún",
+            "=su"
+          ],
+          "gloss": "five-points"
+        },
+        {
+          "form": "ljoljo",
+          "mixed_script": "下",
+          "entry_ids": [
+            "ljulju"
+          ]
+        },
+        {
+          "form": "mjumju",
+          "mixed_script": "残手片之多少層",
+          "entry_ids": [
+            "bjobjo"
+          ]
+        },
+        {
+          "form": "étu=su",
+          "mixed_script": "一銭",
+          "entry_ids": [
+            "étu",
+            "=su"
+          ],
+          "gloss": "one-point"
+        }
+      ]
     }
   ]
 }
