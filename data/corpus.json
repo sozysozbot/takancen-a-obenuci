@@ -4635,6 +4635,89 @@
           "mixed_script": "混に"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "数字カードと混ぜた場合、好きな数字の代わりになります。"
+      },
+      "tokens": [
+        {
+          "form": "mákaco",
+          "mixed_script": "値片",
+          "gloss": "number.card",
+          "entry_ids": [
+            "mákaco"
+          ]
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "téne",
+          "entry_ids": [
+            "tén-",
+            "(e)"
+          ],
+          "gloss": "mix-ADV",
+          "mixed_script": "混"
+        },
+        {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {
+          "form": "mé",
+          "mixed_script": "此",
+          "entry_ids": [
+            "mé"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "moŕmaku",
+          "mixed_script": "別値",
+          "entry_ids": [
+            "moŕmaku"
+          ],
+          "gloss": "another.number"
+        },
+        {
+          "form": "ému",
+          "mixed_script": "如",
+          "entry_ids": [
+            "ému-",
+            "(e)"
+          ],
+          "gloss": "be.similar-ADV"
+        },
+        {
+          "form": "némeci",
+          "mixed_script": "労し",
+          "entry_ids": [
+            "néme-",
+            "(i)"
+          ],
+          "gloss": "work-IMP"
+        }
+      ]
     }
   ]
 }
