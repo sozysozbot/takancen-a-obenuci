@@ -4578,6 +4578,46 @@
           "gloss": "submit-can-IMP"
         }
       ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "調味料（W）の使い方"
+      },
+      "tokens": [
+        {
+          "mixed_script": "味油",
+          "form": "tikéoli",
+          "entry_ids": [
+            "tikéoli"
+          ],
+          "gloss": "condiment"
+        },
+        {
+          "form": "úla",
+          "mixed_script": "(歪)",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "sísitu",
+          "mixed_script": "使術",
+          "entry_ids": [
+            "sísitu"
+          ],
+          "gloss": "usage"
+        }
+      ]
     }
   ]
 }
