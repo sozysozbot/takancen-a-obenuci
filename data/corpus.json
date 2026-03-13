@@ -4164,10 +4164,10 @@
           "gloss": "ABL"
         },
         {
-          "form": "aaaaaama",
+          "form": "tacáma",
           "mixed_script": "多ま",
           "entry_ids": [
-            "iiiiiim-",
+            "tacám-",
             "(a)"
           ],
           "gloss": "be.many-PTCP"
@@ -5341,10 +5341,10 @@
           "gloss": "card"
         },
         {
-          "form": "aaaaaame",
+          "form": "tacáme",
           "mixed_script": "多",
           "entry_ids": [
-            "iiiiiim-",
+            "tacám-",
             "(e)"
           ],
           "gloss": "be.many-ADV"
@@ -5888,10 +5888,10 @@
       },
       "tokens": [
         {
-          "form": "aaaaaama",
+          "form": "tacáma",
           "mixed_script": "多ま",
           "entry_ids": [
-            "iiiiiim-",
+            "tacám-",
             "(a)"
           ],
           "gloss": "be.many-PTCP"
