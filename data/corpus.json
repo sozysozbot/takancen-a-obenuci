@@ -3230,11 +3230,12 @@
       },
       "tokens": [
         {
-          "form": "ououo",
+          "form": "munkaíkaga",
           "entry_ids": [
-            "uouou"
+            "munkaíkaga"
           ],
-          "mixed_script": "妙時"
+          "mixed_script": "妙時",
+          "gloss": "rare.case"
         },
         {
           "form": "ooooo",
