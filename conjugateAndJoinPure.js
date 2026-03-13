@@ -101,6 +101,9 @@ function conjugateAndJoinVerb(ids) {
     return stem;
 }
 function applyAccentRule(text) {
+    return text.split(" ").map(w => applyAccentRuleSingleWord(w)).join(" ");
+}
+function applyAccentRuleSingleWord(text) {
     // Handle special cases
     if (text === "únunác") {
         return "unúnac";

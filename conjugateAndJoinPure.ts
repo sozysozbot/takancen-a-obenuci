@@ -16,33 +16,33 @@ console.assert(conjugateAndJoinPure(["éma-", "(e)"]) === "éma");
 console.assert(conjugateAndJoinPure(["éma-", "(u)"]) === "émalu");
 
 // únunu
-/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(e)"]) === "únune"); 
+/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(e)"]) === "únune");
 /* 普 */console.assert(conjugateAndJoinPure(["únun-", "(a)ta"]) === "únunata");
 /* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(é)m-", "(u)"]) === "unúnemu");
 /* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(á)c-", "(u)"]) === "unúnacu");
-/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(í)-", "(u)"]) === "ununílu"); 
-/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(í)ja-", "(u)"]) === "unúnijalu"); 
-/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(é)t-", "(u)"]) === "unúnetu"); 
-/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(e)có-", "(u)"]) === "ununecólu"); 
-/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(é)mu-", "(u)"]) === "unúnemulu"); 
+/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(í)-", "(u)"]) === "ununílu");
+/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(í)ja-", "(u)"]) === "unúnijalu");
+/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(é)t-", "(u)"]) === "unúnetu");
+/* 普 */console.assert(conjugateAndJoinPure(["únun-", "(e)có-", "(u)"]) === "ununecólu");
+/* 妙 */console.assert(conjugateAndJoinPure(["únun-", "(é)mu-", "(u)"]) === "unúnemulu");
 
 
 // moŕlu
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(e)"]) === "moŕ"); 
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(a)ta"]) === "moŕlata"); 
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(e)"]) === "moŕ");
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(a)ta"]) === "moŕlata");
 /* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(é)m-", "(u)"]) === "moŕmu");
 /* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(á)c-", "(u)"]) === "morlácu");
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(í)-", "(u)"]) === "morcílu"); 
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(í)ja-", "(u)"]) === "morcíjalu"); 
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(í)-", "(u)"]) === "morcílu");
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(í)ja-", "(u)"]) === "morcíjalu");
 /* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(é)t-", "(u)"]) === "moŕtu");
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(e)có-", "(u)"]) === "morcólu"); 
-/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(é)mu-", "(u)"]) === "moŕmulu"); 
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(e)có-", "(u)"]) === "morcólu");
+/* 普 */console.assert(conjugateAndJoinPure(["moŕ-", "(é)mu-", "(u)"]) === "moŕmulu");
 
 // cú
-console.assert(conjugateAndJoinPure(["ć-", "(e)"]) === "có"); 
-console.assert(conjugateAndJoinPure(["ć-", "(a)"]) === "cóla"); 
-console.assert(conjugateAndJoinPure(["ć-", "(u)"]) === "cú"); 
-console.assert(conjugateAndJoinPure(["ć-", "(i)"]) === "cí"); 
+console.assert(conjugateAndJoinPure(["ć-", "(e)"]) === "có");
+console.assert(conjugateAndJoinPure(["ć-", "(a)"]) === "cóla");
+console.assert(conjugateAndJoinPure(["ć-", "(u)"]) === "cú");
+console.assert(conjugateAndJoinPure(["ć-", "(i)"]) === "cí");
 
 export function getStemClassFromId(id: string): "vowel-stem" | "consonant-stem" | "c-irregular" {
   if (["ć-", "ác-", "(á)c-"].includes(id)) {
@@ -121,6 +121,9 @@ function conjugateAndJoinVerb(ids: string[]) {
 }
 
 function applyAccentRule(text: string): string {
+  return text.split(" ").map(w => applyAccentRuleSingleWord(w)).join(" ");
+}
+function applyAccentRuleSingleWord(text: string): string {
   // Handle special cases
   if (text === "únunác") { return "unúnac"; }
   if (text === "únuném") { return "unúnem"; }

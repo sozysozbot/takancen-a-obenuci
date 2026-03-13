@@ -4990,10 +4990,50 @@
       },
       "tokens": [
         {
-          "form": "kakakakaka",
-          "mixed_script": "多少四亦加多",
+          "form": "momomo",
+          "mixed_script": "多少",
           "entry_ids": [
-            "kukuku"
+            "wewewe"
+          ]
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "nága",
+            "nágamu",
+            "nágan",
+            "kámu"
+          ],
+          "mixed_script": "四",
+          "entry_ids_of_each_form": [
+            [
+              "nága"
+            ],
+            [
+              "nágamu"
+            ],
+            [
+              "nágan"
+            ],
+            [
+              "kámu"
+            ]
+          ],
+          "gloss": "four"
+        },
+        {
+          "form": "ju",
+          "mixed_script": "亦",
+          "entry_ids": [
+            "ju"
+          ],
+          "gloss": "or"
+        },
+        {
+          "form": "kegekege",
+          "mixed_script": "加多",
+          "entry_ids": [
+            "kugukugu"
           ]
         },
         {
@@ -5908,10 +5948,34 @@
       "tokens": [
         {
           "form": "mjamja",
-          "mixed_script": "付紙片之多少層",
+          "mixed_script": "付紙片",
           "entry_ids": [
             "bjabja"
           ]
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "momomo",
+          "mixed_script": "多少",
+          "entry_ids": [
+            "wewewe"
+          ]
+        },
+        {
+          "form": "kújo cóla",
+          "mixed_script": "層",
+          "entry_ids": [
+            "kújo ć-",
+            "(a)"
+          ],
+          "gloss": "multiply-PTCP"
         },
         {
           "form": "ún=su",
@@ -5931,10 +5995,34 @@
         },
         {
           "form": "mjumju",
-          "mixed_script": "残手片之多少層",
+          "mixed_script": "残手片",
           "entry_ids": [
             "bjobjo"
           ]
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "momomo",
+          "mixed_script": "多少",
+          "entry_ids": [
+            "wewewe"
+          ]
+        },
+        {
+          "form": "kújo cóla",
+          "mixed_script": "層",
+          "entry_ids": [
+            "kújo ć-",
+            "(a)"
+          ],
+          "gloss": "multiply-PTCP"
         },
         {
           "form": "étu=su",
