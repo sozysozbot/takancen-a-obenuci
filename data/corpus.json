@@ -5087,22 +5087,22 @@
           "gloss": "not.exist-ADV"
         },
         {
-          "form": "jáne",
-          "mixed_script": "生",
+          "form": "wa",
+          "mixed_script": "而",
           "entry_ids": [
-            "ján-",
-            "(e)"
+            "wa"
           ],
-          "gloss": "submit-ADV"
+          "gloss": "and.also"
         },
         {
-          "form": "wáci",
-          "mixed_script": "無し",
+          "form": "janáci",
+          "mixed_script": "生能し",
           "entry_ids": [
-            "wác-",
+            "ján-",
+            "(á)c-",
             "(i)"
           ],
-          "gloss": "not.exist-IMP"
+          "gloss": "submit-can-IMP"
         }
       ]
     },
