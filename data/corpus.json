@@ -2539,12 +2539,18 @@
       },
       "tokens": [
         {
+          "punctuation": "「"
+        },
+        {
           "form": "é",
-          "mixed_script": "「え」",
+          "mixed_script": "え",
           "entry_ids": [
             "é"
           ],
           "gloss": "the.second.alphabet"
+        },
+        {
+          "punctuation": "」"
         },
         {
           "form": "nímor",
@@ -2564,12 +2570,21 @@
           "gloss": "do-NPST"
         },
         {
+          "punctuation": "！"
+        },
+        {
+          "punctuation": "("
+        },
+        {
           "form": "muńmoku",
-          "mixed_script": "（無行）",
+          "mixed_script": "無行",
           "entry_ids": [
             "muńmoku"
           ],
           "gloss": "passing.one’s.turn"
+        },
+        {
+          "punctuation": ")"
         }
       ]
     },
@@ -2644,6 +2659,9 @@
             "(i)"
           ],
           "gloss": "end-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -2702,6 +2720,9 @@
             "(u)"
           ],
           "gloss": "exist-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -2761,6 +2782,9 @@
             "(i)"
           ],
           "gloss": "not.exist-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -2906,6 +2930,9 @@
             "(i)"
           ],
           "gloss": "not.exist-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3027,6 +3054,9 @@
             "(i)"
           ],
           "gloss": "begin-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3044,6 +3074,9 @@
             "(a)ta"
           ],
           "gloss": "eat-PST"
+        },
+        {
+          "punctuation": "！"
         }
       ]
     },
@@ -3094,13 +3127,22 @@
           "gloss": "that.time"
         },
         {
+          "punctuation": "「"
+        },
+        {
           "form": "jámata",
-          "mixed_script": "「口終！」",
+          "mixed_script": "口終！",
           "entry_ids": [
             "jám-",
             "(a)ta"
           ],
           "gloss": "eat-PST"
+        },
+        {
+          "punctuation": "！"
+        },
+        {
+          "punctuation": "」"
         },
         {
           "form": "ki",
@@ -3167,6 +3209,9 @@
             "(i)"
           ],
           "gloss": "go-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3200,6 +3245,9 @@
             "(i)"
           ],
           "gloss": "obtain-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3279,6 +3327,9 @@
           ],
           "mixed_script": "閉付ぎ",
           "gloss": "place.something.face.down-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3288,6 +3339,9 @@
         "ja": "（ゲーム終了時に得点になります）"
       },
       "tokens": [
+        {
+          "punctuation": "("
+        },
         {
           "form": "bélepici",
           "mixed_script": "遊術",
@@ -3353,6 +3407,12 @@
             "(e)"
           ],
           "gloss": "be-ADV"
+        },
+        {
+          "punctuation": "。"
+        },
+        {
+          "punctuation": ")"
         }
       ]
     },
@@ -3362,6 +3422,9 @@
         "ja": "まれな場合として捨て札がない場合があります"
       },
       "tokens": [
+        {
+          "punctuation": "("
+        },
         {
           "form": "munkaíkaga",
           "entry_ids": [
@@ -3393,6 +3456,9 @@
             "(u)"
           ],
           "gloss": "not.exist-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3420,7 +3486,7 @@
         },
         {
           "form": "jána",
-          "mixed_script": "生な",
+          "mixed_script": "生",
           "entry_ids": [
             "ján-",
             "(a)"
@@ -3483,6 +3549,9 @@
             "(i)"
           ],
           "gloss": "go-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3566,6 +3635,12 @@
             "(i)"
           ],
           "gloss": "not.exist-IMP"
+        },
+        {
+          "punctuation": "。"
+        },
+        {
+          "punctuation": ")"
         }
       ]
     },
@@ -3582,6 +3657,9 @@
             "átawi"
           ],
           "gloss": "another.helping"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3663,6 +3741,9 @@
             "(u)"
           ],
           "gloss": "go-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3672,6 +3753,9 @@
         "ja": "山札が足りない場合はできる限り引きます。"
       },
       "tokens": [
+        {
+          "punctuation": "("
+        },
         {
           "form": "cómaco",
           "mixed_script": "積片",
@@ -3762,6 +3846,9 @@
             "(i)"
           ],
           "gloss": "go-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3778,6 +3865,9 @@
             "túmoku"
           ],
           "gloss": "go.again"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -3835,6 +3925,9 @@
             "(i)"
           ],
           "gloss": "go-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4241,6 +4334,9 @@
           "mixed_script": "八"
         },
         {
+          "punctuation": "。"
+        },
+        {
           "form": "íku",
           "mixed_script": "二",
           "entry_ids": [
@@ -4395,6 +4491,9 @@
           ],
           "mixed_script": "裁し",
           "gloss": "judge-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4515,6 +4614,9 @@
           ],
           "mixed_script": "裁し",
           "gloss": "judge-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4540,6 +4642,9 @@
             "(i)"
           ],
           "gloss": "be.similar-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4703,6 +4808,9 @@
             "(i)"
           ],
           "gloss": "submit-can-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4766,6 +4874,9 @@
           ],
           "gloss": "mix-IMP",
           "mixed_script": "混に"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4798,7 +4909,7 @@
             "(e)"
           ],
           "gloss": "mix-ADV",
-          "mixed_script": "混"
+          "mixed_script": "混ね"
         },
         {
           "form": "ken",
@@ -4849,6 +4960,9 @@
             "(i)"
           ],
           "gloss": "work-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -4858,6 +4972,9 @@
         "ja": "（例：3-W-5 は 3-4-5 扱い）"
       },
       "tokens": [
+        {
+          "punctuation": "("
+        },
         {
           "form": "úmu",
           "mixed_script": "三",
@@ -4939,6 +5056,9 @@
             "(i)"
           ],
           "gloss": "be.similar-IMP"
+        },
+        {
+          "punctuation": ")"
         }
       ]
     },
@@ -4963,6 +5083,9 @@
             "tetu"
           ],
           "gloss": "only"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5095,6 +5218,9 @@
             "(i)"
           ],
           "gloss": "exist-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
