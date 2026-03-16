@@ -178,6 +178,14 @@ function renderMissingHighFreq(entries) {
         list.appendChild(div);
     }
 }
+const PUNCTUATION_MAPPING = {
+    "。": ".",
+    "(": "(", // both are ASCII
+    ")": ")", // both are ASCII
+    "「": "“",
+    "」": "”",
+    "！": "!"
+};
 // ── Dictionary rendering ───────────────────────────────────────────────────
 function renderDictionary(entries) {
     const list = document.getElementById('entry-list');
@@ -350,7 +358,7 @@ function buildSentenceEl(sentence) {
     copyScript.type = 'button';
     copyScript.textContent = t('ui', 'Copy script');
     copyScript.addEventListener('click', () => {
-        const text = sentence.tokens.map(tok => 'punctuation' in tok ? '\u3002' : (tok.mixed_script ?? '')).join('');
+        const text = sentence.tokens.map(tok => 'punctuation' in tok ? tok.punctuation : (tok.mixed_script ?? '')).join('');
         navigator.clipboard.writeText(text).then(() => {
             copyScript.textContent = t('ui', 'Copied!');
             setTimeout(() => { copyScript.textContent = t('ui', 'Copy script'); }, 1500);
@@ -368,7 +376,7 @@ function buildSentenceEl(sentence) {
                     hiragana += toSpacedHiraganaPure(batch);
                     batch = [];
                 }
-                hiragana += '\u3002';
+                hiragana += tok.punctuation;
             }
             else if ('multiple-standard-pronunciations' in tok) {
                 batch.push('{' + tok.forms.join('/') + '}');
@@ -392,8 +400,11 @@ function buildSentenceEl(sentence) {
         let needSpace = false;
         for (const tok of sentence.tokens) {
             if ('punctuation' in tok) {
-                latin += '. ';
-                needSpace = false;
+                const isOpening = tok.punctuation === '(' || tok.punctuation === '「';
+                if (isOpening && needSpace)
+                    latin += ' ';
+                latin += PUNCTUATION_MAPPING[tok.punctuation] ?? tok.punctuation;
+                needSpace = !isOpening;
             }
             else {
                 if (needSpace)
@@ -444,11 +455,11 @@ function buildEntryLinks(ids) {
 function buildTokenEl(token) {
     const div = document.createElement('div');
     if ('punctuation' in token) {
-        div.appendChild(buildScriptElWithRuby({ mixed_script: "。", latin_form: token.punctuation }));
         div.className = 'token';
+        div.appendChild(buildScriptElWithRuby({ mixed_script: token.punctuation, latin_form: token.punctuation }));
         const form = document.createElement('div');
         form.className = 'token-form';
-        form.textContent = token.punctuation;
+        form.textContent = PUNCTUATION_MAPPING[token.punctuation] ?? token.punctuation;
         div.appendChild(form);
         const gloss = document.createElement('div');
         gloss.className = 'token-gloss';

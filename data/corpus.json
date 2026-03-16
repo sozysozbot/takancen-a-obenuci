@@ -944,7 +944,7 @@
           "gloss": "cheap.restaurant"
         },
         {
-          "punctuation": "."
+          "punctuation": "。"
         }
       ],
       "translation": {
@@ -1517,12 +1517,18 @@
           "gloss": "card"
         },
         {
+          "punctuation": "("
+        },
+        {
           "form": "mún oca nóu",
-          "mixed_script": "(無耒九)",
+          "mixed_script": "無耒九",
           "entry_ids": [
             "mún oca nóu"
           ],
           "gloss": "0.to.9"
+        },
+        {
+          "punctuation": ")"
         },
         {
           "form": "túce",
@@ -1561,12 +1567,18 @@
           "gloss": "condiment"
         },
         {
-          "mixed_script": "(歪片)",
+          "punctuation": "("
+        },
+        {
+          "mixed_script": "歪片",
           "form": "búnco",
           "entry_ids": [
             "búnco"
           ],
           "gloss": "wildcard"
+        },
+        {
+          "punctuation": ")"
         },
         {
           "mixed_script": "十五片",
@@ -4591,12 +4603,18 @@
           "gloss": "condiment"
         },
         {
+          "punctuation": "("
+        },
+        {
           "form": "úla",
-          "mixed_script": "(歪)",
+          "mixed_script": "歪",
           "entry_ids": [
             "úla"
           ],
           "gloss": "wildcard"
+        },
+        {
+          "punctuation": ")"
         },
         {
           "form": "a",
@@ -5494,7 +5512,10 @@
           "gloss": "combination"
         },
         {
-          "mixed_script": "(友",
+          "punctuation": "("
+        },
+        {
+          "mixed_script": "友",
           "form": "óki",
           "entry_ids": [
             "óki"
