@@ -5239,6 +5239,9 @@
           "gloss": "special.combination"
         },
         {
+          "punctuation": ":"
+        },
+        {
           "form": "gógowi",
           "mixed_script": "ごゝ皿",
           "entry_ids": [
@@ -5409,6 +5412,9 @@
             "(i)"
           ],
           "gloss": "submit-can-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5523,6 +5529,9 @@
             "(i)"
           ],
           "gloss": "go-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5588,6 +5597,9 @@
             "(u)"
           ],
           "gloss": "be.victorious-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5631,6 +5643,9 @@
             "(u)"
           ],
           "gloss": "submit-can-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5690,6 +5705,9 @@
             "(u)"
           ],
           "gloss": "be.victorious-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -5804,11 +5822,14 @@
           "gloss": "NOM"
         },
         {
-          "mixed_script": "連)",
+          "mixed_script": "連",
           "form": "néka",
           "entry_ids": [
             "néka"
           ]
+        },
+        {
+          "punctuation": ")"
         },
         {
           "form": "únune",
@@ -5852,6 +5873,9 @@
             "(u)"
           ],
           "gloss": "submit-can-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -6024,6 +6048,9 @@
             "(i)"
           ],
           "gloss": "end-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -6146,6 +6173,9 @@
             "(i)"
           ],
           "gloss": "be.victorious-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -6157,7 +6187,7 @@
       "tokens": [
         {
           "form": "tacáma",
-          "mixed_script": "多ま",
+          "mixed_script": "多",
           "entry_ids": [
             "tacám-",
             "(a)"
@@ -6205,6 +6235,9 @@
             "(u)"
           ],
           "gloss": "be.victorious-NPST"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -6326,6 +6359,9 @@
             "=su"
           ],
           "gloss": "one-point"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     }

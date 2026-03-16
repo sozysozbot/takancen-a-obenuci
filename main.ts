@@ -213,6 +213,7 @@ function renderMissingHighFreq(entries: Map<string, number>) {
 
 const PUNCTUATION_MAPPING = {
   "。": ".",
+  ":": ":", // both are ASCII
   "(" : "(", // both are ASCII
   ")" : ")", // both are ASCII
   "「" : "“",

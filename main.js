@@ -180,6 +180,7 @@ function renderMissingHighFreq(entries) {
 }
 const PUNCTUATION_MAPPING = {
     "。": ".",
+    ":": ":", // both are ASCII
     "(": "(", // both are ASCII
     ")": ")", // both are ASCII
     "「": "“",
