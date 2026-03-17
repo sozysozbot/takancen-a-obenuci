@@ -1833,7 +1833,7 @@
             "únun-",
             "(i)"
           ],
-          "gloss": "exist-IMP"
+          "gloss": "be-IMP"
         },
         {
           "punctuation": "。"
@@ -3667,6 +3667,14 @@
           ]
         },
         {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {
           "form": "kéxke",
           "mixed_script": "戦処",
           "entry_ids": [
@@ -3689,6 +3697,14 @@
             "jáku"
           ],
           "gloss": "rule"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
         },
         {
           "form": "émo",
@@ -3928,12 +3944,13 @@
           "gloss": "case"
         },
         {
-          "form": "ja",
-          "mixed_script": "や",
+          "form": "únune",
+          "mixed_script": "うぬね",
           "entry_ids": [
-            "ja"
+            "únun-",
+            "(e)"
           ],
-          "gloss": "NOM"
+          "gloss": "be-ADV"
         },
         {
           "form": "móma",
@@ -4300,14 +4317,6 @@
             "a"
           ],
           "gloss": "GEN"
-        },
-        {
-          "form": "túce",
-          "mixed_script": "毎",
-          "entry_ids": [
-            "túce"
-          ],
-          "gloss": "each"
         },
         {
           "form": "míso",
@@ -5339,7 +5348,7 @@
             "únun-",
             "(i)"
           ],
-          "gloss": "exist-IMP"
+          "gloss": "be-IMP"
         },
         {
           "punctuation": "。"
