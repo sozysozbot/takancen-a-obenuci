@@ -1042,10 +1042,19 @@
           "gloss": "NOM"
         },
         {
-          "form": "kinínsu",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "kinínsu",
+            "kinúnsu"
+          ],
           "mixed_script": "銭",
-          "entry_ids": [
-            "kinínsu"
+          "entry_ids_of_each_form": [
+            [
+              "kinínsu"
+            ],
+            [
+              "kinúnsu"
+            ]
           ],
           "gloss": "money"
         },
@@ -3289,10 +3298,19 @@
       },
       "tokens": [
         {
-          "form": "kinínsu",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "kinínsu",
+            "kinúnsu"
+          ],
           "mixed_script": "銭",
-          "entry_ids": [
-            "kinínsu"
+          "entry_ids_of_each_form": [
+            [
+              "kinínsu"
+            ],
+            [
+              "kinúnsu"
+            ]
           ],
           "gloss": "money"
         },
@@ -3470,10 +3488,19 @@
           "gloss": "NOM"
         },
         {
-          "form": "kinínsu",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "kinínsu",
+            "kinúnsu"
+          ],
           "mixed_script": "銭",
-          "entry_ids": [
-            "kinínsu"
+          "entry_ids_of_each_form": [
+            [
+              "kinínsu"
+            ],
+            [
+              "kinúnsu"
+            ]
           ],
           "gloss": "money"
         },
@@ -3614,10 +3641,19 @@
           "gloss": "ACC"
         },
         {
-          "form": "kinínsu",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "kinínsu",
+            "kinúnsu"
+          ],
           "mixed_script": "銭",
-          "entry_ids": [
-            "kinínsu"
+          "entry_ids_of_each_form": [
+            [
+              "kinínsu"
+            ],
+            [
+              "kinúnsu"
+            ]
           ],
           "gloss": "money"
         },
