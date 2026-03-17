@@ -1510,12 +1510,20 @@
       "source": "ヤマタ！",
       "tokens": [
         {
-          "form": "soŕcju",
-          "mixed_script": "上裁",
-          "entry_ids": [
-            "soŕcju"
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "sórcju",
+            "soŕcjur"
           ],
-          "gloss": "setup"
+          "gloss": "setup",
+          "entry_ids_of_each_form": [
+            [
+              "sórcju"
+            ],
+            [
+              "soŕcjur"
+            ]
+          ]
         }
       ],
       "translation": {
@@ -1555,7 +1563,7 @@
         }
       ],
       "translation": {
-        "ja": "カードの確認"
+        "ja": "カードを数える"
       }
     },
     {
@@ -1794,10 +1802,27 @@
           "gloss": "NOM"
         },
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
@@ -2625,10 +2650,27 @@
       },
       "tokens": [
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
@@ -2763,10 +2805,27 @@
       },
       "tokens": [
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
@@ -3700,10 +3759,27 @@
       },
       "tokens": [
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
@@ -3787,10 +3863,27 @@
           "punctuation": "("
         },
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
@@ -5998,10 +6091,27 @@
       },
       "tokens": [
         {
-          "form": "cómaco",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
           "mixed_script": "積片",
-          "entry_ids": [
-            "cómaco"
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
           ],
           "gloss": "pile.of.cards"
         },
