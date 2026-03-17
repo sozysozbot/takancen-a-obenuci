@@ -51,7 +51,10 @@ async function init() {
   setupModal();
   renderDictionary(dictionary);
   renderMissingHighFreq(computeHighFreqMissing());
-  renderCorpus(corpus);
+
+  const initialSource = new URLSearchParams(location.search).get('source') ?? '';
+  (document.getElementById('source-filter') as HTMLSelectElement).value = initialSource;
+  applyCorpusFilter();
 
   const initialTab = new URLSearchParams(location.search).get('tab');
   if (initialTab === 'dictionary' || initialTab === 'corpus') switchTab(initialTab);
@@ -107,6 +110,7 @@ function setupControls() {
   document.getElementById('tab-corpus')!.addEventListener('click', () => switchTab('corpus'));
   document.getElementById('search-input')!.addEventListener('input', applyFilter);
   document.getElementById('pos-filter')!.addEventListener('change', applyFilter);
+  document.getElementById('source-filter')!.addEventListener('change', applyCorpusFilter);
 
   document.getElementById('tab-dictionary')!.textContent = t('ui', 'Dictionary');
   document.getElementById('tab-corpus')!.textContent = t('ui', 'Corpus');
@@ -132,6 +136,20 @@ function setupControls() {
     opt.textContent = t('pos', pos);
     sel.appendChild(opt);
   }
+
+  // Populate source filter for corpus
+  const sourceSel = document.getElementById('source-filter') as HTMLSelectElement;
+  const allSourceOpt = document.createElement('option');
+  allSourceOpt.value = '';
+  allSourceOpt.textContent = t('ui', 'All sources');
+  sourceSel.appendChild(allSourceOpt);
+  const sources = [...new Set(corpus.flatMap(s => s.source ? [s.source] : []))].sort();
+  for (const source of sources) {
+    const opt = document.createElement('option');
+    opt.value = source;
+    opt.textContent = source;
+    sourceSel.appendChild(opt);
+  }
 }
 
 function applyFilter() {
@@ -149,6 +167,15 @@ function applyFilter() {
   });
 
   renderDictionary(filtered);
+}
+
+function applyCorpusFilter() {
+  const source = (document.getElementById('source-filter') as HTMLSelectElement).value;
+  const params = new URLSearchParams(location.search);
+  if (source) params.set('source', source);
+  else params.delete('source');
+  history.replaceState(null, '', '?' + params.toString());
+  renderCorpus(source ? corpus.filter(s => s.source === source) : corpus);
 }
 
 // ── Frequent missing words ─────────────────────────────────────────────────
