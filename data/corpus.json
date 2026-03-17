@@ -4331,39 +4331,6 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "種類　内容　例"
-      },
-      "tokens": [
-        {
-          "form": "míso",
-          "mixed_script": "類",
-          "gloss": "kind",
-          "entry_ids": [
-            "míso"
-          ]
-        },
-        {
-          "form": "aiaai",
-          "entry_ids": [
-            "iaiia"
-          ],
-          "mixed_script": "内",
-          "gloss": "content"
-        },
-        {
-          "form": "ému",
-          "mixed_script": "如",
-          "entry_ids": [
-            "ému-",
-            "(e)"
-          ],
-          "gloss": "be.similar-ADV"
-        }
-      ]
-    },
-    {
-      "source": "ヤマタ！",
-      "translation": {
         "ja": "1枚出し　カード1枚　5"
       },
       "tokens": [
@@ -4392,6 +4359,14 @@
             "=co"
           ],
           "gloss": "one-piece"
+        },
+        {
+          "form": "kéco",
+          "mixed_script": "如",
+          "entry_ids": [
+            "kéco"
+          ],
+          "gloss": "such.as"
         },
         {
           "form": "cúna",
@@ -4441,6 +4416,14 @@
           "gloss": "combination"
         },
         {
+          "form": "kéco",
+          "mixed_script": "如",
+          "entry_ids": [
+            "kéco"
+          ],
+          "gloss": "such.as"
+        },
+        {
           "form": "nómu",
           "entry_ids": [
             "nómu"
@@ -4466,6 +4449,14 @@
         },
         {
           "punctuation": "。"
+        },
+        {
+          "form": "kéco",
+          "mixed_script": "如",
+          "entry_ids": [
+            "kéco"
+          ],
+          "gloss": "such.as"
         },
         {
           "form": "íku",
@@ -4539,6 +4530,14 @@
             "nekámaka"
           ],
           "gloss": "consecutive.number"
+        },
+        {
+          "form": "kéco",
+          "mixed_script": "如",
+          "entry_ids": [
+            "kéco"
+          ],
+          "gloss": "such.as"
         },
         {
           "form": "úmu",
@@ -4631,38 +4630,25 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "セットや連番は、その中の一番大きい数字で比較します。"
+        "ja": "複数枚からなる組合せは、その中の一番大きい数字で比較します。"
       },
       "tokens": [
         {
-          "mixed_script": "友",
-          "form": "óki",
+          "form": "túo",
+          "mixed_script": "片",
           "entry_ids": [
-            "óki"
-          ]
-        },
-        {
-          "form": "ata",
-          "mixed_script": "加",
-          "entry_ids": [
-            "ata"
+            "túo"
           ],
-          "gloss": "and"
+          "gloss": "card"
         },
         {
-          "mixed_script": "連集",
-          "form": "nekátadu",
+          "form": "tacáma",
+          "mixed_script": "多ま",
           "entry_ids": [
-            "nekátadu"
-          ]
-        },
-        {
-          "form": "ja",
-          "mixed_script": "や",
-          "entry_ids": [
-            "ja"
+            "tacám-",
+            "(a)"
           ],
-          "gloss": "NOM"
+          "gloss": "be.many-PTCP"
         },
         {
           "form": "dátu",
@@ -4673,6 +4659,22 @@
           "gloss": "combination"
         },
         {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "tí",
+          "mixed_script": "其",
+          "entry_ids": [
+            "tí"
+          ],
+          "gloss": "such.kind.of"
+        },
+        {
           "form": "a",
           "mixed_script": "之",
           "entry_ids": [
@@ -4681,28 +4683,29 @@
           "gloss": "GEN"
         },
         {
-          "form": "aiaai",
+          "form": "éti",
           "entry_ids": [
-            "iaiia"
+            "éti"
           ],
           "mixed_script": "内",
           "gloss": "content"
         },
         {
-          "form": "áno",
-          "mixed_script": "全",
-          "entry_ids": [
-            "áno"
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "béma",
+            "anoámama"
           ],
-          "gloss": "all"
-        },
-        {
-          "form": "ámama",
-          "mixed_script": "大",
-          "entry_ids": [
-            "ámama"
+          "mixed_script": "全大",
+          "entry_ids_of_each_form": [
+            [
+              "béma"
+            ],
+            [
+              "anoámama"
+            ]
           ],
-          "gloss": "great"
+          "gloss": "maximum"
         },
         {
           "form": "a",
@@ -4758,21 +4761,20 @@
       },
       "tokens": [
         {
-          "form": "mé",
-          "mixed_script": "此",
+          "form": "kéco",
+          "mixed_script": "如",
           "entry_ids": [
-            "mé"
+            "kéco"
           ],
-          "gloss": "this"
+          "gloss": "such.as"
         },
         {
-          "form": "émuci",
-          "mixed_script": "如し",
+          "mixed_script": "下",
+          "form": "útagi",
           "entry_ids": [
-            "ému-",
-            "(i)"
+            "útagi"
           ],
-          "gloss": "be.similar-IMP"
+          "gloss": "below"
         },
         {
           "punctuation": "。"
@@ -5227,37 +5229,48 @@
       },
       "tokens": [
         {
-          "form": "úla",
-          "mixed_script": "歪",
-          "entry_ids": [
-            "úla"
-          ],
-          "gloss": "wildcard"
-        },
-        {
-          "form": "úla",
-          "mixed_script": "歪",
-          "entry_ids": [
-            "úla"
-          ],
-          "gloss": "wildcard"
-        },
-        {
-          "form": "ému",
+          "form": "kéco",
           "mixed_script": "如",
           "entry_ids": [
-            "ému-",
-            "(e)"
+            "kéco"
           ],
-          "gloss": "be.similar-ADV"
+          "gloss": "such.as"
         },
         {
-          "form": "wa",
-          "mixed_script": "而",
+          "form": "úla",
+          "mixed_script": "歪",
           "entry_ids": [
-            "wa"
+            "úla"
           ],
-          "gloss": "and.also"
+          "gloss": "wildcard"
+        },
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "átaci",
+          "mixed_script": "目し",
+          "entry_ids": [
+            "áta-",
+            "(i)"
+          ],
+          "gloss": "see-IMP"
+        },
+        {
+          "punctuation": "。"
         },
         {
           "form": "úla",
@@ -5370,9 +5383,6 @@
           "gloss": "special.combination"
         },
         {
-          "punctuation": ":"
-        },
-        {
           "form": "gógowi",
           "mixed_script": "ごゝ皿",
           "entry_ids": [
@@ -5421,27 +5431,21 @@
           "gloss": "four"
         },
         {
-          "form": "ju",
-          "mixed_script": "亦",
+          "form": "oca",
+          "mixed_script": "耒",
           "entry_ids": [
-            "ju"
+            "oca"
           ],
-          "gloss": "or"
+          "gloss": "ABL"
         },
         {
-          "form": "kegekege",
-          "mixed_script": "加多",
+          "form": "tacáma",
+          "mixed_script": "多ま",
           "entry_ids": [
-            "kugukugu"
-          ]
-        },
-        {
-          "form": "a",
-          "mixed_script": "之",
-          "entry_ids": [
-            "a"
+            "tacám-",
+            "(a)"
           ],
-          "gloss": "GEN"
+          "gloss": "be.many-PTCP"
         },
         {
           "form": "dátu",
@@ -5669,7 +5673,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "枚数で勝つ: "
+        "ja": "枚数基準で勝つ: "
       },
       "tokens": [
         {
@@ -5783,7 +5787,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "強さで勝つ: "
+        "ja": "強さ基準で勝つ: "
       },
       "tokens": [
         {
@@ -6290,10 +6294,19 @@
           "gloss": "sum.of.money"
         },
         {
-          "form": "béma",
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "béma",
+            "anoámama"
+          ],
           "mixed_script": "全大",
-          "entry_ids": [
-            "béma"
+          "entry_ids_of_each_form": [
+            [
+              "béma"
+            ],
+            [
+              "anoámama"
+            ]
           ],
           "gloss": "maximum"
         },
@@ -6360,10 +6373,10 @@
           "gloss": "and.also"
         },
         {
-          "form": "tí",
+          "form": "tí a",
           "mixed_script": "其",
           "entry_ids": [
-            "tí"
+            "tí a"
           ],
           "gloss": "such.kind.of"
         },
@@ -6392,7 +6405,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "（手元の得点札の枚数 × 5点） − （残った手札の枚数 × 1点）"
+        "ja": "手元の得点札 1枚につき5点"
       },
       "tokens": [
         {
@@ -6413,28 +6426,21 @@
           "gloss": "card"
         },
         {
-          "form": "a",
-          "mixed_script": "之",
+          "form": "túce",
+          "mixed_script": "毎",
           "entry_ids": [
-            "a"
+            "túce"
           ],
-          "gloss": "GEN"
+          "gloss": "each"
         },
         {
-          "form": "tónke",
-          "mixed_script": "多少",
+          "form": "éx=co",
+          "mixed_script": "一片",
           "entry_ids": [
-            "tónke"
-          ]
-        },
-        {
-          "form": "kújo cóla",
-          "mixed_script": "層",
-          "entry_ids": [
-            "kújo ć-",
-            "(a)"
+            "éx",
+            "=co"
           ],
-          "gloss": "multiply-PTCP"
+          "gloss": "one-piece"
         },
         {
           "form": "ún=su",
@@ -6444,14 +6450,15 @@
             "=su"
           ],
           "gloss": "five-points"
-        },
-        {
-          "form": "ljoljo",
-          "mixed_script": "下",
-          "entry_ids": [
-            "ljulju"
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "残った手札 1枚につき　-1点"
+      },
+      "tokens": [
         {
           "form": "téko",
           "mixed_script": "残",
@@ -6476,40 +6483,38 @@
           ]
         },
         {
-          "form": "a",
-          "mixed_script": "之",
+          "form": "túce",
+          "mixed_script": "毎",
           "entry_ids": [
-            "a"
+            "túce"
           ],
-          "gloss": "GEN"
+          "gloss": "each"
         },
         {
-          "form": "tónke",
-          "mixed_script": "多少",
+          "form": "éx=co",
+          "mixed_script": "一片",
           "entry_ids": [
-            "tónke"
-          ]
-        },
-        {
-          "form": "kújo cóla",
-          "mixed_script": "層",
-          "entry_ids": [
-            "kújo ć-",
-            "(a)"
+            "éx",
+            "=co"
           ],
-          "gloss": "multiply-PTCP"
+          "gloss": "one-piece"
         },
         {
-          "form": "étu=su",
+          "form": "útu",
+          "mixed_script": "下",
+          "entry_ids": [
+            "útu"
+          ],
+          "gloss": "negative"
+        },
+        {
+          "form": "éx=su",
           "mixed_script": "一銭",
           "entry_ids": [
-            "étu",
+            "éx",
             "=su"
           ],
           "gloss": "one-point"
-        },
-        {
-          "punctuation": "。"
         }
       ]
     }
