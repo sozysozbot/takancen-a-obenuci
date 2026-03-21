@@ -375,6 +375,10 @@
     {
       "id": "(á)c-",
       "lemma": "(á)c-",
+      "script": [
+        "す",
+        "能す"
+      ],
       "pos": "auxiliary verb",
       "conjugation_class": "c-irregular",
       "definitions": [
@@ -794,7 +798,10 @@
       ],
       "definitions": [
         {
-          "gloss": "humbly"
+          "gloss": "humbly",
+          "translations": {
+            "ja": "させていただく"
+          }
         }
       ]
     },

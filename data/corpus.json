@@ -4418,14 +4418,16 @@
           "entry_ids": [
             "kém-",
             "(a)"
-          ]
+          ],
+          "gloss": "be.weak-PTCP"
         },
         {
           "mixed_script": "硬",
           "form": "méki",
           "entry_ids": [
             "méki"
-          ]
+          ],
+          "gloss": "strong"
         }
       ]
     },
