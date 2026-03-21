@@ -181,7 +181,7 @@ function updateEntryFilterUI() {
   const banner = document.getElementById('entry-filter-banner')!;
   const label = document.getElementById('entry-filter-label')!;
   banner.hidden = !entryFilter;
-  label.textContent = entryFilter;
+  label.textContent = t('ui', 'entry filter') + ' ' + entryFilter;
 }
 
 function applyAllFilters() {

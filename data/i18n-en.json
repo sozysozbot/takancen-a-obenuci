@@ -49,6 +49,7 @@
     "definition": "definition",
     "Search…": "Search lemma or definition…",
     "Frequent undocumented words": "Frequently-appearing undocumented words",
-    "Enlisted words": "Enlisted words"
+    "Enlisted words": "Enlisted words",
+    "entry filter": "containing the entry word:"
   }
 }

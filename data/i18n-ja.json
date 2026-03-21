@@ -48,6 +48,7 @@
     "definition": "定義文",
     "Search…": "見出し語・定義で検索…",
     "Frequent undocumented words": "高頻度で登場する未登録語",
-    "Enlisted words": "登録済みの語"
+    "Enlisted words": "登録済みの語",
+    "entry filter": "見出し語でフィルター："
   }
 }
