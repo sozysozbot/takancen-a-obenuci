@@ -1642,11 +1642,11 @@
           "gloss": "each"
         },
         {
-          "form": "ún=co",
+          "form": "ún≡co",
           "mixed_script": "五片",
           "entry_ids": [
-            "ún",
-            "=co"
+            "un≡",
+            "≡co"
           ],
           "gloss": "five-pieces"
         },
@@ -1688,10 +1688,10 @@
         },
         {
           "mixed_script": "十五片",
-          "form": "mitún=co",
+          "form": "mitún≡co",
           "entry_ids": [
-            "mitún",
-            "=co"
+            "mitun≡",
+            "≡co"
           ],
           "gloss": "fifteen-pieces"
         },
@@ -1724,10 +1724,10 @@
         },
         {
           "mixed_script": "六十五片",
-          "form": "netumitún=co",
+          "form": "netumitún≡co",
           "entry_ids": [
-            "netumitún",
-            "=co"
+            "netumitun≡",
+            "≡co"
           ],
           "gloss": "65-pieces"
         },
@@ -1767,11 +1767,11 @@
           "gloss": "each"
         },
         {
-          "form": "ún=co",
+          "form": "ún≡co",
           "mixed_script": "五片",
           "entry_ids": [
-            "ún",
-            "=co"
+            "un≡",
+            "≡co"
           ],
           "gloss": "five-pieces"
         },
@@ -2965,7 +2965,7 @@
           "form": "áno",
           "mixed_script": "全",
           "entry_ids": [
-            "áno"
+            "áno#2"
           ],
           "gloss": "all"
         },
@@ -4264,7 +4264,7 @@
           "entry_ids": [
             "túmoku"
           ],
-          "gloss": "go.again"
+          "gloss": "going.again"
         },
         {
           "punctuation": "。"
@@ -4613,11 +4613,11 @@
       },
       "tokens": [
         {
-          "form": "éx=co",
+          "form": "éx≡co",
           "mixed_script": "一片",
           "entry_ids": [
-            "éx",
-            "=co"
+            "ex≡",
+            "≡co"
           ],
           "gloss": "one-piece"
         },
@@ -4630,11 +4630,11 @@
           "gloss": "card"
         },
         {
-          "form": "éx=co",
+          "form": "éx≡co",
           "mixed_script": "一片",
           "entry_ids": [
-            "éx",
-            "=co"
+            "ex≡",
+            "≡co"
           ],
           "gloss": "one-piece"
         },
@@ -4778,11 +4778,11 @@
           "gloss": "combination.of.sequential.cards"
         },
         {
-          "form": "ón=co",
+          "form": "ón≡co",
           "mixed_script": "三片",
           "entry_ids": [
-            "ón",
-            "=co"
+            "on≡",
+            "≡co"
           ],
           "gloss": "three-pieces"
         },
@@ -4952,7 +4952,7 @@
           "entry_ids": [
             "tí"
           ],
-          "gloss": "such.kind.of"
+          "gloss": "such.kind"
         },
         {
           "form": "a",
@@ -5658,7 +5658,7 @@
           "form": "áno",
           "mixed_script": "全",
           "entry_ids": [
-            "áno"
+            "áno#2"
           ],
           "gloss": "all"
         },
@@ -6783,20 +6783,20 @@
           "gloss": "each"
         },
         {
-          "form": "éx=co",
+          "form": "éx≡co",
           "mixed_script": "一片",
           "entry_ids": [
-            "éx",
-            "=co"
+            "ex≡",
+            "≡co"
           ],
           "gloss": "one-piece"
         },
         {
-          "form": "ón=su",
+          "form": "ón≡su",
           "mixed_script": "三銭",
           "entry_ids": [
-            "ón",
-            "=su"
+            "on≡",
+            "≡su"
           ],
           "gloss": "three-points"
         }
@@ -6841,11 +6841,11 @@
           "gloss": "each"
         },
         {
-          "form": "éx=co",
+          "form": "éx≡co",
           "mixed_script": "一片",
           "entry_ids": [
-            "éx",
-            "=co"
+            "ex≡",
+            "≡co"
           ],
           "gloss": "one-piece"
         },
@@ -6858,11 +6858,11 @@
           "gloss": "negative"
         },
         {
-          "form": "éx=su",
+          "form": "ex≡su",
           "mixed_script": "一銭",
           "entry_ids": [
-            "éx",
-            "=su"
+            "ex≡",
+            "≡su"
           ],
           "gloss": "one-point"
         },
@@ -6894,11 +6894,11 @@
           "gloss": "negative"
         },
         {
-          "form": "íku=su",
+          "form": "íku≡su",
           "mixed_script": "二銭",
           "entry_ids": [
-            "íku",
-            "=su"
+            "iku≡",
+            "≡su"
           ],
           "gloss": "two-points"
         },

@@ -3,10 +3,17 @@
     "noun": "noun",
     "noun suffix": "noun suffix",
     "verb": "verb",
+    "phrase": "phrase",
+    "bound morpheme": "bound morpheme",
     "noun particle": "noun particle",
     "auxiliary verb": "auxiliary verb",
+    "prenominal": "prenominal",
     "verb particle": "verb particle",
     "sentence particle": "sentence particle",
+    "noun conjunction": "noun conjunction",
+    "sentence conjunction": "sentence conjunction",
+    "adjectival noun": "adjectival noun",
+    "interjection": "interjection",
     "All parts of speech": "All parts of speech"
   },
   "conj": {

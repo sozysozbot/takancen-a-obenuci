@@ -3,10 +3,17 @@
     "noun": "名詞",
     "noun suffix": "名詞接尾辞",
     "verb": "動詞",
+    "phrase": "フレーズ",
+    "bound morpheme": "拘束形態素",
     "noun particle": "名詞につく助詞",
     "auxiliary verb": "助動詞",
+    "prenominal": "連体詞",
     "verb particle": "接続助詞",
     "sentence particle": "終助詞",
+    "noun conjunction": "名詞接続詞",
+    "sentence conjunction": "文接続詞",
+    "adjectival noun": "形容詞性名詞",
+    "interjection": "間投詞",
     "All parts of speech": "全ての品詞から検索"
   },
   "conj": {
