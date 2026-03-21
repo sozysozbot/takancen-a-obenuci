@@ -1423,7 +1423,7 @@
           "entry_ids": [
             "jánku"
           ],
-          "gloss": "kitchen"
+          "gloss": "food"
         },
         {
           "form": "a",
@@ -2033,7 +2033,7 @@
           "form": "kíja",
           "mixed_script": "日",
           "entry_ids": [
-            "kíja"
+            "kíja#2"
           ],
           "gloss": "day"
         },
@@ -2085,7 +2085,7 @@
           "form": "kíja",
           "mixed_script": "日",
           "entry_ids": [
-            "kíja"
+            "kíja#2"
           ],
           "gloss": "day"
         },
@@ -2723,7 +2723,7 @@
           "form": "kíja",
           "mixed_script": "日",
           "entry_ids": [
-            "kíja"
+            "kíja#2"
           ],
           "gloss": "day"
         },
@@ -4281,7 +4281,7 @@
           "form": "kíja",
           "mixed_script": "日",
           "entry_ids": [
-            "kíja"
+            "kíja#2"
           ],
           "gloss": "day"
         },

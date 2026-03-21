@@ -1,28 +1,7 @@
 [
   {
     "id": "(a)",
-    "pos": "noun",
-    "script": [
-      "識ね入た",
-      "うぬな",
-      "席能そら",
-      "席上ら",
-      "光ら",
-      "無さ",
-      "在ら",
-      "無",
-      "為ら",
-      "善",
-      "生な",
-      "終",
-      "生",
-      "少",
-      "手ま",
-      "軟",
-      "多ま",
-      "多",
-      "付"
-    ],
+    "pos": "verb particle",
     "definitions": [
       {
         "gloss": "PTCP"
@@ -31,32 +10,7 @@
   },
   {
     "id": "(e)",
-    "pos": "noun",
-    "script": [
-      "うぬね",
-      "在",
-      "口入て",
-      "無せ",
-      "錘",
-      "目",
-      "口行",
-      "入て",
-      "行",
-      "定",
-      "生",
-      "心",
-      "手",
-      "小止",
-      "生ね",
-      "言",
-      "少行",
-      "下て",
-      "混ね",
-      "如",
-      "多",
-      "同",
-      "為"
-    ],
+    "pos": "verb particle",
     "definitions": [
       {
         "gloss": "ADV"
@@ -68,7 +22,7 @@
     "pos": "auxiliary verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "与来き"
+      "来く"
     ],
     "definitions": [
       {
@@ -81,7 +35,7 @@
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "席上ら"
+      "上る"
     ],
     "definitions": [
       {
@@ -94,7 +48,7 @@
     "pos": "auxiliary verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "口行"
+      "行く"
     ],
     "definitions": [
       {
@@ -107,7 +61,7 @@
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "うぬにる"
+      "る","心る"
     ],
     "definitions": [
       {
@@ -120,7 +74,7 @@
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "手来心る"
+      "やる","心る"
     ],
     "definitions": [
       {
@@ -130,13 +84,9 @@
   },
   {
     "id": "=co",
-    "pos": "noun",
+    "pos": "noun suffix",
     "script": [
-      "五片",
-      "十五片",
-      "六十五片",
-      "一片",
-      "三片"
+      "片"
     ],
     "definitions": [
       {
@@ -149,11 +99,9 @@
   },
   {
     "id": "=su",
-    "pos": "noun",
+    "pos": "noun suffix",
     "script": [
-      "三銭",
-      "一銭",
-      "二銭"
+      "銭"
     ],
     "definitions": [
       {
@@ -202,7 +150,7 @@
   },
   {
     "id": "ata",
-    "pos": "noun",
+    "pos": "noun conjunction",
     "script": [
       "あた",
       "加"
@@ -338,8 +286,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "上行き",
-      "上行"
+      "上行く"
     ],
     "definitions": [
       {
@@ -388,7 +335,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "裁し"
+      "裁る"
     ],
     "definitions": [
       {
@@ -437,7 +384,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "錘"
+      "錘る"
     ],
     "definitions": [
       {
@@ -558,7 +505,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "閉付ぎ"
+      "閉付ぐ"
     ],
     "definitions": [
       {
@@ -592,7 +539,7 @@
   },
   {
     "id": "ju",
-    "pos": "noun",
+    "pos": "noun conjunction",
     "script": [
       "ゆ",
       "亦"
@@ -620,12 +567,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "生に",
-      "生",
-      "生な",
-      "生ね",
-      "生能し",
-      "生能す"
+      "生ぬ"
     ],
     "definitions": [
       {
@@ -641,7 +583,7 @@
     ],
     "definitions": [
       {
-        "gloss": "kitchen"
+        "gloss": "food"
       }
     ]
   },
@@ -659,7 +601,7 @@
   },
   {
     "id": "ken",
-    "pos": "noun",
+    "pos": "sentence conjunction",
     "script": [
       "即"
     ],
@@ -743,7 +685,7 @@
   },
   {
     "id": "kéco",
-    "pos": "noun",
+    "pos": "prenominal",
     "script": [
       "如"
     ],
@@ -795,13 +737,21 @@
     "id": "kíja",
     "pos": "noun",
     "script": [
-      "心",
-      "日"
+      "心"
     ],
     "definitions": [
       {
         "gloss": "mind"
-      },
+      }
+    ]
+  },
+  {
+    "id": "kíja#2",
+    "pos": "noun",
+    "script": [
+      "日"
+    ],
+    "definitions": [
       {
         "gloss": "day"
       }
@@ -824,8 +774,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "付ぎ",
-      "付"
+      "付ぐ"
     ],
     "definitions": [
       {
@@ -874,7 +823,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "値手み"
+      "値手む"
     ],
     "definitions": [
       {
@@ -910,7 +859,7 @@
     "id": "mitún",
     "pos": "noun",
     "script": [
-      "十五片"
+      "十五"
     ],
     "definitions": [
       {
@@ -1007,8 +956,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "定み",
-      "定"
+      "定む"
     ],
     "definitions": [
       {
@@ -1045,7 +993,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "同"
+      "同る"
     ],
     "definitions": [
       {
@@ -1070,9 +1018,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "手",
-      "手み",
-      "手ま"
+      "手む"
     ],
     "definitions": [
       {
@@ -1085,7 +1031,7 @@
   },
   {
     "id": "mórwa",
-    "pos": "noun",
+    "pos": "sentence conjunction",
     "script": [
       "別而"
     ],
@@ -1174,7 +1120,7 @@
     "id": "netumitún",
     "pos": "noun",
     "script": [
-      "六十五片"
+      "六十五"
     ],
     "definitions": [
       {
@@ -1199,8 +1145,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "小止る",
-      "小止"
+      "小止る"
     ],
     "definitions": [
       {
@@ -1225,7 +1170,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "労し"
+      "労る"
     ],
     "definitions": [
       {
@@ -1250,7 +1195,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "入て"
+      "入つ"
     ],
     "definitions": [
       {
@@ -1275,7 +1220,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "悪に"
+      "悪ぬ"
     ],
     "definitions": [
       {
@@ -1363,8 +1308,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "多ま",
-      "多"
+      "多む"
     ],
     "definitions": [
       {
@@ -1425,8 +1369,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "終し",
-      "終"
+      "終る"
     ],
     "definitions": [
       {
@@ -1454,8 +1397,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "混に",
-      "混ね"
+      "混ぬ"
     ],
     "definitions": [
       {
@@ -1580,7 +1522,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "少行"
+      "少行く"
     ],
     "definitions": [
       {
@@ -1593,7 +1535,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "始に"
+      "始ぬ"
     ],
     "definitions": [
       {
@@ -1603,7 +1545,7 @@
   },
   {
     "id": "wa",
-    "pos": "noun",
+    "pos": "sentence conjunction",
     "script": [
       "わ",
       "而"
@@ -1703,7 +1645,7 @@
   },
   {
     "id": "ée",
-    "pos": "noun",
+    "pos": "interjection",
     "script": [
       "えゝ"
     ],
@@ -1718,7 +1660,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "光ら"
+      "光る"
     ],
     "definitions": [
       {
@@ -1743,8 +1685,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "如",
-      "如し"
+      "如る"
     ],
     "definitions": [
       {
@@ -1766,10 +1707,10 @@
   },
   {
     "id": "éx",
-    "pos": "noun",
+    "pos": "noun prefix",
     "script": [
-      "一片",
-      "一銭"
+      "一",
+      "一"
     ],
     "definitions": [
       {
@@ -1782,7 +1723,7 @@
     "pos": "verb",
     "conjugation_class": "vowel-stem",
     "script": [
-      "心"
+      "心る"
     ],
     "definitions": [
       {
@@ -1794,8 +1735,7 @@
     "id": "íku",
     "pos": "noun",
     "script": [
-      "二",
-      "二銭"
+      "二"
     ],
     "definitions": [
       {
@@ -1819,8 +1759,7 @@
     "id": "ón",
     "pos": "noun",
     "script": [
-      "三片",
-      "三銭"
+      "三"
     ],
     "definitions": [
       {
@@ -1833,7 +1772,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "少"
+      "少く"
     ],
     "definitions": [
       {
@@ -1869,7 +1808,7 @@
     "id": "ún",
     "pos": "noun",
     "script": [
-      "五片"
+      "五"
     ],
     "definitions": [
       {
@@ -1882,7 +1821,7 @@
     "pos": "verb",
     "conjugation_class": "consonant-stem",
     "script": [
-      "下て"
+      "下つ"
     ],
     "definitions": [
       {
