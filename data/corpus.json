@@ -1687,11 +1687,21 @@
           "punctuation": ")"
         },
         {
+          "multiple-standard-pronunciations": true,
           "mixed_script": "十五片",
-          "form": "mitún≡co",
-          "entry_ids": [
-            "mitun≡",
-            "≡co"
+          "forms": [
+            "mitún≡co",
+            "mituún≡co"
+          ],
+          "entry_ids_of_each_form": [
+            [
+              "mitun≡",
+              "≡co"
+            ],
+            [
+              "mituun≡",
+              "≡co"
+            ]
           ],
           "gloss": "fifteen-pieces"
         },
