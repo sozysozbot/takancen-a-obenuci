@@ -89,7 +89,25 @@ function validate(label: string, schema: z.ZodSchema, data: unknown) {
   }
 }
 
+const corpusRaw = JSON.parse(readFileSync('data/corpus.json', 'utf-8'));
+
 validate('dictionary.json', dictionaryDataSchema, JSON.parse(readFileSync('data/dictionary.json', 'utf-8')));
-validate('corpus.json',     corpusDataSchema,     JSON.parse(readFileSync('data/corpus.json',     'utf-8')));
+validate('corpus.json',     corpusDataSchema,     corpusRaw);
+
+if (!hasError) {
+  const corpusData = corpusDataSchema.parse(corpusRaw);
+  for (const [si, sentence] of corpusData.sentences.entries()) {
+    for (const [ti, token] of sentence.tokens.entries()) {
+      if ('punctuation' in token || 'multiple-standard-pronunciations' in token) continue;
+      if (!token.gloss || !token.entry_ids) continue;
+      const parts = token.gloss.split('-');
+      if (parts.length !== token.entry_ids.length) {
+        console.error(`❌  corpus.json cross-validation: sentences[${si}].tokens[${ti}]: gloss.split("-").length (${parts.length}) ≠ entry_ids.length (${token.entry_ids.length})`);
+        hasError = true;
+      }
+    }
+  }
+  if (!hasError) console.log('✅  cross-validation');
+}
 
 if (hasError) process.exit(1);
