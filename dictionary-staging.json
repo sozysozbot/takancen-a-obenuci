@@ -2,6 +2,27 @@
   {
     "id": "(a)",
     "pos": "noun",
+    "script": [
+      "識ね入た",
+      "うぬな",
+      "席能そら",
+      "席上ら",
+      "光ら",
+      "無さ",
+      "在ら",
+      "無",
+      "為ら",
+      "善",
+      "生な",
+      "終",
+      "生",
+      "少",
+      "手ま",
+      "軟",
+      "多ま",
+      "多",
+      "付"
+    ],
     "definitions": [
       {
         "gloss": "PTCP"
@@ -11,6 +32,31 @@
   {
     "id": "(e)",
     "pos": "noun",
+    "script": [
+      "うぬね",
+      "在",
+      "口入て",
+      "無せ",
+      "錘",
+      "目",
+      "口行",
+      "入て",
+      "行",
+      "定",
+      "生",
+      "心",
+      "手",
+      "小止",
+      "生ね",
+      "言",
+      "少行",
+      "下て",
+      "混ね",
+      "如",
+      "多",
+      "同",
+      "為"
+    ],
     "definitions": [
       {
         "gloss": "ADV"
@@ -21,6 +67,9 @@
     "id": "(e)cák-",
     "pos": "auxiliary verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "与来き"
+    ],
     "definitions": [
       {
         "gloss": "toward us"
@@ -31,6 +80,9 @@
     "id": "(e)có-",
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "席上ら"
+    ],
     "definitions": [
       {
         "gloss": "humbly"
@@ -41,6 +93,9 @@
     "id": "(e)mók-",
     "pos": "auxiliary verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "口行"
+    ],
     "definitions": [
       {
         "gloss": "away"
@@ -51,6 +106,9 @@
     "id": "(í)-",
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "うぬにる"
+    ],
     "definitions": [
       {
         "gloss": "SPECL"
@@ -61,6 +119,9 @@
     "id": "(í)ja-",
     "pos": "auxiliary verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "手来心る"
+    ],
     "definitions": [
       {
         "gloss": "want"
@@ -70,6 +131,13 @@
   {
     "id": "=co",
     "pos": "noun",
+    "script": [
+      "五片",
+      "十五片",
+      "六十五片",
+      "一片",
+      "三片"
+    ],
     "definitions": [
       {
         "gloss": "pieces"
@@ -82,6 +150,11 @@
   {
     "id": "=su",
     "pos": "noun",
+    "script": [
+      "三銭",
+      "一銭",
+      "二銭"
+    ],
     "definitions": [
       {
         "gloss": "points"
@@ -94,6 +167,9 @@
   {
     "id": "ailúcima",
     "pos": "noun",
+    "script": [
+      "冠国"
+    ],
     "definitions": [
       {
         "gloss": "Ai’ren Republic"
@@ -103,6 +179,9 @@
   {
     "id": "amamátono",
     "pos": "noun",
+    "script": [
+      "大島"
+    ],
     "definitions": [
       {
         "gloss": "big island"
@@ -112,6 +191,9 @@
   {
     "id": "asiácuka",
     "pos": "noun",
+    "script": [
+      "一人"
+    ],
     "definitions": [
       {
         "gloss": "one person"
@@ -121,6 +203,10 @@
   {
     "id": "ata",
     "pos": "noun",
+    "script": [
+      "あた",
+      "加"
+    ],
     "definitions": [
       {
         "gloss": "and"
@@ -130,6 +216,9 @@
   {
     "id": "bartádon",
     "pos": "noun",
+    "script": [
+      "闇島"
+    ],
     "definitions": [
       {
         "gloss": "闇島"
@@ -139,6 +228,9 @@
   {
     "id": "báxmaku",
     "pos": "noun",
+    "script": [
+      "同値"
+    ],
     "definitions": [
       {
         "gloss": "same number"
@@ -148,6 +240,9 @@
   {
     "id": "báxso",
     "pos": "noun",
+    "script": [
+      "同類"
+    ],
     "definitions": [
       {
         "gloss": "same kind"
@@ -157,6 +252,9 @@
   {
     "id": "bécuku",
     "pos": "noun",
+    "script": [
+      "全人"
+    ],
     "definitions": [
       {
         "gloss": "everyone"
@@ -166,6 +264,9 @@
   {
     "id": "bélepici",
     "pos": "noun",
+    "script": [
+      "遊術"
+    ],
     "definitions": [
       {
         "gloss": "game"
@@ -175,6 +276,9 @@
   {
     "id": "bélu",
     "pos": "noun",
+    "script": [
+      "全新"
+    ],
     "definitions": [
       {
         "gloss": "latest"
@@ -184,6 +288,9 @@
   {
     "id": "béutu",
     "pos": "noun",
+    "script": [
+      "全下"
+    ],
     "definitions": [
       {
         "gloss": "finally"
@@ -193,6 +300,9 @@
   {
     "id": "búnco",
     "pos": "noun",
+    "script": [
+      "歪片"
+    ],
     "definitions": [
       {
         "gloss": "wildcard"
@@ -202,6 +312,9 @@
   {
     "id": "ceímoku",
     "pos": "noun",
+    "script": [
+      "周行"
+    ],
     "definitions": [
       {
         "gloss": "rotational direction"
@@ -211,6 +324,9 @@
   {
     "id": "cjúsu",
     "pos": "noun",
+    "script": [
+      "裁銭"
+    ],
     "definitions": [
       {
         "gloss": "calculate money"
@@ -221,6 +337,10 @@
     "id": "comók-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "上行き",
+      "上行"
+    ],
     "definitions": [
       {
         "gloss": "be victorious"
@@ -230,6 +350,9 @@
   {
     "id": "cumácuka",
     "pos": "noun",
+    "script": [
+      "豊人"
+    ],
     "definitions": [
       {
         "gloss": "rich person"
@@ -239,6 +362,9 @@
   {
     "id": "céjo",
     "pos": "noun",
+    "script": [
+      "或"
+    ],
     "definitions": [
       {
         "gloss": "a certain"
@@ -248,6 +374,9 @@
   {
     "id": "céutu",
     "pos": "noun",
+    "script": [
+      "其下"
+    ],
     "definitions": [
       {
         "gloss": "after that"
@@ -258,6 +387,9 @@
     "id": "cíju-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "裁し"
+    ],
     "definitions": [
       {
         "gloss": "judge"
@@ -267,6 +399,9 @@
   {
     "id": "cína",
     "pos": "noun",
+    "script": [
+      "名"
+    ],
     "definitions": [
       {
         "gloss": "name"
@@ -276,6 +411,9 @@
   {
     "id": "có",
     "pos": "noun",
+    "script": [
+      "上"
+    ],
     "definitions": [
       {
         "gloss": "on top"
@@ -285,6 +423,9 @@
   {
     "id": "códatu",
     "pos": "noun",
+    "script": [
+      "片集"
+    ],
     "definitions": [
       {
         "gloss": "combination of cards"
@@ -295,6 +436,9 @@
     "id": "códo-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "錘"
+    ],
     "definitions": [
       {
         "gloss": "consider important"
@@ -304,6 +448,9 @@
   {
     "id": "cómasu",
     "pos": "noun",
+    "script": [
+      "積銭"
+    ],
     "definitions": [
       {
         "gloss": "sum of money"
@@ -313,6 +460,9 @@
   {
     "id": "cóno",
     "pos": "noun",
+    "script": [
+      "前"
+    ],
     "definitions": [
       {
         "gloss": "front"
@@ -322,6 +472,9 @@
   {
     "id": "cúna",
     "pos": "noun",
+    "script": [
+      "五"
+    ],
     "definitions": [
       {
         "gloss": "five"
@@ -331,6 +484,9 @@
   {
     "id": "cúnasi",
     "pos": "noun",
+    "script": [
+      "六"
+    ],
     "definitions": [
       {
         "gloss": "six"
@@ -340,6 +496,9 @@
   {
     "id": "cúneku",
     "pos": "noun",
+    "script": [
+      "七"
+    ],
     "definitions": [
       {
         "gloss": "seven"
@@ -349,6 +508,9 @@
   {
     "id": "dońdatu",
     "pos": "noun",
+    "script": [
+      "島集"
+    ],
     "definitions": [
       {
         "gloss": "Republic Union of the Eastern Islands"
@@ -358,6 +520,9 @@
   {
     "id": "dátu",
     "pos": "noun",
+    "script": [
+      "集"
+    ],
     "definitions": [
       {
         "gloss": "combination"
@@ -367,6 +532,9 @@
   {
     "id": "ekádon",
     "pos": "noun",
+    "script": [
+      "光島"
+    ],
     "definitions": [
       {
         "gloss": "Ekadon Island"
@@ -376,6 +544,9 @@
   {
     "id": "gógowi",
     "pos": "noun",
+    "script": [
+      "ごゝ皿"
+    ],
     "definitions": [
       {
         "gloss": "extra large serving"
@@ -386,6 +557,9 @@
     "id": "inekúg-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "閉付ぎ"
+    ],
     "definitions": [
       {
         "gloss": "place something face down"
@@ -395,6 +569,9 @@
   {
     "id": "ininátono",
     "pos": "noun",
+    "script": [
+      "小島"
+    ],
     "definitions": [
       {
         "gloss": "small island"
@@ -404,6 +581,9 @@
   {
     "id": "jamámuta",
     "pos": "noun",
+    "script": [
+      "口家"
+    ],
     "definitions": [
       {
         "gloss": "cheap restaurant"
@@ -413,6 +593,10 @@
   {
     "id": "ju",
     "pos": "noun",
+    "script": [
+      "ゆ",
+      "亦"
+    ],
     "definitions": [
       {
         "gloss": "or"
@@ -422,6 +606,9 @@
   {
     "id": "jáku",
     "pos": "noun",
+    "script": [
+      "律"
+    ],
     "definitions": [
       {
         "gloss": "rule"
@@ -432,6 +619,14 @@
     "id": "ján-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "生に",
+      "生",
+      "生な",
+      "生ね",
+      "生能し",
+      "生能す"
+    ],
     "definitions": [
       {
         "gloss": "submit"
@@ -441,6 +636,9 @@
   {
     "id": "jánku",
     "pos": "noun",
+    "script": [
+      "口物"
+    ],
     "definitions": [
       {
         "gloss": "kitchen"
@@ -450,6 +648,9 @@
   {
     "id": "kańken",
     "pos": "noun",
+    "script": [
+      "火処"
+    ],
     "definitions": [
       {
         "gloss": "kitchen"
@@ -459,6 +660,9 @@
   {
     "id": "ken",
     "pos": "noun",
+    "script": [
+      "即"
+    ],
     "definitions": [
       {
         "gloss": "then"
@@ -468,6 +672,9 @@
   {
     "id": "kinusáciju",
     "pos": "noun",
+    "script": [
+      "銭裁"
+    ],
     "definitions": [
       {
         "gloss": "money calculation"
@@ -477,6 +684,9 @@
   {
     "id": "kjábetu",
     "pos": "noun",
+    "script": [
+      "心圧"
+    ],
     "definitions": [
       {
         "gloss": "oppression"
@@ -486,6 +696,9 @@
   {
     "id": "kácuka",
     "pos": "noun",
+    "script": [
+      "此人"
+    ],
     "definitions": [
       {
         "gloss": "this person"
@@ -495,6 +708,9 @@
   {
     "id": "kákan",
     "pos": "noun",
+    "script": [
+      "此処"
+    ],
     "definitions": [
       {
         "gloss": "here"
@@ -504,6 +720,9 @@
   {
     "id": "káxcen",
     "pos": "noun",
+    "script": [
+      "互言"
+    ],
     "definitions": [
       {
         "gloss": "conversation"
@@ -513,6 +732,9 @@
   {
     "id": "kéca",
     "pos": "noun",
+    "script": [
+      "絵"
+    ],
     "definitions": [
       {
         "gloss": "picture"
@@ -522,6 +744,9 @@
   {
     "id": "kéco",
     "pos": "noun",
+    "script": [
+      "如"
+    ],
     "definitions": [
       {
         "gloss": "such as"
@@ -532,6 +757,9 @@
     "id": "kém-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "軟"
+    ],
     "definitions": [
       {
         "gloss": "be weak"
@@ -542,6 +770,9 @@
     "id": "két-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "善"
+    ],
     "definitions": [
       {
         "gloss": "good"
@@ -551,6 +782,9 @@
   {
     "id": "kéxke",
     "pos": "noun",
+    "script": [
+      "戦処"
+    ],
     "definitions": [
       {
         "gloss": "fighting place"
@@ -560,6 +794,10 @@
   {
     "id": "kíja",
     "pos": "noun",
+    "script": [
+      "心",
+      "日"
+    ],
     "definitions": [
       {
         "gloss": "mind"
@@ -572,6 +810,9 @@
   {
     "id": "kóxco",
     "pos": "noun",
+    "script": [
+      "手片"
+    ],
     "definitions": [
       {
         "gloss": "cards in one’s hand"
@@ -582,6 +823,10 @@
     "id": "kúg-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "付ぎ",
+      "付"
+    ],
     "definitions": [
       {
         "gloss": "put"
@@ -591,6 +836,9 @@
   {
     "id": "lácuka",
     "pos": "noun",
+    "script": [
+      "軸人"
+    ],
     "definitions": [
       {
         "gloss": "starting player"
@@ -600,6 +848,9 @@
   {
     "id": "láneme",
     "pos": "noun",
+    "script": [
+      "羅"
+    ],
     "definitions": [
       {
         "gloss": "Lanerme"
@@ -609,6 +860,9 @@
   {
     "id": "lúcju",
     "pos": "noun",
+    "script": [
+      "新裁"
+    ],
     "definitions": [
       {
         "gloss": "reset"
@@ -619,6 +873,9 @@
     "id": "makamóm-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "値手み"
+    ],
     "definitions": [
       {
         "gloss": "count"
@@ -628,6 +885,9 @@
   {
     "id": "mananádon",
     "pos": "noun",
+    "script": [
+      "母島"
+    ],
     "definitions": [
       {
         "gloss": "Manmana Island"
@@ -637,6 +897,9 @@
   {
     "id": "max́matu",
     "pos": "noun",
+    "script": [
+      "奮々"
+    ],
     "definitions": [
       {
         "gloss": "rage"
@@ -646,6 +909,9 @@
   {
     "id": "mitún",
     "pos": "noun",
+    "script": [
+      "十五片"
+    ],
     "definitions": [
       {
         "gloss": "fifteen"
@@ -655,6 +921,9 @@
   {
     "id": "moŕmaku",
     "pos": "noun",
+    "script": [
+      "別値"
+    ],
     "definitions": [
       {
         "gloss": "another number"
@@ -664,6 +933,9 @@
   {
     "id": "munkaídatu",
     "pos": "noun",
+    "script": [
+      "妙集"
+    ],
     "definitions": [
       {
         "gloss": "special combination"
@@ -673,6 +945,9 @@
   {
     "id": "munkaíkaga",
     "pos": "noun",
+    "script": [
+      "妙時"
+    ],
     "definitions": [
       {
         "gloss": "rare case"
@@ -682,6 +957,9 @@
   {
     "id": "muńcan",
     "pos": "noun",
+    "script": [
+      "無識"
+    ],
     "definitions": [
       {
         "gloss": "subconsciousness"
@@ -691,6 +969,9 @@
   {
     "id": "muńmoku",
     "pos": "noun",
+    "script": [
+      "無行"
+    ],
     "definitions": [
       {
         "gloss": "passing one’s turn"
@@ -700,6 +981,9 @@
   {
     "id": "máka",
     "pos": "noun",
+    "script": [
+      "値"
+    ],
     "definitions": [
       {
         "gloss": "number"
@@ -709,6 +993,9 @@
   {
     "id": "mákaco",
     "pos": "noun",
+    "script": [
+      "値片"
+    ],
     "definitions": [
       {
         "gloss": "number card"
@@ -719,6 +1006,10 @@
     "id": "mám-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "定み",
+      "定"
+    ],
     "definitions": [
       {
         "gloss": "determine"
@@ -728,6 +1019,9 @@
   {
     "id": "méki",
     "pos": "noun",
+    "script": [
+      "硬"
+    ],
     "definitions": [
       {
         "gloss": "strong"
@@ -737,6 +1031,9 @@
   {
     "id": "méko",
     "pos": "noun",
+    "script": [
+      "道"
+    ],
     "definitions": [
       {
         "gloss": "way"
@@ -747,6 +1044,9 @@
     "id": "méme-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "同"
+    ],
     "definitions": [
       {
         "gloss": "be same"
@@ -756,6 +1056,9 @@
   {
     "id": "míso",
     "pos": "noun",
+    "script": [
+      "類"
+    ],
     "definitions": [
       {
         "gloss": "kind"
@@ -766,6 +1069,11 @@
     "id": "móm-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "手",
+      "手み",
+      "手ま"
+    ],
     "definitions": [
       {
         "gloss": "take"
@@ -778,6 +1086,9 @@
   {
     "id": "mórwa",
     "pos": "noun",
+    "script": [
+      "別而"
+    ],
     "definitions": [
       {
         "gloss": "but"
@@ -787,6 +1098,9 @@
   {
     "id": "móxpor",
     "pos": "noun",
+    "script": [
+      "行道"
+    ],
     "definitions": [
       {
         "gloss": "procedure"
@@ -796,6 +1110,9 @@
   {
     "id": "mún",
     "pos": "noun",
+    "script": [
+      "無"
+    ],
     "definitions": [
       {
         "gloss": "0"
@@ -808,6 +1125,9 @@
   {
     "id": "múnbo a tó",
     "pos": "noun",
+    "script": [
+      "無満之樽"
+    ],
     "definitions": [
       {
         "gloss": "insatiable"
@@ -817,6 +1137,9 @@
   {
     "id": "múnsu",
     "pos": "noun",
+    "script": [
+      "無銭"
+    ],
     "definitions": [
       {
         "gloss": "free of charge"
@@ -826,6 +1149,9 @@
   {
     "id": "nekámaka",
     "pos": "noun",
+    "script": [
+      "連値"
+    ],
     "definitions": [
       {
         "gloss": "consecutive number"
@@ -835,6 +1161,9 @@
   {
     "id": "nekátadu",
     "pos": "noun",
+    "script": [
+      "連集"
+    ],
     "definitions": [
       {
         "gloss": "combination of sequential cards"
@@ -844,6 +1173,9 @@
   {
     "id": "netumitún",
     "pos": "noun",
+    "script": [
+      "六十五片"
+    ],
     "definitions": [
       {
         "gloss": "65"
@@ -853,6 +1185,9 @@
   {
     "id": "nimálane",
     "pos": "noun",
+    "script": [
+      "哩言"
+    ],
     "definitions": [
       {
         "gloss": "Linepāine"
@@ -863,6 +1198,10 @@
     "id": "nimór-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "小止る",
+      "小止"
+    ],
     "definitions": [
       {
         "gloss": "take a short break"
@@ -872,6 +1211,9 @@
   {
     "id": "néka",
     "pos": "noun",
+    "script": [
+      "連"
+    ],
     "definitions": [
       {
         "gloss": "sequence"
@@ -882,6 +1224,9 @@
     "id": "néme-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "労し"
+    ],
     "definitions": [
       {
         "gloss": "work"
@@ -891,6 +1236,9 @@
   {
     "id": "nínco",
     "pos": "noun",
+    "script": [
+      "紙片"
+    ],
     "definitions": [
       {
         "gloss": "card"
@@ -901,6 +1249,9 @@
     "id": "nít-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "入て"
+    ],
     "definitions": [
       {
         "gloss": "disappear"
@@ -910,6 +1261,9 @@
   {
     "id": "nómu",
     "pos": "noun",
+    "script": [
+      "八"
+    ],
     "definitions": [
       {
         "gloss": "eight"
@@ -920,6 +1274,9 @@
     "id": "nón-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "悪に"
+    ],
     "definitions": [
       {
         "gloss": "bad"
@@ -929,6 +1286,9 @@
   {
     "id": "nóu",
     "pos": "noun",
+    "script": [
+      "九"
+    ],
     "definitions": [
       {
         "gloss": "9"
@@ -941,6 +1301,9 @@
   {
     "id": "okítadu",
     "pos": "noun",
+    "script": [
+      "友集"
+    ],
     "definitions": [
       {
         "gloss": "combination of cards of equal rank"
@@ -950,6 +1313,9 @@
   {
     "id": "six́sor muńmoku",
     "pos": "noun",
+    "script": [
+      "術上無行"
+    ],
     "definitions": [
       {
         "gloss": "strategic pass"
@@ -959,6 +1325,9 @@
   {
     "id": "sukelácuka",
     "pos": "noun",
+    "script": [
+      "店軸人"
+    ],
     "definitions": [
       {
         "gloss": "shopkeeper"
@@ -968,6 +1337,9 @@
   {
     "id": "sísitu",
     "pos": "noun",
+    "script": [
+      "使術"
+    ],
     "definitions": [
       {
         "gloss": "usage"
@@ -977,6 +1349,9 @@
   {
     "id": "súco",
     "pos": "noun",
+    "script": [
+      "銭片"
+    ],
     "definitions": [
       {
         "gloss": "point card"
@@ -987,6 +1362,10 @@
     "id": "tacám-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "多ま",
+      "多"
+    ],
     "definitions": [
       {
         "gloss": "be many"
@@ -996,6 +1375,9 @@
   {
     "id": "takańdon",
     "pos": "noun",
+    "script": [
+      "皇島"
+    ],
     "definitions": [
       {
         "gloss": "Atalam Island"
@@ -1005,6 +1387,9 @@
   {
     "id": "tetu",
     "pos": "noun",
+    "script": [
+      "唯"
+    ],
     "definitions": [
       {
         "gloss": "only"
@@ -1014,6 +1399,9 @@
   {
     "id": "tikéoli",
     "pos": "noun",
+    "script": [
+      "味油"
+    ],
     "definitions": [
       {
         "gloss": "condiment"
@@ -1023,6 +1411,9 @@
   {
     "id": "tomábeko",
     "pos": "noun",
+    "script": [
+      "端之道"
+    ],
     "definitions": [
       {
         "gloss": "as much as possible"
@@ -1033,6 +1424,10 @@
     "id": "tá-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "終し",
+      "終"
+    ],
     "definitions": [
       {
         "gloss": "end"
@@ -1042,6 +1437,9 @@
   {
     "id": "téko",
     "pos": "noun",
+    "script": [
+      "残"
+    ],
     "definitions": [
       {
         "gloss": "leftover"
@@ -1055,6 +1453,10 @@
     "id": "tén-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "混に",
+      "混ね"
+    ],
     "definitions": [
       {
         "gloss": "mix"
@@ -1064,6 +1466,9 @@
   {
     "id": "tí",
     "pos": "noun",
+    "script": [
+      "其"
+    ],
     "definitions": [
       {
         "gloss": "such kind of"
@@ -1073,6 +1478,9 @@
   {
     "id": "tí a",
     "pos": "noun",
+    "script": [
+      "其"
+    ],
     "definitions": [
       {
         "gloss": "such kind of"
@@ -1082,6 +1490,9 @@
   {
     "id": "tíkaga",
     "pos": "noun",
+    "script": [
+      "其時"
+    ],
     "definitions": [
       {
         "gloss": "that time"
@@ -1091,6 +1502,9 @@
   {
     "id": "tína",
     "pos": "noun",
+    "script": [
+      "己"
+    ],
     "definitions": [
       {
         "gloss": "oneself"
@@ -1100,6 +1514,9 @@
   {
     "id": "tónke",
     "pos": "noun",
+    "script": [
+      "多少"
+    ],
     "definitions": [
       {
         "gloss": "quantity"
@@ -1109,6 +1526,9 @@
   {
     "id": "túce",
     "pos": "noun",
+    "script": [
+      "毎"
+    ],
     "definitions": [
       {
         "gloss": "each"
@@ -1118,6 +1538,9 @@
   {
     "id": "túmoku",
     "pos": "noun",
+    "script": [
+      "再行"
+    ],
     "definitions": [
       {
         "gloss": "go again"
@@ -1127,6 +1550,9 @@
   {
     "id": "túo",
     "pos": "noun",
+    "script": [
+      "片"
+    ],
     "definitions": [
       {
         "gloss": "card"
@@ -1136,6 +1562,10 @@
   {
     "id": "tútu",
     "pos": "noun",
+    "script": [
+      "再々",
+      "再"
+    ],
     "definitions": [
       {
         "gloss": "repeatedly"
@@ -1149,6 +1579,9 @@
     "id": "ukemók-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "少行"
+    ],
     "definitions": [
       {
         "gloss": "decrease"
@@ -1159,6 +1592,9 @@
     "id": "uteján-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "始に"
+    ],
     "definitions": [
       {
         "gloss": "begin"
@@ -1168,6 +1604,10 @@
   {
     "id": "wa",
     "pos": "noun",
+    "script": [
+      "わ",
+      "而"
+    ],
     "definitions": [
       {
         "gloss": "and also"
@@ -1177,6 +1617,9 @@
   {
     "id": "á",
     "pos": "noun",
+    "script": [
+      "あ"
+    ],
     "definitions": [
       {
         "gloss": "the first alphabet"
@@ -1186,6 +1629,9 @@
   {
     "id": "ácuka",
     "pos": "noun",
+    "script": [
+      "人"
+    ],
     "definitions": [
       {
         "gloss": "person"
@@ -1195,6 +1641,9 @@
   {
     "id": "ámama",
     "pos": "noun",
+    "script": [
+      "大"
+    ],
     "definitions": [
       {
         "gloss": "greatly"
@@ -1207,6 +1656,9 @@
   {
     "id": "áno",
     "pos": "noun",
+    "script": [
+      "全"
+    ],
     "definitions": [
       {
         "gloss": "all"
@@ -1216,6 +1668,9 @@
   {
     "id": "ási",
     "pos": "noun",
+    "script": [
+      "一"
+    ],
     "definitions": [
       {
         "gloss": "one"
@@ -1225,6 +1680,9 @@
   {
     "id": "átawi",
     "pos": "noun",
+    "script": [
+      "加皿"
+    ],
     "definitions": [
       {
         "gloss": "another helping"
@@ -1234,6 +1692,9 @@
   {
     "id": "é",
     "pos": "noun",
+    "script": [
+      "え"
+    ],
     "definitions": [
       {
         "gloss": "the second alphabet"
@@ -1243,6 +1704,9 @@
   {
     "id": "ée",
     "pos": "noun",
+    "script": [
+      "えゝ"
+    ],
     "definitions": [
       {
         "gloss": "hey"
@@ -1253,6 +1717,9 @@
     "id": "éka-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "光ら"
+    ],
     "definitions": [
       {
         "gloss": "shine"
@@ -1262,6 +1729,9 @@
   {
     "id": "émo",
     "pos": "noun",
+    "script": [
+      "別"
+    ],
     "definitions": [
       {
         "gloss": "other"
@@ -1272,6 +1742,10 @@
     "id": "ému-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "如",
+      "如し"
+    ],
     "definitions": [
       {
         "gloss": "be similar"
@@ -1281,6 +1755,9 @@
   {
     "id": "éti",
     "pos": "noun",
+    "script": [
+      "内"
+    ],
     "definitions": [
       {
         "gloss": "content"
@@ -1290,6 +1767,10 @@
   {
     "id": "éx",
     "pos": "noun",
+    "script": [
+      "一片",
+      "一銭"
+    ],
     "definitions": [
       {
         "gloss": "one"
@@ -1300,6 +1781,9 @@
     "id": "íja-",
     "pos": "verb",
     "conjugation_class": "vowel-stem",
+    "script": [
+      "心"
+    ],
     "definitions": [
       {
         "gloss": "consider"
@@ -1309,6 +1793,10 @@
   {
     "id": "íku",
     "pos": "noun",
+    "script": [
+      "二",
+      "二銭"
+    ],
     "definitions": [
       {
         "gloss": "two"
@@ -1318,6 +1806,9 @@
   {
     "id": "óki",
     "pos": "noun",
+    "script": [
+      "友"
+    ],
     "definitions": [
       {
         "gloss": "combination of cards of equal rank"
@@ -1327,6 +1818,10 @@
   {
     "id": "ón",
     "pos": "noun",
+    "script": [
+      "三片",
+      "三銭"
+    ],
     "definitions": [
       {
         "gloss": "three"
@@ -1337,6 +1832,9 @@
     "id": "úk-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "少"
+    ],
     "definitions": [
       {
         "gloss": "be few"
@@ -1346,6 +1844,9 @@
   {
     "id": "úla",
     "pos": "noun",
+    "script": [
+      "歪"
+    ],
     "definitions": [
       {
         "gloss": "wildcard"
@@ -1355,6 +1856,9 @@
   {
     "id": "úmu",
     "pos": "noun",
+    "script": [
+      "三"
+    ],
     "definitions": [
       {
         "gloss": "three"
@@ -1364,6 +1868,9 @@
   {
     "id": "ún",
     "pos": "noun",
+    "script": [
+      "五片"
+    ],
     "definitions": [
       {
         "gloss": "five"
@@ -1374,6 +1881,9 @@
     "id": "út-",
     "pos": "verb",
     "conjugation_class": "consonant-stem",
+    "script": [
+      "下て"
+    ],
     "definitions": [
       {
         "gloss": "proceed to the next"
@@ -1383,6 +1893,9 @@
   {
     "id": "útagi",
     "pos": "noun",
+    "script": [
+      "下"
+    ],
     "definitions": [
       {
         "gloss": "below"
@@ -1392,6 +1905,9 @@
   {
     "id": "útagi kan ká ki kálu",
     "pos": "noun",
+    "script": [
+      "於下筆此"
+    ],
     "definitions": [
       {
         "gloss": "as will be explained below"
@@ -1401,6 +1917,9 @@
   {
     "id": "útu",
     "pos": "noun",
+    "script": [
+      "下"
+    ],
     "definitions": [
       {
         "gloss": "negative"

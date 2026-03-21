@@ -47,10 +47,11 @@ def infer_pos_and_class(entry_id: str) -> dict:
     conj = "vowel-stem" if last in set("aeiour") else "consonant-stem"
     return {"pos": pos, "conjugation_class": conj}
 
-# ── Collect missing entry_ids and their corpus glosses ───────────────────────
+# ── Collect missing entry_ids, their corpus glosses, and mixed_script values ──
 
-# ordered dict: entry_id -> list of glosses (preserving first-seen order)
+# ordered dicts preserving first-seen order
 missing: dict[str, list[str]] = {}
+scripts: dict[str, list[str]] = {}
 
 for sentence in corpus["sentences"]:
     for token in sentence["tokens"]:
@@ -59,14 +60,18 @@ for sentence in corpus["sentences"]:
         ids = token.get("entry_ids") or []
         gloss = token.get("gloss", "")
         parts = gloss.split("-") if gloss else []
+        mixed = token.get("mixed_script", "")
         for i, entry_id in enumerate(ids):
             if entry_id in entry_map:
                 continue
             normalized = parts[i].replace(".", " ") if i < len(parts) else ""
             if entry_id not in missing:
                 missing[entry_id] = []
+                scripts[entry_id] = []
             if normalized and normalized not in missing[entry_id]:
                 missing[entry_id].append(normalized)
+            if mixed and mixed not in scripts[entry_id]:
+                scripts[entry_id].append(mixed)
 
 # ── Build draft entries ───────────────────────────────────────────────────────
 
@@ -74,6 +79,8 @@ staging = []
 for entry_id, glosses in missing.items():
     entry: dict = {"id": entry_id}
     entry.update(infer_pos_and_class(entry_id))
+    if scripts[entry_id]:
+        entry["script"] = scripts[entry_id]
     entry["definitions"] = [{"gloss": g} for g in glosses] if glosses else []
     staging.append(entry)
 
