@@ -1524,6 +1524,7 @@
             "sórcju",
             "soŕcjur"
           ],
+          "mixed_script": "上裁",
           "gloss": "setup",
           "entry_ids_of_each_form": [
             [
@@ -1540,7 +1541,7 @@
       }
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "tokens": [
         {
           "form": "nínco",
@@ -1576,7 +1577,7 @@
       }
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "tokens": [
         {
           "form": "máka",
@@ -1658,7 +1659,7 @@
       }
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "調味料（ワイルド）15枚"
       },
@@ -1700,7 +1701,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "計65枚"
       },
@@ -1766,13 +1767,13 @@
           "gloss": "each"
         },
         {
-          "form": "ón=co",
-          "mixed_script": "三片",
+          "form": "ún=co",
+          "mixed_script": "五片",
           "entry_ids": [
-            "ón",
+            "ún",
             "=co"
           ],
-          "gloss": "three-pieces"
+          "gloss": "five-pieces"
         },
         {
           "form": "momemóki",
@@ -3344,6 +3345,224 @@
     {
       "source": "ヤマタ！",
       "translation": {
+        "ja": "得点札1枚を自分の前に裏返して置く。"
+      },
+      "tokens": [
+        {
+          "form": "súco",
+          "mixed_script": "銭片",
+          "entry_ids": [
+            "súco"
+          ],
+          "gloss": "point.card"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "tína",
+          "mixed_script": "己",
+          "entry_ids": [
+            "tína"
+          ],
+          "gloss": "oneself"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "cóno",
+          "entry_ids": [
+            "cóno"
+          ],
+          "mixed_script": "前",
+          "gloss": "front"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "inekúgi",
+          "entry_ids": [
+            "inekúg-",
+            "(i)"
+          ],
+          "mixed_script": "閉付ぎ",
+          "gloss": "place.something.face.down-IMP"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "得点札が足りない場合、捨て札1枚を自分の前に裏返して置く。"
+      },
+      "tokens": [
+        {
+          "form": "súco",
+          "mixed_script": "銭片",
+          "entry_ids": [
+            "súco"
+          ],
+          "gloss": "point.card"
+        },
+        {
+          "form": "wáca",
+          "mixed_script": "無",
+          "entry_ids": [
+            "wác-",
+            "(a)"
+          ],
+          "gloss": "not.exist-PTCP"
+        },
+        {
+          "form": "kága",
+          "mixed_script": "時",
+          "entry_ids": [
+            "kága"
+          ],
+          "gloss": "case"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cáxco",
+            "césa"
+          ],
+          "mixed_script": "斥片",
+          "entry_ids_of_each_form": [
+            [
+              "cáxco"
+            ],
+            [
+              "césa"
+            ]
+          ],
+          "gloss": "discarded.card"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "tína",
+          "mixed_script": "己",
+          "entry_ids": [
+            "tína"
+          ],
+          "gloss": "oneself"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "cóno",
+          "entry_ids": [
+            "cóno"
+          ],
+          "mixed_script": "前",
+          "gloss": "front"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "inekúgi",
+          "entry_ids": [
+            "inekúg-",
+            "(i)"
+          ],
+          "mixed_script": "閉付ぎ",
+          "gloss": "place.something.face.down-IMP"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！（ボツ）",
+      "translation": {
         "ja": "捨て札1枚を自分の前に裏返して置く。"
       },
       "tokens": [
@@ -3435,7 +3654,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "（ゲーム終了時に得点になります）"
       },
@@ -3527,7 +3746,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "まれな場合として捨て札がない場合があります"
       },
@@ -3583,7 +3802,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "その場合は今出したカード1枚を得点にします"
       },
@@ -3685,7 +3904,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "カードが減っても場の要求条件は変わりません"
       },
@@ -4361,6 +4580,22 @@
           ],
           "gloss": "GEN"
         },
+        {
+          "form": "míso",
+          "mixed_script": "類",
+          "gloss": "kind",
+          "entry_ids": [
+            "míso"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "種類"
+      },
+      "tokens": [
         {
           "form": "míso",
           "mixed_script": "類",
@@ -5238,6 +5473,66 @@
         },
         {
           "punctuation": ")"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "このとき、Wが何の数字になっているかを宣言します。"
+      },
+      "tokens": [
+        {
+          "form": "tíkaga",
+          "mixed_script": "其時",
+          "entry_ids": [
+            "tíkaga"
+          ],
+          "gloss": "that.time"
+        },
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nán",
+          "mixed_script": "何",
+          "entry_ids": [
+            "nán"
+          ],
+          "gloss": "what?"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cémaci",
+          "mixed_script": "言し",
+          "entry_ids": [
+            "céma-",
+            "(i)"
+          ],
+          "gloss": "speak-IMP"
+        },
+        {
+          "punctuation": "。"
         }
       ]
     },
@@ -6459,7 +6754,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "手元の得点札 1枚につき5点"
+        "ja": "手元の得点札 1枚につき3点"
       },
       "tokens": [
         {
@@ -6497,20 +6792,20 @@
           "gloss": "one-piece"
         },
         {
-          "form": "ún=su",
-          "mixed_script": "五銭",
+          "form": "ón=su",
+          "mixed_script": "三銭",
           "entry_ids": [
-            "ún",
+            "ón",
             "=su"
           ],
-          "gloss": "five-points"
+          "gloss": "three-points"
         }
       ]
     },
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "残った手札 1枚につき　-1点"
+        "ja": "残った手札 1枚につき　-1点（ワイルドの場合-2点）"
       },
       "tokens": [
         {
@@ -6570,6 +6865,45 @@
             "=su"
           ],
           "gloss": "one-point"
+        },
+        {
+          "punctuation": "("
+        },
+        {
+          "form": "úla",
+          "mixed_script": "歪",
+          "entry_ids": [
+            "úla"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "útu",
+          "mixed_script": "下",
+          "entry_ids": [
+            "útu"
+          ],
+          "gloss": "negative"
+        },
+        {
+          "form": "íku=su",
+          "mixed_script": "二銭",
+          "entry_ids": [
+            "íku",
+            "=su"
+          ],
+          "gloss": "two-points"
+        },
+        {
+          "punctuation": ")"
         }
       ]
     }
