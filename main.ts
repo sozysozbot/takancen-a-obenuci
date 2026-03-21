@@ -7,6 +7,7 @@ let corpus: CorpusSentence[] = [];
 const entryMap = new Map<string, DictionaryEntry>();
 let i18n: I18nData = {};
 let lang = 'en';
+let entryFilter = '';
 
 const SUPPORTED_LANGS = ['en', 'ja'];
 
@@ -54,7 +55,9 @@ async function init() {
 
   const initialSource = new URLSearchParams(location.search).get('source') ?? '';
   (document.getElementById('source-filter') as HTMLSelectElement).value = initialSource;
-  applyCorpusFilter();
+  entryFilter = new URLSearchParams(location.search).get('entry') ?? '';
+  updateEntryFilterUI();
+  applyAllFilters();
 
   const initialTab = new URLSearchParams(location.search).get('tab');
   if (initialTab === 'dictionary' || initialTab === 'corpus') switchTab(initialTab);
@@ -110,7 +113,12 @@ function setupControls() {
   document.getElementById('tab-corpus')!.addEventListener('click', () => switchTab('corpus'));
   document.getElementById('search-input')!.addEventListener('input', applyFilter);
   document.getElementById('pos-filter')!.addEventListener('change', applyFilter);
-  document.getElementById('source-filter')!.addEventListener('change', applyCorpusFilter);
+  document.getElementById('source-filter')!.addEventListener('change', applyAllFilters);
+  document.getElementById('entry-filter-clear')!.addEventListener('click', () => {
+    entryFilter = '';
+    updateEntryFilterUI();
+    applyAllFilters();
+  });
 
   document.getElementById('tab-dictionary')!.textContent = t('ui', 'Dictionary');
   document.getElementById('tab-corpus')!.textContent = t('ui', 'Corpus');
@@ -169,13 +177,29 @@ function applyFilter() {
   renderDictionary(filtered);
 }
 
-function applyCorpusFilter() {
+function updateEntryFilterUI() {
+  const banner = document.getElementById('entry-filter-banner')!;
+  const label = document.getElementById('entry-filter-label')!;
+  banner.hidden = !entryFilter;
+  label.textContent = entryFilter;
+}
+
+function applyAllFilters() {
   const source = (document.getElementById('source-filter') as HTMLSelectElement).value;
   const params = new URLSearchParams(location.search);
-  if (source) params.set('source', source);
-  else params.delete('source');
+  if (source) params.set('source', source); else params.delete('source');
+  if (entryFilter) params.set('entry', entryFilter); else params.delete('entry');
   history.replaceState(null, '', '?' + params.toString());
-  renderCorpus(source ? corpus.filter(s => s.source === source) : corpus);
+
+  let filtered = corpus;
+  if (source) filtered = filtered.filter(s => s.source === source);
+  if (entryFilter) filtered = filtered.filter(s => s.tokens.some(tok =>
+    'punctuation' in tok ? false
+    : 'multiple-standard-pronunciations' in tok
+      ? tok.entry_ids_of_each_form.some(ids => ids.includes(entryFilter))
+      : tok.entry_ids?.includes(entryFilter)
+  ));
+  renderCorpus(filtered);
 }
 
 // ── Frequent missing words ─────────────────────────────────────────────────
@@ -389,8 +413,10 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
     link.className = 'corpus-link';
     link.textContent = tCount(linked.length);
     link.addEventListener('click', () => {
+      entryFilter = entry.id;
+      updateEntryFilterUI();
       switchTab('corpus');
-      highlightSentences(linked.map(s => s.id));
+      applyAllFilters();
     });
     div.appendChild(link);
   }
@@ -612,19 +638,6 @@ function buildTokenEl(token: import('./types.js').Token): HTMLDivElement {
 }
 
 // ── Cross-linking ──────────────────────────────────────────────────────────
-
-function highlightSentences(ids: string[]) {
-  const idSet = new Set(ids);
-  let first = true;
-  for (const el of document.querySelectorAll<HTMLElement>('.sentence')) {
-    const matches = idSet.has(el.dataset['id']!);
-    el.classList.toggle('highlighted', matches);
-    if (matches && first) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      first = false;
-    }
-  }
-}
 
 function navigateToEntry(id: string) {
   (document.getElementById('search-input') as HTMLInputElement).value = '';
