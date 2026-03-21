@@ -69,10 +69,100 @@ export function conjugateAndJoinPure(entry_ids: string[]) {
     return conjugateAndJoinVerb(entry_ids)
   }
 
+  if (ids[0].slice(-1) === "≡") {
+    return conjugateAndJoinBoundMorphemes(entry_ids);
+  }
+
   // otherwise it should be a noun; just combine all the components
   // but don't forget to strip the homophone disambiguators
   return ids.map(id => stripHomophoneDisambiguator(id).replace(/=/g, "")).join("");
 }
+
+
+
+// Accent falls on the third-from-last mora
+console.assert(conjugateAndJoinBoundMorphemes(["on≡", "≡co"]) === "ón≡co");
+console.assert(conjugateAndJoinBoundMorphemes(["ex≡", "≡co"]) === "éx≡co");
+console.assert(conjugateAndJoinBoundMorphemes(["netumitun≡", "≡co"]) === "netumitún≡co");
+console.assert(conjugateAndJoinBoundMorphemes(["iku≡", "≡co"]) === "íku≡co");
+console.assert(conjugateAndJoinBoundMorphemes(["mix≡", "≡kja"]) === "míx≡kja");
+console.assert(conjugateAndJoinBoundMorphemes(["on≡", "≡lesju"]) === "oń≡lesju");
+console.assert(conjugateAndJoinBoundMorphemes(["ex≡", "≡lesju"]) === "ex́≡lesju");
+console.assert(conjugateAndJoinBoundMorphemes(["on≡", "≡cei"]) === "oń≡cei");
+// However, when "x" precedes a "p", "t", "k" or "c", such an "x" can never receive an accent, throwing it back one more mora back:
+console.assert(conjugateAndJoinBoundMorphemes(["ex≡", "≡cei"]) === "éx≡cei");
+
+function conjugateAndJoinBoundMorphemes(ids: string[]): string {
+  // Step 1: Join and collapse ≡≡ → ≡
+  const joined = ids.join('').replace(/≡≡/g, '≡');
+
+  // Step 2: Strip existing acute accents (well, there should not be any...)
+  const stripped = joined.normalize('NFD').replace(/\u0301/g, '').normalize('NFC');
+  if (stripped !== joined) {
+    console.warn(`An acute accent exists in the ids ${JSON.stringify(ids)}, but it will be stripped in conjugateAndJoinBoundMorphemes`);
+  }
+
+  // Step 3: Parse moras, tracking accent-char positions in `stripped`
+  const vowels = new Set('aeiou');
+
+  function nextPhon(pos: number): number {
+    let p = pos;
+    while (p < stripped.length && stripped[p] === '≡') p++;
+    return p;
+  }
+
+  const moraList: Array<{ accentCharIdx: number; nextPhonIdx: number }> = [];
+
+  let i = nextPhon(0);
+  while (i < stripped.length) {
+    const ch = stripped[i];
+    const j1idx = nextPhon(i + 1);
+    const j1 = j1idx < stripped.length ? stripped[j1idx] : '';
+    const j2idx = j1idx < stripped.length ? nextPhon(j1idx + 1) : stripped.length;
+    const j2 = j2idx < stripped.length ? stripped[j2idx] : '';
+
+    if (vowels.has(ch)) {
+      moraList.push({ accentCharIdx: i, nextPhonIdx: j1idx });
+      i = j1idx;
+    } else if (ch === 'x') {
+      moraList.push({ accentCharIdx: i, nextPhonIdx: j1idx });
+      i = j1idx;
+    } else if (ch === 'r') {
+      moraList.push({ accentCharIdx: i, nextPhonIdx: j1idx });
+      i = j1idx;
+    } else if (j1 === 'j' && vowels.has(j2)) {
+      // CjV: accent on the vowel
+      moraList.push({ accentCharIdx: j2idx, nextPhonIdx: nextPhon(j2idx + 1) });
+      i = nextPhon(j2idx + 1);
+    } else if (ch === 'n' && !vowels.has(j1)) {
+      // syllabic n
+      moraList.push({ accentCharIdx: i, nextPhonIdx: j1idx });
+      i = j1idx;
+    } else {
+      // CV: accent on the vowel
+      moraList.push({ accentCharIdx: j1idx, nextPhonIdx: nextPhon(j1idx + 1) });
+      i = nextPhon(j1idx + 1);
+    }
+  }
+
+  // Step 4: 3rd-from-last mora (initial if fewer than 3)
+  let moraIdx = moraList.length < 3 ? 0 : moraList.length - 3;
+
+  // Step 5: x before {p,t,k,c} cannot receive accent — throw back one mora
+  const accentMora = moraList[moraIdx];
+  if (stripped[accentMora.accentCharIdx] === 'x' && moraIdx > 0) {
+    const nextChar = accentMora.nextPhonIdx < stripped.length ? stripped[accentMora.nextPhonIdx] : '';
+    if ('ptkc'.includes(nextChar) && nextChar !== '') {
+      moraIdx -= 1;
+    }
+  }
+
+  // Step 6: Insert acute accent
+  const accentPos = moraList[moraIdx].accentCharIdx;
+  const result = stripped.slice(0, accentPos + 1) + '\u0301' + stripped.slice(accentPos + 1);
+  return result.normalize('NFC');
+}
+
 function conjugateAndJoinVerb(ids: string[]) {
   if (!ids || ids.length < 2) {
     console.log({ ids });

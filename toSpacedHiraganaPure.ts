@@ -28,7 +28,7 @@ const SMALL_VOWEL: Record<string, string> = {
 export function latinToSyllabary(token: string): string {
   // Strip accent marks (acute etc.) then morpheme-boundary markers
   let text = token.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  text = text.replace(/[-=]/g, '').toLowerCase();
+  text = text.replace(/[-=≡]/g, '').toLowerCase();
 
   // or → ou
   text = text.replace(/or/g, "ou");
