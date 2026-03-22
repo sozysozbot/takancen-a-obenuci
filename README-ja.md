@@ -6,8 +6,8 @@ English version: [README.md](README.md)
 ## コーパス・辞書の編集者向け
 
 データファイルは以下の2つです：
-- `data/corpus.json` — コーパス（例文集）
-- `data/dictionary.json` — 辞書
+- `docs/data/corpus.json` — コーパス（例文集）
+- `docs/data/dictionary.json` — 辞書
 
 編集後のデータは自動的に検証されます：
 - **GitHub上** — プッシュやプルリクエストのたびにCIチェックが走ります。データが不正な場合、チェックが失敗して内容が表示されます。
@@ -38,7 +38,7 @@ python3 extract-staging.py
 
 を実行してください。
 
-このスクリプトは `data/corpus.json` をスキャンし、`data/dictionary.json` に存在しない見出し語IDをすべて抽出して、`dictionary-staging.json` に書き出します。出力は `dictionary.json` と同じトップレベル構造を持ちます：
+このスクリプトは `docs/data/corpus.json` をスキャンし、`docs/data/dictionary.json` に存在しない見出し語IDをすべて抽出して、`dictionary-staging.json` に書き出します。出力は `dictionary.json` と同じトップレベル構造を持ちます：
 
 ```json
 { "entries": [...], "alternative_form_groups": [...] }
@@ -58,7 +58,7 @@ python3 extract-staging.py
 ## ローカルでサイトを確認する
 
 ```sh
-python3 -m http.server
+python3 -m http.server --directory docs
 ```
 
 ブラウザで `http://localhost:8000?lang=ja` を開いてください。

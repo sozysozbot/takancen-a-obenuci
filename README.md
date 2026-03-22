@@ -6,8 +6,8 @@ Japanese version: [README-ja.md](README-ja.md)
 ## For corpus/dictionary editors
 
 The data files are:
-- `data/corpus.json` — corpus sentences
-- `data/dictionary.json` — dictionary entries
+- `docs/data/corpus.json` — corpus sentences
+- `docs/data/dictionary.json` — dictionary entries
 
 After editing, the data is validated automatically:
 - **On GitHub** — a CI check runs on every push and pull request. If your data is invalid, the check will fail and show you what went wrong.
@@ -37,7 +37,7 @@ site displays them as red badges. To draft those missing entries in bulk:
 python3 extract-staging.py
 ```
 
-This scans `data/corpus.json` for every entry ID absent from `data/dictionary.json`
+This scans `docs/data/corpus.json` for every entry ID absent from `docs/data/dictionary.json`
 and writes draft entries to `dictionary-staging.json`. The output has the same
 top-level shape as `dictionary.json`:
 
@@ -67,7 +67,7 @@ in `data/dictionary.json`. Run `npm test` to validate before committing.
 ## Viewing the site locally
 
 ```sh
-python3 -m http.server
+python3 -m http.server --directory docs
 ```
 
 Then open `http://localhost:8000` in your browser.

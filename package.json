@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "tsc && node conjugateAndJoinPure.js && node validate-data.js"
+    "test": "tsc && node docs/conjugateAndJoinPure.js && node validate-data.js"
   },
   "devDependencies": {
     "@types/node": "^25.3.3",

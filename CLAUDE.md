@@ -10,30 +10,30 @@ The dictionary and the corpus are given in two separate JSON files. The frontend
 
 ## Architecture
 
-- **Target**: GitHub Pages (static hosting — no server-side code)
+- **Target**: GitHub Pages (static hosting — no server-side code), served from the `docs/` folder
 - **Approach**: Pure frontend (HTML/CSS/JS), with TypeScript source files compiled to JS
 - No backend; any search/filtering logic runs entirely in the browser
-- `main.ts` → `main.js` (main app logic)
-- `conjugateAndJoinPure.ts` → `conjugateAndJoinPure.js` (pure conjugation logic, self-contained)
-- `toSpacedHiraganaPure.ts` → `toSpacedHiraganaPure.js` (romanization → spaced hiragana, self-contained; also exports `latinToSyllabary`)
-- `validate-data.ts` → `validate-data.js` (Zod schemas for JSON validation, run in `npm test`)
-- `types.ts` → `types.js` (shared TypeScript interfaces)
+- `docs/main.ts` → `docs/main.js` (main app logic)
+- `docs/conjugateAndJoinPure.ts` → `docs/conjugateAndJoinPure.js` (pure conjugation logic, self-contained)
+- `docs/toSpacedHiraganaPure.ts` → `docs/toSpacedHiraganaPure.js` (romanization → spaced hiragana, self-contained; also exports `latinToSyllabary`)
+- `validate-data.ts` → `validate-data.js` (Zod schemas for JSON validation, run in `npm test`; lives at root, not in `docs/`)
+- `docs/types.ts` → `docs/types.js` (shared TypeScript interfaces)
 
 ## Local development
 
 `fetch()` requires HTTP — open `index.html` via a local server, not directly:
 
 ```
-python3 -m http.server
+python3 -m http.server --directory docs
 ```
 
 Then visit `http://localhost:8000`.
 
-The pre-commit hook runs `npm test` (typecheck + data validation) and also auto-formats `data/*.json` with Python.
+The pre-commit hook runs `npm test` (typecheck + data validation) and also auto-formats `docs/data/*.json` with Python.
 
 ## Data schemas
 
-**`data/dictionary.json`** — `{ "entries": [ Entry ] }`
+**`docs/data/dictionary.json`** — `{ "entries": [ Entry ] }`
 
 Each `Entry`:
 ```
@@ -58,7 +58,7 @@ translations      { en?: string, ja: string }   optional;
                             ja is always shown in Japanese UI when present
 ```
 
-**`data/corpus.json`** — `{ "sentences": [ Sentence ] }`
+**`docs/data/corpus.json`** — `{ "sentences": [ Sentence ] }`
 
 Each `Sentence` (no `id` field — the renderer assigns ids by array index at load time):
 ```

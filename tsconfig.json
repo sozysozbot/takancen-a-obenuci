@@ -9,5 +9,5 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["conjugateAndJoinPure.ts", "toSpacedHiraganaPure.ts", "types.ts", "main.ts", "validate-data.ts"]
+  "include": ["docs/conjugateAndJoinPure.ts", "docs/toSpacedHiraganaPure.ts", "docs/types.ts", "docs/main.ts", "validate-data.ts"]
 }

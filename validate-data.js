@@ -79,8 +79,8 @@ function validate(label, schema, data) {
         hasError = true;
     }
 }
-const dictionaryRaw = JSON.parse(readFileSync('data/dictionary.json', 'utf-8'));
-const corpusRaw = JSON.parse(readFileSync('data/corpus.json', 'utf-8'));
+const dictionaryRaw = JSON.parse(readFileSync('docs/data/dictionary.json', 'utf-8'));
+const corpusRaw = JSON.parse(readFileSync('docs/data/corpus.json', 'utf-8'));
 validate('dictionary.json', dictionaryDataSchema, dictionaryRaw);
 validate('corpus.json', corpusDataSchema, corpusRaw);
 if (!hasError) {

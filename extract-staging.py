@@ -24,9 +24,9 @@ import unicodedata
 
 # ── Load data ─────────────────────────────────────────────────────────────────
 
-with open("data/corpus.json", encoding="utf-8") as f:
+with open("docs/data/corpus.json", encoding="utf-8") as f:
     corpus = json.load(f)
-with open("data/dictionary.json", encoding="utf-8") as f:
+with open("docs/data/dictionary.json", encoding="utf-8") as f:
     dictionary = json.load(f)
 
 entry_map = {e["id"]: e for e in dictionary["entries"]}
