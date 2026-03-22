@@ -38,7 +38,14 @@ python3 extract-staging.py
 ```
 
 This scans `data/corpus.json` for every entry ID absent from `data/dictionary.json`
-and writes draft entries to `dictionary-staging.json`. Each draft is pre-filled with:
+and writes draft entries to `dictionary-staging.json`. The output has the same
+top-level shape as `dictionary.json`:
+
+```json
+{ "entries": [...], "alternative_form_groups": [...] }
+```
+
+Each draft entry is pre-filled with:
 
 - **`id`** — the entry ID as it appears in the corpus
 - **`pos`** and **`conjugation_class`** — inferred from the ID shape (trailing `-`
@@ -48,9 +55,13 @@ and writes draft entries to `dictionary-staging.json`. Each draft is pre-filled 
 - **`definitions`** — one entry per unique gloss seen in the corpus
   (corpus periods converted back to spaces, e.g. `not.exist` → `not exist`)
 
+`alternative_form_groups` is populated from `multiple-standard-pronunciations`
+tokens in the corpus where at least one entry ID is missing from the dictionary.
+
 After running the script, open `dictionary-staging.json`, review and edit the
 drafts (fix `pos` [parts of speech], prune `script` [write the (u) form when it is a verb], add
 `translations`, etc.), then paste the finished entries into the `entries` array
+and the finished groups into the `alternative_form_groups` array
 in `data/dictionary.json`. Run `npm test` to validate before committing.
 
 ## Viewing the site locally

@@ -1,1 +1,275 @@
-[]
+{
+  "entries": [
+    {
+      "id": "anoámama",
+      "pos": "noun",
+      "script": [
+        "全大"
+      ],
+      "definitions": [
+        {
+          "gloss": "maximum"
+        }
+      ]
+    },
+    {
+      "id": "béma",
+      "pos": "noun",
+      "script": [
+        "全大"
+      ],
+      "definitions": [
+        {
+          "gloss": "maximum"
+        }
+      ]
+    },
+    {
+      "id": "comátuo",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cáxco",
+      "pos": "noun",
+      "script": [
+        "斥片"
+      ],
+      "definitions": [
+        {
+          "gloss": "discarded card"
+        }
+      ]
+    },
+    {
+      "id": "césa",
+      "pos": "noun",
+      "script": [
+        "斥片"
+      ],
+      "definitions": [
+        {
+          "gloss": "discarded card"
+        }
+      ]
+    },
+    {
+      "id": "cóma",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cómaco",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cónco",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "kinínsu",
+      "pos": "noun",
+      "script": [
+        "銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "money"
+        }
+      ]
+    },
+    {
+      "id": "kinúnsu",
+      "pos": "noun",
+      "script": [
+        "銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "money"
+        }
+      ]
+    },
+    {
+      "id": "kámu",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "méxko",
+      "pos": "noun",
+      "script": [
+        "硬軟"
+      ],
+      "definitions": [
+        {
+          "gloss": "strength"
+        }
+      ]
+    },
+    {
+      "id": "méxkor",
+      "pos": "noun",
+      "script": [
+        "硬軟"
+      ],
+      "definitions": [
+        {
+          "gloss": "strength"
+        }
+      ]
+    },
+    {
+      "id": "nága",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "nágamu",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "nágan",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "soŕcjur",
+      "pos": "noun",
+      "script": [
+        "上裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "setup"
+        }
+      ]
+    },
+    {
+      "id": "sórcju",
+      "pos": "noun",
+      "script": [
+        "上裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "setup"
+        }
+      ]
+    }
+  ],
+  "alternative_form_groups": [
+    {
+      "script": "銭",
+      "entry_ids": [
+        "kinínsu",
+        "kinúnsu"
+      ]
+    },
+    {
+      "script": "上裁",
+      "entry_ids": [
+        "sórcju",
+        "soŕcjur"
+      ]
+    },
+    {
+      "script": "積片",
+      "entry_ids": [
+        "cómaco",
+        "cónco",
+        "comátuo",
+        "cóma"
+      ]
+    },
+    {
+      "script": "斥片",
+      "entry_ids": [
+        "cáxco",
+        "césa"
+      ]
+    },
+    {
+      "script": "硬軟",
+      "entry_ids": [
+        "méxko",
+        "méxkor"
+      ]
+    },
+    {
+      "script": "四",
+      "entry_ids": [
+        "nága",
+        "nágamu",
+        "nágan",
+        "kámu"
+      ]
+    },
+    {
+      "script": "全大",
+      "entry_ids": [
+        "béma",
+        "anoámama"
+      ]
+    }
+  ]
+}

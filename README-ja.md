@@ -38,14 +38,22 @@ python3 extract-staging.py
 
 を実行してください。
 
-このスクリプトは `data/corpus.json` をスキャンし、`data/dictionary.json` に存在しない見出し語IDをすべて抽出して、`dictionary-staging.json` に下書きエントリとして書き出します。各下書きには以下の情報が自動的に入力されます：
+このスクリプトは `data/corpus.json` をスキャンし、`data/dictionary.json` に存在しない見出し語IDをすべて抽出して、`dictionary-staging.json` に書き出します。出力は `dictionary.json` と同じトップレベル構造を持ちます：
+
+```json
+{ "entries": [...], "alternative_form_groups": [...] }
+```
+
+各下書きエントリには以下の情報が自動的に入力されます：
 
 - **`id`** — コーパス中に現れる見出し語ID
 - **`pos`** / **`conjugation_class`** — IDの形から推定（末尾が `-` → 動詞または助動詞、母音幹・子音幹の別も推定；末尾が `-` でない → 名詞）
 - **`script`** — コーパス内でこのIDに対して使われた `mixed_script` の値をすべて列挙（手動で正しい字形に絞り込む）
 - **`definitions`** — コーパス中に現れた固有の語義ラベルを列挙（コーパス上のピリオドをスペースに戻したもの。例：`not.exist` → `not exist`）
 
-スクリプト実行後、`dictionary-staging.json` を開いて下書きを確認・編集し（品詞 `pos` を修正したり、`script` を適宜削ったり〔動詞は終止形にする〕、`translations` を追加するなど）、完成したエントリを `data/dictionary.json` の `entries` 配列に貼り付けてください。コミット前に `npm test` でバリデーションを行ってください。
+`alternative_form_groups` には、コーパスの `multiple-standard-pronunciations` トークンのうち少なくとも1つの見出し語IDが辞書に未登録のものが出力されます。
+
+スクリプト実行後、`dictionary-staging.json` を開いて下書きを確認・編集し（品詞 `pos` を修正したり、`script` を適宜削ったり〔動詞は終止形にする〕、`translations` を追加するなど）、完成したエントリを `data/dictionary.json` の `entries` 配列に、完成したグループを `alternative_form_groups` 配列に貼り付けてください。コミット前に `npm test` でバリデーションを行ってください。
 
 ## ローカルでサイトを確認する
 
