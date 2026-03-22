@@ -4419,7 +4419,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "弱　強"
+        "ja": "弱│強"
       },
       "tokens": [
         {
@@ -4430,7 +4430,7 @@
             "(a)"
           ],
           "gloss": "be.weak-PTCP"
-        },
+        },{"punctuation":"│"},
         {
           "mixed_script": "硬",
           "form": "méki",
@@ -4444,7 +4444,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "ワイルドのみ"
+        "ja": "ワイルドのみ│0│1│2│3│4│5│6│7│8│9"
       },
       "tokens": [
         {
@@ -4462,15 +4462,7 @@
             "tetu"
           ],
           "gloss": "only"
-        }
-      ]
-    },
-    {
-      "source": "ヤマタ！",
-      "translation": {
-        "ja": "0　1　2　3　4　5　6　7　8　9"
-      },
-      "tokens": [
+        },{"punctuation":"│"},
         {
           "form": "mún",
           "entry_ids": [
@@ -4478,7 +4470,7 @@
           ],
           "gloss": "zero",
           "mixed_script": "無"
-        },
+        },{"punctuation":"│"},
         {
           "form": "ási",
           "mixed_script": "一",
@@ -4486,7 +4478,7 @@
             "ási"
           ],
           "gloss": "one"
-        },
+        },{"punctuation":"│"},
         {
           "form": "íku",
           "mixed_script": "二",
@@ -4494,7 +4486,7 @@
             "íku"
           ],
           "gloss": "two"
-        },
+        },{"punctuation":"│"},
         {
           "form": "úmu",
           "mixed_script": "三",
@@ -4502,7 +4494,7 @@
             "úmu"
           ],
           "gloss": "three"
-        },
+        },{"punctuation":"│"},
         {
           "multiple-standard-pronunciations": true,
           "forms": [
@@ -4527,7 +4519,7 @@
             ]
           ],
           "gloss": "four"
-        },
+        },{"punctuation":"│"},
         {
           "form": "cúna",
           "entry_ids": [
@@ -4535,7 +4527,7 @@
           ],
           "gloss": "five",
           "mixed_script": "五"
-        },
+        },{"punctuation":"│"},
         {
           "form": "cúnasi",
           "entry_ids": [
@@ -4543,7 +4535,7 @@
           ],
           "gloss": "six",
           "mixed_script": "六"
-        },
+        },{"punctuation":"│"},
         {
           "form": "cúneku",
           "entry_ids": [
@@ -4551,7 +4543,7 @@
           ],
           "gloss": "seven",
           "mixed_script": "七"
-        },
+        },{"punctuation":"│"},
         {
           "form": "nómu",
           "entry_ids": [
@@ -4559,7 +4551,7 @@
           ],
           "gloss": "eight",
           "mixed_script": "八"
-        },
+        },{"punctuation":"│"},
         {
           "form": "nóu",
           "entry_ids": [
@@ -4621,7 +4613,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "1枚出し　カード1枚　5"
+        "ja": "1枚出し│カード1枚│5"
       },
       "tokens": [
         {
@@ -4632,7 +4624,7 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },
+        },{"punctuation":"│"},
         {
           "form": "nínco",
           "mixed_script": "紙片",
@@ -4649,7 +4641,7 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },
+        },{"punctuation":"│"},
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -4671,7 +4663,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "セット　同じ数字の組み合わせ　8-8 , 2-2-2"
+        "ja": "セット│同じ数字の組み合わせ│8-8 , 2-2-2"
       },
       "tokens": [
         {
@@ -4681,7 +4673,7 @@
             "okítadu"
           ],
           "gloss": "combination.of.cards.of.equal.rank"
-        },
+        },{"punctuation":"│"},
         {
           "form": "báxmaku",
           "mixed_script": "同値",
@@ -4705,7 +4697,7 @@
             "dátu"
           ],
           "gloss": "combination"
-        },
+        },{"punctuation":"│"},
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -4778,7 +4770,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "連番　3枚以上の連続した数字　3-4-5"
+        "ja": "連番│3枚以上の連続した数字│3-4-5"
       },
       "tokens": [
         {
@@ -4788,7 +4780,7 @@
             "nekátadu"
           ],
           "gloss": "combination.of.sequential.cards"
-        },
+        },{"punctuation":"│"},
         {
           "form": "ón≡co",
           "mixed_script": "三片",
@@ -4822,7 +4814,7 @@
             "nekámaka"
           ],
           "gloss": "consecutive.number"
-        },
+        },{"punctuation":"│"},
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -6766,7 +6758,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "手元の得点札 1枚につき3点"
+        "ja": "手元の得点札 1枚につき│3点"
       },
       "tokens": [
         {
@@ -6802,7 +6794,7 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },
+        },{"punctuation":"│"},
         {
           "form": "ón≡su",
           "mixed_script": "三銭",
@@ -6817,7 +6809,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "残った手札 1枚につき　-1点（ワイルドの場合-2点）"
+        "ja": "残った手札 1枚につき│-1点（ワイルドの場合-2点）"
       },
       "tokens": [
         {
@@ -6860,7 +6852,7 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },
+        },{"punctuation":"│"},
         {
           "form": "útu",
           "mixed_script": "下",

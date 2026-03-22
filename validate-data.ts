@@ -65,7 +65,7 @@ const multiPronunciationTokenSchema = z.object({
 });
 
 const punctuationTokenSchema = z.object({
-  punctuation: z.enum(['。', '(', ')', '「', '」', '！', ':', '？']),
+  punctuation: z.enum(['。', '(', ')', '「', '」', '！', ':', '？', '│']),
 });
 
 const tokenSchema = z.union([singleFormTokenSchema, multiPronunciationTokenSchema, punctuationTokenSchema]);

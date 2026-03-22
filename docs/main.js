@@ -253,6 +253,7 @@ const PUNCTUATION_MAPPING = {
     ")": ")", // both are ASCII
     "「": "“",
     "」": "”",
+    '│': "\t|\t",
     "！": "!"
 };
 // ── Dictionary rendering ───────────────────────────────────────────────────
