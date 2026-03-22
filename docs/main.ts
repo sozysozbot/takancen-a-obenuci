@@ -291,10 +291,22 @@ const PUNCTUATION_MAPPING = {
 
 // ── Dictionary rendering ───────────────────────────────────────────────────
 
+// Normalised sort key: strip accents and punctuation chars (-, =, ≡) but keep
+// parentheses, then lowercase — used for the default alphabetical sort order.
+function entrySortKey(id: string): string {
+  return id.replace(/#\d+$/, '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[-=≡]/g, '')
+    .toLowerCase();
+}
+
 function renderDictionary(entries: DictionaryEntry[]) {
   const list = document.getElementById('entry-list')!;
   list.innerHTML = '';
-  for (const entry of entries) list.appendChild(buildEntryEl(entry));
+  const sorted = [...entries].sort((a, b) =>
+    entrySortKey(a.id).localeCompare(entrySortKey(b.id))
+  );
+  for (const entry of sorted) list.appendChild(buildEntryEl(entry));
 }
 
 // Unicode superscript digits for homophone numbering in headers.
