@@ -29,10 +29,10 @@ function localize(s: LocalizedString): string {
   return s.en ?? s.ja;
 }
 
-function tCount(count: number): string {
-  const tmpl = count === 1 && i18n['count-in-corpus']?.one
-    ? i18n['count-in-corpus'].one
-    : (i18n['count-in-corpus']?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
+function tCount(count: number, property_name: 'count-in-corpus' | 'count-word'): string {
+  const tmpl = count === 1 && i18n[property_name]?.one
+    ? i18n[property_name].one
+    : (i18n[property_name]?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
   return tmpl.replace('${COUNT}', String(count));
 }
 
@@ -133,7 +133,7 @@ function setupControls() {
 
   const enlistedHeading = document.createElement('div');
   enlistedHeading.className = 'entry-list-heading';
-  enlistedHeading.textContent = t('ui', 'Enlisted words');
+  enlistedHeading.textContent = `${t('ui', 'Enlisted words')}: ${tCount(dictionary.length, 'count-word')}`;
   document.getElementById('entry-list')!.before(enlistedHeading);
 
   // Create the "All parts of speech" option first
@@ -269,7 +269,7 @@ function renderMissingHighFreq(entries: Map<string, number>) {
 
     const countBadge = document.createElement('span');
     countBadge.className = 'pos';
-    countBadge.textContent = tCount(count);
+    countBadge.textContent = tCount(count, 'count-in-corpus');
     header.appendChild(countBadge);
 
     div.appendChild(header);
@@ -463,7 +463,7 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
   if (linked.length > 0) {
     const link = document.createElement('div');
     link.className = 'corpus-link';
-    link.textContent = tCount(linked.length);
+    link.textContent = tCount(linked.length, 'count-in-corpus');
     link.addEventListener('click', () => {
       entryFilter = entry.id;
       updateEntryFilterUI();

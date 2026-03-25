@@ -84,5 +84,6 @@ export interface I18nData {
   pos?: Partial<Record<string, string>>;
   conj?: Partial<Record<string, string>>;
   'count-in-corpus'?: { one?: string; other?: string };
+  'count-word'?: { one?: string; other?: string };
   ui?: Partial<Record<string, string>>;
 }

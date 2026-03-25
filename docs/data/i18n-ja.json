@@ -24,6 +24,9 @@
   "count-in-corpus": {
     "other": "コーパス内に ${COUNT} 文あります"
   },
+  "count-word": {
+    "other": "${COUNT} 単語"
+  },
   "ui": {
     "components": "構成要素",
     "All sources": "全て表示",

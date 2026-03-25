@@ -25,6 +25,10 @@
     "other": "${COUNT} sentences in corpus",
     "one": "1 sentence in corpus"
   },
+  "count-word": {
+    "other": "${COUNT} words",
+    "one": "1 word"
+  },
   "ui": {
     "components": "components",
     "All sources": "All sources",

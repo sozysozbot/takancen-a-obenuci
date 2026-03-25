@@ -24,10 +24,10 @@ function localize(s) {
         return s.ja;
     return s.en ?? s.ja;
 }
-function tCount(count) {
-    const tmpl = count === 1 && i18n['count-in-corpus']?.one
-        ? i18n['count-in-corpus'].one
-        : (i18n['count-in-corpus']?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
+function tCount(count, property_name) {
+    const tmpl = count === 1 && i18n[property_name]?.one
+        ? i18n[property_name].one
+        : (i18n[property_name]?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
     return tmpl.replace('${COUNT}', String(count));
 }
 async function init() {
@@ -113,7 +113,7 @@ function setupControls() {
     document.getElementById('search-input').placeholder = t('ui', 'Search\u2026');
     const enlistedHeading = document.createElement('div');
     enlistedHeading.className = 'entry-list-heading';
-    enlistedHeading.textContent = t('ui', 'Enlisted words');
+    enlistedHeading.textContent = `${t('ui', 'Enlisted words')}: ${tCount(dictionary.length, 'count-word')}`;
     document.getElementById('entry-list').before(enlistedHeading);
     // Create the "All parts of speech" option first
     const sel = document.getElementById('pos-filter');
@@ -239,7 +239,7 @@ function renderMissingHighFreq(entries) {
         header.appendChild(lemma);
         const countBadge = document.createElement('span');
         countBadge.className = 'pos';
-        countBadge.textContent = tCount(count);
+        countBadge.textContent = tCount(count, 'count-in-corpus');
         header.appendChild(countBadge);
         div.appendChild(header);
         list.appendChild(div);
@@ -417,7 +417,7 @@ function buildEntryEl(entry) {
     if (linked.length > 0) {
         const link = document.createElement('div');
         link.className = 'corpus-link';
-        link.textContent = tCount(linked.length);
+        link.textContent = tCount(linked.length, 'count-in-corpus');
         link.addEventListener('click', () => {
             entryFilter = entry.id;
             updateEntryFilterUI();
