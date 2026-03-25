@@ -4430,7 +4430,10 @@
             "(a)"
           ],
           "gloss": "be.weak-PTCP"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "mixed_script": "硬",
           "form": "méki",
@@ -4462,7 +4465,10 @@
             "tetu"
           ],
           "gloss": "only"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "mún",
           "entry_ids": [
@@ -4470,7 +4476,10 @@
           ],
           "gloss": "zero",
           "mixed_script": "無"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "ási",
           "mixed_script": "一",
@@ -4478,7 +4487,10 @@
             "ási"
           ],
           "gloss": "one"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "íku",
           "mixed_script": "二",
@@ -4486,7 +4498,10 @@
             "íku"
           ],
           "gloss": "two"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "úmu",
           "mixed_script": "三",
@@ -4494,7 +4509,10 @@
             "úmu"
           ],
           "gloss": "three"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "multiple-standard-pronunciations": true,
           "forms": [
@@ -4519,7 +4537,10 @@
             ]
           ],
           "gloss": "four"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "cúna",
           "entry_ids": [
@@ -4527,7 +4548,10 @@
           ],
           "gloss": "five",
           "mixed_script": "五"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "cúnasi",
           "entry_ids": [
@@ -4535,7 +4559,10 @@
           ],
           "gloss": "six",
           "mixed_script": "六"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "cúneku",
           "entry_ids": [
@@ -4543,7 +4570,10 @@
           ],
           "gloss": "seven",
           "mixed_script": "七"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "nómu",
           "entry_ids": [
@@ -4551,7 +4581,10 @@
           ],
           "gloss": "eight",
           "mixed_script": "八"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "nóu",
           "entry_ids": [
@@ -4624,7 +4657,10 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "nínco",
           "mixed_script": "紙片",
@@ -4641,7 +4677,10 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -4673,7 +4712,10 @@
             "okítadu"
           ],
           "gloss": "combination.of.cards.of.equal.rank"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "báxmaku",
           "mixed_script": "同値",
@@ -4697,7 +4739,10 @@
             "dátu"
           ],
           "gloss": "combination"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -4780,7 +4825,10 @@
             "nekátadu"
           ],
           "gloss": "combination.of.sequential.cards"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "ón≡co",
           "mixed_script": "三片",
@@ -4814,7 +4862,10 @@
             "nekámaka"
           ],
           "gloss": "consecutive.number"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "kéco",
           "mixed_script": "如",
@@ -6794,7 +6845,10 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "ón≡su",
           "mixed_script": "三銭",
@@ -6852,7 +6906,10 @@
             "≡co"
           ],
           "gloss": "one-piece"
-        },{"punctuation":"│"},
+        },
+        {
+          "punctuation": "│"
+        },
         {
           "form": "útu",
           "mixed_script": "下",
@@ -6908,6 +6965,213 @@
         },
         {
           "punctuation": ")"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！CM",
+      "translation": {
+        "ja": "腹一杯食った│腹一杯食った"
+      },
+      "tokens": [
+        {
+          "form": "jáme",
+          "mixed_script": "やーめ",
+          "entry_ids": [
+            "jám-",
+            "(e)"
+          ],
+          "gloss": "eat-ADV"
+        },
+        {
+          "form": "mólata",
+          "mixed_script": "もーらた",
+          "entry_ids": [
+            "mó-",
+            "(a)ta"
+          ],
+          "gloss": "fill-PST"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "jáme",
+          "mixed_script": "やめ",
+          "entry_ids": [
+            "jám-",
+            "(e)"
+          ],
+          "gloss": "eat-ADV"
+        },
+        {
+          "form": "mólata",
+          "mixed_script": "もらた",
+          "entry_ids": [
+            "mó-",
+            "(a)ta"
+          ],
+          "gloss": "fill-PST"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！CM",
+      "translation": {
+        "ja": "「食え」と言うのは│店主"
+      },
+      "tokens": [
+        {
+          "punctuation": "「"
+        },
+        {
+          "form": "jámi",
+          "mixed_script": "やみ",
+          "entry_ids": [
+            "jám-",
+            "(i)"
+          ],
+          "gloss": "eat-IMP"
+        },
+        {
+          "punctuation": "」"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cémala",
+          "mixed_script": "せまら",
+          "entry_ids": [
+            "céma-",
+            "(a)"
+          ],
+          "gloss": "speak-PTCP"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "punctuation": "│"
+        },
+           {
+          "form": "sukelácuka",
+          "mixed_script": "ずけらすか",
+          "entry_ids": [
+            "sukelácuka"
+          ],
+          "gloss": "shopkeeper"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！CM",
+      "translation": {
+        "ja": "食欲良く│どんどん食べ続けて"
+      },
+      "tokens": [
+        {
+          "form": "écilo",
+          "mixed_script": "えしろ",
+          "entry_ids": [
+            "écilo"
+          ],
+          "gloss": "appetite"
+        },
+        {
+          "form": "kéta",
+          "mixed_script": "けた",
+          "entry_ids": [
+            "két-",
+            "(a)"
+          ],
+          "gloss": "be.good-PTCP"
+        },
+        {
+          "form": "éma",
+          "mixed_script": "えま",
+          "entry_ids": [
+            "éma-",
+            "(e)"
+          ],
+          "gloss": "exist-ADV"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "jamemóke",
+          "mixed_script": "やめもけ",
+          "entry_ids": [
+            "jám-",
+            "(e)mók-",
+            "(e)"
+          ],
+          "gloss": "eat-away-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！CM",
+      "translation": {
+        "ja": "他の全員に勝てる│ヤマタ"
+      },
+      "tokens": [
+        {
+          "form": "áno",
+          "mixed_script": "あの",
+          "entry_ids": [
+            "áno"
+          ],
+          "gloss": "all"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "おさ",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "comokácu",
+          "mixed_script": "そもかす",
+          "entry_ids": [
+            "comók-",
+            "(á)c-",
+            "(u)"
+          ],
+          "gloss": "be.victorious-can-NPST"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "jámata",
+          "mixed_script": "やまた",
+          "entry_ids": [
+            "jám-",
+            "(a)ta"
+          ],
+          "gloss": "eat-PST"
         }
       ]
     }
