@@ -30,6 +30,7 @@ export type DictionaryEntry = {
   conjugation_class: ConjugationClass;
   definitions: Definition[];
   notes?: LocalizedString;
+  cognates?: Cognates;
   components?: string[];
 } | {
   id: string;

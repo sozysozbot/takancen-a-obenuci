@@ -1,0 +1,4143 @@
+{
+  "entries": [
+    {
+      "id": "no",
+      "script": [
+        "我"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "わたし、私"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:一般的な一人称代名詞である。"
+      },
+      "cognates": {
+        "ar": [
+          "nau"
+        ]
+      }
+    },
+    {
+      "id": "ma",
+      "script": [
+        "汝"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "あなた、貴方"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:代表的な二人称代名詞である。"
+      },
+      "cognates": {
+        "pk": [
+          "mua2"
+        ],
+        "bt": [
+          "áma"
+        ],
+        "ar": [
+          "amua"
+        ]
+      }
+    },
+    {
+      "id": "a",
+      "script": [
+        "あ",
+        "噫"
+      ],
+      "pos": "sentence particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ああ、えっと"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "a"
+        ],
+        "bt": [
+          "á",
+          "há"
+        ]
+      }
+    },
+    {
+      "id": "a#2",
+      "script": [
+        "あ",
+        "之"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～の"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "a"
+        ],
+        "pk": [
+          "a"
+        ],
+        "ln": [
+          "anl"
+        ],
+        "bt": [
+          "-án"
+        ]
+      }
+    },
+    {
+      "id": "(a)c-u",
+      "script": [
+        "能す"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "c-irregular",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～できる、～される"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:受身、自発、可能など無意識にできることを示す。"
+      },
+      "cognates": {
+        "ar": [
+          "acau"
+        ],
+        "bt": [
+          "ácahúḷ"
+        ]
+      }
+    },
+    {
+      "id": "ata-lu",
+      "script": [
+        "目る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "見る"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "aḍuhazoúḷ"
+        ]
+      }
+    },
+    {
+      "id": "ai",
+      "script": [
+        "冠"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "冠、かんむり"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      },
+      "cognates": {
+        "pk": [
+          "ai2"
+        ]
+      }
+    },
+    {
+      "id": "eka-lu",
+      "script": [
+        "光る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "光る"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "aik2"
+        ],
+        "ln": [
+          "raikqt"
+        ],
+        "ar": [
+          "aika"
+        ],
+        "bt": [
+          "kád",
+          "kádúḷ",
+          "ek"
+        ]
+      }
+    },
+    {
+      "id": "asi",
+      "script": [
+        "一"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "一、いち、1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ata",
+      "script": [
+        "加た"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～と"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ata#2",
+      "script": [
+        "目"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "目"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "ta1"
+        ],
+        "ar": [
+          "ata"
+        ],
+        "bt": [
+          "adha"
+        ],
+        "ln": [
+          "qtaa"
+        ]
+      }
+    },
+    {
+      "id": "c-u",
+      "script": [
+        "為"
+      ],
+      "pos": "verb",
+      "conjugation_class": "c-irregular",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "する"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "zau"
+        ],
+        "ar": [
+          "chauchu"
+        ],
+        "bt": [
+          "zúḷ"
+        ],
+        "ln": [
+          "zau"
+        ]
+      }
+    },
+    {
+      "id": "ca",
+      "script": [
+        "女"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "女"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sa1"
+        ],
+        "ar": [
+          "usa",
+          "-sa"
+        ],
+        "bt": [
+          "sá"
+        ],
+        "ln": [
+          "sa"
+        ]
+      }
+    },
+    {
+      "id": "lij-u",
+      "script": [
+        "須ゆ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "しなければならない"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "zalloúḷ"
+        ]
+      }
+    },
+    {
+      "id": "cema-lu",
+      "script": [
+        "言る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "言う、話す"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "zepha",
+          "cepatepa"
+        ],
+        "ar": [
+          "chepo"
+        ],
+        "pk": [
+          "zep1"
+        ]
+      }
+    },
+    {
+      "id": "cemo",
+      "script": [
+        "月"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "月"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "xemo"
+        ],
+        "ln": [
+          "xqmo"
+        ],
+        "pk": [
+          "xem1"
+        ]
+      }
+    },
+    {
+      "id": "cik-u",
+      "script": [
+        "席く",
+        "座く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "座る"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "ciwi",
+          "cikau"
+        ],
+        "pk": [
+          "cy2"
+        ],
+        "bt": [
+          "ṣíkahúḷ"
+        ]
+      }
+    },
+    {
+      "id": "cisa",
+      "script": [
+        "足"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "足"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "xisa"
+        ],
+        "pk": [
+          "xi1"
+        ]
+      }
+    },
+    {
+      "id": "cak-u",
+      "script": [
+        "来く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "来る"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sak2"
+        ],
+        "ar": [
+          "sakika"
+        ],
+        "ln": [
+          "srakkq"
+        ],
+        "bt": [
+          "cákíkúḷ",
+          "cákíkaúḷ",
+          "sáka",
+          "sakká",
+          "rakkúḷ"
+        ]
+      }
+    },
+    {
+      "id": "co-lu",
+      "script": [
+        "上る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "上げる、上がる"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sau2"
+        ],
+        "ar": [
+          "sau"
+        ],
+        "ln": [
+          "srau"
+        ]
+      }
+    },
+    {
+      "id": "com-u",
+      "script": [
+        "積む"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "積む"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "xom1"
+        ],
+        "ar": [
+          "shomu"
+        ],
+        "ln": [
+          "sljoomq"
+        ],
+        "bt": [
+          "ṣomúl",
+          "ṣoma",
+          "ṣomaúḷ"
+        ]
+      }
+    },
+    {
+      "id": "mo-lu",
+      "script": [
+        "満る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "満ちる"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "bhoúḷ"
+        ]
+      }
+    },
+    {
+      "id": "cu",
+      "script": [
+        "何",
+        "孰"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "どれ、何、なに"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "susi"
+        ]
+      }
+    },
+    {
+      "id": "cuka",
+      "script": [
+        "人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "人"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "cuk2"
+        ],
+        "ar": [
+          "asuka"
+        ]
+      }
+    },
+    {
+      "id": "cuna",
+      "script": [
+        "五"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "五、5"
+          }
+        }
+      ],
+      "cognates": {
+        "ln": [
+          "slqna"
+        ],
+        "ar": [
+          "suna"
+        ]
+      }
+    },
+    {
+      "id": "(e)m-u",
+      "script": [
+        "在む"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～している"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "hemúl",
+          "hem"
+        ],
+        "ar": [
+          "aima"
+        ],
+        "ln": [
+          "aimq"
+        ],
+        "pk": [
+          "aim2"
+        ]
+      }
+    },
+    {
+      "id": "(e)ema-lu",
+      "script": [
+        "在る"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜している"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:近代語。現代では稀。"
+      },
+      "cognates": {
+        "bt": [
+          "hemúl",
+          "hem"
+        ],
+        "ar": [
+          "aima"
+        ],
+        "ln": [
+          "aimq"
+        ],
+        "pk": [
+          "aim2"
+        ]
+      }
+    },
+    {
+      "id": "ema",
+      "script": [
+        "在"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "存在"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "hemúl",
+          "hem"
+        ],
+        "ar": [
+          "aima"
+        ],
+        "ln": [
+          "aimq"
+        ],
+        "pk": [
+          "aim2"
+        ]
+      }
+    },
+    {
+      "id": "(e)mu-lu",
+      "script": [
+        "如る"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～のようだ"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "em"
+        ],
+        "ar": [
+          "aimu"
+        ],
+        "ln": [
+          "aaim"
+        ],
+        "bt": [
+          "ema"
+        ]
+      }
+    },
+    {
+      "id": "i",
+      "script": [
+        "等"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～ら、～など"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "(i)-lu",
+      "script": [
+        "心る"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～したい、～だろう、～させる"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:意思、推量、使役など意識を表す。"
+      },
+      "cognates": {
+        "pk": [
+          "hia1"
+        ],
+        "ar": [
+          "hiya"
+        ],
+        "ln": [
+          "riya"
+        ],
+        "bt": [
+          "heyáúḷ",
+          "híja",
+          "ha",
+          "rijúḷ"
+        ]
+      }
+    },
+    {
+      "id": "ija-lu",
+      "script": [
+        "心る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "思う"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "hia1"
+        ],
+        "ar": [
+          "hiya"
+        ],
+        "ln": [
+          "riya"
+        ],
+        "bt": [
+          "heyáúḷ",
+          "híja",
+          "ha",
+          "rijúḷ"
+        ]
+      }
+    },
+    {
+      "id": "meccuku",
+      "script": [
+        "牌人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "パイグ人"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "iku",
+      "script": [
+        "二"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "二"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "ríka"
+        ],
+        "pk": [
+          "ik2"
+        ],
+        "ar": [
+          "iku"
+        ]
+      }
+    },
+    {
+      "id": "inuci",
+      "script": [
+        "川"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "川"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "nut2"
+        ],
+        "ar": [
+          "inusi"
+        ]
+      }
+    },
+    {
+      "id": "jano",
+      "script": [
+        "横"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "横"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "yanio"
+        ]
+      }
+    },
+    {
+      "id": "ka",
+      "script": [
+        "筆"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "筆"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      },
+      "cognates": {
+        "pk": [
+          "kua2"
+        ]
+      }
+    },
+    {
+      "id": "kani",
+      "script": [
+        "火"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "火"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "kan1"
+        ],
+        "bt": [
+          "gháni",
+          "ghánúḷ"
+        ]
+      }
+    },
+    {
+      "id": "nagamu",
+      "script": [
+        "四"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "四"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "ap1"
+        ],
+        "ar": [
+          "nami"
+        ]
+      }
+    },
+    {
+      "id": "naga",
+      "script": [
+        "四"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "四"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "ap1"
+        ],
+        "ar": [
+          "nami"
+        ]
+      }
+    },
+    {
+      "id": "nagan",
+      "script": [
+        "四"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "四"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "ap1"
+        ],
+        "ar": [
+          "nami"
+        ]
+      }
+    },
+    {
+      "id": "keca",
+      "script": [
+        "絵"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "絵"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "qexua"
+        ]
+      }
+    },
+    {
+      "id": "kicu",
+      "script": [
+        "頬"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "頬"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "kisu"
+        ]
+      }
+    },
+    {
+      "id": "kija",
+      "script": [
+        "日"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "太陽、日"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "ákíjam"
+        ],
+        "pk": [
+          "kia1"
+        ]
+      }
+    },
+    {
+      "id": "mani",
+      "script": [
+        "字"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "字、文字"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "báni"
+        ],
+        "pk": [
+          "man1"
+        ]
+      }
+    },
+    {
+      "id": "manicoma",
+      "script": [
+        "字積"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "マニソマ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:ラネーメ圏発祥のカードゲーム、基本的には山札から何枚かカードを引いて、それらに書いてある燐字を組み合わせて字を作って遊ぶ。投げ棒を使って引くカードを制限したり、派生的なルールが多々ある。リパライン語圏では下にリパライン語で燐字の意味が書いてある場合がある。"
+      }
+    },
+    {
+      "id": "me",
+      "script": [
+        "茲"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "これ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:属格では用いず、代わりにkaが用いられる。"
+      }
+    },
+    {
+      "id": "medu",
+      "script": [
+        "闇"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "闇"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kan",
+      "script": [
+        "処"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜で、〜に、処格"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用、牌語借用慣用音"
+      }
+    },
+    {
+      "id": "mema",
+      "script": [
+        "地"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "土地、世界"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moku",
+      "script": [
+        "輩"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "兄弟"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moju",
+      "script": [
+        "輩"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "兄弟"
+          }
+        }
+      ]
+    },
+    {
+      "id": "momo",
+      "script": [
+        "手"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "手"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "bhoma"
+        ]
+      }
+    },
+    {
+      "id": "muka",
+      "script": [
+        "風"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "風"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:pua2.pk\nbhára.bt"
+      }
+    },
+    {
+      "id": "na",
+      "script": [
+        "水"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "水"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "nua2"
+        ],
+        "bt": [
+          "nutta"
+        ]
+      }
+    },
+    {
+      "id": "cunasi",
+      "script": [
+        "六"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "六"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nisu",
+      "script": [
+        "族"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "民族、部族"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "nímaṣ"
+        ],
+        "pk": [
+          "nim2"
+        ]
+      }
+    },
+    {
+      "id": "nin",
+      "script": [
+        "紙"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "紙"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "nín"
+        ]
+      }
+    },
+    {
+      "id": "nomu",
+      "script": [
+        "八"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "八"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用\n文化:タカン人は固有語だと思っているが、実際はパイグ語からの借用であり、固有語 *cunumu を置き換えた。"
+      },
+      "cognates": {
+        "pk": [
+          "nom2"
+        ]
+      }
+    },
+    {
+      "id": "non",
+      "script": [
+        "八"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "八"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      },
+      "cognates": {
+        "pk": [
+          "nom2"
+        ]
+      }
+    },
+    {
+      "id": "nou",
+      "script": [
+        "九"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "九"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "naku"
+        ]
+      }
+    },
+    {
+      "id": "kamu",
+      "script": [
+        "四"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "四"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "同根語:cuna + nagamu の縮約である、死語cunagamuからの逆成。"
+      }
+    },
+    {
+      "id": "tadu",
+      "script": [
+        "集"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "集まり、集団、団体"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "dhárad"
+        ],
+        "pk": [
+          "dat2"
+        ]
+      }
+    },
+    {
+      "id": "takameku",
+      "script": [
+        "皇光"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "皇光、WP"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takan",
+      "script": [
+        "皇"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "皇神"
+          }
+        },
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "タカン民族の"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takamu",
+      "script": [
+        "皇"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "皇神"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ton",
+      "script": [
+        "樽"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "容器"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "tobwu"
+        ]
+      }
+    },
+    {
+      "id": "tunu",
+      "script": [
+        "神"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "神"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuna",
+      "script": [
+        "神"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "神"
+          }
+        }
+      ]
+    },
+    {
+      "id": "umu",
+      "script": [
+        "三"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "三"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuneku",
+      "script": [
+        "七"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "七"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cac-u",
+      "script": [
+        "恒す"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "永遠である"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "caxou"
+        ]
+      }
+    },
+    {
+      "id": "(e)t-u",
+      "script": [
+        "下つ"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜なさる"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "rúṣ"
+        ]
+      }
+    },
+    {
+      "id": "kan-u",
+      "script": [
+        "火ぬ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "燃える"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "kan1"
+        ]
+      }
+    },
+    {
+      "id": "aim-u",
+      "script": [
+        "在む"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "在る"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "hemúl",
+          "hem"
+        ],
+        "ar": [
+          "aima"
+        ],
+        "ln": [
+          "aimq"
+        ],
+        "pk": [
+          "aim2"
+        ]
+      }
+    },
+    {
+      "id": "mom-u",
+      "script": [
+        "手む"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "取る"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "hop1"
+        ]
+      }
+    },
+    {
+      "id": "wac-u",
+      "script": [
+        "無す"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "無い"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cosa-lu",
+      "script": [
+        "穏る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "穏やかである"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "shousa"
+        ]
+      }
+    },
+    {
+      "id": "mor-lu",
+      "script": [
+        "行る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "行く"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "bhoúḷ"
+        ]
+      }
+    },
+    {
+      "id": "aci-lu",
+      "script": [
+        "辿る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "たどる、なぞる"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "acii"
+        ],
+        "bt": [
+          "accúḷ"
+        ],
+        "ln": [
+          "acii"
+        ]
+      }
+    },
+    {
+      "id": "cema",
+      "script": [
+        "言"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "言語"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "zepha",
+          "cepatepa"
+        ],
+        "ar": [
+          "chepo"
+        ],
+        "pk": [
+          "zep1"
+        ]
+      }
+    },
+    {
+      "id": "co",
+      "script": [
+        "上"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "上"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sau2"
+        ],
+        "ar": [
+          "sau"
+        ],
+        "ln": [
+          "srau"
+        ]
+      }
+    },
+    {
+      "id": "aika",
+      "script": [
+        "光"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "光"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "aik2"
+        ],
+        "ln": [
+          "raikqt"
+        ],
+        "ar": [
+          "aika"
+        ],
+        "bt": [
+          "kád",
+          "kádúḷ",
+          "ek"
+        ]
+      }
+    },
+    {
+      "id": "ija",
+      "script": [
+        "心"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "心"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "hia1"
+        ],
+        "ar": [
+          "hiya"
+        ],
+        "ln": [
+          "riya"
+        ],
+        "bt": [
+          "heyáúḷ",
+          "híja",
+          "ha",
+          "rijúḷ"
+        ]
+      }
+    },
+    {
+      "id": "koli-lu",
+      "script": [
+        "疲る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "疲れる"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "koli"
+        ]
+      }
+    },
+    {
+      "id": "ka-lu",
+      "script": [
+        "筆る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "書く"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      },
+      "cognates": {
+        "pk": [
+          "kua2"
+        ]
+      }
+    },
+    {
+      "id": "na-lu",
+      "script": [
+        "水る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "流れる"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "nua2"
+        ],
+        "bt": [
+          "nutta"
+        ]
+      }
+    },
+    {
+      "id": "eka",
+      "script": [
+        "光"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "光"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "aik2"
+        ],
+        "ln": [
+          "raikqt"
+        ],
+        "ar": [
+          "aika"
+        ],
+        "bt": [
+          "kád",
+          "kádúḷ",
+          "ek"
+        ]
+      }
+    },
+    {
+      "id": "ki",
+      "script": [
+        "那",
+        "彼"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "あれ、かれ、彼、あの人、彼女"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ti",
+      "script": [
+        "其"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "それ"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "dí"
+        ]
+      }
+    },
+    {
+      "id": "uo",
+      "script": [
+        "墨"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "墨"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用、牌語借用慣用音"
+      },
+      "cognates": {
+        "pk": [
+          "huo2"
+        ]
+      }
+    },
+    {
+      "id": "concitu",
+      "script": [
+        "周故"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "革命"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用、牌語借用慣用音"
+      }
+    },
+    {
+      "id": "ki#2",
+      "script": [
+        "於"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜を、対格"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oca",
+      "script": [
+        "来さ",
+        "耒 "
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜から"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ju",
+      "script": [
+        "亦"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "列挙、〜もまた"
+          }
+        }
+      ]
+    },
+    {
+      "id": "men",
+      "script": [
+        "通"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜を経由して"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:現代では稀。"
+      }
+    },
+    {
+      "id": "wa",
+      "script": [
+        "而"
+      ],
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜して"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ken",
+      "script": [
+        "即"
+      ],
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜したら"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "ja",
+      "script": [
+        "や"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "主題の副助詞、〜は"
+          }
+        }
+      ]
+    },
+    {
+      "id": "o",
+      "script": [
+        "亦"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜も"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tetu",
+      "script": [
+        "唯"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜だけ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(a)ta",
+      "script": [
+        "終"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜した"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:すでに完了したことを示す。"
+      }
+    },
+    {
+      "id": "ut-u",
+      "script": [
+        "下つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "下がる、下げる"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "rúṣ"
+        ]
+      }
+    },
+    {
+      "id": "(e)co-lu",
+      "script": [
+        "上る"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～させていただく"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sau2"
+        ],
+        "ar": [
+          "sau"
+        ],
+        "ln": [
+          "srau"
+        ]
+      }
+    },
+    {
+      "id": "(e)jan-u",
+      "script": [
+        "生ぬ"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "開始瞬間の助動詞"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)nit-u",
+      "script": [
+        "入つ"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "終了瞬間の助動詞"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)mok-u",
+      "script": [
+        "行く"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "移動隔離の助動詞"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)cak-u",
+      "script": [
+        "来く"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "移動接近の助動詞"
+          }
+        }
+      ]
+    },
+    {
+      "id": "munconciccicuku",
+      "script": [
+        "無周故し人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "反革命主義者"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unun-u",
+      "script": [
+        "うぬぬ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜である"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mu",
+      "script": [
+        "乎"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "疑問助詞、〜か？"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cen",
+      "script": [
+        "言"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "〜語"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "kijacuka",
+      "script": [
+        "日来之"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "キヤスカ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mon",
+      "script": [
+        "米"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "米"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "mo1"
+        ]
+      }
+    },
+    {
+      "id": "monatadu",
+      "script": [
+        "米之集"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "おにぎり"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:炊いた飯を固めたものの塩握りが多く食される。具が入ったものはリパラオネ系が作ったものであり、タカン文化では食されない。"
+      }
+    },
+    {
+      "id": "namana",
+      "script": [
+        "なまな"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "死神、死の神、ナマナ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "同根語:語源不明。"
+      }
+    },
+    {
+      "id": "namo",
+      "script": [
+        "水道"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ナモ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用\n文化:ラネーメ王朝時代に制定されていた地域区分及び同地を通る幹線道路。"
+      }
+    },
+    {
+      "id": "uomuka",
+      "script": [
+        "墨風"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ウオムカ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:PMCFアイル共和国タカン自治区に本拠地を置く大手自動車企業の名前でもある。"
+      }
+    },
+    {
+      "id": "tulijo",
+      "script": [
+        "つりよ"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "土手"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ema-lu",
+      "script": [
+        "在る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "在る"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "hemúl",
+          "hem"
+        ],
+        "ar": [
+          "aima"
+        ],
+        "ln": [
+          "aimq"
+        ],
+        "pk": [
+          "aim2"
+        ]
+      }
+    },
+    {
+      "id": "mouwa",
+      "script": [
+        "別而"
+      ],
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "しかし"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "mormor-lu",
+      "script": [
+        "行行る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "次第に増加する"
+          }
+        },
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "(連用形で)だんだん"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaga",
+      "script": [
+        "時"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "時、〜回"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aku",
+      "script": [
+        "書"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "本、書籍"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "kaccen",
+      "script": [
+        "互言"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "会話"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "ar",
+      "script": [
+        "あ",
+        "噫"
+      ],
+      "pos": "sentence particle",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ああ、えっと"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "a"
+        ],
+        "bt": [
+          "á",
+          "há"
+        ]
+      }
+    },
+    {
+      "id": "ka#2",
+      "script": [
+        "此"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "これ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sisitu",
+      "script": [
+        "使術"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "使い方"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "imik-u",
+      "script": [
+        "思く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "思う、考える"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "imika"
+        ]
+      }
+    },
+    {
+      "id": "moga",
+      "script": [
+        "色"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "色、様子"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "pok"
+        ],
+        "ar": [
+          "poga"
+        ]
+      }
+    },
+    {
+      "id": "kuwi",
+      "script": [
+        "傷"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "傷"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "gui2"
+        ],
+        "ar": [
+          "ngui"
+        ]
+      }
+    },
+    {
+      "id": "na-lu#2",
+      "script": [
+        "静る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "静かだ、静かな"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "anaa"
+        ],
+        "pk": [
+          "na1"
+        ]
+      }
+    },
+    {
+      "id": "tanna",
+      "script": [
+        "皇水"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "タンナ（マナナ島とタカン島の間の海域）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kjabetu",
+      "script": [
+        "心圧"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "心が圧されること、ヒャーベッ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用\n:皇論において忌まれる。パイグから借用したのは音のみであり、語形はタカン側で成立したものと思われる。kjabetuという単語自体はタカンからパイグhia1 bet2へと借用された。"
+      },
+      "cognates": {
+        "pk": [
+          "hia1 bet2"
+        ]
+      }
+    },
+    {
+      "id": "tomu",
+      "script": [
+        "島"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "島"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "dop'iai"
+        ],
+        "pk": [
+          "dop1"
+        ]
+      }
+    },
+    {
+      "id": "inin-u",
+      "script": [
+        "小ぬ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "小さい"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "ininu"
+        ],
+        "pk": [
+          "ni1"
+        ]
+      }
+    },
+    {
+      "id": "cune",
+      "script": [
+        "論"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "証拠、論、争点、宗教"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:takama cune （皇論）"
+      },
+      "cognates": {
+        "ar": [
+          "zunaii.ar zuhio"
+        ],
+        "pk": [
+          "zui2"
+        ]
+      }
+    },
+    {
+      "id": "ailu",
+      "script": [
+        "冠"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "アイル共和国"
+          }
+        }
+      ],
+      "cognates": {
+        "li": [
+          "ai'r"
+        ],
+        "ar": [
+          "air"
+        ],
+        "pk": [
+          "ai2"
+        ],
+        "pm": [
+          "ail",
+          "ailil"
+        ]
+      }
+    },
+    {
+      "id": "ailucuka",
+      "script": [
+        "冠人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "アイル人"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wepica",
+      "script": [
+        "淮"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ヴェフィス共和国"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wepicacuka",
+      "script": [
+        "淮人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ヴェフィス人"
+          }
+        }
+      ]
+    },
+    {
+      "id": "momecak-u",
+      "script": [
+        "受く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "もらう、得る、受ける"
+          }
+        }
+      ]
+    },
+    {
+      "id": "momemok-u",
+      "script": [
+        "与く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(未訳)"
+        }
+      ]
+    },
+    {
+      "id": "cetageka",
+      "script": [
+        "机戦"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "机戦、パイグ将棋"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mekacuka",
+      "script": [
+        "牌人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "パイグ人"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "pek2 cuk2"
+        ]
+      }
+    },
+    {
+      "id": "cokaga",
+      "script": [
+        "古"
+      ],
+      "pos": "prenominal",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "古い"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sau2 kak"
+        ]
+      }
+    },
+    {
+      "id": "belepisi",
+      "script": [
+        "べれぴし"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "遊び、ゲーム"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "belpic"
+        ],
+        "li": [
+          "belfez"
+        ]
+      }
+    },
+    {
+      "id": "ket-u",
+      "script": [
+        "善つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "良い"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "kait"
+        ],
+        "ar": [
+          "kaisa"
+        ]
+      }
+    },
+    {
+      "id": "maka",
+      "script": [
+        "値"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "数、値"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "mak2"
+        ],
+        "bt": [
+          "bágha"
+        ]
+      }
+    },
+    {
+      "id": "konna",
+      "script": [
+        "豆水"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "豆から得られる液体"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "tanke",
+      "script": [
+        "皇処"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "机戦において駒の動きが変わる場所"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "kengjadatu",
+      "script": [
+        "地心集"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "文化省"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "mogakug-u",
+      "script": [
+        "色付ぐ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "色を付ける"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cima",
+      "script": [
+        "国"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "国"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "sip1"
+        ],
+        "bt": [
+          "síbha.bt, ṣibhai"
+        ],
+        "ar": [
+          "sip'ui"
+        ]
+      }
+    },
+    {
+      "id": "linman",
+      "script": [
+        "清字"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "燐字、燐帝字母"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "takan=cen",
+      "script": [
+        "皇言"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "タカン語"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(i)ja-lu",
+      "script": [
+        "心る"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "～したい、～するつもりだ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "用法:意志・欲求などを表す。"
+      },
+      "cognates": {
+        "pk": [
+          "hia1"
+        ],
+        "ar": [
+          "hiya"
+        ],
+        "ln": [
+          "riya"
+        ],
+        "bt": [
+          "heyáúḷ",
+          "híja",
+          "ha",
+          "rijúḷ"
+        ]
+      }
+    },
+    {
+      "id": "nonenin-u",
+      "script": [
+        "刺ぬ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "刺す"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "naunilorúḷ"
+        ]
+      }
+    },
+    {
+      "id": "kug-u",
+      "script": [
+        "付ぐ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "付ける"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "kun2.pk, kunge"
+        ]
+      }
+    },
+    {
+      "id": "kewa-lu",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "鋳込む、型にはめる"
+          }
+        }
+      ],
+      "cognates": {
+        "ar": [
+          "gháyoúḷ.bt, ngaiweo"
+        ]
+      }
+    },
+    {
+      "id": "kugecema-lu",
+      "script": [
+        "付言る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "言い伝える"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cula",
+      "script": [
+        "為ら"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(未訳)"
+        }
+      ],
+      "notes": {
+        "ja": "タグ:方言\n用法:cu の連体形 cola の北方方言。"
+      }
+    },
+    {
+      "id": "acula",
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(未訳)"
+        }
+      ],
+      "notes": {
+        "ja": "タグ:方言\n用法:acu の連体形 acola の北方方言。"
+      }
+    },
+    {
+      "id": "canenit-u",
+      "script": [
+        "識ね入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "学ぶ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tad-u",
+      "script": [
+        "集づ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "集まる"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kijakaga",
+      "script": [
+        "日時"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "日中、昼"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cutu",
+      "script": [
+        "天"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "天、空"
+          }
+        }
+      ]
+    },
+    {
+      "id": "asu",
+      "script": [
+        "石"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "石"
+          }
+        }
+      ],
+      "cognates": {
+        "pk": [
+          "asíjaúḷ.bt, asiu.ar, sy2"
+        ]
+      }
+    },
+    {
+      "id": "nimalane",
+      "script": [
+        "哩"
+      ],
+      "pos": "prenominal",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "リパライン語の、リパラオネの"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takamacuka",
+      "script": [
+        "皇人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "タカン人"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sornike",
+      "script": [
+        "上学処"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "大学"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "タグ:牌語借用"
+      }
+    },
+    {
+      "id": "bepicasornike",
+      "script": [
+        "淮上学処"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ヴェフィス国立研究院大学"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:通常、ヴェフィスを表す語は wepica だが、この大学名では bepica とする。"
+      }
+    },
+    {
+      "id": "inucalita",
+      "script": [
+        "川入"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "イヌサリタ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:アイル共和国イヌシ郡の主要都市。"
+      }
+    },
+    {
+      "id": "coma",
+      "script": [
+        "積"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "堤"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mo",
+      "script": [
+        "道"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "道"
+          }
+        }
+      ]
+    },
+    {
+      "id": "makati",
+      "script": [
+        "天神"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "マカティ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "文化:アイル共和国の首都。"
+      }
+    },
+    {
+      "id": "mug-u",
+      "script": [
+        "獣ぐ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "醜い"
+          }
+        }
+      ],
+      "cognates": {
+        "bt": [
+          "bháṇúḷ"
+        ]
+      }
+    },
+    {
+      "id": "tonir",
+      "script": [
+        "とにー"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "リパラオネ教の神・神族"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tarpu",
+      "script": [
+        "たーぷ"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "ターフ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "linecita",
+      "script": [
+        "清た"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "リナエスト・オルス共和国"
+          }
+        },
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "リナエストの"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kasika",
+      "script": [
+        "筆席"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "カジカ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kuwa",
+      "script": [
+        "筆"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "クワ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takama",
+      "script": [
+        "たかま",
+        "皇之"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "(TODO)"
+        },
+        {
+          "translations": {
+            "ja": "タカマ"
+          }
+        }
+      ]
+    }
+  ]
+}

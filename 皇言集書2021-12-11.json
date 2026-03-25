@@ -377,7 +377,7 @@
     "tags" : [ ],
     "contents" : [ {
       "title" : "同根語",
-      "text" : "ciwi.ar\ncikau,ar\ncy2.pk\nṣíkahúḷ.bt"
+      "text" : "ciwi.ar\ncikau.ar\ncy2.pk\nṣíkahúḷ.bt"
     } ],
     "variations" : [ {
       "title" : "終止形",
@@ -2764,8 +2764,11 @@
     } ],
     "tags" : [ "牌語借用" ],
     "contents" : [ {
-      "title" : "同根語",
+      "title" : "",
       "text" : "皇論において忌まれる。パイグから借用したのは音のみであり、語形はタカン側で成立したものと思われる。kjabetuという単語自体はタカンからパイグhia1 bet2へと借用された。"
+    },{
+      "title" : "同根語",
+      "text" : "hia1 bet2.pk"
     } ],
     "variations" : [ ]
   }, {

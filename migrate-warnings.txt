@@ -1,0 +1,8 @@
+INFO: cognate line stored as note: 'cuna + nagamu の縮約である、死語cunagamuからの逆成。'
+INFO: cognate line stored as note: '語源不明。'
+WARNING [momemok-u] inferred pos=verb (old id=143)
+WARNING [momemok-u] no definitions found (old id=143)
+WARNING [cula] defaulting pos=noun (old id=162)
+WARNING [cula] no definitions found (old id=162)
+WARNING [acula] defaulting pos=noun (old id=163)
+WARNING [acula] no definitions found (old id=163)
