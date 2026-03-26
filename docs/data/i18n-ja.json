@@ -27,6 +27,14 @@
   "count-word": {
     "other": "${COUNT} 単語"
   },
+  "cognate-source": {
+
+  "pk": "パイグ語",
+  "bt": "バート語",
+  "ar": "アイル語",
+  "ln": "ラネーメ祖語"
+
+  },
   "ui": {
     "components": "構成要素",
     "All sources": "全て表示",

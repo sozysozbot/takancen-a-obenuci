@@ -20,7 +20,7 @@ function detectLang(): string {
   return SUPPORTED_LANGS.includes(browserLang) ? browserLang : 'en';
 }
 
-function t(section: 'pos' | 'conj' | 'ui', key: string): string {
+function t(section: 'pos' | 'conj' | 'ui' | 'cognate-source', key: string): string {
   return i18n[section]?.[key] ?? key;
 }
 
@@ -403,6 +403,28 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
     notes.className = 'notes';
     notes.textContent = localize(entry.notes);
     div.appendChild(notes);
+  }
+
+  // Cognates
+  if (entry.cognates) {
+    const cognateKeys = (['pk', 'bt', 'ar', 'ln'] as const).filter(k => entry.cognates![k]?.length);
+    if (cognateKeys.length) {
+      const notes = document.createElement('div');
+      notes.className = 'notes';
+      notes.textContent = '同根語:';
+      const cognateDiv = document.createElement('div');
+      cognateDiv.classList.add('cognates');
+      for (const langCode of cognateKeys) {
+        const row = document.createElement('div');
+        const label = document.createElement('strong');
+        label.textContent = t('cognate-source', langCode) + ': ';
+        row.appendChild(label);
+        row.appendChild(document.createTextNode(entry.cognates![langCode]!.join(', ')));
+        cognateDiv.appendChild(row);
+      }
+      notes.appendChild(cognateDiv);
+      div.appendChild(notes);
+    }
   }
 
   // Component words (cross-links within the dictionary)

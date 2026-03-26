@@ -162,6 +162,12 @@ main {
   color: #666;
   font-style: italic;
 }
+
+.cognates {
+  border-left: 3px double #666;
+  padding-left: 3px;
+}
+
 .entry-components {
   margin-top: 8px;
   display: flex;

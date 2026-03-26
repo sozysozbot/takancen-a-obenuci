@@ -361,6 +361,27 @@ function buildEntryEl(entry) {
         notes.textContent = localize(entry.notes);
         div.appendChild(notes);
     }
+    // Cognates
+    if (entry.cognates) {
+        const cognateKeys = ['pk', 'bt', 'ar', 'ln'].filter(k => entry.cognates[k]?.length);
+        if (cognateKeys.length) {
+            const notes = document.createElement('div');
+            notes.className = 'notes';
+            notes.textContent = '同根語:';
+            const cognateDiv = document.createElement('div');
+            cognateDiv.classList.add('cognates');
+            for (const langCode of cognateKeys) {
+                const row = document.createElement('div');
+                const label = document.createElement('strong');
+                label.textContent = t('cognate-source', langCode) + ': ';
+                row.appendChild(label);
+                row.appendChild(document.createTextNode(entry.cognates[langCode].join(', ')));
+                cognateDiv.appendChild(row);
+            }
+            notes.appendChild(cognateDiv);
+            div.appendChild(notes);
+        }
+    }
     // Component words (cross-links within the dictionary)
     if (entry.components?.length) {
         const compRow = document.createElement('div');
