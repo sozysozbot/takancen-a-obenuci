@@ -2923,10 +2923,11 @@
       },
       "tokens": [
         {
-          "form": "asiácuka",
+              "multiple-standard-pronunciations": true,
+          "forms": ["asiácuka", "asécuka"],
           "mixed_script": "一人",
-          "entry_ids": [
-            "asiácuka"
+          "entry_ids_of_each_form": [
+            ["asiácuka"],["asécuka"]
           ],
           "gloss": "one.person"
         },

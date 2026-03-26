@@ -922,6 +922,18 @@
       ]
     },
     {
+      "id": "asécuka",
+      "pos": "noun",
+      "script": [
+        "一人"
+      ],
+      "definitions": [
+        {
+          "gloss": "one person"
+        }
+      ]
+    },
+    {
       "id": "ata",
       "pos": "noun conjunction",
       "script": [
@@ -3034,6 +3046,13 @@
       "entry_ids": [
         "béma",
         "anoámama"
+      ]
+    },
+    {
+      "script": "一人",
+      "entry_ids": [
+        "asiácuka",
+        "asécuka"
       ]
     }
   ]
