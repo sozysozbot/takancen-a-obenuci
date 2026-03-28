@@ -7271,6 +7271,72 @@
     {
       "source": "第12回架空言語・架空地図学会スライド発表",
       "translation": {
+        "ja": "今私はタカン語を話しています。"
+      },
+      "tokens": [
+        {
+          "form": "kákaga",
+          "mixed_script": "此時",
+          "entry_ids": [
+            "kákaga"
+          ],
+          "gloss": "now"
+        },
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "=cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cémalu",
+          "mixed_script": "言る",
+          "entry_ids": [
+            "céma-",
+            "(u)"
+          ],
+          "gloss": "speak-NPST"
+        },
+        {
+          "form": "a",
+          "mixed_script": "噫",
+          "entry_ids": [
+            "a#2"
+          ],
+          "gloss": "DECL"
+        }
+      ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表",
+      "translation": {
         "ja": "与えさせて頂きたい"
       },
       "tokens": [
