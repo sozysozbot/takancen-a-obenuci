@@ -7197,8 +7197,9 @@
       "source": "第12回架空言語・架空地図学会スライド発表",
       "translation": {
         "ja": "こんにちは"
-      },"tokens":[
-         {
+      },
+      "tokens": [
+        {
           "form": "kéta",
           "mixed_script": "善た",
           "entry_ids": [
@@ -7207,7 +7208,7 @@
           ],
           "gloss": "be.good-PTCP"
         },
-         {
+        {
           "form": "émaci",
           "mixed_script": "在し",
           "entry_ids": [
@@ -7215,6 +7216,55 @@
             "(i)"
           ],
           "gloss": "exist-IMP"
+        }
+      ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表",
+      "translation": {
+        "ja": "私はカジカ・カナです。"
+      },
+      "tokens": [
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kásika",
+          "mixed_script": "筆席",
+          "entry_ids": [
+            "kásika"
+          ],
+          "gloss": "Kasika"
+        },
+        {
+          "form": "kána",
+          "mixed_script": "かな",
+          "entry_ids": [
+            "kána"
+          ],
+          "gloss": "Kana"
+        },
+        {
+          "form": "únunu",
+          "mixed_script": "うぬゝ",
+          "entry_ids": [
+            "únun-",
+            "(u)"
+          ],
+          "gloss": "be-NPST"
         }
       ]
     },
