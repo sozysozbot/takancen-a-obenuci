@@ -257,12 +257,12 @@ const PUNCTUATION_MAPPING = {
     "！": "!"
 };
 // ── Dictionary rendering ───────────────────────────────────────────────────
-// Normalised sort key: strip accents and punctuation chars (-, =, ≡) but keep
+// Normalised sort key: strip accents and punctuation chars (=, ≡) but keep
 // parentheses, then lowercase — used for the default alphabetical sort order.
 function entrySortKey(id) {
-    return id.replace(/#\d+$/, '')
+    return getLemmaPure(id.replace(/#\d+$/, ''))
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[-=≡]/g, '')
+        .replace(/[=≡]/g, '')
         .toLowerCase();
 }
 function renderDictionary(entries) {
@@ -279,16 +279,9 @@ function getLemma(entry) {
     const base = stripHomophoneDisambiguator(entry.id);
     if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
         if (base.slice(-1) === "-") {
-            if (entry.conjugation_class === "consonant-stem" || entry.conjugation_class === "c-irregular") {
-                if (base.endsWith("ć-")) {
-                    return base.slice(0, -2) + "cú";
-                }
-                else {
-                    return base.slice(0, -1) + "u";
-                }
-            }
-            else if (entry.conjugation_class === "vowel-stem") {
-                return base.slice(0, -1) + "lu";
+            const expected_stem_class = getStemClassFromId(base);
+            if (expected_stem_class === entry.conjugation_class) {
+                return getLemmaPure(base);
             }
             else {
                 console.warn(`warning: entry ${entry.id} ends in a hyphen but its conjugation class is ${entry.conjugation_class}`);
@@ -299,6 +292,25 @@ function getLemma(entry) {
         }
     }
     return base;
+}
+function getLemmaPure(base) {
+    if (base.slice(-1) === "-") {
+        const stem_class = getStemClassFromId(base);
+        if (stem_class === "consonant-stem" || stem_class === "c-irregular") {
+            if (base.endsWith("ć-")) {
+                return base.slice(0, -2) + "cú";
+            }
+            else {
+                return base.slice(0, -1) + "u";
+            }
+        }
+        else {
+            return base.slice(0, -1) + "lu";
+        }
+    }
+    else {
+        return base;
+    }
 }
 function buildEntryEl(entry) {
     const div = document.createElement('div');

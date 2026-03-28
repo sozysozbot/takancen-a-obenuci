@@ -210,9 +210,9 @@ function applyAllFilters() {
   if (source) filtered = filtered.filter(s => s.source === source);
   if (entryFilter) filtered = filtered.filter(s => s.tokens.some(tok =>
     'punctuation' in tok ? false
-    : 'multiple-standard-pronunciations' in tok
-      ? tok.entry_ids_of_each_form.some(ids => ids.includes(entryFilter))
-      : tok.entry_ids?.includes(entryFilter)
+      : 'multiple-standard-pronunciations' in tok
+        ? tok.entry_ids_of_each_form.some(ids => ids.includes(entryFilter))
+        : tok.entry_ids?.includes(entryFilter)
   ));
   renderCorpus(filtered);
 }
@@ -279,24 +279,24 @@ function renderMissingHighFreq(entries: Map<string, number>) {
 
 const PUNCTUATION_MAPPING = {
   "。": ".",
-  "？":"?",
+  "？": "?",
   ":": ":", // both are ASCII
-  "(" : "(", // both are ASCII
-  ")" : ")", // both are ASCII
-  "「" : "“",
-  "」":"”",
+  "(": "(", // both are ASCII
+  ")": ")", // both are ASCII
+  "「": "“",
+  "」": "”",
   '│': "\t|\t",
-  "！":"!"
+  "！": "!"
 };
 
 // ── Dictionary rendering ───────────────────────────────────────────────────
 
-// Normalised sort key: strip accents and punctuation chars (-, =, ≡) but keep
+// Normalised sort key: strip accents and punctuation chars (=, ≡) but keep
 // parentheses, then lowercase — used for the default alphabetical sort order.
 function entrySortKey(id: string): string {
-  return id.replace(/#\d+$/, '')
+  return getLemmaPure(id.replace(/#\d+$/, ''))
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/[-=≡]/g, '')
+    .replace(/[=≡]/g, '')
     .toLowerCase();
 }
 
@@ -317,14 +317,9 @@ function getLemma(entry: DictionaryEntry): string {
   const base = stripHomophoneDisambiguator(entry.id);
   if (entry.pos === "verb" || entry.pos === "auxiliary verb") {
     if (base.slice(-1) === "-") {
-      if (entry.conjugation_class === "consonant-stem" || entry.conjugation_class === "c-irregular") {
-        if (base.endsWith("ć-")) {
-          return base.slice(0, -2) + "cú";
-        } else {
-          return base.slice(0, -1) + "u";
-        }
-      } else if (entry.conjugation_class === "vowel-stem") {
-        return base.slice(0, -1) + "lu";
+      const expected_stem_class: "vowel-stem" | "consonant-stem" | "c-irregular" = getStemClassFromId(base);
+      if (expected_stem_class === entry.conjugation_class) {
+        return getLemmaPure(base);
       } else {
         console.warn(`warning: entry ${entry.id} ends in a hyphen but its conjugation class is ${entry.conjugation_class}`);
       }
@@ -333,6 +328,23 @@ function getLemma(entry: DictionaryEntry): string {
     }
   }
   return base;
+}
+
+function getLemmaPure(base: string): string {
+  if (base.slice(-1) === "-") {
+    const stem_class: "vowel-stem" | "consonant-stem" | "c-irregular" = getStemClassFromId(base);
+    if (stem_class === "consonant-stem" || stem_class === "c-irregular") {
+      if (base.endsWith("ć-")) {
+        return base.slice(0, -2) + "cú";
+      } else {
+        return base.slice(0, -1) + "u";
+      }
+    } else {
+      return base.slice(0, -1) + "lu";
+    }
+  } else {
+    return base;
+  }
 }
 
 function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
