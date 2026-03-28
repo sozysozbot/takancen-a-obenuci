@@ -379,7 +379,13 @@
             "en": "name of an ethnicity or a language",
             "ja": "タカン（民族名 / 言語名）"
           }
-        },{ "gloss": "Tam deity","translations": {"ja": "皇神"}}
+        },
+        {
+          "gloss": "Tam deity",
+          "translations": {
+            "ja": "皇神"
+          }
+        }
       ]
     },
     {
@@ -848,7 +854,8 @@
     {
       "id": "canenít-",
       "script": [
-        "識ね入つ"
+        "識ね入つ",
+        "学つ"
       ],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
@@ -1285,7 +1292,7 @@
         }
       ]
     },
-     {
+    {
       "id": "bélur",
       "pos": "noun",
       "script": [
@@ -3264,6 +3271,12 @@
           "translations": {
             "ja": "次に進む"
           }
+        },
+        {
+          "gloss": "kindly",
+          "translations": {
+            "ja": "してくださる"
+          }
         }
       ],
       "cognates": {
@@ -3983,9 +3996,10 @@
       "pos": "noun suffix",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "PL",
           "translations": {
-            "ja": "～ら、～など"
+            "en": "plural marker",
+            "ja": "複数マーカー：～ら、～など"
           }
         }
       ],
@@ -4996,7 +5010,7 @@
       "conjugation_class": "consonant-stem",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "feel",
           "translations": {
             "ja": "思う、考える"
           }
@@ -5148,7 +5162,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "discourse",
           "translations": {
             "ja": "証拠、論、争点、宗教"
           }
@@ -5753,7 +5767,8 @@
         }
       ]
     }
-  ],"alternative_form_groups": [
+  ],
+  "alternative_form_groups": [
     {
       "script": "十五",
       "entry_ids": [

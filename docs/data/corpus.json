@@ -2923,11 +2923,19 @@
       },
       "tokens": [
         {
-              "multiple-standard-pronunciations": true,
-          "forms": ["asiácuka", "asécuka"],
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "asiácuka",
+            "asécuka"
+          ],
           "mixed_script": "一人",
           "entry_ids_of_each_form": [
-            ["asiácuka"],["asécuka"]
+            [
+              "asiácuka"
+            ],
+            [
+              "asécuka"
+            ]
           ],
           "gloss": "one.person"
         },
@@ -6574,10 +6582,18 @@
         },
         {
           "multiple-standard-pronunciations": true,
-          "forms": ["lúcju", "lúcjur"],
+          "forms": [
+            "lúcju",
+            "lúcjur"
+          ],
           "mixed_script": "新裁",
           "entry_ids_of_each_form": [
-            ["lúcju"], ["lúcjur"]
+            [
+              "lúcju"
+            ],
+            [
+              "lúcjur"
+            ]
           ],
           "gloss": "reset"
         },
@@ -7066,7 +7082,7 @@
         {
           "punctuation": "│"
         },
-           {
+        {
           "form": "sukelácuka",
           "mixed_script": "ずけらすか",
           "entry_ids": [
@@ -7174,6 +7190,150 @@
             "(a)ta"
           ],
           "gloss": "eat-PST"
+        }
+      ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表",
+      "translation": {
+        "ja": "与えさせて頂きたい"
+      },
+      "tokens": [
+        {
+          "form": "momemokecocíjalu",
+          "mixed_script": "もめもけそしやる",
+          "entry_ids": [
+            "momemók-",
+            "(e)có-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "give-humbly-want-NPST"
+        }
+      ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表",
+      "translation": {
+        "en": "Thank you for listening.",
+        "ja": "お聞きくださりありがとうございます。"
+      },
+      "tokens": [
+        {
+          "form": "má",
+          "mixed_script": "汝",
+          "entry_ids": [
+            "má"
+          ],
+          "gloss": "you"
+        },
+        {
+          "form": "i",
+          "mixed_script": "等",
+          "entry_ids": [
+            "i"
+          ],
+          "gloss": "PL"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "a",
+          "mixed_script": "之",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "cúne",
+          "mixed_script": "論",
+          "entry_ids": [
+            "cúne"
+          ],
+          "gloss": "discourse"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "caneníte",
+          "mixed_script": "学て",
+          "entry_ids": [
+            "canenít-",
+            "(e)"
+          ],
+          "gloss": "learn-ADV"
+        },
+        {
+          "form": "úte",
+          "mixed_script": "下て",
+          "entry_ids": [
+            "út-",
+            "(e)"
+          ],
+          "gloss": "kindly-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kéte",
+          "mixed_script": "善て",
+          "entry_ids": [
+            "két-",
+            "(e)"
+          ],
+          "gloss": "be.good-ADV"
+        },
+        {
+          "form": "imíki",
+          "mixed_script": "思き",
+          "entry_ids": [
+            "imík-",
+            "(i)"
+          ],
+          "gloss": "feel-IMP"
         }
       ]
     }
