@@ -34,7 +34,7 @@ const entrySchema = z.union([
   }),
   z.object({
     ...commonFields,
-    pos: z.enum(['noun', 'noun suffix', 'noun particle', 'verb particle', 'sentence particle', 'phrase', 'bound morpheme', 'prenominal', 'noun conjunction','sentence conjunction','adjectival noun','interjection']),
+    pos: z.enum(['noun', 'noun suffix', 'noun particle', 'verb particle', 'sentence particle', 'phrase', 'bound morpheme', 'prenominal', 'noun conjunction','sentence conjunction','adjectival noun','interjection','unclassified']),
     conjugation_class: z.undefined(),
   }),
 ]);

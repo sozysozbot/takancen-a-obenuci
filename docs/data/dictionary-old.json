@@ -1,0 +1,3072 @@
+{
+  "entries": [
+    {
+      "id": "=cen",
+      "script": [
+        "言"
+      ],
+      "pos": "noun suffix",
+      "definitions": [
+        {
+          "gloss": "language",
+          "translations": {
+            "ja": "〜語"
+          }
+        }
+      ],
+      "notes": {
+        "en": "Used in compounds, as in 'tákan=cen' (the Takan language).",
+        "ja": "tákan=cen「タカン語」のように、複合語に用いられる。"
+      }
+    },
+    {
+      "id": "kága",
+      "script": [
+        "時"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "time",
+          "translations": {
+            "ja": "時"
+          }
+        },
+        {
+          "gloss": "case",
+          "translations": {
+            "ja": "場合"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kijákaga",
+      "script": [
+        "日時"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "daytime",
+          "translations": {
+            "ja": "昼間"
+          }
+        }
+      ],
+      "components": [
+        "kíja#2",
+        "kága"
+      ]
+    },
+    {
+      "id": "ácijo",
+      "script": [
+        "石"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "stone",
+          "translations": {
+            "ja": "石"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ná",
+      "script": [
+        "水"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "water",
+          "translations": {
+            "ja": "水"
+          }
+        }
+      ]
+    },
+    {
+      "id": "má",
+      "script": [
+        "汝"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "you",
+          "translations": {
+            "en": "second person singular pronoun",
+            "ja": "あなた、君（二人称単数代名詞）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nó",
+      "script": [
+        "我"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "I",
+          "translations": {
+            "en": "first person singular pronoun",
+            "ja": "わたし（一人称単数代名詞）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "áku",
+      "script": [
+        "書"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "book",
+          "translations": {
+            "ja": "本、書籍"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nán",
+      "script": [
+        "何"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "what?",
+          "translations": {
+            "ja": "何"
+          }
+        }
+      ]
+    },
+    {
+      "id": "céma-",
+      "script": [
+        "言る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "speak",
+          "translations": {
+            "ja": "話す"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cák-",
+      "script": [
+        "来く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "come",
+          "translations": {
+            "ja": "来る"
+          }
+        }
+      ]
+    },
+    {
+      "id": "áta-",
+      "script": [
+        "目る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "see",
+          "translations": {
+            "ja": "見る"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja",
+      "script": [
+        "や"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "NOM",
+          "translations": {
+            "en": "Nominative case / topic marker; indicates either the subject or the topic of the sentence.",
+            "ja": "主格マーカー、主題マーカー。文の主語や主題を表す。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ki",
+      "script": [
+        "き"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "ACC",
+          "translations": {
+            "en": "Accusative case marker; indicates the direct object of the sentence.",
+            "ja": "対格マーカー。文の目的語を表す。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kí",
+      "script": [
+        "那"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "3sg",
+          "translations": {
+            "en": "third person singular pronoun",
+            "ja": "三人称単数代名詞"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mu",
+      "script": [
+        "む"
+      ],
+      "pos": "sentence particle",
+      "definitions": [
+        {
+          "gloss": "Q",
+          "translations": {
+            "en": "Question marker; placed at the end of a questioning sentence.",
+            "ja": "文末に置く疑問文マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oca",
+      "script": [
+        "耒"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "ABL",
+          "translations": {
+            "en": "Ablative case marker; indicates a movement away from it.",
+            "ja": "奪格マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kan",
+      "script": [
+        "処"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "LOC",
+          "translations": {
+            "en": "Locative case marker; indicates a place where an action takes place.",
+            "ja": "処格マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tákan",
+      "script": [
+        "皇"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "Takan",
+          "translations": {
+            "en": "name of an ethnicity or a language",
+            "ja": "タカン（民族名 / 言語名）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "obénuci",
+      "script": [
+        "海"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "ocean",
+          "translations": {
+            "ja": "海"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(a)ta",
+      "script": [
+        "終"
+      ],
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "PST",
+          "translations": {
+            "en": "Past marker; A marker that marks that the action is already completed.",
+            "ja": "〜した；完了マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)nít-",
+      "script": [
+        "入つ"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "CMPL",
+          "translations": {
+            "en": "The instant-of-completion marker",
+            "ja": "終了した瞬間に着目する瞬間動詞を作る"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(u)",
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "NPST",
+          "translations": {
+            "en": "Non-past marker",
+            "ja": "非過去形"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(á)c-",
+      "lemma": "(á)c-",
+      "script": [
+        "す",
+        "能す"
+      ],
+      "pos": "auxiliary verb",
+      "conjugation_class": "c-irregular",
+      "definitions": [
+        {
+          "gloss": "can",
+          "translations": {
+            "ja": "〜できる、〜しうる"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cík-",
+      "lemma": "cík-",
+      "script": [
+        "席く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "sit",
+          "translations": {
+            "ja": "座る"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a",
+      "lemma": "a",
+      "script": [
+        "之"
+      ],
+      "pos": "noun particle",
+      "definitions": [
+        {
+          "gloss": "GEN",
+          "translations": {
+            "en": "The genitive marker",
+            "ja": "〜の；属格マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "címa",
+      "lemma": "címa",
+      "script": [
+        "国"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "country",
+          "translations": {
+            "ja": "国"
+          }
+        }
+      ]
+    },
+    {
+      "id": "áika",
+      "script": [
+        "光"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "light",
+          "translations": {
+            "ja": "光"
+          }
+        }
+      ]
+    },
+    {
+      "id": "écilo",
+      "script": [
+        "えしろ"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "appetite",
+          "translations": {
+            "ja": "食欲"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moŕ-",
+      "script": [
+        "行る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "go",
+          "translations": {
+            "ja": "行く"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(i)",
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "IMP",
+          "translations": {
+            "en": "imperative marker",
+            "ja": "〜せよ；命令形マーカー"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jám-",
+      "script": [
+        "口む"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "eat",
+          "translations": {
+            "ja": "食べる"
+          }
+        }
+      ]
+    },
+    {
+      "id": "éma-",
+      "script": [
+        "在る"
+      ],
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "definitions": [
+        {
+          "gloss": "exist",
+          "translations": {
+            "ja": "ある、存在する"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wác-",
+      "script": [
+        "無す"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "not exist",
+          "translations": {
+            "ja": "無い、存在しない"
+          }
+        }
+      ]
+    },
+    {
+      "id": "méma",
+      "script": [
+        "地"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "land",
+          "translations": {
+            "ja": "地面、土地"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takamácuka",
+      "script": [
+        "皇人"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "person of Takan ethnicity",
+          "translations": {
+            "ja": "タカン人"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mé",
+      "script": [
+        "此",
+        "茲"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "this",
+          "translations": {
+            "ja": "これ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ká",
+      "script": [
+        "此"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "this",
+          "translations": {
+            "ja": "これ"
+          }
+        }
+      ],
+      "notes": {
+        "ja": "単体で用いるのは文語のみ。口語では専ら修飾語として用いる。"
+      }
+    },
+    {
+      "id": "a#2",
+      "script": [
+        "噫"
+      ],
+      "pos": "sentence particle",
+      "definitions": [
+        {
+          "gloss": "DECL"
+        }
+      ]
+    },
+    {
+      "id": "ć-",
+      "script": [
+        "為"
+      ],
+      "pos": "verb",
+      "conjugation_class": "c-irregular",
+      "definitions": [
+        {
+          "gloss": "do",
+          "translations": {
+            "ja": "する"
+          }
+        }
+      ]
+    },
+    {
+      "id": "únun-",
+      "script": [
+        "うぬゝ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "be",
+          "translations": {
+            "ja": "〜である"
+          }
+        }
+      ]
+    },
+    {
+      "id": "canenít-",
+      "script": [
+        "識ね入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "learn",
+          "translations": {
+            "ja": "学ぶ"
+          }
+        }
+      ],
+      "components": [
+        "cán-",
+        "(e)nít-"
+      ]
+    },
+    {
+      "id": "cakenít-",
+      "script": [
+        "来け入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "come in",
+          "translations": {
+            "ja": "中に入る、入ってくる"
+          }
+        }
+      ],
+      "components": [
+        "cák-",
+        "(e)nít-"
+      ]
+    },
+    {
+      "id": "momecák-",
+      "script": [
+        "手来く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "obtain",
+          "translations": {
+            "ja": "手に入れる"
+          }
+        }
+      ],
+      "components": [
+        "móm-",
+        "(e)cák-"
+      ]
+    },
+    {
+      "id": "momemók-",
+      "script": [
+        "与く"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "give",
+          "translations": {
+            "ja": "与える"
+          }
+        }
+      ],
+      "components": [
+        "móm-",
+        "(e)mók-"
+      ]
+    },
+    {
+      "id": "jamenít-",
+      "script": [
+        "口入つ"
+      ],
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "eat up",
+          "translations": {
+            "ja": "食べ尽くす"
+          }
+        }
+      ],
+      "components": [
+        "jám-",
+        "(e)nít-"
+      ]
+    },
+    {
+      "id": "(a)",
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "PTCP",
+          "translations": {
+            "ja": "分詞；連体形"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)",
+      "pos": "verb particle",
+      "definitions": [
+        {
+          "gloss": "ADV",
+          "translations": {
+            "ja": "副詞化；連用形"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)cák-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "来く"
+      ],
+      "definitions": [
+        {
+          "gloss": "toward us"
+        }
+      ],
+      "notes": {
+        "ja": "近づいてくる動作を示す。"
+      }
+    },
+    {
+      "id": "(e)có-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "上る"
+      ],
+      "definitions": [
+        {
+          "gloss": "humbly",
+          "translations": {
+            "ja": "させていただく"
+          }
+        }
+      ]
+    },
+    {
+      "id": "(e)mók-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "行く"
+      ],
+      "definitions": [
+        {
+          "gloss": "away"
+        }
+      ],
+      "notes": {
+        "ja": "離れ行く動作を示す。"
+      }
+    },
+    {
+      "id": "(í)-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "る",
+        "心る"
+      ],
+      "definitions": [
+        {
+          "gloss": "SPECL"
+        }
+      ]
+    },
+    {
+      "id": "(í)ja-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "やる",
+        "心る"
+      ],
+      "definitions": [
+        {
+          "gloss": "want"
+        }
+      ]
+    },
+    {
+      "id": "≡co",
+      "pos": "bound morpheme",
+      "script": [
+        "片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pieces"
+        },
+        {
+          "gloss": "piece"
+        }
+      ]
+    },
+    {
+      "id": "≡su",
+      "pos": "bound morpheme",
+      "script": [
+        "銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "points"
+        },
+        {
+          "gloss": "point"
+        }
+      ]
+    },
+    {
+      "id": "ailúcima",
+      "pos": "noun",
+      "script": [
+        "冠国"
+      ],
+      "definitions": [
+        {
+          "gloss": "Ai’ren Republic"
+        }
+      ]
+    },
+    {
+      "id": "amamátono",
+      "pos": "noun",
+      "script": [
+        "大島"
+      ],
+      "definitions": [
+        {
+          "gloss": "big island"
+        }
+      ]
+    },
+    {
+      "id": "asiácuka",
+      "pos": "noun",
+      "script": [
+        "一人"
+      ],
+      "definitions": [
+        {
+          "gloss": "one person"
+        }
+      ]
+    },
+    {
+      "id": "asécuka",
+      "pos": "noun",
+      "script": [
+        "一人"
+      ],
+      "definitions": [
+        {
+          "gloss": "one person"
+        }
+      ]
+    },
+    {
+      "id": "ata",
+      "pos": "noun conjunction",
+      "script": [
+        "あた",
+        "加"
+      ],
+      "definitions": [
+        {
+          "gloss": "and"
+        }
+      ]
+    },
+    {
+      "id": "bartádon",
+      "pos": "noun",
+      "script": [
+        "闇島"
+      ],
+      "definitions": [
+        {
+          "gloss": "闇島"
+        }
+      ]
+    },
+    {
+      "id": "báxmaku",
+      "pos": "noun",
+      "script": [
+        "同値"
+      ],
+      "definitions": [
+        {
+          "gloss": "same number"
+        }
+      ]
+    },
+    {
+      "id": "báxso",
+      "pos": "noun",
+      "script": [
+        "同類"
+      ],
+      "definitions": [
+        {
+          "gloss": "same kind"
+        }
+      ]
+    },
+    {
+      "id": "bécuku",
+      "pos": "noun",
+      "script": [
+        "全人"
+      ],
+      "definitions": [
+        {
+          "gloss": "everyone"
+        }
+      ]
+    },
+    {
+      "id": "bélepici",
+      "pos": "noun",
+      "script": [
+        "遊術"
+      ],
+      "definitions": [
+        {
+          "gloss": "game"
+        }
+      ]
+    },
+    {
+      "id": "bélu",
+      "pos": "noun",
+      "script": [
+        "全新"
+      ],
+      "definitions": [
+        {
+          "gloss": "latest"
+        }
+      ]
+    },
+    {
+      "id": "béutu",
+      "pos": "noun",
+      "script": [
+        "全下"
+      ],
+      "definitions": [
+        {
+          "gloss": "finally"
+        }
+      ]
+    },
+    {
+      "id": "búnco",
+      "pos": "noun",
+      "script": [
+        "歪片"
+      ],
+      "definitions": [
+        {
+          "gloss": "wildcard"
+        }
+      ]
+    },
+    {
+      "id": "ceímoku",
+      "pos": "noun",
+      "script": [
+        "周行"
+      ],
+      "definitions": [
+        {
+          "gloss": "rotational direction"
+        }
+      ]
+    },
+    {
+      "id": "cjúsu",
+      "pos": "noun",
+      "script": [
+        "裁銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "calculate money"
+        }
+      ]
+    },
+    {
+      "id": "comók-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "上行く"
+      ],
+      "definitions": [
+        {
+          "gloss": "be victorious"
+        }
+      ]
+    },
+    {
+      "id": "cumácuka",
+      "pos": "noun",
+      "script": [
+        "豊人"
+      ],
+      "definitions": [
+        {
+          "gloss": "rich person"
+        }
+      ]
+    },
+    {
+      "id": "céjo",
+      "pos": "noun",
+      "script": [
+        "或"
+      ],
+      "definitions": [
+        {
+          "gloss": "a certain"
+        }
+      ]
+    },
+    {
+      "id": "céutu",
+      "pos": "noun",
+      "script": [
+        "其下"
+      ],
+      "definitions": [
+        {
+          "gloss": "after that"
+        }
+      ]
+    },
+    {
+      "id": "cíju-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "裁る"
+      ],
+      "definitions": [
+        {
+          "gloss": "judge"
+        }
+      ]
+    },
+    {
+      "id": "cína",
+      "pos": "noun",
+      "script": [
+        "名"
+      ],
+      "definitions": [
+        {
+          "gloss": "name"
+        }
+      ]
+    },
+    {
+      "id": "có",
+      "pos": "noun",
+      "script": [
+        "上"
+      ],
+      "definitions": [
+        {
+          "gloss": "on top"
+        }
+      ]
+    },
+    {
+      "id": "códatu",
+      "pos": "noun",
+      "script": [
+        "片集"
+      ],
+      "definitions": [
+        {
+          "gloss": "combination of cards"
+        }
+      ]
+    },
+    {
+      "id": "códo-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "錘る"
+      ],
+      "definitions": [
+        {
+          "gloss": "consider important"
+        }
+      ]
+    },
+    {
+      "id": "cómasu",
+      "pos": "noun",
+      "script": [
+        "積銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "sum of money"
+        }
+      ]
+    },
+    {
+      "id": "cóno",
+      "pos": "noun",
+      "script": [
+        "前"
+      ],
+      "definitions": [
+        {
+          "gloss": "front"
+        }
+      ]
+    },
+    {
+      "id": "cúna",
+      "pos": "noun",
+      "script": [
+        "五"
+      ],
+      "definitions": [
+        {
+          "gloss": "five"
+        }
+      ]
+    },
+    {
+      "id": "cúnasi",
+      "pos": "noun",
+      "script": [
+        "六"
+      ],
+      "definitions": [
+        {
+          "gloss": "six"
+        }
+      ]
+    },
+    {
+      "id": "cúneku",
+      "pos": "noun",
+      "script": [
+        "七"
+      ],
+      "definitions": [
+        {
+          "gloss": "seven"
+        }
+      ]
+    },
+    {
+      "id": "dońdatu",
+      "pos": "noun",
+      "script": [
+        "島集"
+      ],
+      "definitions": [
+        {
+          "gloss": "Republic Union of the Eastern Islands"
+        }
+      ]
+    },
+    {
+      "id": "dátu",
+      "pos": "noun",
+      "script": [
+        "集"
+      ],
+      "definitions": [
+        {
+          "gloss": "combination"
+        }
+      ]
+    },
+    {
+      "id": "ekádon",
+      "pos": "noun",
+      "script": [
+        "光島"
+      ],
+      "definitions": [
+        {
+          "gloss": "Ekadon Island"
+        }
+      ]
+    },
+    {
+      "id": "gógowi",
+      "pos": "noun",
+      "script": [
+        "ごゝ皿"
+      ],
+      "definitions": [
+        {
+          "gloss": "extra large serving"
+        }
+      ]
+    },
+    {
+      "id": "inekúg-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "閉付ぐ"
+      ],
+      "definitions": [
+        {
+          "gloss": "place something face down"
+        }
+      ]
+    },
+    {
+      "id": "ininátono",
+      "pos": "noun",
+      "script": [
+        "小島"
+      ],
+      "definitions": [
+        {
+          "gloss": "small island"
+        }
+      ]
+    },
+    {
+      "id": "jamámuta",
+      "pos": "noun",
+      "script": [
+        "口家"
+      ],
+      "definitions": [
+        {
+          "gloss": "cheap restaurant"
+        }
+      ]
+    },
+    {
+      "id": "ju",
+      "pos": "noun conjunction",
+      "script": [
+        "ゆ",
+        "亦"
+      ],
+      "definitions": [
+        {
+          "gloss": "or"
+        }
+      ]
+    },
+    {
+      "id": "jáku",
+      "pos": "noun",
+      "script": [
+        "律"
+      ],
+      "definitions": [
+        {
+          "gloss": "rule"
+        }
+      ]
+    },
+    {
+      "id": "ján-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "生ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "submit"
+        }
+      ]
+    },
+    {
+      "id": "jánku",
+      "pos": "noun",
+      "script": [
+        "口物"
+      ],
+      "definitions": [
+        {
+          "gloss": "food"
+        }
+      ]
+    },
+    {
+      "id": "kańken",
+      "pos": "noun",
+      "script": [
+        "火処"
+      ],
+      "definitions": [
+        {
+          "gloss": "kitchen"
+        }
+      ]
+    },
+    {
+      "id": "ken",
+      "pos": "sentence conjunction",
+      "script": [
+        "即"
+      ],
+      "definitions": [
+        {
+          "gloss": "then"
+        }
+      ]
+    },
+    {
+      "id": "kinusáciju",
+      "pos": "noun",
+      "script": [
+        "銭裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "money calculation"
+        }
+      ]
+    },
+    {
+      "id": "kjábetu",
+      "pos": "noun",
+      "script": [
+        "心圧"
+      ],
+      "definitions": [
+        {
+          "gloss": "oppression"
+        }
+      ]
+    },
+    {
+      "id": "ká-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "筆る"
+      ],
+      "definitions": [
+        {
+          "gloss": "write",
+          "translations": {
+            "ja": "書く"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kácuka",
+      "pos": "noun",
+      "script": [
+        "此人"
+      ],
+      "definitions": [
+        {
+          "gloss": "this person"
+        }
+      ]
+    },
+    {
+      "id": "kákan",
+      "pos": "noun",
+      "script": [
+        "此処"
+      ],
+      "definitions": [
+        {
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "id": "káxcen",
+      "pos": "noun",
+      "script": [
+        "互言"
+      ],
+      "definitions": [
+        {
+          "gloss": "conversation"
+        }
+      ]
+    },
+    {
+      "id": "kéca",
+      "pos": "noun",
+      "script": [
+        "絵"
+      ],
+      "definitions": [
+        {
+          "gloss": "picture"
+        }
+      ]
+    },
+    {
+      "id": "kéco",
+      "pos": "prenominal",
+      "script": [
+        "如"
+      ],
+      "definitions": [
+        {
+          "gloss": "such as"
+        }
+      ]
+    },
+    {
+      "id": "kém-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "軟"
+      ],
+      "definitions": [
+        {
+          "gloss": "be weak"
+        }
+      ]
+    },
+    {
+      "id": "két-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "善"
+      ],
+      "definitions": [
+        {
+          "gloss": "be good"
+        }
+      ]
+    },
+    {
+      "id": "kéxke",
+      "pos": "noun",
+      "script": [
+        "戦処"
+      ],
+      "definitions": [
+        {
+          "gloss": "fighting place"
+        }
+      ]
+    },
+    {
+      "id": "kíja",
+      "pos": "noun",
+      "script": [
+        "心"
+      ],
+      "definitions": [
+        {
+          "gloss": "mind"
+        }
+      ]
+    },
+    {
+      "id": "kíja#2",
+      "pos": "noun",
+      "script": [
+        "日"
+      ],
+      "definitions": [
+        {
+          "gloss": "day",
+          "translations": {
+            "ja": "日"
+          }
+        },{
+          "gloss": "sun",
+          "translations": {
+            "ja": "太陽、日"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kóxco",
+      "pos": "noun",
+      "script": [
+        "手片"
+      ],
+      "definitions": [
+        {
+          "gloss": "cards in one’s hand",
+          "translations": {
+            "ja": "手札"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kúg-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "付ぐ"
+      ],
+      "definitions": [
+        {
+          "gloss": "put"
+        }
+      ]
+    },
+    {
+      "id": "lácuka",
+      "pos": "noun",
+      "script": [
+        "軸人"
+      ],
+      "definitions": [
+        {
+          "gloss": "starting player"
+        }
+      ]
+    },
+    {
+      "id": "láneme",
+      "pos": "noun",
+      "script": [
+        "羅"
+      ],
+      "definitions": [
+        {
+          "gloss": "Lanerme"
+        }
+      ]
+    },
+    {
+      "id": "lúcju",
+      "pos": "noun",
+      "script": [
+        "新裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "reset"
+        }
+      ]
+    },
+    {
+      "id": "makamóm-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "値手む"
+      ],
+      "definitions": [
+        {
+          "gloss": "count"
+        }
+      ]
+    },
+    {
+      "id": "mananádon",
+      "pos": "noun",
+      "script": [
+        "母島"
+      ],
+      "definitions": [
+        {
+          "gloss": "Manmana Island"
+        }
+      ]
+    },
+    {
+      "id": "max́matu",
+      "pos": "noun",
+      "script": [
+        "奮々"
+      ],
+      "definitions": [
+        {
+          "gloss": "rage"
+        }
+      ]
+    },
+    {
+      "id": "mitun≡",
+      "pos": "bound morpheme",
+      "script": [
+        "十五"
+      ],
+      "definitions": [
+        {
+          "gloss": "fifteen"
+        }
+      ]
+    },
+    {
+      "id": "mituun≡",
+      "pos": "bound morpheme",
+      "script": [
+        "十五"
+      ],
+      "definitions": [
+        {
+          "gloss": "fifteen"
+        }
+      ]
+    },
+    {
+      "id": "moŕmaku",
+      "pos": "noun",
+      "script": [
+        "別値"
+      ],
+      "definitions": [
+        {
+          "gloss": "another number"
+        }
+      ]
+    },
+    {
+      "id": "munkaídatu",
+      "pos": "noun",
+      "script": [
+        "妙集"
+      ],
+      "definitions": [
+        {
+          "gloss": "special combination"
+        }
+      ]
+    },
+    {
+      "id": "munkaíkaga",
+      "pos": "noun",
+      "script": [
+        "妙時"
+      ],
+      "definitions": [
+        {
+          "gloss": "rare case"
+        }
+      ]
+    },
+    {
+      "id": "muńcan",
+      "pos": "noun",
+      "script": [
+        "無識"
+      ],
+      "definitions": [
+        {
+          "gloss": "subconsciousness"
+        }
+      ]
+    },
+    {
+      "id": "muńmoku",
+      "pos": "noun",
+      "script": [
+        "無行"
+      ],
+      "definitions": [
+        {
+          "gloss": "passing one’s turn"
+        }
+      ]
+    },
+    {
+      "id": "máka",
+      "pos": "noun",
+      "script": [
+        "値"
+      ],
+      "definitions": [
+        {
+          "gloss": "number"
+        }
+      ]
+    },
+    {
+      "id": "mákaco",
+      "pos": "noun",
+      "script": [
+        "値片"
+      ],
+      "definitions": [
+        {
+          "gloss": "number card"
+        }
+      ]
+    },
+    {
+      "id": "mám-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "定む"
+      ],
+      "definitions": [
+        {
+          "gloss": "determine"
+        }
+      ]
+    },
+    {
+      "id": "méki",
+      "pos": "adjectival noun",
+      "script": [
+        "硬"
+      ],
+      "definitions": [
+        {
+          "gloss": "strong"
+        }
+      ]
+    },
+    {
+      "id": "méko",
+      "pos": "noun",
+      "script": [
+        "道"
+      ],
+      "definitions": [
+        {
+          "gloss": "way"
+        }
+      ]
+    },
+    {
+      "id": "méme-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "同る"
+      ],
+      "definitions": [
+        {
+          "gloss": "be same"
+        }
+      ]
+    },
+    {
+      "id": "míso",
+      "pos": "noun",
+      "script": [
+        "類"
+      ],
+      "definitions": [
+        {
+          "gloss": "kind"
+        }
+      ]
+    },
+    {
+      "id": "móm-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "手む"
+      ],
+      "definitions": [
+        {
+          "gloss": "take"
+        },
+        {
+          "gloss": "obtain"
+        }
+      ]
+    },
+    {
+      "id": "mórwa",
+      "pos": "sentence conjunction",
+      "script": [
+        "別而"
+      ],
+      "definitions": [
+        {
+          "gloss": "but"
+        }
+      ]
+    },
+    {
+      "id": "móxpor",
+      "pos": "noun",
+      "script": [
+        "行道"
+      ],
+      "definitions": [
+        {
+          "gloss": "procedure"
+        }
+      ]
+    },
+    {
+      "id": "mún",
+      "pos": "noun",
+      "script": [
+        "無"
+      ],
+      "definitions": [
+        {
+          "gloss": "0"
+        },
+        {
+          "gloss": "zero"
+        }
+      ]
+    },
+    {
+      "id": "múnbo a tó",
+      "pos": "noun",
+      "script": [
+        "無満之樽"
+      ],
+      "definitions": [
+        {
+          "gloss": "insatiable"
+        }
+      ],
+      "components": [
+        "múnbo",
+        "a",
+        "tó"
+      ]
+    },
+    {
+      "id": "múnsu",
+      "pos": "noun",
+      "script": [
+        "無銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "free of charge"
+        }
+      ]
+    },
+    {
+      "id": "nekámaka",
+      "pos": "noun",
+      "script": [
+        "連値"
+      ],
+      "definitions": [
+        {
+          "gloss": "consecutive number"
+        }
+      ]
+    },
+    {
+      "id": "nekátadu",
+      "pos": "noun",
+      "script": [
+        "連集"
+      ],
+      "definitions": [
+        {
+          "gloss": "combination of sequential cards"
+        }
+      ]
+    },
+    {
+      "id": "netumitun≡",
+      "pos": "bound morpheme",
+      "script": [
+        "六十五"
+      ],
+      "definitions": [
+        {
+          "gloss": "65"
+        }
+      ]
+    },
+    {
+      "id": "nimálane",
+      "pos": "noun",
+      "script": [
+        "哩言"
+      ],
+      "definitions": [
+        {
+          "gloss": "Linepāine"
+        }
+      ]
+    },
+    {
+      "id": "nimór-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "小止る"
+      ],
+      "definitions": [
+        {
+          "gloss": "take a short break"
+        }
+      ]
+    },
+    {
+      "id": "néka",
+      "pos": "noun",
+      "script": [
+        "連"
+      ],
+      "definitions": [
+        {
+          "gloss": "sequence"
+        }
+      ]
+    },
+    {
+      "id": "néme-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "労る"
+      ],
+      "definitions": [
+        {
+          "gloss": "work"
+        }
+      ]
+    },
+    {
+      "id": "nínco",
+      "pos": "noun",
+      "script": [
+        "紙片"
+      ],
+      "definitions": [
+        {
+          "gloss": "card",
+          "translations": {
+            "ja": "カード"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nít-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "入つ"
+      ],
+      "definitions": [
+        {
+          "gloss": "disappear"
+        }
+      ]
+    },
+    {
+      "id": "nómu",
+      "pos": "noun",
+      "script": [
+        "八"
+      ],
+      "definitions": [
+        {
+          "gloss": "eight"
+        }
+      ]
+    },
+    {
+      "id": "nón-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "悪ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "bad"
+        }
+      ]
+    },
+    {
+      "id": "nóu",
+      "pos": "noun",
+      "script": [
+        "九"
+      ],
+      "definitions": [
+        {
+          "gloss": "9"
+        },
+        {
+          "gloss": "nine"
+        }
+      ]
+    },
+    {
+      "id": "okítadu",
+      "pos": "noun",
+      "script": [
+        "友集"
+      ],
+      "definitions": [
+        {
+          "gloss": "combination of cards of equal rank"
+        }
+      ]
+    },
+    {
+      "id": "six́sor muńmoku",
+      "pos": "noun",
+      "script": [
+        "術上無行"
+      ],
+      "definitions": [
+        {
+          "gloss": "strategic pass"
+        }
+      ]
+    },
+    {
+      "id": "sukelácuka",
+      "pos": "noun",
+      "script": [
+        "店軸人"
+      ],
+      "definitions": [
+        {
+          "gloss": "shopkeeper"
+        }
+      ]
+    },
+    {
+      "id": "sísitu",
+      "pos": "noun",
+      "script": [
+        "使術"
+      ],
+      "definitions": [
+        {
+          "gloss": "usage",
+          "translations": {
+            "ja": "使い方"
+          }
+        }
+      ]
+    },
+    {
+      "id": "súco",
+      "pos": "noun",
+      "script": [
+        "銭片"
+      ],
+      "definitions": [
+        {
+          "gloss": "card with a monetary value",
+          "translations": {
+            "ja": "得点札"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tacám-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "多む"
+      ],
+      "definitions": [
+        {
+          "gloss": "be many",
+          "translations": {
+            "ja": "多い"
+          }
+        }
+      ]
+    },
+    {
+      "id": "takańdon",
+      "pos": "noun",
+      "script": [
+        "皇島"
+      ],
+      "definitions": [
+        {
+          "gloss": "Atalam Island",
+          "translations": {
+            "ja": "アタラム島"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tetu",
+      "pos": "noun",
+      "script": [
+        "唯"
+      ],
+      "definitions": [
+        {
+          "gloss": "only"
+        }
+      ]
+    },
+    {
+      "id": "tikéoli",
+      "pos": "noun",
+      "script": [
+        "味油"
+      ],
+      "definitions": [
+        {
+          "gloss": "condiment",
+          "translations": {
+            "ja": "調味料"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tomábeko",
+      "pos": "noun",
+      "script": [
+        "端之道"
+      ],
+      "definitions": [
+        {
+          "gloss": "as much as possible"
+        }
+      ]
+    },
+    {
+      "id": "tá-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "終る"
+      ],
+      "definitions": [
+        {
+          "gloss": "end"
+        }
+      ]
+    },
+    {
+      "id": "téko",
+      "pos": "noun",
+      "script": [
+        "残"
+      ],
+      "definitions": [
+        {
+          "gloss": "leftover"
+        },
+        {
+          "gloss": "remaining"
+        }
+      ]
+    },
+    {
+      "id": "tén-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "混ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "mix"
+        }
+      ]
+    },
+    {
+      "id": "tí",
+      "pos": "noun",
+      "script": [
+        "其"
+      ],
+      "definitions": [
+        {
+          "gloss": "such kind"
+        }
+      ]
+    },
+    {
+      "id": "tí a",
+      "pos": "prenominal",
+      "script": [
+        "其"
+      ],
+      "definitions": [
+        {
+          "gloss": "such kind of"
+        }
+      ]
+    },
+    {
+      "id": "tíkaga",
+      "pos": "noun",
+      "script": [
+        "其時"
+      ],
+      "definitions": [
+        {
+          "gloss": "that time"
+        }
+      ]
+    },
+    {
+      "id": "tína",
+      "pos": "noun",
+      "script": [
+        "己"
+      ],
+      "definitions": [
+        {
+          "gloss": "oneself"
+        }
+      ]
+    },
+    {
+      "id": "tónke",
+      "pos": "noun",
+      "script": [
+        "多少"
+      ],
+      "definitions": [
+        {
+          "gloss": "quantity"
+        }
+      ]
+    },
+    {
+      "id": "túce",
+      "pos": "prenominal",
+      "script": [
+        "毎"
+      ],
+      "definitions": [
+        {
+          "gloss": "each"
+        }
+      ]
+    },
+    {
+      "id": "túmoku",
+      "pos": "noun",
+      "script": [
+        "再行"
+      ],
+      "definitions": [
+        {
+          "gloss": "going again"
+        }
+      ]
+    },
+    {
+      "id": "túo",
+      "pos": "noun",
+      "script": [
+        "片"
+      ],
+      "definitions": [
+        {
+          "gloss": "card"
+        }
+      ]
+    },
+    {
+      "id": "tútu",
+      "pos": "noun",
+      "script": [
+        "再々",
+        "再"
+      ],
+      "definitions": [
+        {
+          "gloss": "repeatedly"
+        },
+        {
+          "gloss": "again"
+        }
+      ]
+    },
+    {
+      "id": "ukemók-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "少行く"
+      ],
+      "definitions": [
+        {
+          "gloss": "decrease",
+          "translations": {
+            "ja": "減る"
+          }
+        }
+      ],
+      "components": [
+        "úk-",
+        "(e)mók-"
+      ]
+    },
+    {
+      "id": "uteján-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "始ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "begin"
+        }
+      ],
+      "components": [
+        "út-",
+        "(e)",
+        "ján-"
+      ]
+    },
+    {
+      "id": "wa",
+      "pos": "sentence conjunction",
+      "script": [
+        "わ",
+        "而"
+      ],
+      "definitions": [
+        {
+          "gloss": "and also"
+        }
+      ]
+    },
+    {
+      "id": "á",
+      "pos": "noun",
+      "script": [
+        "あ"
+      ],
+      "definitions": [
+        {
+          "gloss": "the first alphabet",
+          "translations": {
+            "ja": "①, その1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ácuka",
+      "pos": "noun",
+      "script": [
+        "人"
+      ],
+      "definitions": [
+        {
+          "gloss": "person"
+        }
+      ]
+    },
+    {
+      "id": "ámama",
+      "pos": "adjectival noun",
+      "script": [
+        "大"
+      ],
+      "definitions": [
+        {
+          "gloss": "greatly"
+        },
+        {
+          "gloss": "great"
+        }
+      ]
+    },
+    {
+      "id": "áno",
+      "pos": "noun",
+      "script": [
+        "全"
+      ],
+      "definitions": [
+        {
+          "gloss": "all",
+          "translations": {
+            "en": "entirety",
+            "ja": "すべて"
+          }
+        }
+      ]
+    },
+    {
+      "id": "áno#2",
+      "pos": "prenominal",
+      "script": [
+        "全"
+      ],
+      "definitions": [
+        {
+          "gloss": "all",
+          "translations": {
+            "en": "entire",
+            "ja": "すべての"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ási",
+      "pos": "noun",
+      "script": [
+        "一"
+      ],
+      "definitions": [
+        {
+          "gloss": "one"
+        }
+      ]
+    },
+    {
+      "id": "átawi",
+      "pos": "noun",
+      "script": [
+        "加皿"
+      ],
+      "definitions": [
+        {
+          "gloss": "another helping",
+          "translations": {
+            "ja": "おかわり"
+          }
+        }
+      ]
+    },
+    {
+      "id": "é",
+      "pos": "noun",
+      "script": [
+        "え"
+      ],
+      "definitions": [
+        {
+          "gloss": "the second alphabet",
+          "translations": {
+            "ja": "②, その2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ée",
+      "pos": "interjection",
+      "script": [
+        "えゝ"
+      ],
+      "definitions": [
+        {
+          "gloss": "hey"
+        }
+      ]
+    },
+    {
+      "id": "éka-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "光る"
+      ],
+      "definitions": [
+        {
+          "gloss": "shine"
+        }
+      ]
+    },
+    {
+      "id": "émo",
+      "pos": "noun",
+      "script": [
+        "別"
+      ],
+      "definitions": [
+        {
+          "gloss": "other"
+        }
+      ]
+    },
+    {
+      "id": "ému-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "如る"
+      ],
+      "definitions": [
+        {
+          "gloss": "be similar"
+        }
+      ]
+    },
+    {
+      "id": "éti",
+      "pos": "noun",
+      "script": [
+        "内"
+      ],
+      "definitions": [
+        {
+          "gloss": "content"
+        }
+      ]
+    },
+    {
+      "id": "ex≡",
+      "pos": "bound morpheme",
+      "script": [
+        "一"
+      ],
+      "definitions": [
+        {
+          "gloss": "one"
+        }
+      ]
+    },
+    {
+      "id": "íja-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "心る"
+      ],
+      "definitions": [
+        {
+          "gloss": "consider"
+        }
+      ]
+    },
+    {
+      "id": "íku",
+      "pos": "noun",
+      "script": [
+        "二"
+      ],
+      "definitions": [
+        {
+          "gloss": "two"
+        }
+      ]
+    },
+    {
+      "id": "iku≡",
+      "pos": "bound morpheme",
+      "script": [
+        "二"
+      ],
+      "definitions": [
+        {
+          "gloss": "two"
+        }
+      ]
+    },
+    {
+      "id": "óki",
+      "pos": "noun",
+      "script": [
+        "友"
+      ],
+      "definitions": [
+        {
+          "gloss": "combination of cards of equal rank"
+        }
+      ]
+    },
+    {
+      "id": "on≡",
+      "pos": "bound morpheme",
+      "script": [
+        "三"
+      ],
+      "definitions": [
+        {
+          "gloss": "three"
+        }
+      ]
+    },
+    {
+      "id": "úk-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "少く"
+      ],
+      "definitions": [
+        {
+          "gloss": "be few"
+        }
+      ]
+    },
+    {
+      "id": "úla",
+      "pos": "noun",
+      "script": [
+        "歪"
+      ],
+      "definitions": [
+        {
+          "gloss": "wildcard"
+        }
+      ]
+    },
+    {
+      "id": "úmu",
+      "pos": "noun",
+      "script": [
+        "三"
+      ],
+      "definitions": [
+        {
+          "gloss": "three"
+        }
+      ]
+    },
+    {
+      "id": "un≡",
+      "pos": "bound morpheme",
+      "script": [
+        "五"
+      ],
+      "definitions": [
+        {
+          "gloss": "five"
+        }
+      ]
+    },
+    {
+      "id": "út-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "下つ"
+      ],
+      "definitions": [
+        {
+          "gloss": "lower",
+          "translations": {
+            "ja": "下がる、下げる"
+          }
+        },{
+          "gloss": "proceed to the next",
+          "translations": {
+            "ja": "次に進む"
+          }
+        }
+      ]
+    },
+    {
+      "id": "útagi",
+      "pos": "noun",
+      "script": [
+        "下"
+      ],
+      "definitions": [
+        {
+          "gloss": "below"
+        }
+      ]
+    },
+    {
+      "id": "útagi kan ká ki kálu",
+      "pos": "phrase",
+      "script": [
+        "於下筆此"
+      ],
+      "definitions": [
+        {
+          "gloss": "as will be explained below",
+          "translations": {
+            "ja": "後述、後に述べる"
+          }
+        }
+      ],
+      "components": [
+        "útagi",
+        "kan",
+        "ká",
+        "ki",
+        "ká-",
+        "(u)"
+      ]
+    },
+    {
+      "id": "útu",
+      "pos": "prenominal",
+      "script": [
+        "下"
+      ],
+      "definitions": [
+        {
+          "gloss": "negative"
+        }
+      ]
+    },
+    {
+      "id": "anoámama",
+      "pos": "adjectival noun",
+      "script": [
+        "全大"
+      ],
+      "definitions": [
+        {
+          "gloss": "maximum"
+        }
+      ]
+    },
+    {
+      "id": "béma",
+      "pos": "adjectival noun",
+      "script": [
+        "全大"
+      ],
+      "definitions": [
+        {
+          "gloss": "maximum"
+        }
+      ]
+    },
+    {
+      "id": "comátuo",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cáxco",
+      "pos": "noun",
+      "script": [
+        "斥片"
+      ],
+      "definitions": [
+        {
+          "gloss": "discarded card"
+        }
+      ]
+    },
+    {
+      "id": "césa",
+      "pos": "noun",
+      "script": [
+        "斥片"
+      ],
+      "definitions": [
+        {
+          "gloss": "discarded card"
+        }
+      ]
+    },
+    {
+      "id": "cóma",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cómaco",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "cónco",
+      "pos": "noun",
+      "script": [
+        "積片"
+      ],
+      "definitions": [
+        {
+          "gloss": "pile of cards"
+        }
+      ]
+    },
+    {
+      "id": "kinínsu",
+      "pos": "noun",
+      "script": [
+        "銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "money"
+        }
+      ]
+    },
+    {
+      "id": "kinúnsu",
+      "pos": "noun",
+      "script": [
+        "銭"
+      ],
+      "definitions": [
+        {
+          "gloss": "money"
+        }
+      ]
+    },
+    {
+      "id": "kámu",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "méxko",
+      "pos": "noun",
+      "script": [
+        "硬軟"
+      ],
+      "definitions": [
+        {
+          "gloss": "strength"
+        }
+      ]
+    },
+    {
+      "id": "méxkor",
+      "pos": "noun",
+      "script": [
+        "硬軟"
+      ],
+      "definitions": [
+        {
+          "gloss": "strength"
+        }
+      ]
+    },
+    {
+      "id": "nága",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "nágamu",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "nágan",
+      "pos": "noun",
+      "script": [
+        "四"
+      ],
+      "definitions": [
+        {
+          "gloss": "four"
+        }
+      ]
+    },
+    {
+      "id": "soŕcjur",
+      "pos": "noun",
+      "script": [
+        "上裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "setup"
+        }
+      ]
+    },
+    {
+      "id": "sórcju",
+      "pos": "noun",
+      "script": [
+        "上裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "setup"
+        }
+      ]
+    }
+  ],
+  "alternative_form_groups": [
+    {
+      "script": "十五",
+      "entry_ids": [
+        "mitun≡",
+        "mituun≡"
+      ]
+    },
+    {
+      "script": "銭",
+      "entry_ids": [
+        "kinínsu",
+        "kinúnsu"
+      ]
+    },
+    {
+      "script": "上裁",
+      "entry_ids": [
+        "sórcju",
+        "soŕcjur"
+      ]
+    },
+    {
+      "script": "積片",
+      "entry_ids": [
+        "cómaco",
+        "cónco",
+        "comátuo",
+        "cóma"
+      ]
+    },
+    {
+      "script": "斥片",
+      "entry_ids": [
+        "cáxco",
+        "césa"
+      ]
+    },
+    {
+      "script": "硬軟",
+      "entry_ids": [
+        "méxko",
+        "méxkor"
+      ]
+    },
+    {
+      "script": "四",
+      "entry_ids": [
+        "nága",
+        "nágamu",
+        "nágan",
+        "kámu"
+      ]
+    },
+    {
+      "script": "全大",
+      "entry_ids": [
+        "béma",
+        "anoámama"
+      ]
+    },
+    {
+      "script": "一人",
+      "entry_ids": [
+        "asiácuka",
+        "asécuka"
+      ]
+    }
+  ]
+}
