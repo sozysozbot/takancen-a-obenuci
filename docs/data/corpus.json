@@ -7196,6 +7196,31 @@
     {
       "source": "第12回架空言語・架空地図学会スライド発表",
       "translation": {
+        "ja": "こんにちは"
+      },"tokens":[
+         {
+          "form": "kéta",
+          "mixed_script": "善た",
+          "entry_ids": [
+            "két-",
+            "(a)"
+          ],
+          "gloss": "be.good-PTCP"
+        },
+         {
+          "form": "émaci",
+          "mixed_script": "在し",
+          "entry_ids": [
+            "éma-",
+            "(i)"
+          ],
+          "gloss": "exist-IMP"
+        }
+      ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表",
+      "translation": {
         "ja": "与えさせて頂きたい"
       },
       "tokens": [
