@@ -1285,6 +1285,18 @@
         }
       ]
     },
+     {
+      "id": "bélur",
+      "pos": "noun",
+      "script": [
+        "全新"
+      ],
+      "definitions": [
+        {
+          "gloss": "latest"
+        }
+      ]
+    },
     {
       "id": "béutu",
       "pos": "noun",
@@ -1988,6 +2000,30 @@
     },
     {
       "id": "lúcju",
+      "pos": "noun",
+      "script": [
+        "新裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "reset"
+        }
+      ]
+    },
+    {
+      "id": "lúcjur",
+      "pos": "noun",
+      "script": [
+        "新裁"
+      ],
+      "definitions": [
+        {
+          "gloss": "reset"
+        }
+      ]
+    },
+    {
+      "id": "luŕcjur",
       "pos": "noun",
       "script": [
         "新裁"
@@ -5783,6 +5819,21 @@
       "entry_ids": [
         "asiácuka",
         "asécuka"
+      ]
+    },
+    {
+      "script": "新裁",
+      "entry_ids": [
+        "lúcju",
+        "lúcjur",
+        "luŕcjur"
+      ]
+    },
+    {
+      "script": "全新",
+      "entry_ids": [
+        "bélu",
+        "bélur"
       ]
     }
   ]

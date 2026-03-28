@@ -6573,10 +6573,11 @@
           "gloss": "NOM"
         },
         {
-          "form": "lúcju",
+          "multiple-standard-pronunciations": true,
+          "forms": ["lúcju", "lúcjur"],
           "mixed_script": "新裁",
-          "entry_ids": [
-            "lúcju"
+          "entry_ids_of_each_form": [
+            ["lúcju"], ["lúcjur"]
           ],
           "gloss": "reset"
         },
