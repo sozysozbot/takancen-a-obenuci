@@ -1153,8 +1153,15 @@
       ],
       "definitions": [
         {
-          "gloss": "Ai’ren Republic"
+          "gloss": "Ai’ren Republic",
+          "translations": {
+            "ja": "アイル共和国"
+          }
         }
+      ],
+      "components": [
+        "áilu",
+        "címa"
       ]
     },
     {
@@ -1177,7 +1184,10 @@
       ],
       "definitions": [
         {
-          "gloss": "one person"
+          "gloss": "one person",
+          "translations": {
+            "ja": "一人"
+          }
         }
       ]
     },
@@ -1189,7 +1199,10 @@
       ],
       "definitions": [
         {
-          "gloss": "one person"
+          "gloss": "one person",
+          "translations": {
+            "ja": "一人"
+          }
         }
       ]
     },
@@ -1397,7 +1410,7 @@
       ],
       "definitions": [
         {
-          "gloss": "after that"
+          "gloss": "after that","translations":{"ja":"その後"}
         }
       ]
     },
@@ -1562,7 +1575,7 @@
       ],
       "definitions": [
         {
-          "gloss": "Republic Union of the Eastern Islands"
+          "gloss": "Republic Union of the Eastern Islands","translations":{"ja":"東諸島共和国連合"}
         }
       ]
     },
@@ -2715,7 +2728,7 @@
       ],
       "definitions": [
         {
-          "gloss": "mix"
+          "gloss": "mix","translations":{"ja":"混ぜる"}
         }
       ]
     },
@@ -2771,7 +2784,7 @@
       ],
       "definitions": [
         {
-          "gloss": "oneself"
+          "gloss": "oneself","translations":{"ja":"自分、自身"}
         }
       ]
     },
@@ -2868,7 +2881,10 @@
       ],
       "definitions": [
         {
-          "gloss": "begin"
+          "gloss": "begin",
+          "translations": {
+            "ja": "始まる"
+          }
         }
       ],
       "components": [
@@ -3221,7 +3237,7 @@
       ],
       "definitions": [
         {
-          "gloss": "wildcard"
+          "gloss": "wildcard","translations":{"ja":"ワイルドカード"}
         }
       ]
     },
@@ -3248,7 +3264,10 @@
       ],
       "definitions": [
         {
-          "gloss": "five"
+          "gloss": "five",
+          "translations": {
+            "ja": "五、5"
+          }
         }
       ]
     },
@@ -3328,7 +3347,10 @@
       ],
       "definitions": [
         {
-          "gloss": "negative"
+          "gloss": "negative",
+          "translations": {
+            "ja": "マイナス〜"
+          }
         }
       ]
     },
@@ -3342,6 +3364,10 @@
         {
           "gloss": "maximum"
         }
+      ],
+      "components": [
+        "áno",
+        "ámama"
       ]
     },
     {
@@ -3618,7 +3644,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "eye",
           "translations": {
             "ja": "目"
           }
@@ -3872,9 +3898,10 @@
       "conjugation_class": "consonant-stem",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "PROG",
           "translations": {
-            "ja": "～している"
+            "en": "Progressive marker",
+            "ja": "進行相マーカー；〜している"
           }
         }
       ],
@@ -3903,9 +3930,10 @@
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "PROG",
           "translations": {
-            "ja": "〜している"
+            "en": "Progressive marker",
+            "ja": "進行相マーカー；〜している"
           }
         }
       ],
@@ -4840,7 +4868,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Kijacuka(name)",
           "translations": {
             "ja": "キヤスカ（人名）"
           }
@@ -4929,7 +4957,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Uomuka(name)",
           "translations": {
             "ja": "ウオムカ（人名）"
           }
@@ -4985,7 +5013,7 @@
       "pos": "interjection",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "uh",
           "translations": {
             "ja": "ああ、えっと"
           }
@@ -5030,9 +5058,15 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "color",
           "translations": {
-            "ja": "色、様子"
+            "ja": "色"
+          }
+        },
+        {
+          "gloss": "appearance",
+          "translations": {
+            "ja": "様子"
           }
         }
       ],
@@ -5219,7 +5253,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "person of Ai’r ethnicity",
           "translations": {
             "ja": "アイル人"
           }
@@ -5264,7 +5298,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Cetkaik",
           "translations": {
             "ja": "机戦、パイグ将棋"
           }
@@ -5535,7 +5569,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "stone",
           "translations": {
             "ja": "石"
           }
@@ -5684,7 +5718,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Tarpu(name)",
           "translations": {
             "ja": "ターフ（人名）"
           }
@@ -5729,7 +5763,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "Kasika",
+          "gloss": "Kasika(name)",
           "translations": {
             "ja": "カジカ（人名）"
           }
@@ -5744,7 +5778,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Kuwa(name)",
           "translations": {
             "ja": "クワ（人名）"
           }
@@ -5760,7 +5794,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Takama(name)",
           "translations": {
             "ja": "タカマ（人名）"
           }
