@@ -53,6 +53,9 @@ def merge_entry(new_e: dict, old_e: dict) -> dict:
             nd = dict(nd)
             nd['translations'] = dict(nd.get('translations') or {})
             nd['translations']['ja'] = od['translations']['ja']
+        if od and nd.get('translations', {}).get('ja') and od.get('translations', {}).get('ja'):
+          if nd['translations']['ja'] != od['translations']['ja']:
+            print(f"WARN [{nd['translations']['ja']}] --- [{od['translations']['ja']}]", file=sys.stderr)
         new_defs.append(nd)
     merged['definitions'] = new_defs
 

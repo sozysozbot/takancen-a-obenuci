@@ -16,7 +16,7 @@
       ],
       "notes": {
         "en": "Used in compounds, as in 'tákan=cen' (the Takan language).",
-        "ja": "タグ:牌語借用📙tákan=cen「タカン語」のように、複合語に用いられる。"
+        "ja": "タグ:牌語借用\ntákan=cen「タカン語」のように、複合語に用いられる。"
       }
     },
     {
@@ -29,7 +29,7 @@
         {
           "gloss": "time",
           "translations": {
-            "ja": "時"
+            "ja": "時、〜回"
           }
         },
         {
@@ -50,7 +50,7 @@
         {
           "gloss": "daytime",
           "translations": {
-            "ja": "昼間"
+            "ja": "昼間、日中、昼"
           }
         }
       ],
@@ -108,7 +108,7 @@
           "gloss": "you",
           "translations": {
             "en": "second person singular pronoun",
-            "ja": "あなた、君（二人称単数代名詞）"
+            "ja": "あなた、君、貴方（二人称単数代名詞）"
           }
         }
       ],
@@ -138,7 +138,7 @@
           "gloss": "I",
           "translations": {
             "en": "first person singular pronoun",
-            "ja": "わたし（一人称単数代名詞）"
+            "ja": "わたし、私（一人称単数代名詞）"
           }
         }
       ],
@@ -195,7 +195,7 @@
         {
           "gloss": "speak",
           "translations": {
-            "ja": "話す"
+            "ja": "言う、話す"
           }
         }
       ],
@@ -278,7 +278,7 @@
           "gloss": "NOM",
           "translations": {
             "en": "Nominative case / topic marker; indicates either the subject or the topic of the sentence.",
-            "ja": "主格マーカー、主題マーカー。文の主語や主題を表す。"
+            "ja": "主格マーカー、主題マーカー。文の主語や主題を表す。；主題の副助詞、〜は"
           }
         }
       ]
@@ -294,7 +294,7 @@
           "gloss": "ACC",
           "translations": {
             "en": "Accusative case marker; indicates the direct object of the sentence.",
-            "ja": "対格マーカー。文の目的語を表す。"
+            "ja": "対格マーカー。文の目的語を表す。；〜を、対格"
           }
         }
       ]
@@ -310,7 +310,7 @@
           "gloss": "3sg",
           "translations": {
             "en": "third person singular pronoun",
-            "ja": "三人称単数代名詞"
+            "ja": "三人称単数代名詞；あれ、かれ、彼、あの人、彼女"
           }
         }
       ]
@@ -326,7 +326,7 @@
           "gloss": "Q",
           "translations": {
             "en": "Question marker; placed at the end of a questioning sentence.",
-            "ja": "文末に置く疑問文マーカー"
+            "ja": "文末に置く疑問文マーカー：疑問助詞、〜か？"
           }
         }
       ]
@@ -342,7 +342,7 @@
           "gloss": "ABL",
           "translations": {
             "en": "Ablative case marker; indicates a movement away from it.",
-            "ja": "奪格マーカー"
+            "ja": "奪格マーカー；〜から"
           }
         }
       ]
@@ -358,7 +358,7 @@
           "gloss": "LOC",
           "translations": {
             "en": "Locative case marker; indicates a place where an action takes place.",
-            "ja": "処格マーカー"
+            "ja": "処格マーカー；〜で、〜に、処格"
           }
         }
       ],
@@ -379,7 +379,7 @@
             "en": "name of an ethnicity or a language",
             "ja": "タカン（民族名 / 言語名）"
           }
-        }
+        },{ "gloss": "Tam deity","translations": {"ja": "皇神"}}
       ]
     },
     {
@@ -428,7 +428,7 @@
           "gloss": "CMPL",
           "translations": {
             "en": "The instant-of-completion marker",
-            "ja": "終了した瞬間に着目する瞬間動詞を作る"
+            "ja": "終了瞬間の助動詞：終了した瞬間に着目する瞬間動詞を作る"
           }
         }
       ]
@@ -459,7 +459,7 @@
         {
           "gloss": "can",
           "translations": {
-            "ja": "〜できる、〜しうる"
+            "ja": "〜できる、〜しうる、〜される"
           }
         }
       ],
@@ -508,6 +508,7 @@
       "id": "a",
       "lemma": "a",
       "script": [
+        "あ",
         "之"
       ],
       "pos": "noun particle",
@@ -670,7 +671,7 @@
         {
           "gloss": "exist",
           "translations": {
-            "ja": "ある、存在する"
+            "ja": "ある、存在する、在る"
           }
         }
       ],
@@ -716,7 +717,7 @@
         {
           "gloss": "land",
           "translations": {
-            "ja": "地面、土地"
+            "ja": "地面、土地、世界"
           }
         }
       ]
@@ -776,6 +777,7 @@
     {
       "id": "a#2",
       "script": [
+        "あ",
         "噫"
       ],
       "pos": "sentence particle",
@@ -894,7 +896,7 @@
         {
           "gloss": "obtain",
           "translations": {
-            "ja": "手に入れる"
+            "ja": "手に入れる、もらう、得る、受ける"
           }
         }
       ],
@@ -997,7 +999,7 @@
         {
           "gloss": "humbly",
           "translations": {
-            "ja": "させていただく"
+            "ja": "〜させていただく"
           }
         }
       ],
@@ -4930,7 +4932,7 @@
         "あ",
         "噫"
       ],
-      "pos": "sentence particle",
+      "pos": "interjection",
       "definitions": [
         {
           "gloss": "(TODO)",
@@ -5713,6 +5715,74 @@
             "ja": "タカマ（人名）"
           }
         }
+      ]
+    }
+  ],"alternative_form_groups": [
+    {
+      "script": "十五",
+      "entry_ids": [
+        "mitun≡",
+        "mituun≡"
+      ]
+    },
+    {
+      "script": "銭",
+      "entry_ids": [
+        "kinínsu",
+        "kinúnsu"
+      ]
+    },
+    {
+      "script": "上裁",
+      "entry_ids": [
+        "sórcju",
+        "soŕcjur"
+      ]
+    },
+    {
+      "script": "積片",
+      "entry_ids": [
+        "cómaco",
+        "cónco",
+        "comátuo",
+        "cóma"
+      ]
+    },
+    {
+      "script": "斥片",
+      "entry_ids": [
+        "cáxco",
+        "césa"
+      ]
+    },
+    {
+      "script": "硬軟",
+      "entry_ids": [
+        "méxko",
+        "méxkor"
+      ]
+    },
+    {
+      "script": "四",
+      "entry_ids": [
+        "nága",
+        "nágamu",
+        "nágan",
+        "kámu"
+      ]
+    },
+    {
+      "script": "全大",
+      "entry_ids": [
+        "béma",
+        "anoámama"
+      ]
+    },
+    {
+      "script": "一人",
+      "entry_ids": [
+        "asiácuka",
+        "asécuka"
       ]
     }
   ]

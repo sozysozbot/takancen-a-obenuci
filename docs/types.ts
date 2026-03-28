@@ -16,6 +16,13 @@ export interface Definition {
   translations?: LocalizedString;
 }
 
+export interface Cognates {
+  pk?: string[],
+  bt?: string[],
+  ar?: string[],
+  ln?: string[],
+}
+
 export type DictionaryEntry = {
   id: string;
   script?: string[];
@@ -23,6 +30,7 @@ export type DictionaryEntry = {
   conjugation_class: ConjugationClass;
   definitions: Definition[];
   notes?: LocalizedString;
+  cognates?: Cognates;
   components?: string[];
 } | {
   id: string;
@@ -30,6 +38,7 @@ export type DictionaryEntry = {
   pos: IndeclinablePos;
   definitions: Definition[];
   notes?: LocalizedString;
+  cognates?: Cognates;
   components?: string[];
 }
 
