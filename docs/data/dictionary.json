@@ -4740,7 +4740,7 @@
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "flow",
           "translations": {
             "ja": "流れる"
           }
@@ -5664,7 +5664,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "National Graduate Institute of the Vefisait Republic",
           "translations": {
             "ja": "ヴェフィス国立研究院大学"
           }
@@ -5682,7 +5682,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Inusalita(toponym)",
           "translations": {
             "ja": "イヌサリタ（地名）"
           }
@@ -5861,6 +5861,20 @@
       "definitions": [
         {
           "gloss": "now"
+        }
+      ]
+    },
+    {
+      "id": "ketéma-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "善在る",
+        "善まる"
+      ],
+      "definitions": [
+        {
+          "gloss": "be good"
         }
       ]
     }

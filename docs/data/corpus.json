@@ -1440,6 +1440,172 @@
     },
     {
       "source": "タカン語概論",
+      "translation": {
+        "ja": "タカマさんは良い"
+      },
+      "tokens": [
+        {
+          "form": "tákama=cici",
+          "mixed_script": "たかましし",
+          "entry_ids": [
+            "tákama",
+            "=cici"
+          ],
+          "gloss": "Takama(name)-POL"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "ketémalu",
+          "mixed_script": "善まる",
+          "entry_ids": [
+            "ketéma-",
+            "(u)"
+          ]
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
+      "translation": {
+        "ja": "クワさんはヴェフィス大学に行った。"
+      },
+      "tokens": [
+        {
+          "form": "kúwa=cici",
+          "mixed_script": "筆しし",
+          "entry_ids": [
+            "kúwa",
+            "=cici"
+          ],
+          "gloss": "Kuwa(name)-POL"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "bepicasoŕnike",
+          "mixed_script": "淮上学処",
+          "entry_ids": [
+            "bepicasoŕnike"
+          ],
+          "gloss": "National.Graduate.Institute.of.the.Vefisait.Republic"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "かん",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "moŕlata",
+          "mixed_script": "行ら終",
+          "entry_ids": [
+            "moŕ-",
+            "(a)ta"
+          ],
+          "gloss": "go-PST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
+      "translation": {
+        "ja": "この川はイヌサリタで流れていますか？"
+      },
+      "tokens": [
+        {
+          "form": "ká",
+          "mixed_script": "此",
+          "entry_ids": [
+            "ká"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "ínuci",
+          "mixed_script": "川",
+          "entry_ids": [
+            "ínuci"
+          ],
+          "gloss": "river"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "inucálita",
+          "mixed_script": "川入",
+          "entry_ids": [
+            "inucálita"
+          ],
+          "gloss": "Inusalita(toponym)"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "かん",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "námu",
+          "mixed_script": "水む",
+          "entry_ids": [
+            "ná-",
+            "(é)m-",
+            "(u)"
+          ],
+          "gloss": "flow-PROG-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
       "tokens": [
         {
           "form": "nó",
