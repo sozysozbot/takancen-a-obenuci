@@ -350,6 +350,7 @@
     {
       "id": "kan",
       "script": [
+        "かん",
         "処"
       ],
       "pos": "noun particle",
@@ -1211,6 +1212,7 @@
       "pos": "noun conjunction",
       "script": [
         "あた",
+        "加た",
         "加"
       ],
       "definitions": [
@@ -4830,6 +4832,7 @@
     {
       "id": "men",
       "script": [
+        "めん",
         "通"
       ],
       "pos": "noun particle",
@@ -4848,6 +4851,7 @@
     {
       "id": "o",
       "script": [
+        "お",
         "亦"
       ],
       "pos": "noun particle",
