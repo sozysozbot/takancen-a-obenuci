@@ -4,7 +4,10 @@ import type { DictionaryEntry, CorpusSentence, DictionaryData, CorpusData, I18nD
 
 let dictionary: DictionaryEntry[] = [];
 let corpus: CorpusSentence[] = [];
-const sourceUrlMap = new Map<string, string[]>();
+// Global reference list: index 0 = ref #1, etc.
+const globalRefs: Array<{ source_name: string; url: string }> = [];
+// source_name → 1-based global reference numbers for that source
+const sourceGlobalNums = new Map<string, number[]>();
 const entryMap = new Map<string, DictionaryEntry>();
 // Maps each entry id to the sibling ids in its alternative-form group (excluding itself).
 const alternativesMap = new Map<string, string[]>();
@@ -49,8 +52,14 @@ async function init() {
   dictionary = dictData.entries;
   corpus = corpusData.sentences.map((s, i) => ({ ...s, id: String(i) }));
   for (const { source_name, urls } of corpusData.source_urls ?? []) {
-    sourceUrlMap.set(source_name, urls);
+    const nums: number[] = [];
+    for (const url of urls) {
+      globalRefs.push({ source_name, url });
+      nums.push(globalRefs.length); // 1-based
+    }
+    sourceGlobalNums.set(source_name, nums);
   }
+  buildReferencesPanel();
   for (const entry of dictionary) entryMap.set(entry.id, entry);
   for (const group of dictData.alternative_form_groups ?? []) {
     for (const id of group.entry_ids) {
@@ -71,7 +80,7 @@ async function init() {
   applyAllFilters();
 
   const initialTab = new URLSearchParams(location.search).get('tab');
-  if (initialTab === 'dictionary' || initialTab === 'corpus') switchTab(initialTab);
+  if (initialTab === 'dictionary' || initialTab === 'corpus' || initialTab === 'references') switchTab(initialTab);
 }
 
 // ── Settings (language + font toggle) ─────────────────────────────────────
@@ -107,11 +116,13 @@ function applyScriptFont(enabled: boolean) {
 
 // ── Tab switching ──────────────────────────────────────────────────────────
 
-function switchTab(name: 'dictionary' | 'corpus') {
+function switchTab(name: 'dictionary' | 'corpus' | 'references') {
   document.getElementById('panel-dictionary')!.hidden = name !== 'dictionary';
   document.getElementById('panel-corpus')!.hidden = name !== 'corpus';
+  document.getElementById('panel-references')!.hidden = name !== 'references';
   document.getElementById('tab-dictionary')!.classList.toggle('active', name === 'dictionary');
   document.getElementById('tab-corpus')!.classList.toggle('active', name === 'corpus');
+  document.getElementById('tab-references')!.classList.toggle('active', name === 'references');
   const params = new URLSearchParams(location.search);
   params.set('tab', name);
   history.replaceState(null, '', '?' + params.toString());
@@ -122,6 +133,7 @@ function switchTab(name: 'dictionary' | 'corpus') {
 function setupControls() {
   document.getElementById('tab-dictionary')!.addEventListener('click', () => switchTab('dictionary'));
   document.getElementById('tab-corpus')!.addEventListener('click', () => switchTab('corpus'));
+  document.getElementById('tab-references')!.addEventListener('click', () => switchTab('references'));
   document.getElementById('search-input')!.addEventListener('input', applyFilter);
   document.getElementById('pos-filter')!.addEventListener('change', applyFilter);
   document.getElementById('source-filter')!.addEventListener('change', applyAllFilters);
@@ -133,6 +145,7 @@ function setupControls() {
 
   document.getElementById('tab-dictionary')!.textContent = t('ui', 'Dictionary');
   document.getElementById('tab-corpus')!.textContent = t('ui', 'Corpus');
+  document.getElementById('tab-references')!.textContent = t('ui', 'References');
   (document.getElementById('search-input') as HTMLInputElement).placeholder = t('ui', 'Search\u2026');
 
   const enlistedHeading = document.createElement('div');
@@ -516,6 +529,22 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
 
 // ── Corpus rendering ───────────────────────────────────────────────────────
 
+function buildReferencesPanel() {
+  const list = document.getElementById('references-list')!;
+  globalRefs.forEach(({ source_name, url }, i) => {
+    const li = document.createElement('li');
+    li.id = `ref-${i + 1}`;
+    li.appendChild(document.createTextNode(source_name + ' — '));
+    const a = document.createElement('a');
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = url;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+}
+
 function renderCorpus(sentences: CorpusSentence[]) {
   const list = document.getElementById('corpus-list')!;
   list.innerHTML = '';
@@ -530,20 +559,29 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
   if (sentence.source) {
     const src = document.createElement('div');
     src.className = 'source';
-    const urls = sourceUrlMap.get(sentence.source);
-    if (urls?.length) {
-      src.textContent = sentence.source + ' ';
-      urls.forEach((url, i) => {
+    src.textContent = sentence.source;
+    const nums = sourceGlobalNums.get(sentence.source);
+    if (nums?.length) {
+      src.appendChild(document.createTextNode(' '));
+      nums.forEach((n, i) => {
         const a = document.createElement('a');
-        a.href = url;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.textContent = `[${i + 1}]`;
+        a.href = `#ref-${n}`;
+        a.textContent = `[${n}]`;
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          switchTab('references');
+          const refEl = document.getElementById(`ref-${n}`)!;
+          refEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // Clear any stale highlights (animations freeze when the panel is hidden,
+          // so animationend may never fire for a previously highlighted element).
+          document.querySelectorAll('.ref-highlight').forEach(el => el.classList.remove('ref-highlight'));
+          void refEl.offsetWidth; // force reflow so the animation restarts cleanly
+          refEl.classList.add('ref-highlight');
+          refEl.addEventListener('animationend', () => refEl.classList.remove('ref-highlight'), { once: true });
+        });
         src.appendChild(a);
-        if (i < urls.length - 1) src.appendChild(document.createTextNode(' '));
+        if (i < nums.length - 1) src.appendChild(document.createTextNode(' '));
       });
-    } else {
-      src.textContent = sentence.source;
     }
     div.appendChild(src);
   }

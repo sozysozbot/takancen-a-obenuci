@@ -2,7 +2,10 @@ import { conjugateAndJoinPure, getStemClassFromId, stripHomophoneDisambiguator }
 import { toSpacedHiraganaPure, latinToSyllabary } from "./toSpacedHiraganaPure.js";
 let dictionary = [];
 let corpus = [];
-const sourceUrlMap = new Map();
+// Global reference list: index 0 = ref #1, etc.
+const globalRefs = [];
+// source_name → 1-based global reference numbers for that source
+const sourceGlobalNums = new Map();
 const entryMap = new Map();
 // Maps each entry id to the sibling ids in its alternative-form group (excluding itself).
 const alternativesMap = new Map();
@@ -42,8 +45,14 @@ async function init() {
     dictionary = dictData.entries;
     corpus = corpusData.sentences.map((s, i) => ({ ...s, id: String(i) }));
     for (const { source_name, urls } of corpusData.source_urls ?? []) {
-        sourceUrlMap.set(source_name, urls);
+        const nums = [];
+        for (const url of urls) {
+            globalRefs.push({ source_name, url });
+            nums.push(globalRefs.length); // 1-based
+        }
+        sourceGlobalNums.set(source_name, nums);
     }
+    buildReferencesPanel();
     for (const entry of dictionary)
         entryMap.set(entry.id, entry);
     for (const group of dictData.alternative_form_groups ?? []) {
@@ -62,7 +71,7 @@ async function init() {
     updateEntryFilterUI();
     applyAllFilters();
     const initialTab = new URLSearchParams(location.search).get('tab');
-    if (initialTab === 'dictionary' || initialTab === 'corpus')
+    if (initialTab === 'dictionary' || initialTab === 'corpus' || initialTab === 'references')
         switchTab(initialTab);
 }
 // ── Settings (language + font toggle) ─────────────────────────────────────
@@ -94,8 +103,10 @@ function applyScriptFont(enabled) {
 function switchTab(name) {
     document.getElementById('panel-dictionary').hidden = name !== 'dictionary';
     document.getElementById('panel-corpus').hidden = name !== 'corpus';
+    document.getElementById('panel-references').hidden = name !== 'references';
     document.getElementById('tab-dictionary').classList.toggle('active', name === 'dictionary');
     document.getElementById('tab-corpus').classList.toggle('active', name === 'corpus');
+    document.getElementById('tab-references').classList.toggle('active', name === 'references');
     const params = new URLSearchParams(location.search);
     params.set('tab', name);
     history.replaceState(null, '', '?' + params.toString());
@@ -104,6 +115,7 @@ function switchTab(name) {
 function setupControls() {
     document.getElementById('tab-dictionary').addEventListener('click', () => switchTab('dictionary'));
     document.getElementById('tab-corpus').addEventListener('click', () => switchTab('corpus'));
+    document.getElementById('tab-references').addEventListener('click', () => switchTab('references'));
     document.getElementById('search-input').addEventListener('input', applyFilter);
     document.getElementById('pos-filter').addEventListener('change', applyFilter);
     document.getElementById('source-filter').addEventListener('change', applyAllFilters);
@@ -114,6 +126,7 @@ function setupControls() {
     });
     document.getElementById('tab-dictionary').textContent = t('ui', 'Dictionary');
     document.getElementById('tab-corpus').textContent = t('ui', 'Corpus');
+    document.getElementById('tab-references').textContent = t('ui', 'References');
     document.getElementById('search-input').placeholder = t('ui', 'Search\u2026');
     const enlistedHeading = document.createElement('div');
     enlistedHeading.className = 'entry-list-heading';
@@ -466,6 +479,21 @@ function buildEntryEl(entry) {
     return div;
 }
 // ── Corpus rendering ───────────────────────────────────────────────────────
+function buildReferencesPanel() {
+    const list = document.getElementById('references-list');
+    globalRefs.forEach(({ source_name, url }, i) => {
+        const li = document.createElement('li');
+        li.id = `ref-${i + 1}`;
+        li.appendChild(document.createTextNode(source_name + ' — '));
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = url;
+        li.appendChild(a);
+        list.appendChild(li);
+    });
+}
 function renderCorpus(sentences) {
     const list = document.getElementById('corpus-list');
     list.innerHTML = '';
@@ -479,22 +507,30 @@ function buildSentenceEl(sentence) {
     if (sentence.source) {
         const src = document.createElement('div');
         src.className = 'source';
-        const urls = sourceUrlMap.get(sentence.source);
-        if (urls?.length) {
-            src.textContent = sentence.source + ' ';
-            urls.forEach((url, i) => {
+        src.textContent = sentence.source;
+        const nums = sourceGlobalNums.get(sentence.source);
+        if (nums?.length) {
+            src.appendChild(document.createTextNode(' '));
+            nums.forEach((n, i) => {
                 const a = document.createElement('a');
-                a.href = url;
-                a.target = '_blank';
-                a.rel = 'noopener noreferrer';
-                a.textContent = `[${i + 1}]`;
+                a.href = `#ref-${n}`;
+                a.textContent = `[${n}]`;
+                a.addEventListener('click', e => {
+                    e.preventDefault();
+                    switchTab('references');
+                    const refEl = document.getElementById(`ref-${n}`);
+                    refEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Clear any stale highlights (animations freeze when the panel is hidden,
+                    // so animationend may never fire for a previously highlighted element).
+                    document.querySelectorAll('.ref-highlight').forEach(el => el.classList.remove('ref-highlight'));
+                    void refEl.offsetWidth; // force reflow so the animation restarts cleanly
+                    refEl.classList.add('ref-highlight');
+                    refEl.addEventListener('animationend', () => refEl.classList.remove('ref-highlight'), { once: true });
+                });
                 src.appendChild(a);
-                if (i < urls.length - 1)
+                if (i < nums.length - 1)
                     src.appendChild(document.createTextNode(' '));
             });
-        }
-        else {
-            src.textContent = sentence.source;
         }
         div.appendChild(src);
     }
