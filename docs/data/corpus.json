@@ -696,265 +696,6 @@
       "source": "タカン語概論",
       "tokens": [
         {
-          "form": "tákan=cen",
-          "mixed_script": "皇言",
-          "entry_ids": [
-            "tákan",
-            "=cen"
-          ],
-          "gloss": "Takan-language"
-        },
-        {
-          "form": "ki",
-          "mixed_script": "き",
-          "entry_ids": [
-            "ki"
-          ],
-          "gloss": "ACC"
-        },
-        {
-          "form": "caneníta",
-          "mixed_script": "識ね入た",
-          "entry_ids": [
-            "canenít-",
-            "(a)"
-          ],
-          "gloss": "learn-PTCP"
-        },
-        {
-          "form": "áku",
-          "mixed_script": "書",
-          "entry_ids": [
-            "áku"
-          ],
-          "gloss": "book"
-        }
-      ],
-      "translation": {
-        "en": "a book to learn the Takan language from",
-        "ja": "タカン語を学ぶ本"
-      }
-    },
-    {
-      "source": "タカン語概論",
-      "tokens": [
-        {
-          "form": "kijákaga",
-          "mixed_script": "日時",
-          "entry_ids": [
-            "kijákaga"
-          ],
-          "gloss": "daytime"
-        },
-        {
-          "form": "únune",
-          "mixed_script": "うぬね",
-          "entry_ids": [
-            "únun-",
-            "(e)"
-          ],
-          "gloss": "be-ADV"
-        },
-        {
-          "form": "áika",
-          "mixed_script": "光",
-          "entry_ids": [
-            "áika"
-          ],
-          "gloss": "light"
-        },
-        {
-          "form": "ja",
-          "mixed_script": "や",
-          "entry_ids": [
-            "ja"
-          ],
-          "gloss": "NOM"
-        },
-        {
-          "form": "cakenítu",
-          "mixed_script": "来け入つ",
-          "entry_ids": [
-            "cakenít-",
-            "(u)"
-          ],
-          "gloss": "come.in-NPST"
-        },
-        {
-          "form": "mu",
-          "mixed_script": "む",
-          "entry_ids": [
-            "mu"
-          ],
-          "gloss": "Q"
-        },
-        {
-          "punctuation": "？"
-        }
-      ],
-      "translation": {
-        "en": "Would light have come through, if it were daytime?",
-        "ja": "昼間であれば、光は入ってきたのか。"
-      }
-    },
-    {
-      "source": "タカン語概論",
-      "tokens": [
-        {
-          "form": "nó",
-          "mixed_script": "我",
-          "entry_ids": [
-            "nó"
-          ],
-          "gloss": "I"
-        },
-        {
-          "form": "ja",
-          "mixed_script": "や",
-          "entry_ids": [
-            "ja"
-          ],
-          "gloss": "NOM"
-        },
-        {
-          "form": "nimálane=cen",
-          "mixed_script": "哩言",
-          "entry_ids": [
-            "nimálane",
-            "=cen"
-          ],
-          "gloss": "Linepāine-language"
-        },
-        {
-          "form": "ki",
-          "mixed_script": "き",
-          "entry_ids": [
-            "ki"
-          ],
-          "gloss": "ACC"
-        },
-        {
-          "form": "cemalácu",
-          "mixed_script": "言能す",
-          "entry_ids": [
-            "céma-",
-            "(á)c-",
-            "(u)"
-          ],
-          "gloss": "speak-can-NPST"
-        },
-        {
-          "punctuation": "。"
-        }
-      ],
-      "translation": {
-        "en": "I can speak Linepāine.",
-        "ja": "私はリパライン語が話せる。"
-      }
-    },
-    {
-      "source": "タカン語概論",
-      "tokens": [
-        {
-          "form": "má",
-          "mixed_script": "汝",
-          "entry_ids": [
-            "má"
-          ],
-          "gloss": "you"
-        },
-        {
-          "form": "ja",
-          "mixed_script": "や",
-          "entry_ids": [
-            "ja"
-          ],
-          "gloss": "NOM"
-        },
-        {
-          "form": "ná",
-          "mixed_script": "水",
-          "entry_ids": [
-            "ná"
-          ],
-          "gloss": "water"
-        },
-        {
-          "form": "ki",
-          "mixed_script": "き",
-          "entry_ids": [
-            "ki"
-          ],
-          "gloss": "ACC"
-        },
-        {
-          "form": "momecakíjalu",
-          "mixed_script": "手来心る",
-          "entry_ids": [
-            "momecák-",
-            "(í)ja-",
-            "(u)"
-          ],
-          "gloss": "obtain-want-NPST"
-        },
-        {
-          "form": "mu",
-          "mixed_script": "む",
-          "entry_ids": [
-            "mu"
-          ],
-          "gloss": "Q"
-        },
-        {
-          "punctuation": "？"
-        }
-      ],
-      "translation": {
-        "en": "Do you want water?",
-        "ja": "君は水が欲しい？"
-      }
-    },
-    {
-      "source": "タカン語概論",
-      "tokens": [
-        {
-          "form": "mé",
-          "mixed_script": "茲",
-          "entry_ids": [
-            "mé"
-          ],
-          "gloss": "this"
-        },
-        {
-          "form": "ki",
-          "mixed_script": "き",
-          "entry_ids": [
-            "ki"
-          ],
-          "gloss": "ACC"
-        },
-        {
-          "form": "átaci",
-          "mixed_script": "目し",
-          "entry_ids": [
-            "áta-",
-            "(i)"
-          ],
-          "gloss": "see-IMP"
-        },
-        {
-          "punctuation": "。"
-        }
-      ],
-      "translation": {
-        "en": "Watch this.",
-        "ja": "これを見よ。"
-      }
-    },
-    {
-      "source": "タカン語概論",
-      "tokens": [
-        {
           "form": "ailúcima",
           "mixed_script": "冠国",
           "entry_ids": [
@@ -1131,6 +872,203 @@
       "source": "タカン語概論",
       "tokens": [
         {
+          "form": "mé",
+          "mixed_script": "茲",
+          "entry_ids": [
+            "mé"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "átaci",
+          "mixed_script": "目し",
+          "entry_ids": [
+            "áta-",
+            "(i)"
+          ],
+          "gloss": "see-IMP"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "Watch this.",
+        "ja": "これを見よ。"
+      }
+    },
+    {
+      "source": "タカン語概論",
+      "tokens": [
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "=cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "caneníta",
+          "mixed_script": "識ね入た",
+          "entry_ids": [
+            "canenít-",
+            "(a)"
+          ],
+          "gloss": "learn-PTCP"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        }
+      ],
+      "translation": {
+        "en": "a book to learn the Takan language from",
+        "ja": "タカン語を学ぶ本"
+      }
+    },
+    {
+      "source": "タカン語概論",
+      "tokens": [
+        {
+          "form": "kijákaga",
+          "mixed_script": "日時",
+          "entry_ids": [
+            "kijákaga"
+          ],
+          "gloss": "daytime"
+        },
+        {
+          "form": "únune",
+          "mixed_script": "うぬね",
+          "entry_ids": [
+            "únun-",
+            "(e)"
+          ],
+          "gloss": "be-ADV"
+        },
+        {
+          "form": "áika",
+          "mixed_script": "光",
+          "entry_ids": [
+            "áika"
+          ],
+          "gloss": "light"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "cakenítu",
+          "mixed_script": "来け入つ",
+          "entry_ids": [
+            "cakenít-",
+            "(u)"
+          ],
+          "gloss": "come.in-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
+        }
+      ],
+      "translation": {
+        "en": "Would light have come through, if it were daytime?",
+        "ja": "昼間であれば、光は入ってきたのか。"
+      }
+    },
+    {
+      "source": "タカン語概論",
+      "tokens": [
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "nimálane=cen",
+          "mixed_script": "哩言",
+          "entry_ids": [
+            "nimálane",
+            "=cen"
+          ],
+          "gloss": "Linepāine-language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cemalácu",
+          "mixed_script": "言能す",
+          "entry_ids": [
+            "céma-",
+            "(á)c-",
+            "(u)"
+          ],
+          "gloss": "speak-can-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "I can speak Linepāine.",
+        "ja": "私はリパライン語が話せる。"
+      }
+    },
+    {
+      "source": "タカン語概論",
+      "tokens": [
+        {
           "form": "kí",
           "mixed_script": "那",
           "entry_ids": [
@@ -1177,27 +1115,62 @@
       "source": "タカン語概論",
       "tokens": [
         {
-          "form": "cikácola",
-          "mixed_script": "席能そら",
+          "form": "má",
+          "mixed_script": "汝",
           "entry_ids": [
-            "cík-",
-            "(á)c-",
-            "(a)"
+            "má"
           ],
-          "gloss": "sit-can-PTCP"
+          "gloss": "you"
         },
         {
-          "form": "méma",
-          "mixed_script": "地",
+          "form": "ja",
+          "mixed_script": "や",
           "entry_ids": [
-            "méma"
+            "ja"
           ],
-          "gloss": "land"
+          "gloss": "NOM"
+        },
+        {
+          "form": "ná",
+          "mixed_script": "水",
+          "entry_ids": [
+            "ná"
+          ],
+          "gloss": "water"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "momecakíjalu",
+          "mixed_script": "手来心る",
+          "entry_ids": [
+            "momecák-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "obtain-want-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
         }
       ],
       "translation": {
-        "en": "a place where it is possible to sit",
-        "ja": "座ることができる土地"
+        "en": "Do you want water?",
+        "ja": "あなたは水が欲しいですか？"
       }
     },
     {
@@ -1225,6 +1198,33 @@
       "translation": {
         "en": "a place where I had the honor to sit",
         "ja": "座らせていただいた土地"
+      }
+    },
+    {
+      "source": "タカン語概論",
+      "tokens": [
+        {
+          "form": "cikácola",
+          "mixed_script": "席能そら",
+          "entry_ids": [
+            "cík-",
+            "(á)c-",
+            "(a)"
+          ],
+          "gloss": "sit-can-PTCP"
+        },
+        {
+          "form": "méma",
+          "mixed_script": "地",
+          "entry_ids": [
+            "méma"
+          ],
+          "gloss": "land"
+        }
+      ],
+      "translation": {
+        "en": "a place where it is possible to sit",
+        "ja": "座ることができる土地"
       }
     },
     {
