@@ -334,6 +334,7 @@
     {
       "id": "oca",
       "script": [
+        "おさ",
         "耒"
       ],
       "pos": "noun particle",
@@ -341,8 +342,8 @@
         {
           "gloss": "ABL",
           "translations": {
-            "en": "Ablative case marker; indicates a movement away from it.",
-            "ja": "奪格マーカー；〜から"
+            "en": "Ablative case marker; indicates a movement away from it; from; because of",
+            "ja": "奪格マーカー；〜から；〜だから"
           }
         }
       ]
