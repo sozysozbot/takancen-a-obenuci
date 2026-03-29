@@ -870,6 +870,158 @@
     },
     {
       "source": "タカン語概論",
+      "translation": {
+        "ja": "タカン語はアタラム島のことばであり、古くから巫がこれを話し書記がこれを書き取ってきた。"
+      },
+      "tokens": [
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "=cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "takańdon",
+          "mixed_script": "皇島",
+          "entry_ids": [
+            "takańdon"
+          ],
+          "gloss": "Atalam.Island"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "cémala",
+          "mixed_script": "言ら",
+          "entry_ids": [
+            "céma-",
+            "(a)"
+          ],
+          "gloss": "speak-PTCP"
+        },
+        {
+          "form": "únune",
+          "mixed_script": "うぬね",
+          "entry_ids": [
+            "únun-",
+            "(e)"
+          ],
+          "gloss": "be-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "cókaga",
+          "mixed_script": "古",
+          "entry_ids": [
+            "cókaga"
+          ],
+          "gloss": "ancient.times"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "おさ",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "takanácuka",
+          "mixed_script": "巫",
+          "entry_ids": [
+            "takanácuka"
+          ],
+          "gloss": "shaman"
+        },
+        {
+          "form": "ká",
+          "mixed_script": "此",
+          "entry_ids": [
+            "ká"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "céma",
+          "mixed_script": "言ま",
+          "entry_ids": [
+            "céma-",
+            "(e)"
+          ],
+          "gloss": "speak-ADV"
+        },
+        {
+          "form": "kácuka",
+          "mixed_script": "筆人",
+          "entry_ids": [
+            "kácuka#2"
+          ],
+          "gloss": "scribe"
+        },
+        {
+          "form": "ká",
+          "mixed_script": "此",
+          "entry_ids": [
+            "ká"
+          ],
+          "gloss": "this"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "kálu",
+          "mixed_script": "筆る",
+          "entry_ids": [
+            "ká-",
+            "(u)"
+          ],
+          "gloss": "write-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
       "tokens": [
         {
           "form": "mé",
