@@ -1134,6 +1134,59 @@
     },
     {
       "source": "タカン語概論",
+      "translation": {
+        "ja": "私はなにか食べたい。"
+      },
+      "tokens": [
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "úku",
+          "mixed_script": "物",
+          "entry_ids": [
+            "úku"
+          ],
+          "gloss": "stuff"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "jamíjalu",
+          "mixed_script": "口みやる",
+          "entry_ids": [
+            "jám-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "eat-want-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
       "tokens": [
         {
           "form": "tákan=cen",
@@ -1174,6 +1227,13 @@
         "en": "a book to learn the Takan language from",
         "ja": "タカン語を学ぶ本"
       }
+    },
+    {
+      "source": "タカン語概論",
+      "translation": {
+        "ja": ""
+      },
+      "tokens": []
     },
     {
       "source": "タカン語概論",
