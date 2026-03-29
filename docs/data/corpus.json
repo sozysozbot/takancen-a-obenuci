@@ -57,6 +57,184 @@
       }
     },
     {
+      "source": "タカン語あれこれ",
+      "translation": {
+        "ja": "天が光り、心があった。"
+      },
+      "tokens": [
+        {
+          "form": "cútu",
+          "mixed_script": "天",
+          "entry_ids": [
+            "cútu"
+          ],
+          "gloss": "sky"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "éka",
+          "mixed_script": "光",
+          "entry_ids": [
+            "éka-",
+            "(e)"
+          ],
+          "gloss": "shine-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "íja",
+          "mixed_script": "心",
+          "entry_ids": [
+            "íja"
+          ],
+          "gloss": "soul"
+        },
+        {
+          "form": "émata",
+          "mixed_script": "在また",
+          "entry_ids": [
+            "ém-",
+            "(a)ta"
+          ],
+          "gloss": "exist-PST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語あれこれ",
+      "translation": {
+        "ja": "皇は心の集まりである。"
+      },
+      "tokens": [
+        {
+          "form": "tákan",
+          "mixed_script": "皇",
+          "entry_ids": [
+            "tákan"
+          ],
+          "gloss": "Tam.deity"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kjádatu",
+          "mixed_script": "心集",
+          "entry_ids": [
+            "kjádatu"
+          ],
+          "gloss": "collection.of.souls"
+        },
+        {
+          "form": "únunu",
+          "mixed_script": "うぬゝ",
+          "entry_ids": [
+            "únun-",
+            "(u)"
+          ],
+          "gloss": "be-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語あれこれ",
+      "translation": {
+        "ja": "川に石がある。"
+      },
+      "tokens": [
+        {
+          "form": "ínuci",
+          "mixed_script": "川",
+          "entry_ids": [
+            "ínuci"
+          ],
+          "gloss": "river"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "ásu",
+          "mixed_script": "石",
+          "entry_ids": [
+            "ásu"
+          ],
+          "gloss": "stone"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "émalu",
+          "mixed_script": "在る",
+          "entry_ids": [
+            "éma-",
+            "(u)"
+          ],
+          "gloss": "exist-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語あれこれ",
+      "translation": {
+        "ja": "取りに行きたい。"
+      },
+      "tokens": [
+        {
+          "form": "momemokíjalu",
+          "mixed_script": "手めもきやる",
+          "entry_ids": [
+            "momemók-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "give-want-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
       "source": "Spoonfed Takancen",
       "tokens": [
         {
@@ -7703,6 +7881,13 @@
       "source_name": "Spoonfed Takancen",
       "urls": [
         "https://docs.google.com/spreadsheets/d/1ToBqXDt6pWIv0C33GjmcfLtkBs7htlLj0TwLHZPFkOE/edit?gid=24700208#gid=24700208"
+      ]
+    },
+    {
+      "source_name": "タカン語あれこれ",
+      "urls": [
+        "https://docs.google.com/presentation/d/1RMkXWwkNmT4kshQnLbrd0TBJ5mTIZZuW_zkbbPaC8m4/edit?slide=id.p1#slide=id.p1",
+        "https://drive.google.com/file/d/1E2qTz3tSdiDgv2te-e9jm50sbC716_lD/view"
       ]
     }
   ]
