@@ -57,6 +57,130 @@
       }
     },
     {
+      "source": "「異世界語入門～転生したけど日本語が通じなかった～」p.216",
+      "translation": {
+        "ja": "あなたは反革命主義者ですか？"
+      },
+      "tokens": [
+        {
+          "form": "má",
+          "mixed_script": "汝",
+          "entry_ids": [
+            "má"
+          ],
+          "gloss": "you"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "munconcixcícuku",
+          "mixed_script": "無周故し人",
+          "entry_ids": [
+            "munconcixcícuku"
+          ],
+          "gloss": "counterrevolutionary.person"
+        },
+        {
+          "form": "únunu",
+          "mixed_script": "うぬゝ",
+          "entry_ids": [
+            "únun-",
+            "(u)"
+          ],
+          "gloss": "be-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
+        }
+      ]
+    },
+    {
+      "source": "「異世界語入門～転生したけど日本語が通じなかった～」p.216",
+      "translation": {
+        "ja": "えっと、私はタカン語を話しますか？"
+      },
+      "tokens": [
+        {
+          "form": "ar",
+          "mixed_script": "噫",
+          "entry_ids": [
+            "ar"
+          ],
+          "gloss": "uh"
+        },
+        {
+          "punctuation": "。"
+        },
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "=cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "cémalu",
+          "mixed_script": "言る",
+          "entry_ids": [
+            "céma-",
+            "(u)"
+          ],
+          "gloss": "speak-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
+        }
+      ]
+    },
+    {
       "source": "タカン語あれこれ",
       "translation": {
         "ja": "天が光り、心があった。"
@@ -7888,6 +8012,12 @@
       "urls": [
         "https://docs.google.com/presentation/d/1RMkXWwkNmT4kshQnLbrd0TBJ5mTIZZuW_zkbbPaC8m4/edit?slide=id.p1#slide=id.p1",
         "https://drive.google.com/file/d/1E2qTz3tSdiDgv2te-e9jm50sbC716_lD/view"
+      ]
+    },
+    {
+      "source_name": "「異世界語入門～転生したけど日本語が通じなかった～」p.216",
+      "urls": [
+        "https://drive.google.com/file/d/1zQs0incCkepj-xHT3zlHE3O4yqm-ECto/view?usp=sharing"
       ]
     }
   ]
