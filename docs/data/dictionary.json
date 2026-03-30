@@ -1655,7 +1655,7 @@
     },
     {
       "id": "ínina",
-      "pos": "prenominal",
+      "pos": "adjectival noun",
       "script": [
         "小"
       ],
@@ -4207,7 +4207,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "grapheme",
           "translations": {
             "ja": "字、文字"
           }
@@ -4722,7 +4722,7 @@
       "conjugation_class": "vowel-stem",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "tire",
           "translations": {
             "ja": "疲れる"
           }
@@ -5480,7 +5480,7 @@
       "pos": "noun",
       "definitions": [
         {
-          "gloss": "(TODO)",
+          "gloss": "Lanermic logogram",
           "translations": {
             "ja": "燐字、燐帝字母"
           }

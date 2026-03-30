@@ -2758,6 +2758,171 @@
     {
       "source": "タカン語概論",
       "translation": {
+        "ja": "小さい文字を読んだので私は疲れた。"
+      },
+      "tokens": [
+        {
+          "form": "ínina",
+          "mixed_script": "小",
+          "entry_ids": [
+            "ínina"
+          ],
+          "gloss": "small"
+        },
+        {
+          "form": "máni",
+          "mixed_script": "字",
+          "entry_ids": [
+            "máni"
+          ],
+          "gloss": "grapheme"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "ácila",
+          "mixed_script": "辿ら",
+          "entry_ids": [
+            "áci-",
+            "(a)"
+          ],
+          "gloss": "trace-PTCP"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "nó",
+          "mixed_script": "我",
+          "entry_ids": [
+            "nó"
+          ],
+          "gloss": "I"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kolicákata",
+          "mixed_script": "疲来かた",
+          "entry_ids": [
+            "kóli-",
+            "(e)cák-",
+            "(a)ta"
+          ],
+          "gloss": "tire-toward.us-PST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
+      "translation": {
+        "ja": "燐帝字母とタカン文字が集まって、タカン語の本が在る。"
+      },
+      "tokens": [
+        {
+          "form": "lińman",
+          "mixed_script": "清字",
+          "gloss": "Lanermic.logogram",
+          "entry_ids": [
+            "lińman"
+          ]
+        },
+        {
+          "form": "ata",
+          "mixed_script": "加た",
+          "entry_ids": [
+            "ata"
+          ],
+          "gloss": "and"
+        },
+        {
+          "form": "tákan=mani",
+          "mixed_script": "皇字",
+          "entry_ids": [
+            "tákan",
+            "=mani"
+          ],
+          "gloss": "Takan-grapheme"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "táde",
+          "mixed_script": "集で",
+          "entry_ids": [
+            "tád-",
+            "(e)"
+          ],
+          "gloss": "gather-ADV"
+        },
+        {
+          "form": "tákan=cen",
+          "mixed_script": "皇言",
+          "entry_ids": [
+            "tákan",
+            "=cen"
+          ],
+          "gloss": "Takan-language"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        },
+        {
+          "form": "émalu",
+          "mixed_script": "在る",
+          "entry_ids": [
+            "éma-",
+            "(u)"
+          ],
+          "gloss": "exist-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "タカン語概論",
+      "translation": {
         "ja": "あなたが本に色づけしたので、私もまた色づけした。"
       },
       "tokens": [
