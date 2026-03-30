@@ -771,12 +771,20 @@
           "gloss": "and.also"
         },
         {
-          "form": "amamátono",
-          "mixed_script": "大島",
+          "form": "ámama",
+          "mixed_script": "大",
           "entry_ids": [
-            "amamátono"
+            "ámama"
           ],
-          "gloss": "big.island"
+          "gloss": "big"
+        },
+        {
+          "form": "tóno",
+          "mixed_script": "島",
+          "entry_ids": [
+            "tóno"
+          ],
+          "gloss": "island"
         },
         {
           "form": "únuna",
@@ -813,12 +821,20 @@
           "gloss": "and.also"
         },
         {
-          "form": "ininátono",
-          "mixed_script": "小島",
+          "form": "ínina",
+          "mixed_script": "小",
           "entry_ids": [
-            "ininátono"
+            "ínina"
           ],
-          "gloss": "small.island"
+          "gloss": "small"
+        },
+        {
+          "form": "tóno",
+          "mixed_script": "島",
+          "entry_ids": [
+            "tóno"
+          ],
+          "gloss": "island"
         },
         {
           "form": "a",
@@ -2413,7 +2429,7 @@
           "form": "noneninému",
           "mixed_script": "刺如",
           "entry_ids": [
-            "nonenin-",
+            "nonenín-",
             "(é)mu-",
             "(e)"
           ],
@@ -7459,7 +7475,7 @@
           "entry_ids": [
             "ámama"
           ],
-          "gloss": "great"
+          "gloss": "big"
         },
         {
           "form": "a",

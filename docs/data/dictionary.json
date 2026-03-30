@@ -1167,14 +1167,14 @@
       ]
     },
     {
-      "id": "amamátono",
+      "id": "tóno",
       "pos": "noun",
       "script": [
-        "大島"
+        "島"
       ],
       "definitions": [
         {
-          "gloss": "big island"
+          "gloss": "island"
         }
       ]
     },
@@ -1654,14 +1654,14 @@
       ]
     },
     {
-      "id": "ininátono",
-      "pos": "noun",
+      "id": "ínina",
+      "pos": "prenominal",
       "script": [
-        "小島"
+        "小"
       ],
       "definitions": [
         {
-          "gloss": "small island"
+          "gloss": "small"
         }
       ]
     },
@@ -2978,7 +2978,7 @@
           "gloss": "greatly"
         },
         {
-          "gloss": "great"
+          "gloss": "big"
         }
       ]
     },
