@@ -5883,6 +5883,141 @@
           "gloss": "be good"
         }
       ]
+    },
+    {
+      "id": "mojúdomu",
+      "pos": "noun",
+      "script": [
+        "輩島"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "隣り合った大きさの近い島"
+          }
+        }
+      ]
+    },
+    {
+      "id": "játu",
+      "pos": "noun",
+      "script": [
+        "冬"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "冬"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jatúsemo",
+      "pos": "noun",
+      "script": [
+        "冬月"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "冬の空に浮かぶ月"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kanilámana",
+      "pos": "noun",
+      "script": [
+        "火らまな"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "致死性の熱病"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciságuwi",
+      "pos": "noun",
+      "script": [
+        "足傷"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "足の傷"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cimábema",
+      "pos": "noun",
+      "script": [
+        "国地"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "国土"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kína",
+      "pos": "noun",
+      "script": [
+        "右"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "右"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kinábomo",
+      "pos": "noun",
+      "script": [
+        "右手"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "右手"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mugámon",
+      "pos": "noun",
+      "script": [
+        "獣が米"
+      ],
+      "definitions": [
+        {
+          "gloss": "(TODO)",
+          "translations": {
+            "ja": "見た目も味もよろしくない野生の穀物"
+          }
+        }
+      ]
     }
   ],
   "alternative_form_groups": [
