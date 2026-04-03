@@ -196,7 +196,7 @@
         },
         {
           "form": "atáma",
-          "mixed_script": "目在",
+          "mixed_script": "目ま",
           "entry_ids": [
             "áta-",
             "(é)m-",
@@ -239,8 +239,212 @@
         }
       ],
       "translation": {
-        "en": "Once or twice Alice saw the book that her sister was reading, ",
+        "en": "Once or twice Alice saw the book that her sister was reading, but",
         "ja": "一度か二度、姉の読んでいる本を見たが、"
+      }
+    },
+    {
+      "source": "Alice in Wonderland",
+      "tokens": [
+        {
+          "form": "tí",
+          "mixed_script": "其",
+          "entry_ids": [
+            "tí"
+          ],
+          "gloss": "such.kind"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "かん",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kéca",
+          "mixed_script": "絵",
+          "entry_ids": [
+            "kéca"
+          ],
+          "gloss": "picture"
+        },
+        {
+          "form": "ju",
+          "mixed_script": "ゆ",
+          "entry_ids": [
+            "ju"
+          ],
+          "gloss": "or"
+        },
+        {
+          "form": "káxcen",
+          "mixed_script": "互言",
+          "entry_ids": [
+            "káxcen"
+          ],
+          "gloss": "conversation"
+        },
+        {
+          "form": "wácata",
+          "mixed_script": "無さた",
+          "entry_ids": [
+            "wác-",
+            "(a)ta"
+          ],
+          "gloss": "not.exist-PST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "there were no pictures or conversations in the book.",
+        "ja": "その本には絵や会話がなかった。"
+      }
+    },
+    {
+      "source": "Alice in Wonderland",
+      "tokens": [
+        {
+          "punctuation": "「"
+        },
+        {
+          "form": "ar",
+          "mixed_script": "あー",
+          "entry_ids": [
+            "ar"
+          ],
+          "gloss": "uh"
+        },
+        {
+          "form": "tí",
+          "mixed_script": "其",
+          "entry_ids": [
+            "tí"
+          ],
+          "gloss": "such.kind"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "かん",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "sísitu",
+          "mixed_script": "使術",
+          "entry_ids": [
+            "sísitu"
+          ],
+          "gloss": "usage"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "émalu",
+          "mixed_script": "在る",
+          "entry_ids": [
+            "éma-",
+            "(u)"
+          ],
+          "gloss": "exist-NPST"
+        },
+        {
+          "form": "mu",
+          "mixed_script": "む",
+          "entry_ids": [
+            "mu"
+          ],
+          "gloss": "Q"
+        },
+        {
+          "punctuation": "？"
+        },
+        {
+          "punctuation": "」"
+        },
+        {
+          "form": "álicu",
+          "mixed_script": "ありす",
+          "entry_ids": [
+            "álicu"
+          ],
+          "gloss": "Alice(English_name)"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "imíkata",
+          "mixed_script": "思かた",
+          "entry_ids": [
+            "imík-",
+            "(a)ta"
+          ],
+          "gloss": "feel-PST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "‘Is there any use in that book?’ Alice thought.",
+        "ja": "「その本に使い道があるのだろうか？」とアリスは思った。"
       }
     },
     {
@@ -295,8 +499,8 @@
         }
       ],
       "translation": {
-        "en": "There was no pictures or conversations.",
-        "ja": "絵も会話もなかった。"
+        "en": "‘There was no pictures or conversations after all.’",
+        "ja": "「絵も会話もなかったのだし。」"
       }
     },
     {
