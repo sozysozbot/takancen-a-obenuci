@@ -83,7 +83,7 @@
       ],
       "translation": {
         "en": "Alice was sitting by her sister on the bank",
-        "ja": "アリスは土手で女きょうだいの横で座っていた。"
+        "ja": "アリスは土手で姉の横で座っていた。"
       }
     },
     {
@@ -149,6 +149,98 @@
       "translation": {
         "en": "But having nothing to do, Alice gradually became tired.",
         "ja": "しかし、することがないため、だんだん疲れていった。"
+      }
+    },
+    {
+      "source": "Alice in Wonderland",
+      "tokens": [
+        {
+          "form": "asíkaga",
+          "mixed_script": "一時",
+          "entry_ids": [
+            "asíkaga"
+          ],
+          "gloss": "once"
+        },
+        {
+          "form": "ju",
+          "mixed_script": "ゆ",
+          "entry_ids": [
+            "ju"
+          ],
+          "gloss": "or"
+        },
+        {
+          "form": "ikúkaga",
+          "mixed_script": "二時",
+          "entry_ids": [
+            "ikúkaga"
+          ],
+          "gloss": "twice"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "móku",
+          "mixed_script": "輩",
+          "entry_ids": [
+            "móku"
+          ],
+          "gloss": "sibling"
+        },
+        {
+          "form": "atáma",
+          "mixed_script": "目在",
+          "entry_ids": [
+            "áta-",
+            "(é)m-",
+            "(a)"
+          ],
+          "gloss": "see-PROG-PTCP"
+        },
+        {
+          "form": "áku",
+          "mixed_script": "書",
+          "entry_ids": [
+            "áku"
+          ],
+          "gloss": "book"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "átalata",
+          "mixed_script": "目らた",
+          "entry_ids": [
+            "áta-",
+            "(a)ta"
+          ],
+          "gloss": "see-PST"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        }
+      ],
+      "translation": {
+        "en": "Once or twice Alice saw the book that her sister was reading, ",
+        "ja": "一度か二度、姉の読んでいる本を見たが、"
       }
     },
     {
