@@ -29,6 +29,10 @@
     "other": "${COUNT} words",
     "one": "1 word"
   },
+  "count-sentence": {
+    "one": "1 sentence",
+    "other": "${COUNT} sentences"
+  },
   "cognate-source": {
     "pk": "Pēgvīle / Pekzep",
     "bt": "Phētāsvīle",

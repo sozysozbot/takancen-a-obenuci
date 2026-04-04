@@ -27,6 +27,9 @@
   "count-word": {
     "other": "${COUNT} 単語"
   },
+  "count-sentence": {
+    "other": "${COUNT}文"
+  },
   "cognate-source": {
     "pk": "パイグ語",
     "bt": "バート語",

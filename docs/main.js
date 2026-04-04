@@ -156,7 +156,8 @@ function setupControls() {
     for (const source of sources) {
         const opt = document.createElement('option');
         opt.value = source;
-        opt.textContent = source;
+        const count = corpus.filter(s => s.source === source).length;
+        opt.textContent = `[${tCount(count, 'count-sentence')}] ${source}`;
         sourceSel.appendChild(opt);
     }
 }

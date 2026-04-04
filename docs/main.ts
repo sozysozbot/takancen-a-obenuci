@@ -33,7 +33,7 @@ function localize(s: LocalizedString): string {
   return s.en ?? s.ja;
 }
 
-function tCount(count: number, property_name: 'count-in-corpus' | 'count-word'): string {
+function tCount(count: number, property_name: 'count-in-corpus' | 'count-word' | 'count-sentence'): string {
   const tmpl = count === 1 && i18n[property_name]?.one
     ? i18n[property_name].one
     : (i18n[property_name]?.other ?? `${count} sentence${count !== 1 ? 's' : ''} in corpus`);
@@ -179,7 +179,8 @@ function setupControls() {
   for (const source of sources) {
     const opt = document.createElement('option');
     opt.value = source;
-    opt.textContent = source;
+    const count = corpus.filter(s => s.source === source).length;
+    opt.textContent = `[${tCount(count, 'count-sentence')}] ${source}`;
     sourceSel.appendChild(opt);
   }
 }
