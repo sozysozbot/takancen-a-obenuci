@@ -43,10 +43,16 @@ script            string[]  native script representations (may be empty array or
                             multiple entries for words with alternate writings (e.g. ["此", "茲"])
 pos               string    "noun" | "noun suffix" | "verb" | "auxiliary verb"
                             | "noun particle" | "verb particle" | "sentence particle"
+                            | "phrase" | "bound morpheme" | "prenominal"
+                            | "noun conjunction" | "sentence conjunction"
+                            | "adjectival noun" | "interjection" | "unclassified"
 conjugation_class string    "vowel-stem" | "consonant-stem" | "c-irregular" (omit for indeclinables)
                             c-irregular: like consonant-stem for (i)/(u), but (a)→ola and (e)→o
 definitions       [ Definition ]
 notes             { en?: string, ja: string }   optional
+cognates          { pk?: string[], bt?: string[], ar?: string[], ln?: string[] }   optional;
+                            pk = Pēgvīle/Pekzep, bt = Phētāsvīle, ar = Ai'r, ln = Proto-Lanermic;
+                            each value is a list of cognate forms in that language
 components        string[]  optional; ids of component dictionary entries (for compounds)
 ```
 
@@ -58,13 +64,24 @@ translations      { en?: string, ja: string }   optional;
                             ja is always shown in Japanese UI when present
 ```
 
-**`docs/data/corpus.json`** — `{ "sentences": [ Sentence ] }`
+**`docs/data/corpus.json`** — `{ "sentences": [ Sentence ], "source_urls": [ SourceUrl ] }`
+
+Each `SourceUrl`:
+```
+source_name   string    matches a `source` value used in sentences
+urls          string[]  one or more URLs for that source
+```
+The UI renders these as globally-numbered `[n]` citation links inline in each sentence, and lists
+all references in a dedicated References tab (Wikipedia-style numbered list).
 
 Each `Sentence` (no `id` field — the renderer assigns ids by array index at load time):
 ```
-source      string   provenance label, e.g. "Folk song, verse 1" (optional)
-tokens      [ Token ]
-translation { en?: string, ja: string }   free translation
+source                          string     provenance label, e.g. "Folk song, verse 1" (optional)
+tokens                          [ Token ]
+translation                     { en?: string, ja: string }   free translation
+alternative_registers_of_writing  string[][]  optional; each inner array has the same length as
+                                             `tokens` and provides an alternative way of writing
+                                             each token (e.g. logographic forms)
 ```
 
 Each `Token` is one of two shapes:
@@ -98,6 +115,20 @@ Special case: when you want to specify the empty string as mixed_script, use "\u
 - `or` → `ou` (long o), `r` alone → `ー`
 - 拗音: `CjV` (e.g. `kja`) → Ci-kana + small vowel kana (e.g. `きぁ`), distinct from Japanese `kya` = `きゃ`
 - `x` → `っ` (geminate consonant marker, e.g. `káxcen` → `かっせん`)
+
+### Mora counting
+
+For source statistics (total mora count per source), each of the following counts as one mora:
+- Any vowel (a, e, i, o, u) — including accented variants (á, é, í, ó, ú)
+- `x` (geminate consonant marker → っ)
+- `r` in any position (always a mora: → ー when alone, part of `or`→`ou` long-o)
+- `n` when **not** followed by a vowel (syllabic n → ん)
+
+Apply NFD normalization and strip combining diacritics (U+0300–U+036F) before counting, so
+accented vowels are handled uniformly.
+
+Multi-pronunciation tokens (which may have forms of different lengths) contribute a [min, max]
+mora range per sentence; source stats show the total range across all sentences.
 
 ## About the User
 
