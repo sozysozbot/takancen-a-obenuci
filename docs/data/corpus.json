@@ -10815,6 +10815,26 @@
           "gloss": "feel-IMP"
         }
       ]
+    },
+    {
+      "source": "第12回架空言語・架空地図学会スライド発表（ボツ）",
+      "translation": {
+        "ja": "与えさせて頂きたい"
+      },
+      "tokens": [
+        {
+          "form": "momemokecolíjalu",
+          "mixed_script": "もめもけそりやる",
+          "entry_ids": [
+            "momemók-",
+            "(e)có-",
+            "(e)l-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "give-humbly-ZERO-want-NPST"
+        }
+      ]
     }
   ],
   "source_urls": [
