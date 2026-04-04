@@ -163,7 +163,18 @@
       "translation": {
         "en": "But having nothing to do, Alice gradually became tired.",
         "ja": "しかし、することがないため、だんだん疲れていった。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "別而",
+          "為之",
+          "無終",
+          "耒",
+          "行々",
+          "疲来終",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -255,7 +266,21 @@
       "translation": {
         "en": "Once or twice Alice saw the book that her sister was reading, but",
         "ja": "一度か二度、姉の読んでいる本を見たが、"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "一時",
+          "亦",
+          "二時",
+          "生",
+          "輩",
+          "目在",
+          "書",
+          "き",
+          "目終",
+          "而"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -340,7 +365,21 @@
       "translation": {
         "en": "there were no pictures or conversations in the book.",
         "ja": "その本には絵や会話がなかった。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "此",
+          "之",
+          "書",
+          "処",
+          "生",
+          "絵",
+          "亦",
+          "互言",
+          "無終",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -459,7 +498,27 @@
       "translation": {
         "en": "‘Is there any use in that book?’ Alice thought.",
         "ja": "「その本に使い道があるのだろうか？」とアリスは思った。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "「",
+          "噫",
+          "此",
+          "之",
+          "書",
+          "処",
+          "使術",
+          "生",
+          "在",
+          "無",
+          "？",
+          "」",
+          "ありす",
+          "生",
+          "思終",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -515,7 +574,18 @@
       "translation": {
         "en": "‘There was no pictures or conversations after all.’",
         "ja": "「絵も会話もなかったのだし。」"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "「",
+          "絵",
+          "亦",
+          "互言",
+          "無終",
+          "噫",
+          "」"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -595,7 +665,20 @@
       "translation": {
         "en": "And Alice let her thought wander at the mercy of her mind",
         "ja": "そしてアリスは心のなすがままに思考を巡らせた。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "加而",
+          "ありす",
+          "生",
+          "心",
+          "之",
+          "為能之",
+          "処",
+          "思行く",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -702,7 +785,23 @@
       "translation": {
         "en": "But on that day, the weather being hot, Alice wanted to sleep and disappear.",
         "ja": "しかしその日は暑く、アリスは寝たくて消えてしまいたくなる。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "別而",
+          "此日",
+          "生",
+          "風火在終",
+          "耒",
+          "彼",
+          "生",
+          "寝来",
+          "為心",
+          "而",
+          "無行心る",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -821,7 +920,24 @@
       "translation": {
         "en": "Making flower chains feels favorable; getting up and picking [the flowers] feels unfavorable.",
         "ja": "花輪を作ることは好ましく感じられ、立ち上がって（花を）取りに行くことは好ましくないように感じられる。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "花輪",
+          "き",
+          "生之",
+          "生",
+          "善",
+          "心れ",
+          "立生",
+          "手行之",
+          "生",
+          "善",
+          "無",
+          "心る",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",
@@ -923,7 +1039,23 @@
       "translation": {
         "en": "At that moment, a pink-eyed rabbit ran close to Alice.",
         "ja": "そのとき、ピンクの目のウサギがアリスの近くを走った。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "此時",
+          "光赤色",
+          "之",
+          "目",
+          "之",
+          "木獣",
+          "彼",
+          "之",
+          "近",
+          "処",
+          "躍行来く",
+          "。"
+        ]
+      ]
     },
     {
       "source": "「異世界語入門～転生したけど日本語が通じなかった～」p.216",
