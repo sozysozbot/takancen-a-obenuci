@@ -631,9 +631,9 @@ function buildSentenceEl(sentence) {
             });
             return btn;
         };
-        switcher.appendChild(makeRegBtn('base', -1));
+        switcher.appendChild(makeRegBtn(computeLinzklaPct(sentence.tokens), -1));
         for (let k = 0; k < altRegs.length; k++) {
-            switcher.appendChild(makeRegBtn(`alt ${k + 1}`, k));
+            switcher.appendChild(makeRegBtn(computeLinzklaPct(sentence.tokens, altRegs[k]), k));
         }
         div.appendChild(switcher);
     }
@@ -715,6 +715,47 @@ function buildSentenceEl(sentence) {
     copyRow.append(copyScript, copyHiragana, copyLatin);
     div.appendChild(copyRow);
     return div;
+}
+// Returns a "燐字配合率XX%" label for a given register.
+// CJK logograms (燐字) vs hiragana syllabary characters are counted;
+// everything else (Latin, punctuation, spaces) is ignored.
+function computeLinzklaPct(tokens, overrides) {
+    let cjk = 0, hira = 0;
+    for (let i = 0; i < tokens.length; i++) {
+        const token = tokens[i];
+        const override = overrides?.[i];
+        let text;
+        if (override !== undefined) {
+            text = override === '\u3000' ? '' : override;
+        }
+        else if ('punctuation' in token) {
+            text = '';
+        }
+        else if ('multiple-standard-pronunciations' in token) {
+            const ms = token.mixed_script;
+            text = !ms || ms === '\u3000' ? latinToSyllabary(token.forms.join(' / ')) : ms;
+        }
+        else {
+            const ms = token.mixed_script;
+            text = !ms || ms === '\u3000' ? latinToSyllabary(token.form) : ms;
+        }
+        for (const ch of text) {
+            const cp = ch.codePointAt(0);
+            if ((cp >= 0x4E00 && cp <= 0x9FFF) || // CJK Unified Ideographs
+                (cp >= 0x3400 && cp <= 0x4DBF) || // CJK Extension A
+                /*(cp >= 0xF900 && cp <= 0xFAFF) ||   // CJK Compatibility Ideographs*/
+                cp === 0x3005 // 々 IDEOGRAPHIC ITERATION MARK
+            /* || cp === 0x3007                        // 〇 IDEOGRAPHIC NUMBER ZERO*/
+            ) {
+                cjk++;
+            }
+            else if (cp >= 0x3041 && cp <= 0x309F) { // Hiragana
+                hira++;
+            }
+        }
+    }
+    const total = cjk + hira;
+    return `燐字配合率${total === 0 ? 0 : Math.round(cjk / total * 100)}%`;
 }
 function buildScriptElWithRuby(o) {
     const mixedText = o.mixed_script || '';
