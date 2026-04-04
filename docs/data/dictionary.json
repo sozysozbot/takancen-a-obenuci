@@ -6027,6 +6027,373 @@
           }
         }
       ]
+    },
+    {
+      "id": "tákan=don",
+      "pos": "noun",
+      "script": [
+        "皇島"
+      ],
+      "definitions": [
+        {
+          "gloss": "Atalam Island"
+        }
+      ]
+    },
+    {
+      "id": "úku",
+      "pos": "noun",
+      "script": [
+        "物"
+      ],
+      "definitions": [
+        {
+          "gloss": "stuff"
+        }
+      ]
+    },
+    {
+      "id": "ticáguci",
+      "pos": "noun",
+      "script": [
+        "花輪"
+      ],
+      "definitions": [
+        {
+          "gloss": "flower chain"
+        }
+      ]
+    },
+    {
+      "id": "takanácuka",
+      "pos": "noun",
+      "script": [
+        "巫"
+      ],
+      "definitions": [
+        {
+          "gloss": "shaman"
+        }
+      ]
+    },
+    {
+      "id": "nós-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "立ず"
+      ],
+      "definitions": [
+        {
+          "gloss": "stand"
+        }
+      ]
+    },
+    {
+      "id": "nancókaku",
+      "pos": "noun",
+      "script": [
+        "何片時"
+      ],
+      "definitions": [
+        {
+          "gloss": "what percent of a day"
+        }
+      ]
+    },
+    {
+      "id": "mukakán-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "風火ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "weather is hot"
+        }
+      ]
+    },
+    {
+      "id": "mańdon",
+      "pos": "noun",
+      "script": [
+        "母島"
+      ],
+      "definitions": [
+        {
+          "gloss": "Manmana Island"
+        }
+      ]
+    },
+    {
+      "id": "makatisoŕnike",
+      "pos": "noun",
+      "script": [
+        "天神上学処"
+      ],
+      "definitions": [
+        {
+          "gloss": "University of Makati"
+        }
+      ]
+    },
+    {
+      "id": "kásitu",
+      "pos": "noun",
+      "script": [
+        "此故"
+      ],
+      "definitions": [
+        {
+          "gloss": "this reason"
+        }
+      ]
+    },
+    {
+      "id": "kákja",
+      "pos": "noun",
+      "script": [
+        "此日"
+      ],
+      "definitions": [
+        {
+          "gloss": "this day"
+        }
+      ]
+    },
+    {
+      "id": "kácuka#2",
+      "pos": "noun",
+      "script": [
+        "筆人"
+      ],
+      "definitions": [
+        {
+          "gloss": "scribe"
+        }
+      ]
+    },
+    {
+      "id": "kákaku",
+      "pos": "noun",
+      "script": [
+        "此時"
+      ],
+      "definitions": [
+        {
+          "gloss": "this time"
+        }
+      ]
+    },
+    {
+      "id": "kuńson",
+      "pos": "noun",
+      "script": [
+        "木獣"
+      ],
+      "definitions": [
+        {
+          "gloss": "rabbit"
+        }
+      ]
+    },
+    {
+      "id": "kjádatu",
+      "pos": "noun",
+      "script": [
+        "心集"
+      ],
+      "definitions": [
+        {
+          "gloss": "collection of souls"
+        }
+      ]
+    },
+    {
+      "id": "kox́saku",
+      "pos": "noun",
+      "script": [
+        "寝来"
+      ],
+      "definitions": [
+        {
+          "gloss": "sleep"
+        }
+      ]
+    },
+    {
+      "id": "kanmoku-",
+      "pos": "verb",
+      "conjugation_class": "vowel-stem",
+      "script": [
+        "躍行る"
+      ],
+      "definitions": [
+        {
+          "gloss": "run"
+        }
+      ]
+    },
+    {
+      "id": "ikúkaga",
+      "pos": "noun",
+      "script": [
+        "二時"
+      ],
+      "definitions": [
+        {
+          "gloss": "twice"
+        }
+      ]
+    },
+    {
+      "id": "ekakańboku",
+      "pos": "noun",
+      "script": [
+        "光赤色"
+      ],
+      "definitions": [
+        {
+          "gloss": "pink"
+        }
+      ]
+    },
+    {
+      "id": "ekámedu",
+      "pos": "noun",
+      "script": [
+        "光闇"
+      ],
+      "definitions": [
+        {
+          "gloss": "light and dark"
+        }
+      ]
+    },
+    {
+      "id": "céce",
+      "pos": "noun",
+      "script": [
+        "近"
+      ],
+      "definitions": [
+        {
+          "gloss": "proximity"
+        }
+      ]
+    },
+    {
+      "id": "cán-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "識ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "have knowledge"
+        }
+      ]
+    },
+    {
+      "id": "cámoku",
+      "pos": "noun",
+      "script": [
+        "女輩"
+      ],
+      "definitions": [
+        {
+          "gloss": "sister"
+        }
+      ]
+    },
+    {
+      "id": "asíkaga",
+      "pos": "noun",
+      "script": [
+        "一時"
+      ],
+      "definitions": [
+        {
+          "gloss": "once"
+        }
+      ]
+    },
+    {
+      "id": "=cici",
+      "pos": "noun suffix",
+      "script": [
+        "しし"
+      ],
+      "definitions": [
+        {
+          "gloss": "POL",
+          "translations": {
+            "ja": "〜さん"
+          }
+        }
+      ]
+    },
+    {
+      "id": "caneján-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "識ね生ぬ"
+      ],
+      "definitions": [
+        {
+          "gloss": "become aware"
+        }
+      ]
+    },
+    {
+      "id": "átawa",
+      "pos": "sentence conjunction",
+      "script": [
+        "加而"
+      ],
+      "definitions": [
+        {
+          "gloss": "and furthermore"
+        }
+      ]
+    },
+    {
+      "id": "ém-",
+      "pos": "verb",
+      "conjugation_class": "consonant-stem",
+      "script": [
+        "在む"
+      ],
+      "definitions": [
+        {
+          "gloss": "exist"
+        }
+      ]
+    },
+    {
+      "id": "(e)l-",
+      "pos": "auxiliary verb",
+      "conjugation_class": "consonant-stem",
+      "definitions": [
+        {
+          "gloss": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "=mani",
+      "pos": "noun suffix",
+      "script": [
+        "字"
+      ],
+      "definitions": [
+        {
+          "gloss": "grapheme"
+        }
+      ]
     }
   ],
   "alternative_form_groups": [
@@ -6117,6 +6484,13 @@
       "entry_ids": [
         "túnu",
         "tuna"
+      ]
+    },
+    {
+      "script": "皇島",
+      "entry_ids": [
+        "tákan=don",
+        "takańdon"
       ]
     }
   ]
