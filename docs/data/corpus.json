@@ -84,7 +84,21 @@
       "translation": {
         "en": "Alice was sitting by her sister on the bank",
         "ja": "アリスは土手で姉の横で座っていた。"
-      }
+      },
+      "alternative_registers_of_writing": [
+        [
+          "ありす",
+          "生",
+          "つりよ",
+          "処",
+          "女輩",
+          "之",
+          "横",
+          "処",
+          "席在",
+          "。"
+        ]
+      ]
     },
     {
       "source": "Alice in Wonderland",

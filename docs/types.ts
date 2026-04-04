@@ -79,6 +79,7 @@ export interface CorpusSentenceData {
   source?: string;
   tokens: Token[];
   translation: LocalizedString;
+  alternative_registers_of_writing?: string[][];
 }
 
 export interface CorpusSentence extends CorpusSentenceData {

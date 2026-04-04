@@ -57,12 +57,23 @@ const punctuationTokenSchema = z.object({
     punctuation: z.enum(['。', '(', ')', '「', '」', '！', ':', '？', '│']),
 });
 const tokenSchema = z.union([singleFormTokenSchema, multiPronunciationTokenSchema, punctuationTokenSchema]);
+const sentenceSchema = z.object({
+    source: z.string().optional(),
+    tokens: z.array(tokenSchema),
+    translation: localizedStringSchema,
+    alternative_registers_of_writing: z.array(z.array(z.string())).optional(),
+}).superRefine((sentence, ctx) => {
+    for (const [k, register] of (sentence.alternative_registers_of_writing ?? []).entries()) {
+        if (register.length !== sentence.tokens.length) {
+            ctx.addIssue({
+                code: z.ZodIssueCode.custom,
+                message: `alternative_registers_of_writing[${k}].length (${register.length}) must equal tokens.length (${sentence.tokens.length})`,
+            });
+        }
+    }
+});
 const corpusDataSchema = z.object({
-    sentences: z.array(z.object({
-        source: z.string().optional(),
-        tokens: z.array(tokenSchema),
-        translation: localizedStringSchema,
-    })),
+    sentences: z.array(sentenceSchema),
     source_urls: z.array(z.object({
         source_name: z.string(),
         urls: z.array(z.string().url()),
