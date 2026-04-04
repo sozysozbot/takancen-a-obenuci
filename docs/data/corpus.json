@@ -504,6 +504,193 @@
       }
     },
     {
+      "source": "Alice in Wonderland",
+      "tokens": [
+        {
+          "form": "átawa",
+          "mixed_script": "加而",
+          "entry_ids": [
+            "átawa"
+          ],
+          "gloss": "and.furthermore"
+        },
+        {
+          "form": "álicu",
+          "mixed_script": "ありす",
+          "entry_ids": [
+            "álicu"
+          ],
+          "gloss": "Alice(English_name)"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "íja",
+          "mixed_script": "心",
+          "entry_ids": [
+            "íja"
+          ],
+          "gloss": "soul"
+        },
+        {
+          "form": "a",
+          "mixed_script": "あ",
+          "entry_ids": [
+            "a"
+          ],
+          "gloss": "GEN"
+        },
+        {
+          "form": "colácola",
+          "mixed_script": "為らそら",
+          "entry_ids": [
+            "ć-",
+            "(á)c-",
+            "(a)"
+          ],
+          "gloss": "do-can-PTCP"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "かん",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "imikemóku",
+          "mixed_script": "思け行く",
+          "entry_ids": [
+            "imík-",
+            "(e)mók-",
+            "(u)"
+          ],
+          "gloss": "feel-away-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "And Alice let her thought wander at the mercy of her mind",
+        "ja": "そしてアリスは心のなすがままに思考を巡らせた。"
+      }
+    },
+    {
+      "source": "Alice in Wonderland",
+      "tokens": [
+        {
+          "form": "mórwa",
+          "mixed_script": "別而",
+          "entry_ids": [
+            "mórwa"
+          ],
+          "gloss": "but"
+        },
+        {
+          "form": "kákja",
+          "mixed_script": "此日",
+          "entry_ids": [
+            "kákja"
+          ],
+          "gloss": "this.day"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "mukakanémata",
+          "mixed_script": "風火ねまた",
+          "entry_ids": [
+            "mukakán-",
+            "(é)m-",
+            "(a)ta"
+          ],
+          "gloss": "weather.is.hot-PROG-PST"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "おさ",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "kí",
+          "mixed_script": "彼",
+          "entry_ids": [
+            "kí"
+          ],
+          "gloss": "3sg"
+        },
+        {
+          "form": "ja",
+          "mixed_script": "や",
+          "entry_ids": [
+            "ja"
+          ],
+          "gloss": "NOM"
+        },
+        {
+          "form": "kox́saku",
+          "mixed_script": "寝来",
+          "entry_ids": [
+            "kox́saku"
+          ],
+          "gloss": "sleep"
+        },
+        {
+          "form": "cíja",
+          "mixed_script": "しや",
+          "entry_ids": [
+            "ć-",
+            "(í)ja-",
+            "(e)"
+          ],
+          "gloss": "do-want-ADV"
+        },
+        {
+          "form": "wa",
+          "mixed_script": "わ",
+          "entry_ids": [
+            "wa"
+          ],
+          "gloss": "and.also"
+        },
+        {
+          "form": "wacemokíjalu",
+          "mixed_script": "無せもきやる",
+          "entry_ids": [
+            "wác-",
+            "(e)mók-",
+            "(í)ja-",
+            "(u)"
+          ],
+          "gloss": "not.exist-away-want-NPST"
+        },
+        {
+          "punctuation": "。"
+        }
+      ],
+      "translation": {
+        "en": "But on that day, the weather being hot, Alice wanted to sleep and disappear.",
+        "ja": "しかしその日は暑く、アリスは寝たくて消えてしまいたくなる。"
+      }
+    },
+    {
       "source": "「異世界語入門～転生したけど日本語が通じなかった～」p.216",
       "translation": {
         "ja": "あなたは反革命主義者ですか？"
