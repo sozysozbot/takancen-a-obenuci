@@ -11860,13 +11860,13 @@
       "source": "タカン文字練習帳",
       "tokens": [
         {
-          "form": "kujógaci",
+          "form": "kujóga",
           "mixed_script": "層筆",
           "entry_ids": [
             "kujóga-",
-            "(i)"
+            "(e)"
           ],
-          "gloss": "write.superimposed-IMP"
+          "gloss": "write.superimposed-ADV"
         },
         {
           "form": "wa",
