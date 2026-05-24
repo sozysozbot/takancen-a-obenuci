@@ -9401,7 +9401,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "3-4-5 の場には、4-5-6 以上の連番が出せます。"
+        "ja": "3-4-5 の場には、4-5-6 以上の連番が出せます。",
+        "en": "When there is 3-4-5 on the table, you can play the sequence that is 4-5-6 or stronger."
       },
       "tokens": [
         {
@@ -9635,7 +9636,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "数字カードと混ぜた場合、好きな数字の代わりになります。"
+        "ja": "数字カードと混ぜた場合、好きな数字の代わりになります。",
+        "en": "When mixed with number cards, they can be used in place of any number you like."
       },
       "tokens": [
         {
@@ -9730,7 +9732,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "（例：3-W-5 は 3-4-5 扱い）"
+        "ja": "（例：3-W-5 は 3-4-5 扱い）",
+        "en": "(Example: 3-W-5 is treated as 3-4-5)"
       },
       "tokens": [
         {
@@ -9826,7 +9829,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "このとき、Wが何の数字になっているかを宣言します。"
+        "ja": "このとき、Wが何の数字になっているかを宣言します。",
+        "en": "When mixing, declare what number W represents."
       },
       "tokens": [
         {
@@ -9913,7 +9917,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "W-Wのように、Wのみで出すともっとも弱い組合せになります。"
+        "ja": "W-Wのように、Wのみで出すともっとも弱い組合せになります。",
+        "en": "Using only W (W-W for example) results in the weakest combination."
       },
       "tokens": [
         {
@@ -11048,7 +11053,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "複数いる場合は勝利を分かち合います。"
+        "ja": "複数いる場合は勝利を分かち合います。",
+        "en": "If there are multiple players with the highest points, they all are winners."
       },
       "tokens": [
         {
@@ -11164,7 +11170,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "残った手札 1枚につき│-1点"
+        "ja": "残った手札 1枚につき│-1点",
+        "en": "For each card left in your hand │ negative 1 point"
       },
       "tokens": [
         {
