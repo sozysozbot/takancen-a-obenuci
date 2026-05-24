@@ -11303,6 +11303,57 @@
     {
       "source": "ヤマタ！",
       "translation": {
+        "ja": "一枚出し│セット│連番│爆盛り",
+        "en": "Playing a single card │ Set │ Sequence │ Super huge serving"
+      },
+      "tokens": [
+        {
+          "form": "éx≡co",
+          "mixed_script": "一片",
+          "entry_ids": [
+            "ex≡",
+            "≡co"
+          ],
+          "gloss": "one-piece"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "mixed_script": "友集",
+          "form": "okítadu",
+          "entry_ids": [
+            "okítadu"
+          ],
+          "gloss": "combination.of.cards.of.equal.rank"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "mixed_script": "連集",
+          "form": "nekátadu",
+          "entry_ids": [
+            "nekátadu"
+          ],
+          "gloss": "combination.of.sequential.cards"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "gógowi",
+          "mixed_script": "ごゝ皿",
+          "entry_ids": [
+            "gógowi"
+          ],
+          "gloss": "extra.large.serving"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
         "ja": "ゲームの終了と計算"
       },
       "tokens": [
