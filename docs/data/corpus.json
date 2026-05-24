@@ -5085,8 +5085,8 @@
         }
       ],
       "translation": {
-        "ja": "サービスだ！",
-        "en": "This! This! free of charge!"
+        "ja": "これもサービスだ！",
+        "en": "This! This! [I'll give it to you] free of charge!"
       }
     },
     {
@@ -5984,8 +5984,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "全員に3枚ずつ配る",
-        "en": "Hand out three cards to everyone."
+        "ja": "全員に5枚ずつ配る",
+        "en": "Hand out five cards to everyone."
       },
       "tokens": [
         {
@@ -6100,7 +6100,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "順番: 適当な方法でスタートプレイヤーを決める。"
+        "ja": "適当な方法でスタートプレイヤーとゲームの進行方向を決める。",
+        "en": "Using any suitable method, determine the starting player and whether the game proceeds clockwise or counterclockwise."
       },
       "tokens": [
         {
@@ -6217,7 +6218,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "ゲームの流れ"
+        "ja": "ゲームの流れ",
+        "en": "How the game proceeds"
       },
       "tokens": [
         {
@@ -6249,7 +6251,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "スタートプレイヤーから順に手番を行います"
+        "ja": "スタートプレイヤーから順に手番を行います",
+        "en": "Players take turns, starting with the starting player."
       },
       "tokens": [
         {
@@ -6309,7 +6312,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "自分の手番では、以下の【A】か【B】どちらかを選んで行います。"
+        "ja": "自分の手番では、以下の【A】か【B】どちらかを選んで行います。",
+        "en": "On your turn, choose either [A] or [B] below."
       },
       "tokens": [
         {
@@ -6454,7 +6458,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "【A】 食べる！"
+        "ja": "【A】 食べる！",
+        "en": "[A] Eat!"
       },
       "tokens": [
         {
@@ -6488,7 +6493,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "（カードを出す）"
+        "ja": "（カードを出す）",
+        "en": "(Playing some cards)"
       },
       "tokens": [
         {
@@ -6527,7 +6533,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "場に出ているカードの組合せよりも強く、同じ枚数・同じ種類の組み合せ（後述）を出し、すでに場にあるカードの上に重ねて置きます。"
+        "ja": "場に出ているカードの組合せよりも強く、同じ枚数・同じ種類の組み合せ（後述）を出し、すでに場にあるカードの上に重ねて置きます。",
+        "en": "Play a combination of cards that is stronger than the one currently on the table, consisting of the same number and type of cards (as described below), and place it on top of the cards already on the table."
       },
       "tokens": [
         {
@@ -6731,7 +6738,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "場が空の場合: 好きな枚数・組み合わせで出せます。"
+        "ja": "場が空の場合: 好きな枚数・組み合わせで出せます。",
+        "en": "When the table is empty: there is no restriction on how many cards to play or what kind of combination to play."
       },
       "tokens": [
         {
@@ -6849,7 +6857,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "【B】 ちょっとお休み！（パス）"
+        "ja": "【B】 ちょっとお休み！（パス）",
+        "en": "[B] Take a short break! (pass)"
       },
       "tokens": [
         {
@@ -6897,7 +6906,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "山札からカードを1枚引き、手番を終えます。"
+        "ja": "山札からカードを1枚引き、手番を終えます。",
+        "en": "Draw one card from the draw pile, and then end your turn."
       },
       "tokens": [
         {
@@ -6991,7 +7001,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "※戦略的なパスも可能です。"
+        "ja": "※戦略的なパスも可能です。",
+        "en": "Note: it is permissible to make a strategic pass."
       },
       "tokens": [
         {
@@ -7045,7 +7056,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "山札がない場合は引かずに終了します。"
+        "ja": "山札がない場合は引かずに終了します。",
+        "en": "When there are no more cards in the draw pile, the turn ends without drawing a card."
       },
       "tokens": [
         {
@@ -7124,7 +7136,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "場のリセット"
+        "ja": "場のリセット",
+        "en": "Resetting the table"
       },
       "tokens": [
         {
@@ -7409,7 +7422,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "ヤマタ！（ごっつぉさん！）"
+        "ja": "ヤマタ！（ごっつぉさん！）",
+        "en": "Yamata! (I ate!)"
       },
       "tokens": [
         {
@@ -7429,7 +7443,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "手札が0枚になった瞬間に「ヤマタ！」と宣言し、以下の3つを順に行います。"
+        "ja": "手札が0枚になった瞬間に「ヤマタ！」と宣言し、以下の3つを順に行います。",
+        "en": "The moment you have no cards left in your hand, declare “Yamata!” and perform the following three actions in order."
       },
       "tokens": [
         {
@@ -7565,7 +7580,7 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "得点獲得:"
+        "ja": "Obtaining the score:"
       },
       "tokens": [
         {
@@ -8276,7 +8291,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "おかわり"
+        "ja": "おかわり",
+        "en": "Another Helping"
       },
       "tokens": [
         {
@@ -8397,7 +8413,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "山札が足りない場合はできる限り引きます。"
+        "ja": "山札が足りない場合はできる限り引きます。",
+        "en": "If there aren't enough cards left in the draw pile, draw as many as possible."
       },
       "tokens": [
         {
@@ -8668,13 +8685,15 @@
         }
       ],
       "translation": {
-        "ja": "強さ"
+        "ja": "強さ",
+        "en": "strength"
       }
     },
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "弱│強"
+        "ja": "弱│強",
+        "en": "weak│strong"
       },
       "tokens": [
         {
@@ -8702,7 +8721,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "ワイルドのみ│0│1│2│3│4│5│6│7│8│9"
+        "ja": "ワイルドのみ│0│1│2│3│4│5│6│7│8│9",
+        "en": "wildcards only│0│1│2│3│4│5│6│7│8│9"
       },
       "tokens": [
         {
@@ -9347,7 +9367,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "例："
+        "ja": "例：",
+        "en": "Example:"
       },
       "tokens": [
         {
@@ -9587,7 +9608,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "混ぜる:"
+        "ja": "混ぜる:",
+        "en": "Mixing:"
       },
       "tokens": [
         {
@@ -11252,7 +11274,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "3回ぐらい行ってもいいでしょう。満足したらやめるべきです。"
+        "ja": "3回ぐらい行ってもいいでしょう。満足したらやめるべきです。",
+        "en": "You can do it about three times. Once you’re satisfied, you should stop."
       },
       "tokens": [
         {
