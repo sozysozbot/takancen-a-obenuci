@@ -7169,7 +7169,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "自分以外の全員がパスをしたら、場のカードをすべて捨て札にします。"
+        "ja": "自分以外の全員がパスをしたら、場のカードをすべて捨て札にします。",
+        "en": "If everyone except you passes, discard all the cards on the table."
       },
       "tokens": [
         {
@@ -7287,7 +7288,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "その後、最後にカードを出したプレイヤーがカードを出し、ゲームを再開します。"
+        "ja": "その後、最後にカードを出したプレイヤーがカードを出し、ゲームを再開します。",
+        "en": "After that, the player who submitted cards last should play another turn, and the game resumes."
       },
       "tokens": [
         {
@@ -8311,7 +8313,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "山札から3枚引き手札にする"
+        "ja": "山札から3枚引き手札にする",
+        "en": "Draw three cards from the draw pile into your hand"
       },
       "tokens": [
         {
@@ -8617,7 +8620,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "カードの強さと組合せ"
+        "ja": "カードの強さと組合せ",
+        "en": "strengths and combinations of cards"
       },
       "tokens": [
         {
@@ -8873,7 +8877,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "組み合わせの種類"
+        "ja": "組み合わせの種類",
+        "en": "The kind of combination"
       },
       "tokens": [
         {
@@ -8905,7 +8910,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "種類"
+        "ja": "種類",
+        "en": "Kind"
       },
       "tokens": [
         {
