@@ -5755,6 +5755,273 @@
         {
           "multiple-standard-pronunciations": true,
           "forms": [
+            "mákaco",
+            "máxco"
+          ],
+          "mixed_script": "値片",
+          "gloss": "number.card",
+          "entry_ids_of_each_form": [
+            [
+              "mákaco"
+            ],
+            [
+              "máxco"
+            ]
+          ]
+        },
+        {
+          "form": "túce",
+          "mixed_script": "毎",
+          "entry_ids": [
+            "túce"
+          ],
+          "gloss": "each"
+        },
+        {
+          "form": "ún≡co",
+          "mixed_script": "五片",
+          "entry_ids": [
+            "un≡",
+            "≡co"
+          ],
+          "gloss": "five-pieces"
+        }
+      ],
+      "translation": {
+        "ja": "数字カード 各5枚",
+        "en": "Number cards: five cards each"
+      }
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "0│1│2│3│4│5│6│7│8│9",
+        "en": "0│1│2│3│4│5│6│7│8│9"
+      },
+      "tokens": [
+        {
+          "form": "mún",
+          "entry_ids": [
+            "mún"
+          ],
+          "gloss": "zero",
+          "mixed_script": "無"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "ási",
+          "mixed_script": "一",
+          "entry_ids": [
+            "ási"
+          ],
+          "gloss": "one"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "íku",
+          "mixed_script": "二",
+          "entry_ids": [
+            "íku"
+          ],
+          "gloss": "two"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "úmu",
+          "mixed_script": "三",
+          "entry_ids": [
+            "úmu"
+          ],
+          "gloss": "three"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "nága",
+            "nágamu",
+            "nágan",
+            "kámu"
+          ],
+          "mixed_script": "四",
+          "entry_ids_of_each_form": [
+            [
+              "nága"
+            ],
+            [
+              "nágamu"
+            ],
+            [
+              "nágan"
+            ],
+            [
+              "kámu"
+            ]
+          ],
+          "gloss": "four"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "cúna",
+          "entry_ids": [
+            "cúna"
+          ],
+          "gloss": "five",
+          "mixed_script": "五"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "cúnasi",
+          "entry_ids": [
+            "cúnasi"
+          ],
+          "gloss": "six",
+          "mixed_script": "六"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "cúneku",
+          "entry_ids": [
+            "cúneku"
+          ],
+          "gloss": "seven",
+          "mixed_script": "七"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "nómu",
+          "entry_ids": [
+            "nómu"
+          ],
+          "gloss": "eight",
+          "mixed_script": "八"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "nóu",
+          "entry_ids": [
+            "nóu"
+          ],
+          "gloss": "nine",
+          "mixed_script": "九"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "tokens": [
+        {
+          "mixed_script": "歪片",
+          "form": "búnco",
+          "entry_ids": [
+            "búnco"
+          ],
+          "gloss": "wildcard"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "mixed_script": "味油",
+          "form": "tikéoli",
+          "entry_ids": [
+            "tikéoli"
+          ],
+          "gloss": "condiment"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "mixed_script": "十五片",
+          "forms": [
+            "mitún≡co",
+            "mituún≡co"
+          ],
+          "entry_ids_of_each_form": [
+            [
+              "mitun≡",
+              "≡co"
+            ],
+            [
+              "mituun≡",
+              "≡co"
+            ]
+          ],
+          "gloss": "fifteen-pieces"
+        }
+      ],
+      "translation": {
+        "ja": "ワイルドカード│調味料│15枚",
+        "en": "Wildcards │ Condiment │ fifteen cards"
+      }
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "お金│3銭（ズー）|5枚",
+        "en": "money│ 3 zooh (name of our currency) | five cards"
+      },
+      "tokens": [
+        {
+          "form": "súco",
+          "mixed_script": "銭片",
+          "entry_ids": [
+            "súco"
+          ],
+          "gloss": "card.with.a.monetary.value"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "ón≡su",
+          "mixed_script": "三銭",
+          "entry_ids": [
+            "on≡",
+            "≡su"
+          ],
+          "gloss": "three-points"
+        },
+        {
+          "punctuation": "│"
+        },
+        {
+          "form": "ún≡co",
+          "mixed_script": "五片",
+          "entry_ids": [
+            "un≡",
+            "≡co"
+          ],
+          "gloss": "five-pieces"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "tokens": [
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
             "sórcju",
             "soŕcjur"
           ],
@@ -5982,7 +6249,7 @@
       ]
     },
     {
-      "source": "ヤマタ！",
+      "source": "ヤマタ！（ボツ）",
       "translation": {
         "ja": "全員に5枚ずつ配る",
         "en": "Hand out five cards to everyone."
@@ -6038,10 +6305,95 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "残りは山札にする。",
-        "en": "The remaining cards become the draw pile."
+        "ja": "全てのカードから5枚の「お金」カードを取り出し、机の上に置きます。残りは山札とします。",
+        "en": "Take out the five “money” cards out of all cards and place it on the table. The remaining cards become the draw pile."
       },
       "tokens": [
+        {
+          "form": "áno",
+          "mixed_script": "全",
+          "entry_ids": [
+            "áno#2"
+          ],
+          "gloss": "all"
+        },
+        {
+          "form": "nínco",
+          "mixed_script": "紙片",
+          "entry_ids": [
+            "nínco"
+          ],
+          "gloss": "card"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "cúna",
+          "entry_ids": [
+            "cúna"
+          ],
+          "gloss": "five",
+          "mixed_script": "五"
+        },
+        {
+          "form": "súco",
+          "mixed_script": "銭片",
+          "entry_ids": [
+            "súco"
+          ],
+          "gloss": "card.with.a.monetary.value"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "móme",
+          "mixed_script": "手め",
+          "entry_ids": [
+            "móm-",
+            "(e)"
+          ],
+          "gloss": "take-ADV"
+        },
+        {
+          "form": "cétaso",
+          "mixed_script": "机上",
+          "entry_ids": [
+            "cétaso"
+          ],
+          "gloss": "on.top.of.a.table"
+        },
+        {
+          "form": "kan",
+          "mixed_script": "処",
+          "entry_ids": [
+            "kan"
+          ],
+          "gloss": "LOC"
+        },
+        {
+          "form": "kúgi",
+          "mixed_script": "付ぎ",
+          "entry_ids": [
+            "kúg-",
+            "(i)"
+          ],
+          "gloss": "put-IMP"
+        },
+        {
+          "punctuation": "。"
+        },
         {
           "form": "téko",
           "mixed_script": "残",
@@ -6100,7 +6452,86 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "適当な方法でスタートプレイヤーとゲームの進行方向を決める。",
+        "ja": "全プレイヤーは山札から5枚のカードを受け取ります。",
+        "en": "All the players receive five cards from the draw pile."
+      },
+      "tokens": [
+        {
+          "form": "bécuku",
+          "mixed_script": "全人",
+          "entry_ids": [
+            "bécuku"
+          ],
+          "gloss": "everyone"
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "cómaco",
+            "cónco",
+            "comátuo",
+            "cóma"
+          ],
+          "mixed_script": "積片",
+          "entry_ids_of_each_form": [
+            [
+              "cómaco"
+            ],
+            [
+              "cónco"
+            ],
+            [
+              "comátuo"
+            ],
+            [
+              "cóma"
+            ]
+          ],
+          "gloss": "pile.of.cards"
+        },
+        {
+          "form": "oca",
+          "mixed_script": "耒",
+          "entry_ids": [
+            "oca"
+          ],
+          "gloss": "ABL"
+        },
+        {
+          "form": "ún≡co",
+          "mixed_script": "五片",
+          "entry_ids": [
+            "un≡",
+            "≡co"
+          ],
+          "gloss": "five-pieces"
+        },
+        {
+          "form": "ki",
+          "mixed_script": "き",
+          "entry_ids": [
+            "ki"
+          ],
+          "gloss": "ACC"
+        },
+        {
+          "form": "momecáki",
+          "mixed_script": "受き",
+          "entry_ids": [
+            "momecák-",
+            "(i)"
+          ],
+          "gloss": "obtain-IMP"
+        },
+        {
+          "punctuation": "。"
+        }
+      ]
+    },
+    {
+      "source": "ヤマタ！",
+      "translation": {
+        "ja": "適当な方法でスタートプレイヤーとゲームの進行方向を決めます。",
         "en": "Using any suitable method, determine the starting player and whether the game proceeds clockwise or counterclockwise."
       },
       "tokens": [
