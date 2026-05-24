@@ -703,7 +703,7 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
   // Free translation
   const translation = document.createElement('div');
   translation.className = 'translation';
-  translation.textContent = '\u201C' + localize(sentence.translation) + '\u201D';
+  translation.textContent = localize(sentence.translation);
   div.appendChild(translation);
 
   // Copy buttons

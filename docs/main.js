@@ -641,7 +641,7 @@ function buildSentenceEl(sentence) {
     // Free translation
     const translation = document.createElement('div');
     translation.className = 'translation';
-    translation.textContent = '\u201C' + localize(sentence.translation) + '\u201D';
+    translation.textContent = localize(sentence.translation);
     div.appendChild(translation);
     // Copy buttons
     const copyRow = document.createElement('div');

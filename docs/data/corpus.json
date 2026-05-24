@@ -5025,7 +5025,8 @@
         }
       ],
       "translation": {
-        "ja": "「おう、いい食いっぷりだ！"
+        "ja": "「おう、いい食いっぷりだ！",
+        "en": "“Hey, you have great appetite!"
       }
     },
     {
@@ -5084,7 +5085,8 @@
         }
       ],
       "translation": {
-        "ja": "サービスだ！"
+        "ja": "サービスだ！",
+        "en": "This! This! free of charge!"
       }
     },
     {
@@ -5116,7 +5118,8 @@
         }
       ],
       "translation": {
-        "ja": "食え食え！」"
+        "ja": "食え食え！」",
+        "en": "Eat! Eat!”"
       }
     },
     {
@@ -5184,7 +5187,7 @@
         }
       ],
       "translation": {
-        "en": "But if you leave any food behind, you'll be sorry.",
+        "en": "“But if you leave any food behind, you'll be sorry.”",
         "ja": "「でも食べ残したら承知しないからな。」"
       }
     },
@@ -5228,7 +5231,8 @@
         }
       ],
       "translation": {
-        "ja": "ここはとある大衆食堂。"
+        "ja": "ここはとある大衆食堂。",
+        "en": "Here, in a local restaurant,"
       }
     },
     {
@@ -5446,7 +5450,8 @@
         }
       ],
       "translation": {
-        "ja": "気前のいい名物店主は食欲旺盛なお客さんを見るとついうっかり「おかわり」をサービスしてしまいます。"
+        "ja": "気前のいい名物店主は食欲旺盛なお客さんを見るとついうっかり「おかわり」をサービスしてしまいます。",
+        "en": "the famous shopkeeper thinks little about making money, so when seeing someone whose appetite seems insatiable, the shopkeeper just have to give another helping to the customer."
       }
     },
     {
@@ -5500,7 +5505,8 @@
         }
       ],
       "translation": {
-        "ja": "でも食べ残しには要注意！"
+        "ja": "でも食べ残しには要注意！",
+        "en": "But be careful not to leave any food behind!"
       }
     },
     {
@@ -5601,7 +5607,8 @@
         }
       ],
       "translation": {
-        "ja": "食べ残すと店主はカンカンに怒ってしまいます！"
+        "ja": "食べ残すと店主はカンカンに怒ってしまいます！",
+        "en": "Any leftover would make the shopkeeper furious!"
       }
     },
     {
@@ -5738,7 +5745,8 @@
         }
       ],
       "translation": {
-        "ja": "厨房の食材が尽きるまで食べ続け、最も得点を稼いだ人が勝者です。"
+        "ja": "厨房の食材が尽きるまで食べ続け、最も得点を稼いだ人が勝者です。",
+        "en": "Keep eating until all the food in the kitchen runs out; the player who gained the most points wins."
       }
     },
     {
@@ -5763,7 +5771,8 @@
         }
       ],
       "translation": {
-        "ja": "準備"
+        "ja": "準備",
+        "en": "setup"
       }
     },
     {
@@ -5975,7 +5984,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "全員に3枚ずつ配る"
+        "ja": "全員に3枚ずつ配る",
+        "en": "Hand out three cards to everyone."
       },
       "tokens": [
         {
@@ -6028,7 +6038,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "残りは山札にする。"
+        "ja": "残りは山札にする。",
+        "en": "The remaining cards become the draw pile."
       },
       "tokens": [
         {
