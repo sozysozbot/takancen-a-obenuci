@@ -6964,8 +6964,8 @@
     {
       "source": "ヤマタ！",
       "translation": {
-        "ja": "場に出ているカードの組合せよりも強く、同じ枚数・同じ種類の組み合せ（後述）を出し、すでに場にあるカードの上に重ねて置きます。",
-        "en": "Play a combination of cards that is stronger than the one currently on the table, consisting of the same number and type of cards (as described below), and place it on top of the cards already on the table."
+        "ja": "場に出ているカードの組合せよりも強く（同じ強さはダメ）、同じ枚数・同じ種類の組み合せ（後述）を出し、すでに場にあるカードの上に重ねて置きます。",
+        "en": "Play a combination of cards that is [strictly] stronger (you cannot play a combination with the same strength) than the one currently on the table, consisting of the same number and type of cards (as described below), and place it on top of the cards already on the table."
       },
       "tokens": [
         {
@@ -7007,6 +7007,64 @@
             "méki"
           ],
           "gloss": "strong"
+        },
+        {
+          "punctuation": "("
+        },
+        {
+          "multiple-standard-pronunciations": true,
+          "forms": [
+            "méxko",
+            "méxkor"
+          ],
+          "mixed_script": "硬軟",
+          "entry_ids_of_each_form": [
+            [
+              "méxko"
+            ],
+            [
+              "méxkor"
+            ]
+          ],
+          "gloss": "strength"
+        },
+        {
+          "form": "méme",
+          "mixed_script": "同",
+          "entry_ids": [
+            "méme-",
+            "(e)"
+          ],
+          "gloss": "be.same-ADV"
+        },
+        {
+          "form": "ken",
+          "mixed_script": "即",
+          "entry_ids": [
+            "ken"
+          ],
+          "gloss": "then"
+        },
+        {
+          "form": "kéte",
+          "mixed_script": "善",
+          "entry_ids": [
+            "két-",
+            "(e)"
+          ],
+          "gloss": "be.good-ADV"
+        },
+        {
+          "form": "wáci",
+          "mixed_script": "無",
+          "entry_ids": [
+            "wác-",
+            "(i)"
+          ],
+          "gloss": "not.exist-IMP"
+        },
+        {
+          "punctuation": ")"
         },
         {
           "form": "wa",
