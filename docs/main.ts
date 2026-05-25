@@ -28,9 +28,13 @@ function t(section: 'pos' | 'conj' | 'ui' | 'cognate-source', key: string): stri
   return i18n[section]?.[key] ?? key;
 }
 
-function localize(s: LocalizedString): string {
-  if (lang === 'ja') return s.ja;
-  return s.en ?? s.ja;
+function localize(s: LocalizedString): { result: string, is_optimal: boolean } {
+  if (lang === 'ja') return { result: s.ja, is_optimal: true };
+  if (s.en === undefined) {
+    return { result: s.ja, is_optimal: false };
+  } else {
+    return { result: s.en, is_optimal: true };
+  }
 }
 
 function tCount(count: number, property_name: 'count-in-corpus' | 'count-word' | 'count-sentence'): string {
@@ -42,7 +46,7 @@ function tCount(count: number, property_name: 'count-in-corpus' | 'count-word' |
 
 // ── Mora counting ───────────────────────────────────────────────────────────
 
-const MORA_VOWELS = new Set(['a','e','i','o','u']);
+const MORA_VOWELS = new Set(['a', 'e', 'i', 'o', 'u']);
 
 function countMorae(form: string): number {
   // Normalize to NFD and strip combining diacritics so that ŕ → r, ń → n, á → a, etc.
@@ -260,7 +264,7 @@ function applyFilter() {
       || entry.id.toLowerCase().includes(query)
       || entry.definitions.some(d =>
         d.gloss.toLowerCase().includes(query) ||
-        (d.translations ? localize(d.translations) : '').toLowerCase().includes(query));
+        (d.translations ? localize(d.translations) : { result: '' }).result.toLowerCase().includes(query));
     const matchPos = !pos || entry.pos === pos;
     return matchQuery && matchPos;
   });
@@ -497,7 +501,7 @@ function buildEntryEl(entry: DictionaryEntry): HTMLDivElement {
   if (entry.notes) {
     const notes = document.createElement('div');
     notes.className = 'notes';
-    notes.textContent = localize(entry.notes);
+    notes.textContent = localize(entry.notes).result;
     div.appendChild(notes);
   }
 
@@ -703,7 +707,9 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
   // Free translation
   const translation = document.createElement('div');
   translation.className = 'translation';
-  translation.textContent = localize(sentence.translation);
+  const { result, is_optimal } = localize(sentence.translation);
+  translation.textContent = result;
+  if (!is_optimal) { translation.style.color = "magenta"; }
   div.appendChild(translation);
 
   // Copy buttons
@@ -718,7 +724,7 @@ function buildSentenceEl(sentence: CorpusSentence): HTMLDivElement {
       if (override !== undefined) return override === '\u3000' ? '' : override;
       return 'punctuation' in tok ? tok.punctuation :
         tok.mixed_script === '\u3000' ? '' :
-        (tok.mixed_script ?? '');
+          (tok.mixed_script ?? '');
     }).join('');
     navigator.clipboard.writeText(text).then(() => {
       copyScript.textContent = t('ui', 'Copied!');
@@ -803,7 +809,7 @@ function computeLinzklaPct(tokens: import('./types.js').Token[], overrides?: str
         (cp >= 0x3400 && cp <= 0x4DBF) ||   // CJK Extension A
         /*(cp >= 0xF900 && cp <= 0xFAFF) ||   // CJK Compatibility Ideographs*/
         cp === 0x3005                     // 々 IDEOGRAPHIC ITERATION MARK
-       /* || cp === 0x3007                        // 〇 IDEOGRAPHIC NUMBER ZERO*/
+        /* || cp === 0x3007                        // 〇 IDEOGRAPHIC NUMBER ZERO*/
       ) {
         cjk++;
       } else if (cp >= 0x3041 && cp <= 0x309F) {  // Hiragana

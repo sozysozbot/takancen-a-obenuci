@@ -25,8 +25,13 @@ function t(section, key) {
 }
 function localize(s) {
     if (lang === 'ja')
-        return s.ja;
-    return s.en ?? s.ja;
+        return { result: s.ja, is_optimal: true };
+    if (s.en === undefined) {
+        return { result: s.ja, is_optimal: false };
+    }
+    else {
+        return { result: s.en, is_optimal: true };
+    }
 }
 function tCount(count, property_name) {
     const tmpl = count === 1 && i18n[property_name]?.one
@@ -233,7 +238,7 @@ function applyFilter() {
         const matchQuery = !query
             || entry.id.toLowerCase().includes(query)
             || entry.definitions.some(d => d.gloss.toLowerCase().includes(query) ||
-                (d.translations ? localize(d.translations) : '').toLowerCase().includes(query));
+                (d.translations ? localize(d.translations) : { result: '' }).result.toLowerCase().includes(query));
         const matchPos = !pos || entry.pos === pos;
         return matchQuery && matchPos;
     });
@@ -453,7 +458,7 @@ function buildEntryEl(entry) {
     if (entry.notes) {
         const notes = document.createElement('div');
         notes.className = 'notes';
-        notes.textContent = localize(entry.notes);
+        notes.textContent = localize(entry.notes).result;
         div.appendChild(notes);
     }
     // Cognates
@@ -641,7 +646,11 @@ function buildSentenceEl(sentence) {
     // Free translation
     const translation = document.createElement('div');
     translation.className = 'translation';
-    translation.textContent = localize(sentence.translation);
+    const { result, is_optimal } = localize(sentence.translation);
+    translation.textContent = result;
+    if (!is_optimal) {
+        translation.style.color = "magenta";
+    }
     div.appendChild(translation);
     // Copy buttons
     const copyRow = document.createElement('div');
