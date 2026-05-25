@@ -7190,6 +7190,33 @@
           }
         }
       ]
+    },
+    {
+      "id": "cétaso",
+      "pos": "noun",
+      "script": [
+        "机上"
+      ],
+      "definitions": [
+        {
+          "gloss": "on top of a table",
+          "translations": {
+            "ja": "机の上"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mórso",
+      "pos": "noun",
+      "script": [
+        "別類"
+      ],
+      "definitions": [
+        {
+          "gloss": "another kind"
+        }
+      ]
     }
   ],
   "alternative_form_groups": [
