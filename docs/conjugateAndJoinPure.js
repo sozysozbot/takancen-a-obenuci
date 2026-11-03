@@ -2,7 +2,7 @@
 export function stripHomophoneDisambiguator(id) { return id.replace(/#\d+$/, ''); }
 // Suffix vowel realisation per stem class.
 // Keys are conjugation_class values; values map the parenthesised vowel to its realisation.
-const SUFFIX_VOWEL = {
+export const SUFFIX_VOWEL = {
     'vowel-stem': { a: 'la', e: '', i: 'ci', u: 'lu', á: 'lá', é: '\u0301', í: 'cí', ú: 'lú' },
     'consonant-stem': { a: 'a', e: 'e', i: 'i', u: 'u', á: 'á', é: 'é', í: 'í', ú: 'ú' },
     'c-irregular': { a: 'ola', e: 'o', i: 'i', u: 'u', á: 'olá', é: 'ó', í: 'í', ú: 'ú' },
@@ -52,12 +52,17 @@ export function getStemClassFromId(id) {
 }
 console.assert(conjugateAndJoinPure(["tákan", "=cen"]) === "tákan=cen");
 console.assert(conjugateAndJoinPure(["ái", "ki"]) === "ái ki");
+// A verb id carrying a homophone marker ("ná-#2", 静る) must still conjugate as a verb.
+console.assert(conjugateAndJoinPure(["ná-#2", "(u)"]) === "nálu");
+console.assert(conjugateAndJoinPure(["ná-#2", "(a)ta"]) === "nálata");
 export function conjugateAndJoinPure(entry_ids) {
     const ids = entry_ids;
     if (ids[0].slice(0, 1) === "(") {
         console.warn(`The chain starts with an auxiliary; are you sure? ${JSON.stringify(entry_ids)}`);
     }
-    if (ids[0].slice(-1) === "-") {
+    // Strip the homophone marker first: a verb with a disambiguator is written
+    // "ná-#2" (marker after the dash), so the raw last character is a digit.
+    if (stripHomophoneDisambiguator(ids[0]).slice(-1) === "-") {
         return conjugateAndJoinVerb(entry_ids);
     }
     if (ids[0].slice(-1) === "≡") {
