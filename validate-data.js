@@ -46,6 +46,7 @@ const singleFormTokenSchema = z.object({
     mixed_script: z.string().optional(),
     entry_ids: z.array(z.string()).optional(),
     gloss: z.string().optional(),
+    irregular_spelling: z.literal(true).optional(),
 });
 const multiPronunciationTokenSchema = z.object({
     'multiple-standard-pronunciations': z.literal(true),
@@ -78,6 +79,7 @@ const corpusDataSchema = z.object({
     source_urls: z.array(z.object({
         source_name: z.string(),
         urls: z.array(z.string().url()),
+        register: z.enum(['logographic']).optional(),
     })).optional(),
 });
 // ── Validate ───────────────────────────────────────────────────────────────

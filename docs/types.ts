@@ -59,6 +59,8 @@ export interface SingleFormToken {
   mixed_script?: string;
   entry_ids?: string[];
   gloss?: string;
+  /** mixed_script is attested and valid but not derivable by the regular spelling mechanism */
+  irregular_spelling?: true;
 }
 
 export interface MultiPronunciationToken {
@@ -91,6 +93,8 @@ export interface CorpusSentence extends CorpusSentenceData {
 export interface SourceUrl {
   source_name: string;
   urls: string[];
+  /** orthographic register of the source; 'logographic' = the almost-entirely-logographic register */
+  register?: 'logographic';
 }
 
 export interface CorpusData {

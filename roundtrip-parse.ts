@@ -20,6 +20,8 @@ import { spawn } from 'child_process';
 import { resolve } from 'path';
 import { buildParserIndex, parseForm, stripAccents } from './docs/parseFormPure.js';
 import type { Analysis } from './docs/parseFormPure.js';
+import { planMixedScript, mixedScriptOptions, syllabifyWithCarriers, applyIterationMarks } from './docs/mixedScriptPure.js';
+import { latinToSyllabary } from './docs/toSpacedHiraganaPure.js';
 import type { CorpusData, DictionaryData } from './docs/types.js';
 
 const REPORT_PATH = 'test-report.html';
@@ -28,6 +30,8 @@ const dictionary = JSON.parse(readFileSync('docs/data/dictionary.json', 'utf8'))
 const corpus = JSON.parse(readFileSync('docs/data/corpus.json', 'utf8')) as CorpusData;
 
 const knownIds = new Set(dictionary.entries.map(e => e.id));
+const logographicSources = new Set((corpus.source_urls ?? []).filter(s => s.register === 'logographic').map(s => s.source_name));
+const entryMap = new Map(dictionary.entries.map(e => [e.id, e]));
 const index = buildParserIndex(dictionary.entries);
 
 // ── Collect ────────────────────────────────────────────────────────────────
@@ -36,6 +40,9 @@ interface TokenRef { sentenceIndex: number; tokenIndex: number; source: string; 
 interface SkippedToken extends TokenRef { form: string; entry_ids: string[]; missing: string[]; gloss: string; }
 interface Failure extends TokenRef { kind: 'accented' | 'accent-stripped'; form: string; entry_ids: string[]; got: Analysis[]; }
 interface AmbiguousForm { form: string; analyses: Analysis[]; }
+interface SpellingMiss extends TokenRef { form: string; entry_ids: string[]; mixed_script: string; options: string[]; optionsShown: string[]; }
+interface SyllabifyMismatch { form: string; expected: string; got: string; }
+interface AcknowledgedSpelling extends TokenRef { form: string; entry_ids: string[]; mixed_script: string; regular: string[]; }
 
 const report = {
   checked: 0,
@@ -44,6 +51,11 @@ const report = {
   ambiguityHistogram: new Map<number, number>(),
   ambiguous: new Map<string, AmbiguousForm>(),
   idUsage: new Map<string, number>(),
+  spellingChecked: 0,
+  spellingMisses: [] as SpellingMiss[],
+  syllabifyMismatches: [] as SyllabifyMismatch[],
+  irregular: [] as AcknowledgedSpelling[],
+  logographicSkipped: 0,
 };
 
 function sameChain(a: readonly string[], b: readonly string[]): boolean {
@@ -76,6 +88,27 @@ for (const [si, sentence] of corpus.sentences.entries()) {
 
       report.ambiguityHistogram.set(bare.length, (report.ambiguityHistogram.get(bare.length) ?? 0) + 1);
       if (bare.length > 1 && !report.ambiguous.has(form)) report.ambiguous.set(form, { form, analyses: bare });
+
+      // The position-aware syllabifier must agree with latinToSyllabary letter for letter.
+      const expectedKana = latinToSyllabary(form);
+      const gotKana = syllabifyWithCarriers(stripAccents(form).replace(/[-=≡]/g, '')).map(u => u.kana).join('');
+      if (expectedKana !== gotKana) report.syllabifyMismatches.push({ form, expected: expectedKana, got: gotKana });
+
+      // Can the spelling mechanism reproduce the corpus's mixed_script? (informational)
+      if (!('multiple-standard-pronunciations' in token) && token.mixed_script && token.mixed_script !== '\u3000') {
+        const plan = planMixedScript(entryMap, entry_ids);
+        const options = plan ? mixedScriptOptions(plan, 'any', 4096) : [];
+        if (logographicSources.has(sentence.source ?? '')) {
+          report.logographicSkipped++;
+        } else if (token.irregular_spelling) {
+          report.irregular.push({ ...ref, form, entry_ids, mixed_script: token.mixed_script, regular: plan ? mixedScriptOptions(plan, 'keep') : [] });
+        } else {
+          report.spellingChecked++;
+          if (!options.includes(token.mixed_script)) {
+            report.spellingMisses.push({ ...ref, form, entry_ids, mixed_script: token.mixed_script, options, optionsShown: plan ? mixedScriptOptions(plan, 'keep') : [] });
+          }
+        }
+      }
     }
   }
 }
@@ -89,6 +122,7 @@ const histogramSorted = [...report.ambiguityHistogram.entries()].sort((a, b) => 
 console.log(`parse round-trip: ${report.checked} token forms checked, ${report.skipped.length} skipped (ids missing from dictionary), ${unattestedEntries.length} dictionary entries unattested in corpus`);
 console.log('analyses per accent-stripped form:', histogramSorted.map(([n, c]) => `${n}→${c}`).join('  '));
 console.log('most ambiguous:', ambiguousSorted.slice(0, 8).map(a => `${a.form}(${a.analyses.length})`).join('  '));
+console.log(`mixed-script coverage: ${report.spellingChecked - report.spellingMisses.length} / ${report.spellingChecked} corpus spellings reproducible by the per-morpheme mechanism (${report.irregular.length} acknowledged irregular, ${report.logographicSkipped} in logographic-register sources excluded)`);
 
 // ── HTML report ────────────────────────────────────────────────────────────
 
@@ -101,17 +135,19 @@ const analysesList = (list: Analysis[]) =>
   list.length === 0 ? '<em>no analysis</em>'
     : `<ul class="analyses">${list.map(a => `<li>${ids(a.entry_ids)} <span class="arrow">⇒</span> ${code(a.form)}</li>`).join('')}</ul>`;
 
-const status = report.failures.length === 0 ? 'pass' : 'fail';
+const hardFailures = report.failures.length + report.syllabifyMismatches.length;
+const status = hardFailures === 0 ? 'pass' : 'fail';
 const sections: string[] = [];
 
 sections.push(`
 <section>
   <h2>Summary</h2>
   <table class="kv">
-    <tr><th>Result</th><td class="status-${status}">${status === 'pass' ? '✅ pass' : `❌ ${report.failures.length} failure(s)`}</td></tr>
+    <tr><th>Result</th><td class="status-${status}">${status === 'pass' ? '✅ pass' : `❌ ${hardFailures} failure(s)`}</td></tr>
     <tr><th>Token forms checked</th><td>${report.checked}</td></tr>
     <tr><th>Skipped (ids missing from dictionary)</th><td>${report.skipped.length}</td></tr>
     <tr><th>Dictionary entries unattested in corpus</th><td>${unattestedEntries.length} / ${dictionary.entries.length}</td></tr>
+    <tr><th>Mixed-script spellings reproducible</th><td>${report.spellingChecked - report.spellingMisses.length} / ${report.spellingChecked} <small>(+${report.irregular.length} acknowledged irregular; ${report.logographicSkipped} tokens in logographic-register sources excluded)</small></td></tr>
     <tr><th>Generated</th><td>${esc(new Date().toLocaleString())}</td></tr>
   </table>
 </section>`);
@@ -150,9 +186,69 @@ sections.push(`
   </table>`}
 </section>`);
 
+if (report.syllabifyMismatches.length > 0) {
+  sections.push(`
+<section>
+  <h2>Syllabifier disagreements with latinToSyllabary (${report.syllabifyMismatches.length})</h2>
+  <table>
+    <tr><th>Form</th><th>latinToSyllabary</th><th>syllabifyWithCarriers</th></tr>
+    ${report.syllabifyMismatches.map(x => `<tr><td>${code(x.form)}</td><td class="ja">${esc(x.expected)}</td><td class="ja">${esc(x.got)}</td></tr>`).join('')}
+  </table>
+</section>`);
+}
+
 sections.push(`
 <section>
-  <h2>Accent-stripped ambiguity</h2>
+  <h2>Mixed-script spellings the mechanism cannot reproduce (${report.spellingMisses.length} of ${report.spellingChecked})</h2>
+  <p>Informational. The per-morpheme logogram/kana mechanism in <code>mixedScriptPure.ts</code> enumerates the systematic spellings of each analysis; a corpus spelling outside that set is either an irregular register (such as 於冠), a dictionary <code>script</code> that lacks the logogram used, or a gap in the mechanism worth a look.</p>
+  <details>
+    <summary>Show list</summary>
+    <table>
+      <tr><th>Where</th><th>Form</th><th>Entry ids</th><th>Corpus spelling</th><th>Mechanism offers (okurigana kept)</th></tr>
+      ${report.spellingMisses.map(x => `<tr>
+        <td>${where(x)}<br><small>${esc(x.source)}</small></td>
+        <td>${code(x.form)}</td>
+        <td>${ids(x.entry_ids)}</td>
+        <td class="ja">${esc(x.mixed_script)}</td>
+        <td class="ja">${x.options.length === 0 ? '<em>nothing</em>' : x.optionsShown.map(esc).join('<br>')}</td>
+      </tr>`).join('')}
+    </table>
+  </details>
+</section>`);
+
+sections.push(`
+<section>
+  <h2>Acknowledged irregular spellings (${report.irregular.length})</h2>
+  <p>Tokens flagged <code>irregular_spelling</code>: valid attested spellings the regular mechanism does not derive, so the IME will not offer them. Kept visible here so the knowledge is not lost.</p>
+  ${report.irregular.length === 0 ? '<p><em>none</em></p>' : `<table>
+    <tr><th>Where</th><th>Form</th><th>Entry ids</th><th>Attested</th><th>Regular spellings</th></tr>
+    ${report.irregular.map(x => `<tr>
+      <td>${where(x)}<br><small>${esc(x.source)}</small></td>
+      <td>${code(x.form)}</td>
+      <td>${ids(x.entry_ids)}</td>
+      <td class="ja">${esc(x.mixed_script)}</td>
+      <td class="ja">${x.regular.map(esc).join('<br>')}</td>
+    </tr>`).join('')}
+  </table>`}
+  <p>Sources in the highly logographic register (excluded from the coverage check): ${[...logographicSources].map(x => `<code>${esc(x)}</code>`).join(', ') || '<em>none</em>'}.</p>
+</section>`);
+
+const unmarkedDictionary = dictionary.entries
+  .filter(e => !e.avoids_iteration_mark)
+  .flatMap(e => (e.script ?? []).filter(x => applyIterationMarks(x) !== x).map(x => ({ id: e.id, spelling: x, marked: applyIterationMarks(x) })));
+sections.push(`
+<section>
+  <h2>Dictionary spellings written without an iteration mark (${unmarkedDictionary.length})</h2>
+  <p>Informational. A repeated character inside one word is written ゝ (kana) or 々 (logogram), and the renderer does so from these <code>script</code> values regardless; listed here in case the entry should instead carry <code>avoids_iteration_mark</code> (as たかままに and しし do).</p>
+  ${unmarkedDictionary.length === 0 ? '<p><em>none</em></p>' : `<table>
+    <tr><th>Id</th><th>As written</th><th>Rendered</th></tr>
+    ${unmarkedDictionary.map(x => `<tr><td>${code(x.id)}</td><td class="ja">${esc(x.spelling)}</td><td class="ja">${esc(x.marked)}</td></tr>`).join('')}
+  </table>`}
+</section>`);
+
+sections.push(`
+<section>
+  <h2>Ambiguity when parsing accent-stripped forms</h2>
   <p>Number of analyses the parser offers for each accent-stripped corpus form (what a user would type). Forms with several analyses are the ones a composer must present as candidates.</p>
   <table class="histogram">
     <tr>${histogramSorted.map(([n]) => `<th>${n}</th>`).join('')}</tr>
@@ -234,11 +330,14 @@ if (!process.env['CI'] && !process.env['NO_OPEN_REPORT']) {
 
 // ── Exit status ────────────────────────────────────────────────────────────
 
-if (report.failures.length > 0) {
+if (hardFailures > 0) {
+  for (const x of report.syllabifyMismatches) {
+    console.error(`❌  syllabifier mismatch: ${JSON.stringify(x.form)} latinToSyllabary=${x.expected} syllabifyWithCarriers=${x.got}`);
+  }
   for (const f of report.failures) {
     console.error(`❌  ${f.kind} input not recovered: sentences[${f.sentenceIndex}].tokens[${f.tokenIndex}] ${JSON.stringify(f.form)} ${JSON.stringify(f.entry_ids)}`);
   }
-  console.error(`❌  ${report.failures.length} round-trip failure(s) — details in ${REPORT_PATH}`);
+  console.error(`❌  ${hardFailures} failure(s) — details in ${REPORT_PATH}`);
   process.exit(1);
 }
 console.log(`✅  parse round-trip — details in ${REPORT_PATH}`);

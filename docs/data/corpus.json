@@ -3086,7 +3086,8 @@
             "(á)c-",
             "(u)"
           ],
-          "gloss": "do-can-NPST"
+          "gloss": "do-can-NPST",
+          "irregular_spelling": true
         },
         {
           "punctuation": "。"
@@ -15580,7 +15581,8 @@
       "source_name": "アイル共和国国歌「冠光」総まとめ",
       "urls": [
         "https://docs.google.com/document/d/1qQPTA4_dgnG9LMkYJUSx1HuN0XebK4WiBsurS6lL468/edit?tab=t.0#heading=h.x6lcxvnkhjzx"
-      ]
+      ],
+      "register": "logographic"
     },
     {
       "source_name": "ヤマタ！",
@@ -15623,7 +15625,8 @@
       "source_name": "ヤマタ！箱裏／CM",
       "urls": [
         "https://drive.google.com/file/d/1y0HxhgH2L2miO5GpLMPxBztyNQvH49-2/view?usp=share_link"
-      ]
+      ],
+      "register": "logographic"
     },
     {
       "source_name": "皇言唯めん皇言き識ね入た書",

@@ -54,6 +54,9 @@ cognates          { pk?: string[], bt?: string[], ar?: string[], ln?: string[] }
                             pk = Pēgvīle/Pekzep, bt = Phētāsvīle, ar = Ai'r, ln = Proto-Lanermic;
                             each value is a list of cognate forms in that language
 components        string[]  optional; ids of component dictionary entries (for compounds)
+avoids_iteration_mark boolean optional; true when a repeated character inside this entry must NOT be
+                            written with ゝ/々 (e.g. たかままに, a compound whose boundary should stay
+                            visible; しし, a recent loanword). By default repeats are written うぬゝ, 行々.
 ```
 
 Each `Definition`:
@@ -70,6 +73,9 @@ Each `SourceUrl`:
 ```
 source_name   string    matches a `source` value used in sentences
 urls          string[]  one or more URLs for that source
+register      string    optional; "logographic" marks a source written in the almost-entirely-logographic
+                        register (於冠, 生 for ja, 須口), whose spellings the regular mechanism does not
+                        generate — such tokens are excluded from the spelling coverage check
 ```
 The UI renders these as globally-numbered `[n]` citation links inline in each sentence, and lists
 all references in a dedicated References tab (Wikipedia-style numbered list).
@@ -94,6 +100,10 @@ mixed_script string    mixed logogram+syllabary representation (displayed with L
 entry_ids    string[]  dictionary entry ids this token links to (one per morpheme for compounds);
                        red badge if id is missing from dictionary, blue+clickable if found
 gloss        string    interlinear gloss label, e.g. "sun", "NOM", "speak-PST"
+irregular_spelling  true   optional; the mixed_script is valid but not derivable by the regular
+                       per-morpheme mechanism (e.g. 為す for colácu, where 為らす / 為能す are the
+                       regular spellings). The IME will not offer it; the coverage check lists it
+                       as acknowledged instead of as a miss
 ```
 
 **Multi-pronunciation token** (for logograms with multiple equally-valid readings, e.g. "四"):
