@@ -38,7 +38,8 @@ export function buildParserIndex(entries) {
                 console.warn(`parseFormPure: cannot interpret auxiliary id ${JSON.stringify(id)}; skipped`);
                 continue;
             }
-            auxiliaries.push({ id, vowel: m[1], fixed: m[2], hasDash: base.endsWith('-') });
+            const isZero = entry.definitions.some(d => d.gloss === 'ZERO');
+            auxiliaries.push({ id, vowel: m[1], fixed: m[2], hasDash: base.endsWith('-'), isZero });
         }
         else if (base.endsWith('-')) {
             verbStems.push({ id, stem: stripAccents(base.slice(0, -1)) });
@@ -115,10 +116,16 @@ function enumerateVerbChains(index, key, out) {
         extendSuffixes(index, key.slice(stem.length), stemClass, [id], out, 0);
     }
 }
-function extendSuffixes(index, rest, stemClass, chain, out, depth) {
+function extendSuffixes(index, rest, stemClass, chain, out, depth, previousWasZero = false) {
     if (depth >= MAX_SUFFIX_DEPTH)
         return;
     for (const aux of index.auxiliaries) {
+        // ZERO auxiliary: 「母音幹動詞にのみ付く」
+        if (aux.isZero && stemClass !== 'vowel-stem')
+            continue;
+        // ZERO before an a-/u-slot suffix is 「名実ともにゼロ」: do not recognise it.
+        if (previousWasZero && 'aáuú'.includes(aux.vowel))
+            continue;
         const realized = stripAccents(SUFFIX_VOWEL[stemClass][aux.vowel] + aux.fixed);
         if (!rest.startsWith(realized))
             continue;
@@ -135,7 +142,7 @@ function extendSuffixes(index, rest, stemClass, chain, out, depth) {
             catch {
                 continue;
             }
-            extendSuffixes(index, remaining, nextClass, nextChain, out, depth + 1);
+            extendSuffixes(index, remaining, nextClass, nextChain, out, depth + 1, aux.isZero);
         }
         else if (remaining === '') {
             out.push(nextChain);
@@ -193,6 +200,7 @@ const TEST_ENTRIES = [
     { id: 'ná-#2', pos: 'verb', conjugation_class: 'vowel-stem', definitions: [] },
     { id: '(é)m-', pos: 'auxiliary verb', conjugation_class: 'consonant-stem', definitions: [] },
     { id: '(í)ja-', pos: 'auxiliary verb', conjugation_class: 'vowel-stem', definitions: [] },
+    { id: '(e)l-', pos: 'auxiliary verb', conjugation_class: 'consonant-stem', definitions: [{ gloss: 'ZERO' }] },
     { id: '(u)', pos: 'verb particle', definitions: [] },
     { id: '(e)', pos: 'verb particle', definitions: [] },
     { id: '(a)', pos: 'verb particle', definitions: [] },
@@ -223,5 +231,12 @@ console.assert(hasAnalysis(parseForm(TEST_INDEX, 'takan=cen'), ['tákan', '=cen'
 console.assert(hasAnalysis(parseForm(TEST_INDEX, 'ai ki'), ['ái', 'ki'], 'ái ki'));
 console.assert(hasAnalysis(parseForm(TEST_INDEX, 'on≡co'), ['on≡', '≡co'], 'ón≡co'));
 console.assert(parseForm(TEST_INDEX, 'a').length === 2); // a / a#2 homophones
+// ZERO auxiliary: recognised in the e-slot and before an i-slot auxiliary, never
+// before a-/u-slot suffixes, never after a consonant stem.
+console.assert(hasAnalysis(parseForm(TEST_INDEX, 'emale'), ['éma-', '(e)l-', '(e)'], 'émale'));
+console.assert(hasAnalysis(parseForm(TEST_INDEX, 'emalijalu'), ['éma-', '(e)l-', '(í)ja-', '(u)'], 'emalíjalu'));
+console.assert(!parseForm(TEST_INDEX, 'emalu').some(a => a.entry_ids.includes('(e)l-'))); // émalu = éma- (u) only
+console.assert(!parseForm(TEST_INDEX, 'cola').some(a => a.entry_ids.includes('(e)l-'))); // cóla = ć- (a) only
+console.assert(!parseForm(TEST_INDEX, 'cikelu').some(a => a.entry_ids.includes('(e)l-'))); // consonant stem: no ZERO
 console.assert(parseForm(TEST_INDEX, 'cikemuu').length === 0); // trailing junk rejected
 console.assert(parseForm(TEST_INDEX, '').length === 0);

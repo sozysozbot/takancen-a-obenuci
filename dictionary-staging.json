@@ -1,18 +1,6 @@
 {
   "entries": [
     {
-      "id": "=co",
-      "pos": "noun",
-      "script": [
-        "将上片"
-      ],
-      "definitions": [
-        {
-          "gloss": "district"
-        }
-      ]
-    },
-    {
       "id": "cacacaca",
       "pos": "noun",
       "script": [
@@ -45,7 +33,7 @@
       "id": "wéco",
       "pos": "noun",
       "script": [
-        "将上片"
+        "将上"
       ],
       "definitions": [
         {

@@ -7217,6 +7217,36 @@
           "gloss": "another kind"
         }
       ]
+    },
+    {
+      "id": "=co",
+      "pos": "noun suffix",
+      "script": [
+        "片"
+      ],
+      "definitions": [
+        {
+          "gloss": "district",
+          "translations": {
+            "ja": "〜町、〜地区"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kána",
+      "script": [
+        "かな"
+      ],
+      "pos": "noun",
+      "definitions": [
+        {
+          "gloss": "Kana(name)",
+          "translations": {
+            "ja": "カナ（人名）"
+          }
+        }
+      ]
     }
   ],
   "alternative_form_groups": [
