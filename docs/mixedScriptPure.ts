@@ -263,30 +263,94 @@ export function applyIterationMarks(s: string): string {
  * elsewhere is written normally, so the result is always readable).
  */
 export function renderMixedScript(plan: MixedScriptPlan, choice: SpellingChoice, omitted: ReadonlySet<number> = new Set()): string {
-  // Written material is collected per segment so the iteration mark can be
-  // applied inside a segment and never across two.
+  return renderMixedScriptSegments(plan, choice, omitted).map(s => s.text).join('');
+}
+
+/**
+ * A piece of the written word: a logogram together with the kana it stands for
+ * (for ruby), or a run of kana written as such (`reading` null).
+ */
+export interface SpellingSegment {
+  text: string;
+  reading: string | null;
+}
+
+export function renderMixedScriptSegments(plan: MixedScriptPlan, choice: SpellingChoice, omitted: ReadonlySet<number> = new Set()): SpellingSegment[] {
+  // Iteration marks apply inside a word-like segment and never across two, so
+  // each piece remembers which such segment it belongs to.
   const segmentOf = (owner: number) => { let seg = 0; for (let m = 1; m <= owner; m++) if (plan.morphemes[m]!.startsSegment) seg = m; return seg; };
-  const segments: { seg: number; text: string }[] = [];
-  const append = (owner: number, text: string) => {
-    const seg = segmentOf(owner);
-    const last = segments[segments.length - 1];
-    if (last && last.seg === seg) last.text += text; else segments.push({ seg, text });
-  };
+  interface Piece { seg: number; text: string; reading: string | null; owner: number }
+  const pieces: Piece[] = [];
   const emitted = new Set<number>();
   let lastWasLogogram = false;
   plan.units.forEach((u, i) => {
     const chosen = u.role === 'core' ? choice[u.owner] ?? null : null;
+    const last = pieces[pieces.length - 1];
     if (chosen === null) {
-      if (omitted.has(i) && lastWasLogogram) return;
-      append(u.owner, u.kana); lastWasLogogram = false; return;
+      if (omitted.has(i) && lastWasLogogram) {
+        // Omitted okurigana is still read: it joins the reading of the logogram before it.
+        if (last && last.reading !== null) last.reading += u.kana;
+        return;
+      }
+      if (last && last.reading === null && last.seg === segmentOf(u.owner)) last.text += u.kana;
+      else pieces.push({ seg: segmentOf(u.owner), text: u.kana, reading: null, owner: u.owner });
+      lastWasLogogram = false;
+      return;
     }
-    if (!emitted.has(u.owner)) { append(u.owner, chosen); emitted.add(u.owner); }
+    if (!emitted.has(u.owner)) {
+      // A spelling that is itself kana (a nominal `script` such as しし) needs no reading.
+      pieces.push({ seg: segmentOf(u.owner), text: chosen, reading: NON_KANA.test(chosen) ? u.kana : null, owner: u.owner });
+      emitted.add(u.owner);
+    } else if (last && last.owner === u.owner && last.reading !== null) {
+      last.reading += u.kana;   // further core units of the same logogram
+    }
     lastWasLogogram = true;
   });
-  return segments.map(s => {
-    const avoids = plan.morphemes.some((m, i) => segmentOf(i) === s.seg && m.avoidsIterationMark);
-    return avoids ? s.text : applyIterationMarks(s.text);
-  }).join('');
+
+  // Apply iteration marks over each word-like segment's text as a whole, then
+  // hand the characters back to the pieces (a mark replaces exactly one character).
+  const out: SpellingSegment[] = [];
+  let i = 0;
+  while (i < pieces.length) {
+    let j = i;
+    while (j < pieces.length && pieces[j]!.seg === pieces[i]!.seg) j++;
+    const group = pieces.slice(i, j);
+    const avoids = plan.morphemes.some((m, k) => segmentOf(k) === pieces[i]!.seg && m.avoidsIterationMark);
+    const marked = [...(avoids ? group.map(p => p.text).join('') : applyIterationMarks(group.map(p => p.text).join('')))];
+    let pos = 0;
+    for (const p of group) {
+      const len = [...p.text].length;
+      out.push({ text: marked.slice(pos, pos + len).join(''), reading: p.reading === null ? null : (avoids ? p.reading : applyIterationMarks(p.reading)) });
+      pos += len;
+    }
+    i = j;
+  }
+  return out;
+}
+
+/**
+ * The segments of a given spelling, found by enumerating the choices that
+ * could have produced it; null when no systematic choice does (a custom or
+ * irregular spelling), in which case the caller has no per-logogram readings.
+ */
+export function spellingSegments(plan: MixedScriptPlan, spelling: string, cap = 4096): SpellingSegment[] | null {
+  const perMorpheme = plan.morphemes.map(m => [...m.logograms, null]);
+  const omissionSets = subsets(omittableUnits(plan)).map(xs => new Set(xs));
+  let tried = 0;
+  const choice: SpellingChoice = [];
+  const walk = (m: number): SpellingSegment[] | null => {
+    if (m === perMorpheme.length) {
+      for (const omitted of omissionSets) {
+        if (tried++ >= cap) return null;
+        const segments = renderMixedScriptSegments(plan, choice, omitted);
+        if (segments.map(s => s.text).join('') === spelling) return segments;
+      }
+      return null;
+    }
+    for (const opt of perMorpheme[m]!) { choice[m] = opt; const r = walk(m + 1); if (r) return r; }
+    return null;
+  };
+  return walk(0);
 }
 
 /** The all-kana spelling. */
@@ -401,6 +465,16 @@ console.assert(sameList(options(['moŕ-', '(e)mók-', '(é)m-', '(u)']).slice(0,
 console.assert(sameList(options(['kúwa', '=cici']), ['筆しし', 'くわしし']));                              // =cici avoids the mark
 console.assert(sameList(options(['takamámani']), ['皇字', 'たかままに']));                                 // flagged compound
 console.assert(sameList(options(['ámama']), ['大', 'あまゝ']));
+// Segments: logograms carry the kana they stand for, including omitted okurigana.
+const seg = (ids: string[], spelling: string) => spellingSegments(planMixedScript(TEST_DICT, ids)!, spelling)?.map(x => x.reading === null ? x.text : `${x.text}(${x.reading})`).join('|') ?? null;
+console.assert(seg(['cík-', '(é)m-', '(u)'], '席けむ') === '席(し)|けむ');
+console.assert(seg(['tád-', '(e)nít-', '(a)'], '集で入た') === '集(た)|で|入(に)|た');
+console.assert(seg(['wác-', '(a)'], '無') === '無(わさ)');
+console.assert(seg(['kúwa', '=cici'], '筆しし') === '筆(くわ)|しし');
+console.assert(seg(['únun-', '(u)'], 'うぬゝ') === 'うぬゝ');
+console.assert(seg(['mormoŕ-', '(e)'], '行々') === '行々(もうもう)');
+console.assert(seg(['cík-', '(é)m-', '(u)'], '席在') === '席(し)|在(けむ)');      // the logographic register, む omitted
+console.assert(seg(['cík-', '(é)m-', '(u)'], '座けむ') === null);                // not a systematic spelling
 console.assert(syllabifyWithCarriers('kaxcen').map(u => u.kana).join('') === latinToSyllabary('káxcen'));
 console.assert(syllabifyWithCarriers('morlata').map(u => u.kana).join('') === latinToSyllabary('moŕlata'));
 console.assert(syllabifyWithCarriers('kjabetu').map(u => u.kana).join('') === latinToSyllabary('kjábetu'));
