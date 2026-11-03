@@ -302,7 +302,8 @@
     {
       "id": "kí",
       "script": [
-        "那"
+        "那",
+        "彼"
       ],
       "pos": "noun",
       "definitions": [
@@ -897,7 +898,8 @@
     {
       "id": "momecák-",
       "script": [
-        "手来く"
+        "手来く",
+        "受く"
       ],
       "pos": "verb",
       "conjugation_class": "consonant-stem",
@@ -956,6 +958,9 @@
     },
     {
       "id": "(a)",
+      "script": [
+        "之"
+      ],
       "pos": "verb particle",
       "definitions": [
         {
@@ -2276,7 +2281,8 @@
       "id": "méki",
       "pos": "adjectival noun",
       "script": [
-        "硬"
+        "硬",
+        "硬き"
       ],
       "definitions": [
         {
@@ -2468,7 +2474,8 @@
       "id": "nimálane",
       "pos": "noun",
       "script": [
-        "哩言"
+        "哩言",
+        "哩"
       ],
       "definitions": [
         {
@@ -3071,7 +3078,8 @@
         {
           "gloss": "Takan grapheme"
         }
-      ]
+      ],
+      "avoids_iteration_mark": true
     },
     {
       "id": "takańdatu",
@@ -6452,7 +6460,8 @@
       "conjugation_class": "vowel-stem",
       "script": [
         "善在る",
-        "善まる"
+        "善まる",
+        "善る"
       ],
       "definitions": [
         {
@@ -6900,7 +6909,8 @@
             "ja": "〜さん"
           }
         }
-      ]
+      ],
+      "avoids_iteration_mark": true
     },
     {
       "id": "caneján-",

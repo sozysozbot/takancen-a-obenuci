@@ -1348,11 +1348,12 @@
           "form": "momemokíjalu",
           "mixed_script": "手めもきやる",
           "entry_ids": [
-            "momemók-",
+            "móm-",
+            "(e)mók-",
             "(í)ja-",
             "(u)"
           ],
-          "gloss": "give-want-NPST"
+          "gloss": "obtain-away-want-NPST"
         },
         {
           "punctuation": "。"
@@ -2469,11 +2470,12 @@
           "form": "momemokíjalu",
           "mixed_script": "手め行き心る",
           "entry_ids": [
-            "momemók-",
+            "móm-",
+            "(e)mók-",
             "(í)ja-",
             "(u)"
           ],
-          "gloss": "give-want-NPST"
+          "gloss": "obtain-away-want-NPST"
         }
       ]
     },
@@ -12131,7 +12133,7 @@
         },
         {
           "form": "cémala",
-          "mixed_script": "口之",
+          "mixed_script": "言之",
           "entry_ids": [
             "céma-",
             "(a)"
