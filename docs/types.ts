@@ -32,6 +32,7 @@ export type DictionaryEntry = {
   notes?: LocalizedString;
   cognates?: Cognates;
   components?: string[];
+  avoids_iteration_mark?: boolean;
 } | {
   id: string;
   script?: string[];
@@ -40,6 +41,7 @@ export type DictionaryEntry = {
   notes?: LocalizedString;
   cognates?: Cognates;
   components?: string[];
+  avoids_iteration_mark?: boolean;
 }
 
 export interface AlternativeFormGroup {
